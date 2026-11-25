@@ -1,0 +1,113 @@
+{
+  "nav": "Invoices",
+  "title": "Invoices",
+  "description": "Bill customers, track payments and chase overdue invoices.",
+  "commands": {
+    "create": "Create an invoice"
+  },
+  "tiles": {
+    "sent": "Outstanding",
+    "overdue": "Overdue",
+    "paid": "Paid",
+    "draft": "Drafts",
+    "count": "{{count}} invoices"
+  },
+  "status": {
+    "all": "All",
+    "draft": "Draft",
+    "sent": "Sent",
+    "paid": "Paid",
+    "overdue": "Overdue"
+  },
+  "list": {
+    "new": "New invoice",
+    "search": "Search number or customer",
+    "daysLate": "{{count}} days late",
+    "dueToday": "Due today",
+    "dueIn": "Due in {{count}} days",
+    "emptyTitle": "No invoices here",
+    "emptyHint": "Try another status or search."
+  },
+  "columns": {
+    "number": "Invoice",
+    "customer": "Customer",
+    "issued": "Issued",
+    "due": "Due",
+    "status": "Status",
+    "amount": "Amount"
+  },
+  "editor": {
+    "title": "New invoice",
+    "description": "Description",
+    "billTo": "Bill to",
+    "billToHint": "Customer, dates and payment terms.",
+    "customer": "Customer",
+    "customerPlaceholder": "Search customers",
+    "issueDate": "Issue date",
+    "dueDate": "Due date",
+    "terms": "Payment terms",
+    "net": "Net {{days}}",
+    "items": "Line items",
+    "itemsHint": "Products and services on this invoice.",
+    "descriptionPlaceholder": "e.g. Growth plan, annual",
+    "quantity": "Qty",
+    "unitPrice": "Unit price",
+    "lineTotal": "Amount",
+    "addLine": "Add line",
+    "removeLine": "Remove line {{index}}",
+    "notes": "Notes",
+    "defaultNotes": "Payment by bank transfer within the due date. Thank you for your business.",
+    "summary": "Summary",
+    "number": "Will be numbered {{number}}",
+    "noCustomer": "Pick a customer to see their billing address.",
+    "discount": "Discount",
+    "taxRate": "Tax rate",
+    "saveAndSend": "Save and send",
+    "saveDraft": "Save draft",
+    "cancel": "Cancel",
+    "subtitle": "Totals update as you type. Save as a draft or send it right away."
+  },
+  "totals": {
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "tax": "Tax ({{rate}}%)",
+    "total": "Total",
+    "totalDue": "Total due"
+  },
+  "document": {
+    "invoice": "Invoice",
+    "billTo": "Bill to",
+    "issued": "Issued",
+    "due": "Due",
+    "paid": "Paid",
+    "qty": "Qty",
+    "taxId": "Tax ID",
+    "payment": "Payment details",
+    "bankTransfer": "Bank transfer to",
+    "reference": "Reference:"
+  },
+  "detail": {
+    "back": "All invoices",
+    "loading": "Invoice",
+    "status": "Status",
+    "dueOn": "Due {{date}}",
+    "paidOn": "Paid {{date}}",
+    "send": "Send to customer",
+    "markPaid": "Mark as paid",
+    "download": "Download",
+    "print": "Print",
+    "activity": "Activity",
+    "notFound": "Invoice not found",
+    "notFoundHint": "It may have been deleted or the link is wrong.",
+    "events": {
+      "created": "Invoice created",
+      "sent": "Sent to {{email}}",
+      "paid": "Payment of {{amount}} received"
+    }
+  },
+  "toast": {
+    "sent": "{{number}} sent",
+    "draft": "{{number}} saved as draft",
+    "paid": "{{number}} marked as paid"
+  }
+}

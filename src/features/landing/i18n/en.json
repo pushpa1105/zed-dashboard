@@ -1,0 +1,779 @@
+{
+  "nav": "Landing pages",
+  "title": "Landing pages",
+  "description": "Three landing page templates",
+  "brand": "{{brand}}",
+  "switcher": {
+    "label": "Templates",
+    "saas": "SaaS",
+    "startup": "Editorial",
+    "product": "Minimal",
+    "app": "Open the app",
+    "agency": "Studio",
+    "ai": "AI",
+    "dashboards": "Dashboards"
+  },
+  "common": {
+    "signIn": "Sign in",
+    "getStarted": "Get started",
+    "openApp": "Open the app",
+    "rights": "All rights reserved.",
+    "email": "Work email",
+    "emailPlaceholder": "you@company.com",
+    "invalidEmail": "Enter a valid email address"
+  },
+  "saas": {
+    "meta": "Analytics dashboards your whole team trusts",
+    "nav": {
+      "product": "Product",
+      "customers": "Customers",
+      "pricing": "Pricing",
+      "faq": "FAQ",
+      "templates": "Templates"
+    },
+    "hero": {
+      "eyebrow": "New: cohort retention reports",
+      "title": "Every number your team argues about, in one place.",
+      "subtitle": "{{brand}} connects to Postgres, Stripe and your product events, then builds the dashboards your board asks for. Refreshed every five minutes, explained in plain language.",
+      "secondary": "Book a 20-min demo",
+      "note": "14-day trial · No card required · SOC 2 Type II"
+    },
+    "preview": {
+      "url": "app.orbitly.io/overview",
+      "revenue": "Net revenue",
+      "customers": "Active customers",
+      "churn": "Logo churn",
+      "trend": "Net revenue",
+      "trendHint": "Last 12 months",
+      "thisYear": "This year",
+      "lastYear": "Last year",
+      "channels": "Signups by channel",
+      "organic": "Organic",
+      "paid": "Paid",
+      "referral": "Referral",
+      "partners": "Partners",
+      "weekly": "Weekly signups",
+      "vsLastMonth": "vs last month",
+      "signups": "Signups"
+    },
+    "logos": "Finance and ops teams at 1,200+ companies close their month with {{brand}}",
+    "features": {
+      "eyebrow": "Product",
+      "title": "Built for the people who get asked “is this number right?”",
+      "subtitle": "Write SQL when you want to. Click when you don't. Either way the metric is defined once and used everywhere.",
+      "metrics": {
+        "title": "One definition per metric",
+        "body": "Define MRR, active users or gross margin once. Every chart, export and alert reads the same formula, with version history."
+      },
+      "alerts": {
+        "title": "Alerts that explain themselves",
+        "body": "When revenue dips 8% on a Tuesday, {{brand}} tells you which segment moved and links the rows behind it."
+      },
+      "sql": {
+        "title": "SQL or no-code, same chart",
+        "body": "Analysts write queries; everyone else filters and pivots. Both edit the same dashboard."
+      },
+      "access": {
+        "title": "Row-level permissions",
+        "body": "Regional managers see their region. Finance sees everything. Rules live in one place."
+      },
+      "share": {
+        "title": "Board-ready exports",
+        "body": "Scheduled PDF and Slack digests with your branding, every Monday at 8:00."
+      },
+      "api": {
+        "title": "Embed and API",
+        "body": "Put any dashboard inside your own product with signed embeds and a typed REST API."
+      }
+    },
+    "metrics": {
+      "uptime": "Uptime over the last 12 months",
+      "refresh": "Default refresh interval",
+      "queries": "Queries answered last month",
+      "setup": "Median time to first dashboard"
+    },
+    "steps": {
+      "eyebrow": "How it works",
+      "title": "From connection string to board deck in an afternoon",
+      "one": {
+        "title": "Connect your sources",
+        "body": "Read-only connectors for Postgres, BigQuery, Snowflake, Stripe, HubSpot and 40 more."
+      },
+      "two": {
+        "title": "Pick a starting template",
+        "body": "SaaS metrics, e-commerce, marketing or finance. Every chart is editable."
+      },
+      "three": {
+        "title": "Share with the right people",
+        "body": "Invite your team, set row-level rules, schedule the Monday digest."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Customers",
+      "title": "Fewer spreadsheets, shorter meetings",
+      "a": {
+        "quote": "Our month-end close went from four days to one. The revenue bridge used to be a spreadsheet only I understood.",
+        "name": "Marta Lindqvist",
+        "role": "VP Finance, Fieldwork"
+      },
+      "b": {
+        "quote": "The alert told us the churn spike was one payment provider in Brazil. We fixed it before anyone opened a ticket.",
+        "name": "Daniel Okafor",
+        "role": "Head of Growth, Parcelpoint"
+      },
+      "c": {
+        "quote": "We embedded {{brand}} dashboards in our customer portal in a week. Support questions about usage dropped by a third.",
+        "name": "Priya Raman",
+        "role": "CTO, Lumen Health"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Pricing",
+      "title": "Priced per workspace, not per viewer",
+      "subtitle": "Invite everyone who needs to see the numbers. You pay for editors.",
+      "monthly": "Monthly",
+      "yearly": "Yearly",
+      "save": "2 months free",
+      "perMonth": "/ month",
+      "billedYearly": "billed yearly",
+      "billedMonthly": "billed monthly",
+      "popular": "Most teams start here",
+      "cta": "Start free trial",
+      "contact": "Talk to sales",
+      "starter": {
+        "name": "Starter",
+        "description": "For founders tracking the basics.",
+        "f1": "3 editors, unlimited viewers",
+        "f2": "5 data sources",
+        "f3": "Hourly refresh",
+        "f4": "Email digests"
+      },
+      "growth": {
+        "name": "Growth",
+        "description": "For teams that report to a board.",
+        "f1": "15 editors, unlimited viewers",
+        "f2": "Unlimited data sources",
+        "f3": "5-minute refresh and alerts",
+        "f4": "Row-level permissions",
+        "f5": "Slack and PDF digests"
+      },
+      "scale": {
+        "name": "Scale",
+        "description": "For embedding and regulated data.",
+        "f1": "Unlimited editors",
+        "f2": "Signed embeds and API",
+        "f3": "SSO, SCIM and audit log",
+        "f4": "Dedicated region and support"
+      }
+    },
+    "faq": {
+      "title": "Questions we get every week",
+      "q1": {
+        "q": "Does {{brand}} copy our data?",
+        "a": "No. Queries run against your warehouse with a read-only user. We cache aggregated results for up to 24 hours to keep dashboards fast; you can turn caching off per source."
+      },
+      "q2": {
+        "q": "Who counts as an editor?",
+        "a": "Anyone who can create or change a chart, metric or dashboard. Viewers, commenters and people receiving digests are free."
+      },
+      "q3": {
+        "q": "Can we start with spreadsheets?",
+        "a": "Yes. Upload CSV or connect Google Sheets, then move to a warehouse later. Dashboards keep working when you switch the source."
+      },
+      "q4": {
+        "q": "What happens after the trial?",
+        "a": "You pick a plan or the workspace becomes read-only. Nothing is deleted for 90 days."
+      },
+      "q5": {
+        "q": "Do you offer discounts for nonprofits and education?",
+        "a": "Growth is 50% off for registered nonprofits and accredited schools. Write to us from your organization's domain."
+      }
+    },
+    "cta": {
+      "title": "Bring your messiest spreadsheet. We'll turn it into a dashboard on the demo call.",
+      "secondary": "See pricing"
+    },
+    "footer": {
+      "tagline": "Analytics dashboards for finance, ops and growth teams.",
+      "product": "Product",
+      "company": "Company",
+      "resources": "Resources",
+      "legal": "Legal",
+      "links": {
+        "dashboards": "Dashboards",
+        "alerts": "Alerts",
+        "embed": "Embedding",
+        "pricing": "Pricing",
+        "about": "About",
+        "careers": "Careers",
+        "blog": "Blog",
+        "contact": "Contact",
+        "docs": "Documentation",
+        "changelog": "Changelog",
+        "status": "Status",
+        "templates": "Templates",
+        "privacy": "Privacy",
+        "terms": "Terms",
+        "security": "Security",
+        "dpa": "DPA"
+      }
+    }
+  },
+  "startup": {
+    "meta": "{{brand}}: the operating system for numbers",
+    "nav": {
+      "work": "Work",
+      "about": "About",
+      "journal": "Journal"
+    },
+    "hero": {
+      "kicker": "Seed · Series A · 2026",
+      "title1": "Metrics",
+      "title2": "without the",
+      "title3": "meetings.",
+      "body": "We started {{brand}} after spending three years reconciling the same revenue number across four tools. Today 1,200 teams use it to agree on what happened last month, and decide what to do next.",
+      "cta": "Read our story",
+      "scroll": "Scroll"
+    },
+    "logos": "Backed by operators from",
+    "cases": {
+      "title": "Selected work",
+      "subtitle": "What changes when a company stops arguing about its numbers.",
+      "read": "Read case study",
+      "a": {
+        "client": "Fieldwork",
+        "sector": "Workforce software",
+        "title": "Month-end close from four days to one",
+        "metric": "-75%",
+        "metricLabel": "close time"
+      },
+      "b": {
+        "client": "Parcelpoint",
+        "sector": "Logistics",
+        "title": "A churn spike traced to one payment provider in 40 minutes",
+        "metric": "$310k",
+        "metricLabel": "ARR saved"
+      },
+      "c": {
+        "client": "Lumen Health",
+        "sector": "Healthcare",
+        "title": "Usage dashboards embedded in a patient portal",
+        "metric": "-33%",
+        "metricLabel": "support tickets"
+      }
+    },
+    "manifesto": {
+      "label": "What we believe",
+      "title": "A metric is a promise. If two people get two different answers, someone broke it.",
+      "p1": "Most analytics tools optimize for making charts. We optimize for making one chart everyone believes.",
+      "p2": "That means boring things done well: versioned definitions, lineage you can click through, permissions that follow the data, and alerts that say why."
+    },
+    "stats": {
+      "teams": "teams",
+      "countries": "countries",
+      "employees": "people",
+      "raised": "raised"
+    },
+    "team": {
+      "title": "The people",
+      "subtitle": "A small team in Lisbon, Toronto and remote.",
+      "investorsTitle": "Investors and angels",
+      "a": {
+        "name": "Inês Duarte",
+        "role": "Co-founder, CEO"
+      },
+      "b": {
+        "name": "Tomás Reyes",
+        "role": "Co-founder, CTO"
+      },
+      "c": {
+        "name": "Aiko Tanaka",
+        "role": "Head of Design"
+      },
+      "d": {
+        "name": "Samuel Adeyemi",
+        "role": "Head of Data"
+      }
+    },
+    "newsletter": {
+      "title": "The Ledger",
+      "subtitle": "One email a month about metrics, finance tooling and what we shipped. No growth hacks.",
+      "submit": "Subscribe",
+      "success": "You're on the list. First issue lands next Monday.",
+      "privacy": "Unsubscribe in one click. We never share your address."
+    },
+    "footer": {
+      "address": "Rua da Boavista 82, Lisbon",
+      "careers": "We're hiring: 4 open roles"
+    }
+  },
+  "product": {
+    "meta": "{{brand}} Pocket: your company's numbers on your phone",
+    "badge": "Private beta · iOS and Android",
+    "title": "Your company's numbers, before your first coffee.",
+    "subtitle": "{{brand}} Pocket sends a 60-second morning brief: what moved overnight, why, and whether you need to care.",
+    "waitlist": {
+      "submit": "Join the waitlist",
+      "submitting": "Joining…",
+      "count": "2,418 people ahead of you. We let in 200 a week.",
+      "successTitle": "You're in line.",
+      "successBody": "We'll email {{email}} when your invite is ready. Usually within three weeks.",
+      "again": "Use another email"
+    },
+    "brief": {
+      "time": "7:02",
+      "title": "Morning brief",
+      "date": "Tuesday, 24 Nov",
+      "line1": "Revenue",
+      "line1Value": "+4.2%",
+      "line1Note": "Annual plans in Germany",
+      "line2": "Signups",
+      "line2Value": "-11%",
+      "line2Note": "Paid search paused at 2:00",
+      "line3": "Churn",
+      "line3Value": "flat",
+      "line3Note": "Nothing to do"
+    },
+    "features": {
+      "title": "What it does",
+      "brief": {
+        "title": "A brief, not a dashboard",
+        "body": "Three to five lines a day, ranked by how much they changed and how much you said you care."
+      },
+      "why": {
+        "title": "The why, in one tap",
+        "body": "Every line opens the segment that moved and the events behind it."
+      },
+      "quiet": {
+        "title": "Quiet by default",
+        "body": "No push unless a number crosses a threshold you set. Weekends off unless something breaks."
+      },
+      "offline": {
+        "title": "Works on the train",
+        "body": "Briefs are cached on the device and encrypted at rest."
+      }
+    },
+    "compare": {
+      "title": "How it compares",
+      "feature": "Feature",
+      "us": "Pocket",
+      "bi": "BI tool app",
+      "sheets": "Spreadsheet",
+      "rows": {
+        "brief": "Daily ranked brief",
+        "why": "Explains changes",
+        "mobile": "Designed for phone",
+        "alerts": "Threshold alerts",
+        "setup": "Setup under 5 minutes"
+      },
+      "partial": "Partial",
+      "yes": "Yes",
+      "no": "No"
+    },
+    "changelog": {
+      "title": "Recently shipped",
+      "all": "Full changelog",
+      "a": {
+        "date": "Nov 18",
+        "title": "Weekend mode",
+        "body": "Briefs pause Saturday and Sunday unless a critical alert fires."
+      },
+      "b": {
+        "date": "Nov 04",
+        "title": "Apple Watch complication",
+        "body": "Your top metric on your wrist, updated hourly."
+      },
+      "c": {
+        "date": "Oct 21",
+        "title": "Shared briefs",
+        "body": "Forward any brief to a teammate with the context attached."
+      }
+    },
+    "testimonial": {
+      "quote": "I used to open four tabs before standup. Now I read the brief in the elevator and walk in knowing what to ask.",
+      "name": "Hannah Morgan",
+      "role": "COO, Brightline"
+    },
+    "footer": {
+      "made": "Made by the {{brand}} team",
+      "privacy": "Privacy",
+      "terms": "Terms",
+      "press": "Press kit"
+    }
+  },
+  "templates": {
+    "eyebrow": "Dashboard templates",
+    "title": "{{count}} complete dashboards, each with its own layout",
+    "subtitle": "Not screenshots of one page: every template is a working product with its own menu, pages, data and shell structure. Open any of them live, no sign-up.",
+    "viewAll": "Browse the gallery",
+    "livePreview": "Live preview",
+    "details": "Details",
+    "pages_one": "{{count}} page",
+    "pages_other": "{{count}} pages",
+    "layout": "Layout",
+    "category": "Category",
+    "heroCta": "Try the live demo",
+    "previewOf": "Preview of {{name}}",
+    "layouts": {
+      "sidebar": "Sidebar",
+      "sidebar-dark": "Dark sidebar",
+      "inset": "Inset",
+      "floating": "Floating",
+      "rail": "Icon rail",
+      "dual": "Dual sidebar",
+      "topnav": "Top nav",
+      "topnav-tabs": "Top nav + tabs",
+      "boxed": "Boxed"
+    },
+    "layoutHints": {
+      "sidebar": "Collapsible sidebar with nested, badge-aware sections. The familiar default.",
+      "sidebar-dark": "The classic structure on a dark navigation surface for high contrast.",
+      "inset": "The content floats as a rounded card beside the sidebar.",
+      "floating": "A detached sidebar card that leaves the canvas open.",
+      "rail": "A slim icon bar; sub-pages open as flyouts. Maximum room for data.",
+      "dual": "A rail of sections plus a panel listing the pages of the chosen one.",
+      "topnav": "A horizontal menu with dropdowns and mega panels; no sidebar at all.",
+      "topnav-tabs": "A header bar with an underline tab row, GitHub style.",
+      "boxed": "The app sits in a centered frame with its menu inside. Desktop-app feel."
+    },
+    "gallery": {
+      "metaTitle": "Dashboard templates",
+      "title": "Pick the dashboard that fits, then make it yours",
+      "subtitle": "{{count}} workspaces across retail, sales, finance, operations, people and education. Filter by industry or by how the page is structured.",
+      "search": "Search templates",
+      "allCategories": "All industries",
+      "allLayouts": "Any layout",
+      "results_one": "{{count}} template",
+      "results_other": "{{count}} templates",
+      "reset": "Clear filters",
+      "empty": "No template matches those filters",
+      "emptyHint": "Try another industry or layout, or clear the search.",
+      "previous": "Previous",
+      "next": "Next",
+      "pagesLabel": "Pages",
+      "structure": "Page structure",
+      "noSignup": "Opens with a demo account. Nothing to fill in.",
+      "backHome": "Back to the product"
+    },
+    "store": {
+      "buy": "Buy · ${{price}}",
+      "bundleTitle": "All {{count}} dashboards in one package",
+      "bundleBody": "Every dashboard plus the apps, component showcases, page templates and landing pages. One payment, one license.",
+      "bundleCta": "Get the bundle · ${{price}}",
+      "save": "Save ${{amount}}"
+    }
+  },
+  "agency": {
+    "meta": "Kiln — product design and engineering studio",
+    "brand": "Kiln",
+    "nav": {
+      "work": "Work",
+      "services": "Services",
+      "process": "Process",
+      "contact": "Contact",
+      "cta": "Start a project"
+    },
+    "hero": {
+      "availability": "Booking two new projects for February 2027",
+      "title": "We design and build the software teams open every morning.",
+      "subtitle": "A twelve-person studio in Lisbon. We take internal tools, dashboards and B2B products from a whiteboard to production, and stay until they are used.",
+      "stats": {
+        "years": {
+          "value": "9 yrs",
+          "label": "shipping product"
+        },
+        "products": {
+          "value": "64",
+          "label": "products launched"
+        },
+        "retention": {
+          "value": "81%",
+          "label": "clients who came back"
+        }
+      }
+    },
+    "work": {
+      "title": "Selected work",
+      "note": "2023 — 2026",
+      "items": {
+        "ledger": {
+          "client": "Northwind Ledger",
+          "category": "Fintech · Web app",
+          "summary": "Month-end close for 400 accountants, rebuilt around one review queue.",
+          "metric": "−62%",
+          "metricLabel": "close time"
+        },
+        "harbor": {
+          "client": "Harbor Freight Co.",
+          "category": "Logistics · Dashboard",
+          "summary": "Live dock scheduling across 31 warehouses.",
+          "metric": "3.4×",
+          "metricLabel": "dock throughput"
+        },
+        "mosaic": {
+          "client": "Mosaic Learning",
+          "category": "Education · Platform",
+          "summary": "Course builder and grading for 2,000 schools.",
+          "metric": "+38%",
+          "metricLabel": "course completion"
+        },
+        "tandem": {
+          "client": "Tandem HR",
+          "category": "HR · Design system",
+          "summary": "One component library for four products and two brands.",
+          "metric": "11 wks",
+          "metricLabel": "to first release"
+        }
+      }
+    },
+    "services": {
+      "title": "What we do",
+      "subtitle": "Small senior teams, one product at a time. No hand-offs between agencies.",
+      "items": {
+        "product": {
+          "title": "Product strategy",
+          "body": "Interviews, workflow mapping and a scoped first release you can actually ship.",
+          "deliverables": "Research · Roadmap · Pricing"
+        },
+        "design": {
+          "title": "Interface design",
+          "body": "Dense, calm interfaces for people who work in them all day. Prototyped and tested.",
+          "deliverables": "UX · UI · Design systems"
+        },
+        "engineering": {
+          "title": "Engineering",
+          "body": "Typed React front-ends and boring, reliable APIs. Your team owns the code from day one.",
+          "deliverables": "React · TypeScript · Node"
+        },
+        "growth": {
+          "title": "Launch & iteration",
+          "body": "Analytics, onboarding and the second and third release, where most products are won.",
+          "deliverables": "Onboarding · Analytics · Iteration"
+        }
+      }
+    },
+    "process": {
+      "title": "Four phases, one team, no surprises in week ten.",
+      "items": {
+        "discover": {
+          "weeks": "Weeks 1–2",
+          "title": "Discover",
+          "body": "We sit with the people who will use it and write down what slows them down."
+        },
+        "shape": {
+          "weeks": "Weeks 3–4",
+          "title": "Shape",
+          "body": "Clickable prototype, tested with real users, and a fixed scope for release one."
+        },
+        "build": {
+          "weeks": "Weeks 5–12",
+          "title": "Build",
+          "body": "Weekly demos on staging. You can stop or change direction at any of them."
+        },
+        "launch": {
+          "weeks": "Week 13 +",
+          "title": "Launch",
+          "body": "Rollout, training and a month of fixes included. Then we measure."
+        }
+      }
+    },
+    "quote": {
+      "text": "Kiln shipped in eleven weeks what our previous vendor scoped at nine months, and our ops team stopped exporting to spreadsheets the week it launched.",
+      "author": "Priya Raman",
+      "role": "VP Operations, Harbor Freight Co."
+    },
+    "contact": {
+      "title": "Tell us what you are building",
+      "subtitle": "We answer every message within two working days, with honest advice even if we are not the right fit.",
+      "address": "Rua da Boavista 82, Lisbon",
+      "name": "Your name",
+      "nameError": "Please enter your name",
+      "budget": "Budget",
+      "budgets": {
+        "small": "< €50k",
+        "medium": "€50k – €150k",
+        "large": "> €150k"
+      },
+      "message": "Project details",
+      "messagePlaceholder": "Who is it for, what do they do today, and when do you need it?",
+      "messageError": "A couple of sentences help us reply properly",
+      "submit": "Send message",
+      "sent": "Message sent",
+      "sentHint": "We will reply within two working days."
+    },
+    "footer": "Designed and built in Lisbon."
+  },
+  "ai": {
+    "meta": "{{brand}} Analyst — ask your data in plain language",
+    "nav": {
+      "features": "Features",
+      "useCases": "Use cases",
+      "pricing": "Pricing",
+      "faq": "FAQ"
+    },
+    "hero": {
+      "eyebrow": "{{brand}} Analyst · now in general availability",
+      "title": "Ask your numbers a question. Get an answer you can check.",
+      "subtitle": "Analyst reads your warehouse, uses your approved metric definitions and shows the SQL behind every answer. No new dashboards to maintain."
+    },
+    "demo": {
+      "sources": "Source:",
+      "prompts": {
+        "churn": {
+          "chip": "Why did churn spike?",
+          "question": "Why did churn spike in October?",
+          "answer": "Churn rose to 4.6% in October, up from 3.4%. 71% of the extra cancellations were annual plans billed through one payment provider that started declining renewals on Oct 9. Excluding them, churn was 3.3%.",
+          "source": "metrics.churn_rate v12",
+          "series": "Churn %"
+        },
+        "regions": {
+          "chip": "Top regions this quarter",
+          "question": "Which regions drove new revenue this quarter?",
+          "answer": "DACH led with €412k of new revenue (35% of the total), followed by the Nordics. Iberia is the only region below its target, at 61% of plan.",
+          "source": "metrics.new_revenue v8",
+          "series": "New revenue (€k)"
+        },
+        "forecast": {
+          "chip": "Will we hit target?",
+          "question": "Are we on track for the Q4 signup target?",
+          "answer": "Yes, if the last three weeks hold: weekly signups are trending to 97% of target by week 49. The forecast range is 91–102%.",
+          "source": "forecast.signups weekly",
+          "series": "Signups vs target %"
+        }
+      }
+    },
+    "features": {
+      "title": "Built for answers you can repeat in a board meeting",
+      "items": {
+        "citations": {
+          "title": "Every answer cites its metric",
+          "body": "Analyst only uses definitions your data team approved, and links each number to the definition and version it came from."
+        },
+        "sql": {
+          "title": "Readable SQL",
+          "body": "Open the query behind any answer, edit it, and save it as a new metric."
+        },
+        "guardrails": {
+          "title": "Row-level permissions",
+          "body": "People only get answers from data they can already see."
+        },
+        "metrics": {
+          "title": "Shared metric layer",
+          "body": "One definition of revenue across chat, dashboards and exports."
+        },
+        "workflows": {
+          "title": "Scheduled questions",
+          "body": "Ask once, get the answer in Slack every Monday at 8:00."
+        },
+        "speed": {
+          "title": "Answers in seconds, not tickets",
+          "body": "Median answer time is 6 seconds on a 2 TB warehouse, so people stop queueing requests for the data team."
+        }
+      }
+    },
+    "useCases": {
+      "title": "One question from every team",
+      "ask": "They ask",
+      "get": "They get",
+      "items": {
+        "finance": {
+          "tab": "Finance",
+          "question": "What moved gross margin between September and October?",
+          "who": "Controller, 300-person SaaS company",
+          "answer": "A bridge: +1.2 pts from pricing, −0.8 pts from cloud costs, −0.3 pts from refunds, with the three largest accounts behind each line."
+        },
+        "sales": {
+          "tab": "Sales",
+          "question": "Which deals over €50k have had no activity in 14 days?",
+          "who": "Sales manager, EMEA",
+          "answer": "Seven deals worth €612k, sorted by close date, with the owner and the last touch for each."
+        },
+        "product": {
+          "tab": "Product",
+          "question": "Did the new onboarding change week-one retention?",
+          "who": "Product lead, growth team",
+          "answer": "Week-one retention is 41% for the new flow vs 34% for the old one, across 2,940 signups; the difference holds on mobile and desktop."
+        },
+        "support": {
+          "tab": "Support",
+          "question": "Which features generate the most tickets per active user?",
+          "who": "Head of support",
+          "answer": "Exports and SSO setup, at 3.1 and 2.4 tickets per 100 active users, both trending up since the October release."
+        }
+      }
+    },
+    "integrations": {
+      "title": "Connects read-only to the tools your numbers already live in",
+      "kinds": {
+        "warehouse": "Warehouse",
+        "billing": "Billing",
+        "crm": "CRM",
+        "support": "Support",
+        "delivery": "Delivery"
+      }
+    },
+    "pricing": {
+      "title": "Priced per seat, with room to ask",
+      "subtitle": "Every plan includes the metric layer, SQL view and Slack delivery.",
+      "yearly": "Billed yearly (save 20%)",
+      "perSeat": "/ seat / mo",
+      "custom": "Custom",
+      "plans": {
+        "team": {
+          "name": "Team",
+          "for": "For one team getting started",
+          "questions": "500 questions per seat / month",
+          "cta": "Start free trial",
+          "features": {
+            "a": "Up to 3 data sources",
+            "b": "Shared metric layer",
+            "c": "Slack delivery"
+          }
+        },
+        "business": {
+          "name": "Business",
+          "for": "For companies with a data team",
+          "questions": "2,000 questions per seat / month",
+          "cta": "Start free trial",
+          "features": {
+            "a": "Unlimited data sources",
+            "b": "Row-level permissions",
+            "c": "Scheduled questions"
+          }
+        },
+        "enterprise": {
+          "name": "Enterprise",
+          "for": "For regulated and large teams",
+          "questions": "Unlimited questions",
+          "cta": "Talk to sales",
+          "features": {
+            "a": "SSO, SCIM and audit log",
+            "b": "Private model deployment",
+            "c": "Dedicated support engineer"
+          }
+        }
+      }
+    },
+    "faq": {
+      "title": "Questions",
+      "items": {
+        "q1": {
+          "q": "Does Analyst train on our data?",
+          "a": "No. Your data and questions are never used to train models. Queries run read-only against your warehouse and results are kept for 30 days unless you change it."
+        },
+        "q2": {
+          "q": "What if it answers wrong?",
+          "a": "Every answer shows the metric definition and SQL it used, so anyone can check it. Mark an answer as wrong and your data team sees it in a review queue."
+        },
+        "q3": {
+          "q": "Do we need a semantic layer first?",
+          "a": "No. Analyst can start from your existing dbt models or from a few hand-written metrics, and suggests definitions as questions come in."
+        },
+        "q4": {
+          "q": "Which languages are supported?",
+          "a": "Questions in English, Spanish, German, French and Portuguese. Answers come back in the language of the question."
+        }
+      }
+    }
+  }
+}

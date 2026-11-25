@@ -1,0 +1,63 @@
+{
+  "nav": "Chat",
+  "title": "Mensajes",
+  "description": "Conversaciones del equipo",
+  "list": {
+    "label": "Conversaciones",
+    "new": "Nuevo mensaje",
+    "search": "Buscar conversaciones",
+    "filter": "Filtrar conversaciones",
+    "all": "Todas",
+    "unread": "No leídas",
+    "groups": "Grupos",
+    "empty": "Ninguna conversación coincide.",
+    "pinned": "Fijada",
+    "muted": "Silenciada",
+    "you": "Tú",
+    "unreadCount": "{{count}} sin leer"
+  },
+  "thread": {
+    "pick": "Elige una conversación para empezar.",
+    "back": "Volver a las conversaciones",
+    "typing": "{{name}} está escribiendo…",
+    "online": "En línea",
+    "offline": "Desconectado",
+    "members": "{{count}} miembros, {{online}} en línea",
+    "today": "Hoy",
+    "yesterday": "Ayer",
+    "reply": "Responder",
+    "react": "Añadir reacción",
+    "read": "Leído",
+    "sent": "Enviado",
+    "call": "Iniciar llamada",
+    "video": "Iniciar videollamada",
+    "callUnavailable": "Las llamadas no están disponibles en la demo.",
+    "emptyTitle": "Aún no hay mensajes",
+    "emptyHint": "Saluda para empezar la conversación."
+  },
+  "composer": {
+    "label": "Mensaje",
+    "placeholder": "Escribe a {{name}}",
+    "send": "Enviar",
+    "attach": "Adjuntar archivos",
+    "hint": "Intro para enviar, Mayús + Intro para una nueva línea",
+    "replyingTo": "Respondiendo a {{name}}",
+    "cancelReply": "Cancelar respuesta",
+    "removeFile": "Quitar {{name}}"
+  },
+  "reactions": {
+    "plusOne": "+1",
+    "thanks": "Gracias",
+    "nice": "Genial",
+    "agreed": "De acuerdo"
+  },
+  "details": {
+    "title": "Detalles",
+    "close": "Cerrar detalles",
+    "pin": "Fijar arriba",
+    "mute": "Silenciar notificaciones",
+    "members": "Miembros ({{count}})",
+    "files": "Archivos compartidos ({{count}})",
+    "noFiles": "Aún no se han compartido archivos."
+  }
+}

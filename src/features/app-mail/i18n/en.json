@@ -1,0 +1,77 @@
+{
+  "nav": "Mail",
+  "title": "Mail",
+  "description": "Your inbox",
+  "folders": {
+    "inbox": "Inbox",
+    "starred": "Starred",
+    "sent": "Sent",
+    "drafts": "Drafts",
+    "archive": "Archive",
+    "spam": "Spam",
+    "trash": "Trash"
+  },
+  "mailboxes": {
+    "label": "Mailboxes",
+    "labels": "Labels"
+  },
+  "list": {
+    "search": "Search mail",
+    "selectAll": "Select all",
+    "select": "Select \"{{subject}}\"",
+    "selected": "{{count}} selected",
+    "to": "To:",
+    "attachment": "Has attachments",
+    "emptyTitle": "Nothing here",
+    "emptyHint": "No messages in this view."
+  },
+  "actions": {
+    "archive": "Archive",
+    "delete": "Delete",
+    "deleteForever": "Delete forever",
+    "markRead": "Mark as read",
+    "markUnread": "Mark as unread",
+    "star": "Star",
+    "unstar": "Remove star",
+    "refresh": "Refresh"
+  },
+  "reader": {
+    "back": "Back to the list",
+    "reply": "Reply",
+    "replyTo": "Reply to {{name}}",
+    "forward": "Forward",
+    "to": "To",
+    "wrote": "On {{date}}, {{name}} wrote:",
+    "attachments": "{{count}} attachments",
+    "download": "Download",
+    "downloadDemo": "Downloads are disabled in the demo.",
+    "emptyTitle": "No message selected",
+    "emptyHint": "Choose a message to read it here."
+  },
+  "compose": {
+    "open": "Compose",
+    "title": "New message",
+    "description": "Recipients are added as chips: type an address and press Enter.",
+    "to": "To",
+    "cc": "Cc",
+    "addCc": "Add Cc",
+    "toPlaceholder": "name@company.com",
+    "subject": "Subject",
+    "body": "Message",
+    "bodyPlaceholder": "Write your message…",
+    "attach": "Attach files",
+    "removeFile": "Remove {{name}}",
+    "send": "Send",
+    "saveDraft": "Save draft",
+    "discard": "Discard",
+    "invalidEmail": "Enter a valid email address",
+    "needRecipient": "Add at least one recipient"
+  },
+  "toast": {
+    "sent": "Message sent",
+    "draftSaved": "Draft saved",
+    "archived": "{{count}} conversation archived",
+    "deleted": "{{count}} conversation moved to the trash",
+    "undo": "Undo"
+  }
+}

@@ -1,0 +1,652 @@
+{
+  "workspace": {
+    "name": "Academia",
+    "description": "Cursos, lecciones, alumnos y horarios",
+    "category": "Educación"
+  },
+  "nav": {
+    "sections": {
+      "main": "Academia"
+    },
+    "home": "Inicio",
+    "courses": "Cursos",
+    "catalog": "Catálogo",
+    "catalogHint": "Todos los cursos, con filtros por nivel y tema",
+    "myLearning": "Mi aprendizaje",
+    "myLearningHint": "Cursos en los que estás inscrito",
+    "dataHint": "SQL, Python e ingeniería de métricas",
+    "designHint": "Paneles, visualización de datos y sistemas de diseño",
+    "engineeringHint": "Rendimiento en React, Postgres y seguridad",
+    "paths": "Rutas de aprendizaje",
+    "pathsHint": "Secuencias pensadas para un puesto",
+    "schedule": "Horario",
+    "teaching": "Docencia",
+    "students": "Alumnos",
+    "instructors": "Instructores",
+    "certificates": "Certificados",
+    "community": "Comunidad",
+    "discussions": "Foros",
+    "assignments": "Tareas",
+    "live": "En directo",
+    "scheduleHint": "Clases, talleres y exámenes de esta semana",
+    "liveSessions": "Sesiones en directo",
+    "liveSessionsHint": "Próximas clases en directo a las que puedes unirte",
+    "recordings": "Grabaciones",
+    "recordingsHint": "Sesiones pasadas y sus repeticiones",
+    "reports": "Informes"
+  },
+  "error": {
+    "title": "No se pudo cargar esta página",
+    "description": "Los datos de la academia no llegaron. Revisa tu conexión e inténtalo de nuevo.",
+    "retry": "Reintentar"
+  },
+  "levels": {
+    "beginner": "Principiante",
+    "intermediate": "Intermedio",
+    "advanced": "Avanzado"
+  },
+  "categories": {
+    "data": "Datos y SQL",
+    "design": "Diseño",
+    "engineering": "Ingeniería",
+    "product": "Producto",
+    "leadership": "Liderazgo"
+  },
+  "kinds": {
+    "live": "Clase en directo",
+    "office-hours": "Tutoría",
+    "workshop": "Taller",
+    "exam": "Examen"
+  },
+  "lessonTypes": {
+    "video": "Vídeo",
+    "reading": "Lectura",
+    "quiz": "Test",
+    "lab": "Práctica"
+  },
+  "card": {
+    "free": "Gratis",
+    "continue": "Continuar",
+    "completed": "Completado"
+  },
+  "home": {
+    "title": "Aprendizaje",
+    "description": "Retoma donde lo dejaste.",
+    "hello": "Qué bueno verte, {{name}}",
+    "headline": "Te faltan {{minutes}} minutos para tu objetivo semanal. Una lección te deja casi allí.",
+    "streak": "días seguidos",
+    "level": "Nivel {{level}}",
+    "weeklyGoal": "Objetivo semanal",
+    "nextLive": "Próxima sesión en directo · {{when}}",
+    "continue": "Seguir aprendiendo",
+    "allCourses": "Todos mis cursos",
+    "upNext": "Siguiente: {{lesson}}",
+    "left": "Quedan {{time}}",
+    "resume": "Reanudar",
+    "activity": {
+      "title": "Actividad de aprendizaje",
+      "description": "Minutos por día en las últimas 12 semanas",
+      "thisWeek": "Ahora"
+    },
+    "upcoming": {
+      "title": "Próximas sesiones",
+      "description": "Clases en directo a las que te apuntaste"
+    },
+    "achievements": "Logros",
+    "recommended": "Recomendado para ti"
+  },
+  "catalog": {
+    "title": "Catálogo de cursos",
+    "description": "Cursos cortos y prácticos impartidos por gente que hace el trabajo.",
+    "search": "Busca cursos, temas o instructores…",
+    "filters": "Filtros",
+    "myLearning": "Solo mis cursos",
+    "level": "Nivel",
+    "topic": "Tema",
+    "price": "Precio",
+    "prices": {
+      "any": "Todos",
+      "free": "Gratis",
+      "paid": "De pago"
+    },
+    "sort": "Ordenar por",
+    "sorts": {
+      "popular": "Más populares",
+      "rating": "Mejor valorados",
+      "newest": "Actualizados recientemente",
+      "shortest": "Más cortos primero"
+    },
+    "results": "{{count}} cursos",
+    "empty": {
+      "title": "Ningún curso coincide",
+      "description": "Quita un filtro o busca algo más general.",
+      "reset": "Borrar filtros"
+    }
+  },
+  "course": {
+    "ratings": "({{count}} valoraciones)",
+    "students": "{{value}} alumnos",
+    "outcomes": "Qué aprenderás",
+    "curriculum": "Temario",
+    "curriculumMeta": "{{modules}} módulos · {{lessons}} lecciones · {{time}}",
+    "preview": "Vista previa",
+    "done": "Completada",
+    "locked": "Bloqueada hasta que te inscribas",
+    "instructor": "Tu instructor",
+    "reviews": "Opiniones",
+    "requirements": "Antes de empezar",
+    "yourProgress": "Tu progreso",
+    "enrol": "Inscribirme",
+    "enrolled": "Ya estás inscrito. ¡Disfruta del curso!",
+    "start": "Empezar el curso",
+    "continue": "Seguir aprendiendo",
+    "includes": {
+      "video": "{{time}} de lecciones y prácticas",
+      "qa": "Preguntas al instructor",
+      "lifetime": "Acceso y actualizaciones de por vida",
+      "certificate": "Certificado de finalización"
+    },
+    "quiz": "Hacer el cuestionario del curso",
+    "edit": "Editar temario"
+  },
+  "lesson": {
+    "progress": "{{done}} de {{total}} hechas",
+    "previous": "Anterior",
+    "next": "Siguiente lección",
+    "markComplete": "Marcar como completada",
+    "completed": "Completada",
+    "completedToast": "Lección marcada como completada",
+    "download": "Descargar",
+    "tabs": {
+      "transcript": "Transcripción",
+      "notes": "Notas",
+      "qa": "Preguntas",
+      "resources": "Recursos"
+    },
+    "player": {
+      "play": "Reproducir",
+      "pause": "Pausar",
+      "seek": "Buscar",
+      "volume": "Volumen",
+      "speed": "Velocidad",
+      "captions": "Subtítulos",
+      "fullscreen": "Pantalla completa"
+    },
+    "notes": {
+      "placeholder": "Escribe una nota en {{time}}…",
+      "add": "Guardar nota en {{time}}",
+      "saved": "Nota guardada",
+      "empty": "Aún no hay notas. Cada nota queda fijada al momento de la lección."
+    },
+    "qa": {
+      "placeholder": "Haz una pregunta sobre esta lección (al menos 10 caracteres)",
+      "ask": "Preguntar",
+      "posted": "Pregunta publicada",
+      "answers_one": "{{count}} respuesta",
+      "answers_other": "{{count}} respuestas"
+    }
+  },
+  "schedule": {
+    "title": "Horario",
+    "description": "Clases en directo, talleres, tutorías y exámenes de esta semana.",
+    "prev": "Semana anterior",
+    "next": "Semana siguiente",
+    "today": "Esta semana",
+    "legend": "Tipos de sesión",
+    "agenda": "Agenda",
+    "attendees": "{{count}} asistentes"
+  },
+  "students": {
+    "title": "Alumnos",
+    "description": "Progreso y notas en los cursos que impartes.",
+    "search": "Buscar alumnos…",
+    "course": "Curso",
+    "allCourses": "Todos los cursos",
+    "status": {
+      "all": "Todos los alumnos",
+      "on-track": "Al día",
+      "at-risk": "En riesgo",
+      "completed": "Completado"
+    },
+    "table": {
+      "title": "Inscripciones",
+      "count": "{{count}} alumnos"
+    },
+    "columns": {
+      "student": "Alumno",
+      "course": "Curso",
+      "progress": "Progreso",
+      "grade": "Nota",
+      "lastActive": "Última actividad",
+      "status": "Estado"
+    },
+    "daysAgo_one": "hace {{count}} día",
+    "daysAgo_other": "hace {{count}} días",
+    "grades": {
+      "title": "Distribución de notas",
+      "description": "Media actual por alumno",
+      "students": "Alumnos"
+    },
+    "nudge": {
+      "title": "Necesitan un empujón",
+      "description": "{{count}} alumnos están inactivos o por debajo del 62 %",
+      "action": "Enviar un correo de seguimiento",
+      "sent": "Seguimiento enviado a {{count}} alumnos"
+    }
+  },
+  "certificates": {
+    "title": "Certificados",
+    "description": "La prueba de los cursos que terminaste. Comparte el ID de credencial con quien quieras.",
+    "badge": "Certificado de finalización",
+    "issued": "Emitido",
+    "hours": "Horas",
+    "grade": "Nota",
+    "credential": "ID de credencial",
+    "view": "Ver certificado",
+    "download": "Descargar PDF",
+    "preview": "Vista previa del certificado",
+    "print": "Imprimir",
+    "close": "Cerrar",
+    "sheet": {
+      "heading": "Certificado de finalización",
+      "completed": "ha completado con éxito",
+      "instructor": "Instructor"
+    }
+  },
+  "instructors": {
+    "title": "Instructores",
+    "description": "Profesionales que enseñan lo que hacen cada día.",
+    "featured": "Más seguido",
+    "teaches": "Imparte",
+    "learners": "{{value}} alumnos",
+    "courses_one": "{{count}} curso",
+    "courses_other": "{{count}} cursos"
+  },
+  "assignments": {
+    "title": "Tareas",
+    "description": "Fechas de entrega, envíos y calificaciones de los cursos que impartes.",
+    "stats": {
+      "open": "Tareas abiertas",
+      "toGrade": "Envíos por calificar",
+      "average": "Nota media"
+    },
+    "table": {
+      "title": "Todas las tareas",
+      "count_one": "{{count}} tarea",
+      "count_other": "{{count}} tareas",
+      "filter": "Filtrar por estado"
+    },
+    "status": {
+      "all": "Todas",
+      "open": "Abierta",
+      "grading": "Por calificar",
+      "closed": "Cerrada"
+    },
+    "columns": {
+      "assignment": "Tarea",
+      "due": "Entrega",
+      "submissions": "Envíos",
+      "graded": "Calificados",
+      "average": "Nota media",
+      "status": "Estado"
+    },
+    "empty": {
+      "title": "No hay tareas aquí",
+      "description": "Ninguna tarea tiene este estado. Prueba con otro filtro."
+    }
+  },
+  "grading": {
+    "back": "Todas las tareas",
+    "brief": "Enunciado",
+    "meta": "Entrega el {{date}} · {{points}} puntos",
+    "stats": {
+      "submitted": "Entregadas",
+      "graded": "Calificadas",
+      "average": "Nota media",
+      "late": "Con retraso"
+    },
+    "submissions": "Envíos",
+    "columns": {
+      "student": "Estudiante",
+      "submitted": "Entregado",
+      "score": "Nota"
+    },
+    "submitted": "Entregado {{when}}",
+    "late": "Con retraso",
+    "pending": "Sin calificar",
+    "download": "Descargar adjunto",
+    "saved": "Calificación guardada",
+    "empty": {
+      "title": "Aún no hay envíos",
+      "description": "Los envíos aparecerán aquí a medida que los estudiantes entreguen su trabajo."
+    },
+    "panel": {
+      "title": "Calificar envío",
+      "score": "Nota",
+      "range": "Entre 0 y {{points}} puntos",
+      "feedback": "Comentarios",
+      "feedbackPlaceholder": "Qué funcionó bien y qué mejorar la próxima vez…",
+      "save": "Guardar calificación",
+      "saveNext": "Guardar y siguiente"
+    }
+  },
+  "quiz": {
+    "title": "Cuestionario del curso",
+    "answered": "{{done}} de {{total}} respondidas",
+    "timeLeft": "Tiempo restante",
+    "navigator": "Preguntas",
+    "goTo": "Ir a la pregunta {{number}}",
+    "question": "Pregunta {{current}} de {{total}}",
+    "previous": "Anterior",
+    "next": "Siguiente",
+    "submit": "Enviar respuestas",
+    "unanswered_one": "{{count}} pregunta sin responder",
+    "unanswered_other": "{{count}} preguntas sin responder",
+    "intro": {
+      "title": "Comprueba lo que has aprendido",
+      "rules": "Responde todas las preguntas antes de que se acabe el tiempo. Puedes moverte entre preguntas y cambiar respuestas hasta enviarlas; cuando el tiempo termina, tus respuestas se envían automáticamente.",
+      "questions": "Preguntas",
+      "time": "Tiempo límite",
+      "pass": "Nota para aprobar",
+      "best": "Mejor nota",
+      "attempts_one": "{{count}} intento",
+      "attempts_other": "{{count}} intentos",
+      "start": "Empezar cuestionario"
+    },
+    "result": {
+      "passed": "Aprobado",
+      "failed": "Aún no aprobado",
+      "summary": "{{correct}} de {{total}} correctas. Para aprobar necesitas un {{pass}}%.",
+      "retake": "Repetir cuestionario",
+      "backToCourse": "Volver al curso",
+      "review": "Revisa tus respuestas",
+      "correct": "Correcta",
+      "incorrect": "Incorrecta",
+      "skipped": "Sin responder",
+      "yourAnswer": "Tu respuesta",
+      "correctAnswer": "Respuesta correcta"
+    }
+  },
+  "discussions": {
+    "title": "Foros",
+    "description": "Preguntas y respuestas de todos los cursos que sigues o impartes.",
+    "search": "Buscar en los foros…",
+    "course": "Curso",
+    "filterLabel": "Filtrar hilos",
+    "filters": {
+      "all": "Todos los hilos",
+      "unanswered": "Sin respuesta",
+      "mine": "Mis hilos"
+    },
+    "votes_one": "voto",
+    "votes_other": "votos",
+    "answered": "Respondido",
+    "you": "Tú",
+    "active": "actividad {{when}}",
+    "replies_one": "{{count}} respuesta",
+    "replies_other": "{{count}} respuestas",
+    "empty": {
+      "title": "No se encontraron hilos",
+      "description": "Prueba con otro filtro o una búsqueda más amplia."
+    },
+    "thread": {
+      "back": "Todos los foros",
+      "asked": "Preguntado {{when}}",
+      "accepted": "Respuesta del instructor",
+      "instructor": "Instructor",
+      "noReplies": "Aún no hay respuestas. Sé el primero en ayudar.",
+      "yourReply": "Tu respuesta",
+      "placeholder": "Comparte una respuesta o una pregunta de seguimiento (mínimo 10 caracteres)",
+      "post": "Publicar respuesta",
+      "posted": "Respuesta publicada"
+    }
+  },
+  "student": {
+    "back": "Todos los estudiantes",
+    "message": "Enviar correo",
+    "courses": "Cursos inscritos",
+    "active": "Activo {{when}}",
+    "grade": "Nota {{grade}}",
+    "grades": {
+      "title": "Tareas y notas",
+      "empty": "Aún no hay envíos."
+    },
+    "stats": {
+      "courses": "Cursos",
+      "grade": "Nota media",
+      "streak": "Racha actual",
+      "time": "Tiempo de estudio"
+    },
+    "days_one": "{{count}} día",
+    "days_other": "{{count}} días",
+    "longest_one": "Mejor racha: {{count}} día",
+    "longest_other": "Mejor racha: {{count}} días",
+    "about": "Perfil",
+    "email": "Correo",
+    "joined": "Se unió",
+    "noCertificates": "Aún no ha obtenido certificados."
+  },
+  "builder": {
+    "title": "Editor del curso",
+    "description": "Organiza secciones y lecciones y publica cuando el curso esté listo.",
+    "viewCourse": "Ver curso",
+    "published": "Publicado",
+    "draft": "Borrador",
+    "saved": "Lección guardada",
+    "publishChanged": "Visibilidad del curso actualizada",
+    "overview": "Resumen",
+    "stats": {
+      "sections": "Secciones",
+      "lessons": "Lecciones",
+      "duration": "Duración total",
+      "previews": "Vistas previas gratis",
+      "saved": "Guardado"
+    },
+    "mix": "Tipos de contenido",
+    "mixHint": "Minutos por formato de lección",
+    "newSection": "Nueva sección",
+    "addSection": "Añadir sección",
+    "addLesson": "Añadir lección",
+    "empty": {
+      "title": "Aún no hay secciones",
+      "description": "Añade una sección para empezar a construir el temario."
+    },
+    "emptySection": "Esta sección aún no tiene lecciones.",
+    "drag": "Arrastra para reordenar «{{title}}»",
+    "editLesson": "Editar lección",
+    "deleteLesson": "Eliminar lección",
+    "renameSection": "Renombrar sección",
+    "titleRequired": "Ponle un título a la sección",
+    "sectionMeta_one": "{{count}} lección · {{time}}",
+    "sectionMeta_other": "{{count}} lecciones · {{time}}",
+    "moveUp": "Subir sección",
+    "moveDown": "Bajar sección",
+    "deleteSection": "Eliminar sección",
+    "deleteSectionTitle": "¿Eliminar «{{title}}»?",
+    "deleteSectionDescription_one": "Su {{count}} lección se quitará del temario.",
+    "deleteSectionDescription_other": "Sus {{count}} lecciones se quitarán del temario.",
+    "form": {
+      "addTitle": "Añadir lección",
+      "editTitle": "Editar lección",
+      "description": "Los alumnos ven el título, el formato y la duración en el temario.",
+      "title": "Título",
+      "type": "Formato",
+      "section": "Sección",
+      "duration": "Duración",
+      "minutes": "min",
+      "summary": "Resumen",
+      "preview": "Vista previa gratis",
+      "previewHint": "Los visitantes pueden ver esta lección antes de inscribirse.",
+      "errors": {
+        "title": "Usa al menos 3 caracteres",
+        "duration": "Entre 1 y 180 minutos"
+      }
+    }
+  },
+  "live": {
+    "title": "Sesiones en directo",
+    "description": "Clases en directo con tus instructores: reserva plaza, únete o mira la repetición.",
+    "schedule": "Programar sesión",
+    "scheduled": "Sesión programada",
+    "registrationChanged": "Inscripción actualizada",
+    "join": "Unirse ahora",
+    "full": "Completa",
+    "cancel": "Cancelar plaza",
+    "reserve": "Reservar plaza",
+    "watch": "Ver",
+    "noRecordingShort": "Sin grabación",
+    "noRecording": "Esta sesión no se grabó.",
+    "views": "{{value}} reproducciones",
+    "agenda": "Agenda",
+    "attendees_one": "{{count}} asistente",
+    "attendees_other": "{{count}} asistentes",
+    "now": "En directo ahora: {{title}}",
+    "stats": {
+      "upcoming": "Próximas sesiones",
+      "going": "Plazas reservadas",
+      "attendance": "Asistencia media",
+      "views": "Reproducciones"
+    },
+    "table": {
+      "title": "Sesiones",
+      "count_one": "{{count}} sesión",
+      "count_other": "{{count}} sesiones",
+      "filter": "Filtrar sesiones"
+    },
+    "filters": {
+      "upcoming": "Próximas",
+      "past": "Pasadas",
+      "going": "Reservadas"
+    },
+    "columns": {
+      "session": "Sesión",
+      "date": "Fecha",
+      "time": "Hora",
+      "host": "Instructor",
+      "seats": "Plazas",
+      "attendance": "Asistencia",
+      "action": "Acción"
+    },
+    "empty": {
+      "title": "No hay sesiones aquí",
+      "description": "Prueba otro filtro o programa una sesión nueva."
+    },
+    "chart": {
+      "title": "Asistencia",
+      "description": "Inscritos frente a asistentes, últimas 8 sesiones",
+      "registered": "Inscritos",
+      "attended": "Asistentes"
+    },
+    "form": {
+      "title": "Programar una sesión en directo",
+      "description": "Los alumnos inscritos reciben un aviso y pueden reservar plaza.",
+      "name": "Título",
+      "namePlaceholder": "Tutoría: funciones de ventana",
+      "course": "Curso",
+      "startsAt": "Comienza",
+      "duration": "Duración",
+      "capacity": "Aforo",
+      "capacityHint": "Número máximo de alumnos en la sala.",
+      "errors": {
+        "title": "Usa al menos 3 caracteres",
+        "past": "Elige una hora futura",
+        "capacity": "Entre 5 y 500 alumnos"
+      }
+    }
+  },
+  "reports": {
+    "title": "Informes",
+    "description": "Inscripciones, finalizaciones e ingresos de todos tus cursos.",
+    "range": "Periodo",
+    "ranges": {
+      "30d": "30 días",
+      "90d": "90 días",
+      "12m": "12 meses"
+    },
+    "export": "Exportar CSV",
+    "vsPrevious": "frente al periodo anterior",
+    "metrics": {
+      "enrolments": "Inscripciones",
+      "completions": "Finalizaciones",
+      "completionRate": "Tasa de finalización",
+      "revenue": "Ingresos"
+    },
+    "trend": {
+      "title": "Inscripciones y finalizaciones",
+      "description": "Nuevos alumnos y cursos terminados"
+    },
+    "revenue": {
+      "title": "Ingresos",
+      "description": "Ventas de cursos, descontados los reembolsos"
+    },
+    "leaderboard": {
+      "title": "Clasificación de cursos",
+      "description": "Rendimiento de cada curso en este periodo",
+      "rankBy": "Ordenar cursos por",
+      "rankings": {
+        "enrolments": "Inscripciones",
+        "completion": "Finalización",
+        "revenue": "Ingresos"
+      },
+      "course": "Curso",
+      "rating": "Valoración"
+    },
+    "dropoff": {
+      "title": "Abandono por lección",
+      "description": "Porcentaje de alumnos inscritos que llega a cada lección",
+      "steepest": "Mayor caída en «{{title}}» (−{{points}} pts)",
+      "learners": "Alumnos"
+    }
+  },
+  "shell": {
+    "categories": {
+      "courses": "Cursos",
+      "students": "Alumnos",
+      "discussions": "Debates"
+    },
+    "notifications": {
+      "submissions": {
+        "title": "8 entregas nuevas por corregir",
+        "body": "El ensayo 3 de Fundamentos de UX Writing espera corrección."
+      },
+      "question": {
+        "title": "Ava Thompson hizo una pregunta",
+        "body": "«En la lección 4, ¿por qué normalizamos los datos antes de entrenar?»"
+      },
+      "live": {
+        "title": "La clase en directo empieza en 30 minutos",
+        "body": "Design Systems 101 · 64 alumnos inscritos."
+      },
+      "enrolled": {
+        "title": "32 inscripciones nuevas esta semana",
+        "body": "Introducción a la Ciencia de Datos es tu curso más popular."
+      },
+      "certificates": {
+        "title": "14 certificados emitidos",
+        "body": "Los alumnos completaron React para principiantes."
+      },
+      "review": {
+        "title": "La valoración del curso bajó a 4,2",
+        "body": "Dos reseñas recientes mencionan vídeos desactualizados en el módulo 2."
+      }
+    },
+    "create": {
+      "course": {
+        "label": "Nuevo curso",
+        "description": "Define módulos y lecciones"
+      },
+      "assignment": {
+        "label": "Crear tarea",
+        "description": "Trabajo con fecha de entrega"
+      },
+      "live": {
+        "label": "Programar clase en directo",
+        "description": "Emite para los alumnos inscritos"
+      }
+    },
+    "account": {
+      "teaching": "Mis cursos",
+      "schedule": "Mi horario"
+    }
+  }
+}

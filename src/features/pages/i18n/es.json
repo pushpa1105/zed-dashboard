@@ -1,0 +1,665 @@
+{
+  "nav": "Plantillas de página",
+  "title": "Plantillas de página",
+  "description": "Páginas de acceso, cuenta, marketing y estado",
+  "gallery": {
+    "back": "Todas las plantillas",
+    "title": "Plantillas de página",
+    "description": "Pantallas listas para acompañar a tus paneles: acceso, cuenta, precios y páginas de estado.",
+    "groups": {
+      "auth": "Acceso",
+      "account": "Cuenta y ayuda",
+      "marketing": "Marketing",
+      "status": "Errores y estado"
+    },
+    "count_one": "{{count}} plantilla",
+    "count_other": "{{count}} plantillas",
+    "inApp": "En la app",
+    "fullPage": "Página completa"
+  },
+  "templates": {
+    "authSplit": {
+      "title": "Acceso · dividido",
+      "body": "Panel de marca con datos de confianza junto al formulario."
+    },
+    "authIllustrated": {
+      "title": "Registro · ilustrado",
+      "body": "Tarjeta con ilustración, registro social y fuerza de contraseña."
+    },
+    "authMinimal": {
+      "title": "Acceso · mínimo",
+      "body": "Primero enlace mágico, contraseña como alternativa."
+    },
+    "authOtp": {
+      "title": "Verificación en dos pasos",
+      "body": "Código de seis dígitos con reenvío y estado de error."
+    },
+    "authForgot": {
+      "title": "Contraseña olvidada",
+      "body": "Solicitud de restablecimiento y qué pasa después."
+    },
+    "authLock": {
+      "title": "Pantalla de bloqueo",
+      "body": "Sesión bloqueada por inactividad; se desbloquea con contraseña."
+    },
+    "profile": {
+      "title": "Perfil",
+      "body": "Portada, métricas, ficha, proyectos fijados, equipo y actividad."
+    },
+    "account": {
+      "title": "Ajustes de cuenta",
+      "body": "Perfil, seguridad, notificaciones, facturación e integraciones."
+    },
+    "help": {
+      "title": "Centro de ayuda",
+      "body": "Búsqueda, categorías, artículos, preguntas frecuentes y contacto."
+    },
+    "onboarding": {
+      "title": "Bienvenida",
+      "body": "Lista de configuración con progreso, recorrido e invitaciones."
+    },
+    "pricing": {
+      "title": "Precios",
+      "body": "Cuatro planes, ciclo de facturación, comparativa y preguntas."
+    },
+    "comingSoon": {
+      "title": "Próximamente",
+      "body": "Cuenta atrás de lanzamiento con lista de espera."
+    },
+    "notFound": {
+      "title": "404 · útil",
+      "body": "Búsqueda y los tres destinos más probables."
+    },
+    "notFoundAlt": {
+      "title": "404 · ilustrado",
+      "body": "Número grande, texto breve e ilustración."
+    },
+    "serverError": {
+      "title": "500 · error del servidor",
+      "body": "Id de petición para soporte, reintento y estado."
+    },
+    "maintenance": {
+      "title": "Mantenimiento",
+      "body": "Parada planificada con progreso y avisos."
+    }
+  },
+  "auth": {
+    "providers": {
+      "google": "Google",
+      "github": "GitHub",
+      "microsoft": "Microsoft"
+    },
+    "toast": {
+      "signedIn": "Sesión iniciada (plantilla)",
+      "provider": "Continuar con {{provider}}: conecta aquí tu proveedor OAuth",
+      "created": "Cuenta creada (plantilla)"
+    },
+    "fields": {
+      "email": "Correo electrónico",
+      "password": "Contraseña",
+      "name": "Nombre completo",
+      "company": "Empresa",
+      "workEmail": "Correo de trabajo"
+    },
+    "errors": {
+      "email": "Escribe un correo válido",
+      "password": "Usa al menos 8 caracteres",
+      "required": "Obligatorio",
+      "terms": "Acepta las condiciones para continuar"
+    },
+    "forgotLink": "¿Olvidaste la contraseña?",
+    "show": "Mostrar contraseña",
+    "hide": "Ocultar contraseña",
+    "remember": "Mantener la sesión 30 días",
+    "signIn": "Iniciar sesión",
+    "signUp": "Crear una cuenta",
+    "noAccount": "¿Nuevo en {{brand}}?",
+    "haveAccount": "¿Ya tienes cuenta?",
+    "orEmail": "o continúa con tu correo",
+    "or": "o",
+    "legal": "Al continuar aceptas las Condiciones del servicio y la Política de privacidad.",
+    "split": {
+      "title": "Hola de nuevo",
+      "subtitle": "Entra en el espacio que tu equipo usa cada mañana.",
+      "stats": {
+        "teams": {
+          "value": "+1.200",
+          "label": "equipos en {{brand}}"
+        },
+        "uptime": {
+          "value": "99,98%",
+          "label": "disponibilidad este año"
+        },
+        "saved": {
+          "value": "6 h",
+          "label": "ahorradas por analista / semana"
+        }
+      },
+      "quote": "Nuestro cierre mensual pasó de cuatro días a uno. El puente de ingresos era una hoja de cálculo que solo yo entendía.",
+      "author": "Marta Lindqvist · VP de Finanzas, Fieldwork"
+    },
+    "illustrated": {
+      "title": "Crea tu espacio de trabajo",
+      "subtitle": "Gratis 14 días. Sin tarjeta de crédito.",
+      "terms": "Acepto las Condiciones del servicio y el Acuerdo de tratamiento de datos.",
+      "submit": "Crear espacio"
+    },
+    "minimal": {
+      "title": "Iniciar sesión",
+      "subtitle": "Te enviaremos un enlace que inicia la sesión. Sin contraseñas que recordar.",
+      "sendLink": "Enviarme un enlace de acceso",
+      "sentTitle": "Revisa tu correo",
+      "sentBody": "Hemos enviado un enlace de acceso a {{email}}. Caduca en 15 minutos.",
+      "useAnother": "Usar otro correo",
+      "usePassword": "Entrar con contraseña",
+      "useLink": "Enviarme un enlace"
+    },
+    "otp": {
+      "title": "Introduce tu código de verificación",
+      "subtitle": "Hemos enviado un código de 6 dígitos a {{email}}.",
+      "verify": "Verificar",
+      "wrong": "Ese código no es correcto. Revisa el último correo e inténtalo de nuevo.",
+      "resendIn": "Reenviar código en {{seconds}} s",
+      "resend": "Reenviar código",
+      "resent": "Te enviamos un código nuevo",
+      "verified": "Verificado (plantilla)",
+      "hint": "En esta plantilla vale cualquier código excepto 000000.",
+      "otherMethod": "Usar otro método"
+    },
+    "forgot": {
+      "back": "Volver al acceso",
+      "title": "Restablece tu contraseña",
+      "subtitle": "Escribe el correo que usas en {{brand}} y te enviaremos un enlace.",
+      "submit": "Enviar enlace",
+      "sentTitle": "Revisa tu bandeja de entrada",
+      "sentBody": "Si existe una cuenta para {{email}}, el enlace va en camino.",
+      "steps": {
+        "open": "Abre el correo de {{brand}} (mira también en spam).",
+        "click": "Pulsa “Restablecer contraseña”. El enlace dura 30 minutos.",
+        "choose": "Elige una contraseña nueva y entra."
+      },
+      "noEmail": "¿Nada en 5 minutos?",
+      "tryAgain": "Inténtalo de nuevo"
+    },
+    "lock": {
+      "locked": "Bloqueada tras 15 minutos de inactividad",
+      "unlock": "Desbloquear",
+      "unlocked": "Desbloqueada (plantilla)",
+      "notYou": "¿No eres tú? Entra con otra cuenta"
+    }
+  },
+  "status": {
+    "home": "Ir a la página de inicio",
+    "back": "Volver",
+    "retry": "Reintentar",
+    "notFound": {
+      "code": "Error 404",
+      "title": "No encontramos esa página",
+      "body": "Puede que el enlace esté desactualizado o que la página cambiara al reorganizar el espacio.",
+      "search": "Busca páginas, paneles y documentación",
+      "links": {
+        "dashboard": {
+          "title": "Panel",
+          "body": "Sigue donde lo dejaste."
+        },
+        "docs": {
+          "title": "Documentación",
+          "body": "Guías de cada función."
+        },
+        "support": {
+          "title": "Soporte",
+          "body": "Respondemos en pocas horas."
+        }
+      }
+    },
+    "notFoundAlt": {
+      "title": "Esta página se ha perdido",
+      "body": "No está donde la dejamos. Vuelve atrás o empieza de nuevo desde el inicio."
+    },
+    "serverError": {
+      "code": "Error 500",
+      "title": "Algo ha fallado de nuestro lado",
+      "body": "Tus datos están a salvo. El equipo ya está avisado; la mayoría de fallos así se arreglan en minutos.",
+      "requestId": "Id de petición (compártelo con soporte)",
+      "statusPage": "Página de estado"
+    },
+    "maintenance": {
+      "badge": "Mantenimiento planificado",
+      "title": "Estamos actualizando la base de datos",
+      "body": "{{brand}} está en solo lectura hasta las 03:00 UTC aproximadamente mientras pasamos a un almacenamiento más rápido. Los paneles cargan; las ediciones y alertas vuelven al terminar.",
+      "notify": "Avisarme",
+      "subscribed": "Te escribiremos cuando volvamos",
+      "progress": "Progreso",
+      "eta": "Fin estimado: 03:05 UTC",
+      "steps": {
+        "backup": "Copia completa hecha y verificada",
+        "migrate": "Datos migrados al nuevo clúster",
+        "reindex": "Reconstruyendo índices de búsqueda",
+        "verify": "Verificación y cambio final"
+      }
+    },
+    "comingSoon": {
+      "eyebrow": "{{brand}} Canvas · muy pronto",
+      "title": "Pizarras que entienden tus métricas",
+      "body": "Arrastra una cifra a un lienzo y sigue en vivo. Planifica trimestres, haz revisiones y presenta sin exportar ni un gráfico.",
+      "notify": "Avisarme",
+      "joined": "Ya estás en la lista",
+      "count": "2.418 personas ya están esperando.",
+      "units": {
+        "days": "Días",
+        "hours": "Horas",
+        "minutes": "Min",
+        "seconds": "Seg"
+      },
+      "teasers": {
+        "canvas": {
+          "title": "Tarjetas de métricas en vivo",
+          "body": "Las cifras se actualizan en el lienzo, con su definición a un clic."
+        },
+        "share": {
+          "title": "Compartir con invitados",
+          "body": "Envía un lienzo de solo lectura a personas de fuera."
+        },
+        "ai": {
+          "title": "Resúmenes",
+          "body": "Un párrafo con lo que cambió desde la última revisión."
+        }
+      }
+    }
+  },
+  "pricing": {
+    "title": "Planes que crecen con tu equipo",
+    "subtitle": "Empieza gratis y amplía cuando necesites más puestos, fuentes o control. Cancela cuando quieras.",
+    "monthly": "Mensual",
+    "yearly": "Anual · ahorra un 20%",
+    "popular": "El más elegido",
+    "perMonth": "/ mes",
+    "billedYearly": "{{total}} $ facturados al año",
+    "chosen": "{{plan}} seleccionado (plantilla)",
+    "compare": "Comparar planes",
+    "feature": "Función",
+    "yes": "Incluido",
+    "no": "No incluido",
+    "values": {
+      "unlimited": "Ilimitado",
+      "daily": "Diaria",
+      "hourly": "Cada hora",
+      "fiveMin": "Cada 5 min",
+      "oneMin": "Cada minuto"
+    },
+    "groups": {
+      "usage": "Uso",
+      "features": "Funciones",
+      "security": "Seguridad y soporte"
+    },
+    "rows": {
+      "seats": "Puestos de edición",
+      "dashboards": "Paneles",
+      "sources": "Fuentes de datos",
+      "refresh": "Frecuencia de actualización",
+      "alerts": "Alertas de métricas",
+      "embedding": "Paneles embebidos",
+      "api": "API REST",
+      "rls": "Permisos por fila",
+      "sso": "SSO SAML",
+      "audit": "Registro de auditoría",
+      "sla": "SLA de disponibilidad 99,9%"
+    },
+    "plans": {
+      "free": {
+        "name": "Gratis",
+        "for": "Para probar {{brand}} en un proyecto personal",
+        "cta": "Empezar gratis",
+        "features": {
+          "a": "1 editor, lectores ilimitados",
+          "b": "3 paneles",
+          "c": "Soporte de la comunidad"
+        }
+      },
+      "starter": {
+        "name": "Inicial",
+        "for": "Para equipos pequeños con una fuente de datos",
+        "cta": "Elegir Inicial",
+        "features": {
+          "a": "5 editores",
+          "b": "Actualización cada hora",
+          "c": "Soporte por correo"
+        }
+      },
+      "growth": {
+        "name": "Crecimiento",
+        "for": "Para empresas que reportan a un consejo",
+        "cta": "Elegir Crecimiento",
+        "features": {
+          "a": "25 editores",
+          "b": "Alertas y paneles embebidos",
+          "c": "Permisos por fila"
+        }
+      },
+      "scale": {
+        "name": "Escala",
+        "for": "Para equipos regulados y en rápido crecimiento",
+        "cta": "Elegir Escala",
+        "features": {
+          "a": "Editores ilimitados",
+          "b": "SSO, SCIM y auditoría",
+          "c": "Gestor de cuenta dedicado"
+        }
+      }
+    },
+    "faq": {
+      "title": "Preguntas de facturación",
+      "subtitle": "¿Algo más? Nuestro equipo responde en un día laborable.",
+      "items": {
+        "q1": {
+          "q": "¿Quién cuenta como editor?",
+          "a": "Cualquiera que pueda crear o cambiar paneles. Los lectores son siempre gratuitos e ilimitados."
+        },
+        "q2": {
+          "q": "¿Puedo cambiar de plan más adelante?",
+          "a": "Sí. Las mejoras se aplican al momento y se prorratean; las reducciones, en la siguiente renovación."
+        },
+        "q3": {
+          "q": "¿Hay descuentos?",
+          "a": "50% para ONG y educación, y créditos para startups de menos de dos años."
+        },
+        "q4": {
+          "q": "¿Qué formas de pago aceptáis?",
+          "a": "Tarjeta en todos los planes, y factura o transferencia en Crecimiento y Escala anuales."
+        },
+        "q5": {
+          "q": "¿Qué pasa con mis datos si cancelo?",
+          "a": "Mantienes acceso de solo lectura 30 días y puedes exportarlo todo. Después se elimina."
+        }
+      }
+    },
+    "enterprise": {
+      "title": "¿Necesitas más de 100 puestos o un despliegue privado?",
+      "body": "Contratos a medida, opciones on-premise y una revisión de seguridad con nuestro equipo.",
+      "cta": "Hablar con ventas",
+      "toast": "Un especialista te contactará en un día laborable"
+    }
+  },
+  "profile": {
+    "status": {
+      "onTrack": "En plazo",
+      "atRisk": "En riesgo",
+      "done": "Hecho"
+    },
+    "progress": "Progreso",
+    "due": "Vence el {{date}}",
+    "joined": "Se unió en {{date}}",
+    "toast": {
+      "message": "Abriendo una conversación…",
+      "follow": "Ahora sigues a {{name}}"
+    },
+    "message": "Mensaje",
+    "follow": "Seguir",
+    "more": "Más acciones",
+    "stats": {
+      "projects": "Proyectos",
+      "reviews": "Revisiones hechas",
+      "response": "Tiempo medio de respuesta"
+    },
+    "tabs": {
+      "overview": "Resumen",
+      "projects": "Proyectos",
+      "team": "Equipo",
+      "activity": "Actividad"
+    },
+    "about": "Acerca de",
+    "skills": "Habilidades",
+    "pinned": "Proyectos fijados",
+    "pinnedHint": "En qué trabaja Hannah este trimestre",
+    "recent": "Actividad reciente",
+    "view": "Ver"
+  },
+  "account": {
+    "title": "Ajustes de cuenta",
+    "description": "Gestiona tu perfil, seguridad, notificaciones y facturación.",
+    "saved": "Cambios guardados",
+    "cancel": "Cancelar",
+    "save": "Guardar cambios",
+    "sections": {
+      "profile": "Perfil",
+      "security": "Seguridad",
+      "notifications": "Notificaciones",
+      "billing": "Facturación",
+      "integrations": "Integraciones"
+    },
+    "profile": {
+      "description": "Así te ven tus compañeros en todo el espacio.",
+      "photo": "Foto",
+      "photoHint": "Cuadrada, de al menos 256 px.",
+      "name": "Nombre",
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo",
+      "emailHint": "Aquí enviamos enlaces de acceso y alertas.",
+      "timezone": "Zona horaria",
+      "bio": "Biografía",
+      "bioHint": "Aparece en tu perfil. Texto sin formato."
+    },
+    "security": {
+      "password": "Contraseña",
+      "passwordHint": "Usa una contraseña larga que no uses en otro sitio.",
+      "update": "Actualizar contraseña",
+      "current": "Contraseña actual",
+      "new": "Contraseña nueva",
+      "twoFactor": "Verificación en dos pasos",
+      "twoFactorHint": "Añade un segundo paso al entrar desde un dispositivo nuevo.",
+      "app": "App de autenticación",
+      "appHint": "Códigos de 1Password, Authy o Google Authenticator.",
+      "keys": "Llaves de seguridad",
+      "keysHint": "YubiKey, Touch ID o Windows Hello.",
+      "sessions": "Sesiones activas",
+      "sessionsHint": "Dispositivos con sesión iniciada en tu cuenta.",
+      "signOutOthers": "Cerrar las demás sesiones",
+      "thisDevice": "Este dispositivo",
+      "revoke": "Cerrar sesión",
+      "revoked": "Sesión cerrada"
+    },
+    "notifications": {
+      "description": "Elige por dónde te llega cada tipo de aviso.",
+      "event": "Evento",
+      "channels": {
+        "email": "Correo",
+        "push": "Push",
+        "slack": "Slack"
+      },
+      "events": {
+        "mentions": {
+          "title": "Menciones",
+          "hint": "Alguien te menciona en un comentario"
+        },
+        "assigned": {
+          "title": "Asignaciones",
+          "hint": "Te asignan una tarea o revisión"
+        },
+        "digest": {
+          "title": "Resumen semanal",
+          "hint": "Resumen de tus paneles cada lunes"
+        },
+        "alerts": {
+          "title": "Alertas de métricas",
+          "hint": "Una métrica cruza un umbral que fijaste"
+        },
+        "billing": {
+          "title": "Facturación",
+          "hint": "Facturas, pagos fallidos y renovaciones"
+        },
+        "product": {
+          "title": "Novedades",
+          "hint": "Nuevas funciones, como mucho dos veces al mes"
+        }
+      }
+    },
+    "billing": {
+      "plan": "Plan actual",
+      "upgrade": "Mejorar",
+      "perMonth": "al mes",
+      "planName": "Plan Crecimiento · se renueva el 1 de dic. de 2026",
+      "seats": "Puestos de edición",
+      "dashboards": "Paneles",
+      "api": "Peticiones a la API este mes",
+      "method": "Forma de pago",
+      "card": "Visa · tarjeta de empresa",
+      "change": "Cambiar forma de pago",
+      "invoices": "Facturas",
+      "invoice": "Factura",
+      "date": "Fecha",
+      "status": "Estado",
+      "amount": "Importe",
+      "download": "Descargar PDF",
+      "statuses": {
+        "paid": "Pagada",
+        "refunded": "Reembolsada"
+      }
+    },
+    "integrations": {
+      "connected": "{{name}} conectado",
+      "disconnected": "{{name}} desconectado",
+      "items": {
+        "slack": "Envía alertas y resúmenes a canales.",
+        "github": "Relaciona despliegues con cambios en métricas.",
+        "stripe": "Sincroniza ingresos, reembolsos y bajas.",
+        "gdrive": "Exporta informes a carpetas compartidas.",
+        "jira": "Crea incidencias a partir de anomalías.",
+        "hubspot": "Trae datos de embudo y oportunidades."
+      }
+    }
+  },
+  "help": {
+    "title": "¿Cómo podemos ayudarte?",
+    "subtitle": "Busca entre 104 artículos o navega por temas.",
+    "search": "Busca artículos, p. ej. “SSO”",
+    "popular": "Populares: invita a tu equipo · conecta Postgres · programa envíos a Slack",
+    "categories": {
+      "start": {
+        "title": "Primeros pasos",
+        "body": "Configura tu espacio y tu equipo."
+      },
+      "dashboards": {
+        "title": "Paneles",
+        "body": "Crea, comparte y programa."
+      },
+      "data": {
+        "title": "Fuentes de datos",
+        "body": "Conecta y modela tus datos."
+      },
+      "billing": {
+        "title": "Facturación",
+        "body": "Planes, facturas y pagos."
+      },
+      "security": {
+        "title": "Seguridad",
+        "body": "SSO, roles y permisos."
+      },
+      "api": {
+        "title": "API",
+        "body": "Tokens, endpoints y webhooks."
+      }
+    },
+    "articles_one": "{{count}} artículo",
+    "articles_other": "{{count}} artículos",
+    "featured": "Artículos destacados",
+    "results_one": "{{count}} artículo",
+    "results_other": "{{count}} artículos",
+    "allTopics": "Todos los temas",
+    "minutes_one": "{{count}} min de lectura",
+    "minutes_other": "{{count}} min de lectura",
+    "noResults": "Ningún artículo coincide con tu búsqueda.",
+    "faq": "Preguntas frecuentes",
+    "faqItems": {
+      "q1": {
+        "q": "¿Cómo añado compañeros?",
+        "a": "Abre Ajustes → Miembros e invita por correo. Los lectores son gratis en todos los planes."
+      },
+      "q2": {
+        "q": "¿Por qué una cifra no coincide entre paneles?",
+        "a": "Suele deberse a versiones de métrica o filtros distintos. Abre la cifra para ver su definición y versión."
+      },
+      "q3": {
+        "q": "¿Puedo conectar una base de datos tras un cortafuegos?",
+        "a": "Sí, mediante un túnel SSH o autorizando nuestras IP estáticas."
+      },
+      "q4": {
+        "q": "¿Cómo cancelo?",
+        "a": "Ajustes → Facturación → Cancelar plan. Mantienes acceso de solo lectura 30 días."
+      }
+    },
+    "contact": "¿Necesitas más ayuda?",
+    "channels": {
+      "chat": {
+        "title": "Chat en vivo",
+        "meta": "Suele responder en 4 minutos",
+        "cta": "Abrir chat",
+        "toast": "Chat abierto (plantilla)"
+      },
+      "email": {
+        "title": "Correo",
+        "meta": "support@orbitly.io · en un día",
+        "cta": "Escríbenos",
+        "toast": "Borrador de correo abierto (plantilla)"
+      },
+      "call": {
+        "title": "Llámanos",
+        "meta": "L–V, 9:00–18:00 CET",
+        "cta": "Reservar llamada",
+        "toast": "Llamada reservada (plantilla)"
+      }
+    },
+    "status": "Todos los sistemas operativos"
+  },
+  "onboarding": {
+    "title": "Configura tu espacio",
+    "description": "Seis pasos cortos hacia un espacio que tu equipo usará de verdad.",
+    "completed": "“{{step}}” completado",
+    "checklist": "Lista de configuración",
+    "progress": "{{done}} de {{total}} hechos",
+    "minutes_one": "Unos {{count}} minuto",
+    "minutes_other": "Unos {{count}} minutos",
+    "steps": {
+      "profile": {
+        "title": "Completa tu perfil",
+        "body": "Añade una foto y tu puesto para que tus compañeros sepan con quién hablan.",
+        "cta": "Abrir perfil"
+      },
+      "connect": {
+        "title": "Conecta una fuente de datos",
+        "body": "Postgres, BigQuery, Snowflake o un CSV. Las conexiones son de solo lectura.",
+        "cta": "Conectar datos"
+      },
+      "dashboard": {
+        "title": "Crea tu primer panel",
+        "body": "Parte de una plantilla; cada gráfico se puede editar después.",
+        "cta": "Usar una plantilla"
+      },
+      "invite": {
+        "title": "Invita a tu equipo",
+        "body": "Los paneles son más útiles cuando los ve quien actúa sobre ellos.",
+        "cta": "Invitar"
+      },
+      "alert": {
+        "title": "Crea una alerta",
+        "body": "Recibe un aviso cuando una métrica cruce un umbral, sin revisarla cada día.",
+        "cta": "Crear alerta"
+      },
+      "mobile": {
+        "title": "Instala la app móvil",
+        "body": "Tus cifras de cada mañana en iOS y Android, con avisos push.",
+        "cta": "Descargar la app"
+      }
+    },
+    "tour": "Recorrido de dos minutos",
+    "tourHint": "Mira cómo un equipo de Fieldwork hace su revisión de los lunes.",
+    "tourToast": "El vídeo es un marcador de posición en esta plantilla",
+    "invite": "Invita a compañeros",
+    "inviteHint": "Pulsa Intro o coma tras cada correo.",
+    "invitePlaceholder": "nombre@empresa.com",
+    "invalidEmail": "Escribe un correo válido",
+    "send": "Enviar invitaciones",
+    "invited_one": "{{count}} invitación enviada",
+    "invited_other": "{{count}} invitaciones enviadas"
+  }
+}

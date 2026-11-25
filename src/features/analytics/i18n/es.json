@@ -1,0 +1,862 @@
+{
+  "workspace": {
+    "name": "Analítica",
+    "description": "Tráfico, audiencias, campañas e informes",
+    "category": "Marketing"
+  },
+  "nav": {
+    "sections": {
+      "main": "Analítica"
+    },
+    "overview": "Resumen",
+    "realtime": "Tiempo real",
+    "audience": "Audiencia",
+    "acquisition": "Adquisición",
+    "channels": "Canales y fuentes",
+    "channelsHint": "De dónde llegan los visitantes, con enlaces etiquetados",
+    "campaigns": "Campañas",
+    "campaignsHint": "Rendimiento de campañas de pago y sociales",
+    "behavior": "Comportamiento",
+    "pages": "Páginas",
+    "funnels": "Embudos",
+    "heatmaps": "Mapas de calor",
+    "sessions": "Grabaciones de sesión",
+    "reports": "Informes",
+    "docs": "Docs de gráficos",
+    "retention": "Retención",
+    "events": "Eventos",
+    "conversions": "Conversiones",
+    "goals": "Objetivos",
+    "goalsHint": "Metas de conversión y el valor que generan",
+    "experiments": "Experimentos",
+    "experimentsHint": "Tests A/B con mejora y confianza",
+    "new": "Nuevo",
+    "demographics": "Resumen",
+    "demographicsHint": "Usuarios, edades, dispositivos y nuevos frente a recurrentes",
+    "geography": "Geografía",
+    "geographyHint": "Sesiones por país y región",
+    "technology": "Dispositivos y tecnología",
+    "technologyHint": "Dispositivos, sistemas, navegadores y pantallas",
+    "alerts": "Alertas"
+  },
+  "home": {
+    "title": "Analítica",
+    "description": "Tráfico, pedidos e ingresos de tu tienda.",
+    "kpis": {
+      "pageViews": "Páginas vistas",
+      "users": "Usuarios totales",
+      "orders": "Pedidos totales",
+      "sales": "Ventas totales",
+      "extra": "Has conseguido <1>{{value}}</1> más este año"
+    },
+    "visitors": {
+      "title": "Visitantes únicos",
+      "granularity": "Granularidad",
+      "month": "Mes",
+      "week": "Semana",
+      "pageViews": "Páginas vistas",
+      "sessions": "Sesiones"
+    },
+    "income": {
+      "title": "Resumen de ingresos",
+      "subtitle": "Estadísticas de esta semana",
+      "value": "Ingresos"
+    },
+    "orders": {
+      "title": "Pedidos recientes",
+      "tracking": "N.º de seguimiento",
+      "product": "Producto",
+      "quantity": "Pedido total",
+      "status": "Estado",
+      "amount": "Importe total"
+    },
+    "status": {
+      "approved": "Aprobado",
+      "pending": "Pendiente",
+      "rejected": "Rechazado"
+    },
+    "report": {
+      "title": "Informe analítico",
+      "trend": "Crecimiento financiero"
+    },
+    "traffic": {
+      "title": "Tráfico por día y hora",
+      "description": "Sesiones por franja de 3 horas, últimas 4 semanas",
+      "sessions": "{{value}} sesiones"
+    },
+    "sales": {
+      "title": "Informe de ventas",
+      "subtitle": "Estadísticas de esta semana",
+      "income": "Ingresos",
+      "costs": "Coste de ventas"
+    },
+    "error": {
+      "title": "No se pudo cargar la analítica",
+      "description": "Revisa tu conexión e inténtalo de nuevo.",
+      "retry": "Reintentar"
+    },
+    "actions": {
+      "more": "Más opciones"
+    }
+  },
+  "campaigns": {
+    "title": "Campañas",
+    "description": "Alcance, interacción y embudo en todos los canales.",
+    "export": "Exportar",
+    "period": {
+      "label": "Periodo",
+      "7d": "Últimos 7 días",
+      "30d": "Últimos 30 días",
+      "90d": "Últimos 90 días"
+    },
+    "kpis": {
+      "domains": "Dominios",
+      "projects": "Campañas activas",
+      "clicks": "Clics totales",
+      "links": "Enlaces rastreados",
+      "hint": "vs. periodo anterior"
+    },
+    "traffic": {
+      "title": "Impresiones vs. únicos",
+      "description": "A cuántas personas llegó tu contenido y cuántas eran nuevas.",
+      "impressions": "Impresiones",
+      "uniques": "Únicos"
+    },
+    "ledger": {
+      "title": "Ingresos y gastos",
+      "description": "Últimas transacciones del espacio de trabajo.",
+      "tabs": {
+        "earnings": "Ingresos",
+        "expenses": "Gastos",
+        "payouts": "Estado de pagos"
+      },
+      "columns": {
+        "id": "Referencia",
+        "type": "Tipo",
+        "date": "Fecha",
+        "amount": "Importe",
+        "status": "Estado"
+      },
+      "status": {
+        "paid": "Pagado",
+        "pending": "Pendiente",
+        "failed": "Fallido"
+      },
+      "net": "Neto del periodo"
+    },
+    "deals": {
+      "title": "Oportunidades",
+      "description": "Oportunidades abiertas vs. cerradas.",
+      "monthly": "Mensual",
+      "weekly": "Semanal",
+      "open": "Abiertas",
+      "closed": "Cerradas"
+    },
+    "posts": {
+      "title": "Actividad de publicaciones",
+      "description": "Publicaciones con mayor alcance.",
+      "reach": "Alcance",
+      "viewAll": "Ver todas"
+    },
+    "postStats": {
+      "title": "Estadísticas de publicaciones",
+      "description": "Publicaciones por día de la semana.",
+      "posts": "Publicaciones",
+      "peak": "Día con más actividad: {{day}}"
+    },
+    "channels": {
+      "title": "Mezcla de canales",
+      "description": "Puntuación de interacción por canal.",
+      "current": "Este periodo",
+      "previous": "Periodo anterior"
+    },
+    "funnel": {
+      "title": "Embudo de campaña",
+      "description": "De la primera visita a la venta cerrada.",
+      "overall": "Conversión total",
+      "ofPrevious": "{{value}} % del paso anterior"
+    },
+    "error": {
+      "title": "No se pudo cargar este bloque",
+      "retry": "Reintentar"
+    }
+  },
+  "range": {
+    "label": "Periodo",
+    "vs": "vs",
+    "compare": "Comparar con",
+    "options": {
+      "7d": "Últimos 7 días",
+      "28d": "Últimos 28 días",
+      "90d": "Últimos 90 días"
+    },
+    "compareOptions": {
+      "previous": "Periodo anterior",
+      "year": "Mismo periodo del año pasado",
+      "none": "Sin comparar"
+    }
+  },
+  "error": {
+    "title": "No se pudo cargar la analítica",
+    "description": "Los datos no llegaron. Revisa tu conexión e inténtalo de nuevo.",
+    "retry": "Reintentar"
+  },
+  "realtime": {
+    "title": "Tiempo real",
+    "description": "Quién está en el sitio ahora mismo. Se actualiza cada 5 segundos.",
+    "pause": "Pausar",
+    "resume": "Reanudar",
+    "active": {
+      "title": "Usuarios activos ahora",
+      "description": "Visitantes con actividad en los últimos 5 minutos",
+      "hint": "en todas las páginas y dispositivos",
+      "perMinute": "Usuarios por minuto, últimos 30 minutos",
+      "users": "Usuarios"
+    },
+    "devices": {
+      "desktop": "Escritorio",
+      "mobile": "Móvil",
+      "tablet": "Tableta"
+    },
+    "stream": {
+      "title": "Eventos en vivo",
+      "description": "Los más recientes primero",
+      "ago": "hace {{value}}"
+    },
+    "events": {
+      "page_view": "Vio",
+      "signup": "Se registró en",
+      "add_to_cart": "Añadió al carrito en",
+      "purchase": "Compró en",
+      "trial_start": "Empezó una prueba en"
+    },
+    "topPages": {
+      "title": "Páginas más vistas ahora",
+      "description": "Usuarios activos por página"
+    }
+  },
+  "audience": {
+    "title": "Audiencia",
+    "description": "Quiénes son tus visitantes y cómo vuelven.",
+    "totals": {
+      "users": "Usuarios",
+      "new": "Usuarios nuevos",
+      "session": "Sesión media",
+      "engagement": "Tasa de interacción"
+    },
+    "returning": {
+      "title": "Nuevos vs recurrentes",
+      "description": "Usuarios diarios, apilados",
+      "new": "Nuevos",
+      "returning": "Recurrentes"
+    },
+    "devices": {
+      "title": "Dispositivos",
+      "description": "Proporción de usuarios",
+      "users": "usuarios"
+    },
+    "ages": {
+      "title": "Grupos de edad",
+      "description": "Usuarios por edad declarada"
+    },
+    "countries": {
+      "title": "Países",
+      "description": "Los 10 primeros por usuarios",
+      "country": "País",
+      "share": "Proporción de usuarios",
+      "users": "Usuarios",
+      "sessions": "Sesiones",
+      "engagement": "Interacción"
+    }
+  },
+  "acquisition": {
+    "title": "Adquisición",
+    "description": "Canales, fuentes y los enlaces que etiquetas para campañas.",
+    "channels": {
+      "title": "Canales",
+      "description": "Agrupación de canales predeterminada",
+      "channel": "Canal",
+      "trend": "Tendencia",
+      "trendLabel": "Usuarios de {{channel}} en el periodo",
+      "users": "Usuarios",
+      "conversion": "Conversión",
+      "revenue": "Ingresos"
+    },
+    "share": {
+      "title": "Reparto por canal",
+      "description": "Usuarios por canal"
+    },
+    "sources": {
+      "title": "Fuente / medio",
+      "description": "Las 8 primeras por sesiones",
+      "sourceMedium": "Fuente / medio",
+      "sessions": "Sesiones",
+      "conversions": "Conversiones",
+      "bounce": "{{value}} de rebote"
+    },
+    "utm": {
+      "title": "Generador de URL de campaña",
+      "description": "Etiqueta un enlace para que sus visitas cuenten en la campaña correcta.",
+      "url": "URL de destino",
+      "source": "Fuente",
+      "sourceHint": "Dónde se publica el enlace, p. ej. newsletter",
+      "medium": "Medio",
+      "campaign": "Campaña",
+      "campaignHint": "Solo letras, números, - y _",
+      "term": "Término (opcional)",
+      "preview": "URL etiquetada",
+      "invalid": "Introduce una URL completa, con https://",
+      "save": "Guardar enlace",
+      "created": "Enlace de campaña guardado",
+      "recent": "Enlaces recientes",
+      "clicks": "{{value}} clics"
+    }
+  },
+  "pages": {
+    "title": "Páginas",
+    "description": "Qué páginas atraen visitantes, mantienen su atención y los pierden.",
+    "search": "Filtrar páginas…",
+    "scrollHint": "Proporción media de la página que recorren los visitantes.",
+    "spotlight": {
+      "mostViewed": "Más vista",
+      "longest": "Mayor tiempo de lectura",
+      "leaky": "Mayor tasa de salida"
+    },
+    "table": {
+      "title": "Todas las páginas",
+      "description": "{{count}} páginas"
+    },
+    "columns": {
+      "page": "Página",
+      "views": "Vistas",
+      "users": "Usuarios",
+      "time": "Tiempo medio",
+      "bounce": "Rebote",
+      "entrances": "Entradas",
+      "exits": "Salidas",
+      "scroll": "Desplazamiento"
+    }
+  },
+  "funnels": {
+    "title": "Embudos",
+    "description": "Elige los pasos de un recorrido y mira dónde se pierde la gente.",
+    "entry": "Paso de entrada",
+    "ofPrevious": "{{value}} del anterior",
+    "overall": "Conversión total",
+    "biggestDrop": "Mayor caída: el {{value}} se va antes de “{{step}}”.",
+    "steps": {
+      "title": "Pasos",
+      "description": "De 2 a 7 eventos, en orden",
+      "step": "Paso {{n}}",
+      "up": "Subir",
+      "down": "Bajar",
+      "remove": "Quitar paso",
+      "add": "Añadir paso",
+      "reset": "Restablecer"
+    },
+    "chart": {
+      "title": "Conversión",
+      "description": "Usuarios que llegan a cada paso"
+    },
+    "table": {
+      "title": "Detalle de pasos",
+      "step": "Paso",
+      "users": "Usuarios",
+      "dropOff": "Abandono",
+      "time": "Tiempo mediano",
+      "minutes": "{{value}} min"
+    }
+  },
+  "reports": {
+    "title": "Informes",
+    "description": "Informes guardados y los envíos programados por correo.",
+    "count": "{{count}} programados",
+    "actions": "Acciones del informe",
+    "addSchedule": "Programar envío",
+    "delete": "Eliminar informe",
+    "deleteTitle": "¿Eliminar “{{name}}”?",
+    "deleteDescription": "También se detiene su envío programado. No se puede deshacer.",
+    "saved": "Programación guardada",
+    "deleted": "Informe eliminado",
+    "views": {
+      "all": "Todos",
+      "scheduled": "Programados",
+      "manual": "Sin programar"
+    },
+    "empty": {
+      "title": "No hay informes aquí",
+      "description": "Prueba otro filtro."
+    },
+    "types": {
+      "traffic": "Tráfico",
+      "acquisition": "Adquisición",
+      "revenue": "Ingresos",
+      "funnel": "Embudo",
+      "custom": "Personalizado"
+    },
+    "frequency": {
+      "daily": "Diario",
+      "weekly": "Semanal",
+      "monthly": "Mensual"
+    },
+    "format": {
+      "pdf": "PDF",
+      "csv": "CSV"
+    },
+    "schedule": {
+      "title": "Envío por correo",
+      "frequency": "Enviar",
+      "recipients": "Destinatarios",
+      "recipientsHint": "Pulsa Intro después de cada dirección",
+      "invalidEmail": "No es un correo válido",
+      "format": "Formato",
+      "stop": "Dejar de enviar",
+      "cancel": "Cancelar",
+      "save": "Guardar"
+    }
+  },
+  "retention": {
+    "title": "Retención",
+    "description": "Cuántas personas de cada cohorte semanal de registro siguen volviendo.",
+    "segment": "Segmento",
+    "cohorts": "Número de cohortes",
+    "weeks": "{{count}} semanas",
+    "week": "S{{n}}",
+    "segments": {
+      "all": "Todos los usuarios",
+      "organic": "Búsqueda orgánica",
+      "paid": "Anuncios de pago",
+      "referral": "Referidos"
+    },
+    "kpis": {
+      "users": "Usuarios en cohortes",
+      "usersHint": "Registrados en las últimas {{count}} semanas",
+      "week1": "Retención semana 1",
+      "week4": "Retención semana 4",
+      "last": "Retención semana {{n}}"
+    },
+    "modes": {
+      "percent": "Porcentaje",
+      "users": "Usuarios"
+    },
+    "table": {
+      "title": "Retención por cohorte",
+      "description": "Porcentaje de cada cohorte activo N semanas después del registro. Selecciona una cohorte para verla en el gráfico.",
+      "caption": "Cohortes semanales por semanas desde el registro",
+      "cohort": "Cohorte",
+      "users": "Usuarios",
+      "average": "Media ponderada"
+    },
+    "curve": {
+      "title": "Curva de retención",
+      "description": "Media de todas las cohortes comparada con la semana del {{week}}.",
+      "average": "Todas las cohortes",
+      "cohort": "Semana del {{week}}"
+    }
+  },
+  "events": {
+    "title": "Eventos",
+    "description": "Todos los eventos registrados con su volumen y tendencia. Abre uno para ver sus propiedades.",
+    "search": "Buscar eventos",
+    "category": "Categoría del evento",
+    "categories": {
+      "all": "Todos",
+      "engagement": "Interacción",
+      "conversion": "Conversión",
+      "system": "Sistema"
+    },
+    "kpis": {
+      "total": "Eventos totales",
+      "tracked": "Tipos de evento",
+      "conversions": "Eventos de conversión"
+    },
+    "table": {
+      "event": "Evento",
+      "category": "Categoría",
+      "count": "Total",
+      "users": "Usuarios",
+      "perUser": "Por usuario",
+      "trend": "Últimos 14 días",
+      "trendLabel": "Tendencia diaria de {{event}}",
+      "change": "Cambio"
+    },
+    "empty": {
+      "title": "Ningún evento coincide",
+      "description": "Prueba con otra búsqueda o categoría."
+    },
+    "sheet": {
+      "daily": "Volumen diario",
+      "properties": "Desglose por propiedad",
+      "property": "Propiedad"
+    }
+  },
+  "goals": {
+    "title": "Objetivos",
+    "description": "Objetivos de conversión, lo cerca que estás de cada meta y los ingresos que generan.",
+    "create": "Nuevo objetivo",
+    "edit": "Editar",
+    "delete": "Eliminar",
+    "actions": "Acciones de {{name}}",
+    "deleteTitle": "¿Eliminar «{{name}}»?",
+    "deleteDescription": "Su historial se conserva, pero deja de aparecer en los informes.",
+    "saved": "Objetivo guardado",
+    "deleted": "Objetivo eliminado",
+    "target": "Meta {{value}}",
+    "trend": "Tendencia de la tasa de conversión de {{name}}",
+    "progress": "Progreso de {{name}} hacia su meta",
+    "conversions": "Conversiones",
+    "value": "Valor del objetivo",
+    "status": {
+      "onTrack": "En camino",
+      "atRisk": "En riesgo",
+      "behind": "Rezagado"
+    },
+    "kpis": {
+      "conversions": "Conversiones totales",
+      "value": "Valor total de objetivos",
+      "onTrack": "Objetivos en camino",
+      "onTrackValue": "{{done}} de {{total}}"
+    },
+    "empty": {
+      "title": "Aún no hay objetivos",
+      "description": "Crea un objetivo para medir una conversión frente a una meta."
+    },
+    "events": {
+      "signup": "Registro",
+      "trial_start": "Prueba iniciada",
+      "demo_request": "Demo solicitada",
+      "add_to_cart": "Añadido al carrito",
+      "purchase": "Compra completada",
+      "subscribe": "Suscripción"
+    },
+    "form": {
+      "createTitle": "Nuevo objetivo",
+      "editTitle": "Editar objetivo",
+      "description": "Un objetivo cuenta los visitantes que disparan un evento y compara la tasa con tu meta.",
+      "name": "Nombre",
+      "namePlaceholder": "p. ej. Pruebas iniciadas",
+      "event": "Evento de conversión",
+      "eventHint": "Los visitantes que disparan este evento cuentan como conversión.",
+      "target": "Tasa objetivo",
+      "targetHint": "Porcentaje de visitantes, 0,1–100 %.",
+      "value": "Valor por conversión",
+      "valueHint": "Se usa para estimar ingresos.",
+      "cancel": "Cancelar",
+      "save": "Guardar objetivo",
+      "errors": {
+        "name": "Usa al menos 2 caracteres",
+        "target": "Introduce una tasa entre 0,1 % y 100 %",
+        "value": "Introduce un importe entre 0 $ y 100.000 $"
+      }
+    }
+  },
+  "experiments": {
+    "title": "Experimentos",
+    "description": "Tests A/B, su estado y cómo rinde la mejor variante frente al control.",
+    "filter": "Filtrar por estado",
+    "all": "Todos",
+    "variants_one": "{{count}} variante",
+    "variants_other": "{{count}} variantes",
+    "status": {
+      "running": "En curso",
+      "completed": "Finalizado",
+      "paused": "En pausa",
+      "draft": "Borrador"
+    },
+    "kpis": {
+      "running": "En curso ahora",
+      "winners": "Ganadores significativos",
+      "avgLift": "Mejora media ganadora"
+    },
+    "table": {
+      "experiment": "Experimento",
+      "status": "Estado",
+      "goal": "Objetivo",
+      "visitors": "Visitantes",
+      "lift": "Mejora",
+      "confidence": "Confianza",
+      "confidenceLabel": "Confianza de {{name}}"
+    },
+    "empty": {
+      "title": "No hay experimentos aquí",
+      "description": "Elige otro estado para ver más tests."
+    },
+    "verdict": {
+      "draft": "Este experimento aún no ha empezado, así que no hay resultados.",
+      "inconclusive": "{{variant}} va en {{lift}} con un {{confidence}} de confianza. Mantén el test activo hasta que sea significativo.",
+      "winner": "{{variant}} supera al control en {{lift}} con un {{confidence}} de confianza.",
+      "loser": "{{variant}} rinde peor que el control ({{lift}}, {{confidence}} de confianza). Mantén el control."
+    },
+    "detail": {
+      "back": "Todos los experimentos",
+      "goal": "Objetivo: {{goal}}",
+      "ran": "Del {{from}} al {{to}}",
+      "since": "En curso desde el {{from}}",
+      "conversions": "Conversiones",
+      "bestLift": "Mayor mejora",
+      "threshold": "Significativo al {{value}} %",
+      "variants": "Variantes",
+      "variant": "Variante",
+      "rate": "Tasa conv.",
+      "control": "Control",
+      "chart": {
+        "title": "Tasa de conversión en el tiempo",
+        "description": "Tasa de conversión acumulada por variante. Las líneas se estabilizan al llegar más visitantes."
+      }
+    }
+  },
+  "geography": {
+    "title": "Geografía",
+    "description": "De dónde llegan tus sesiones y cómo convierte cada mercado.",
+    "kpis": {
+      "sessions": "Sesiones",
+      "countries": "Países",
+      "top": "País principal",
+      "conversion": "Tasa de conversión media"
+    },
+    "map": {
+      "title": "Mapa de sesiones",
+      "description": "Cada casilla es un país; las más oscuras aportan más sesiones. Haz clic para ver el detalle.",
+      "tile": "Abrir {{country}}",
+      "fewer": "Menos",
+      "more": "Más sesiones",
+      "noData": "Sin datos"
+    },
+    "regions": {
+      "title": "Por región",
+      "description": "Porcentaje de sesiones por continente",
+      "filter": "Región",
+      "all": "Todas",
+      "americas": "América",
+      "europe": "Europa",
+      "africa": "África",
+      "asia": "Asia",
+      "oceania": "Oceanía"
+    },
+    "table": {
+      "title": "Países",
+      "description": "Ordenados por sesiones en el periodo seleccionado",
+      "country": "País",
+      "share": "Cuota de sesiones",
+      "sessions": "Sesiones",
+      "users": "Usuarios",
+      "conversion": "Tasa de conversión",
+      "change": "Variación"
+    },
+    "channels": {
+      "organic": "Búsqueda orgánica",
+      "direct": "Directo",
+      "paid": "Búsqueda de pago",
+      "referral": "Referencia",
+      "social": "Redes sociales"
+    },
+    "sheet": {
+      "description": "{{region}} · sesiones, canales y dispositivos",
+      "daily": "Sesiones diarias",
+      "channels": "Canales",
+      "devices": "Dispositivos"
+    },
+    "empty": {
+      "title": "No hay sesiones",
+      "description": "Ningún país de esta selección tuvo sesiones en el periodo."
+    }
+  },
+  "technology": {
+    "title": "Dispositivos y tecnología",
+    "description": "Con qué navegan los visitantes y qué configuraciones convierten mejor.",
+    "kpis": {
+      "mobile": "Cuota móvil",
+      "os": "Sistema operativo principal",
+      "browser": "Navegador principal",
+      "best": "Dispositivo que mejor convierte"
+    },
+    "categories": {
+      "title": "Tipo de dispositivo",
+      "description": "Sesiones por tipo de dispositivo"
+    },
+    "os": {
+      "title": "Sistemas operativos",
+      "description": "Sesiones por sistema operativo"
+    },
+    "browsers": {
+      "title": "Navegadores",
+      "description": "Sesiones por navegador"
+    },
+    "dimensions": {
+      "categories": "Dispositivo",
+      "os": "SO",
+      "browsers": "Navegador",
+      "resolutions": "Resolución"
+    },
+    "segments": {
+      "title": "Conversión por segmento",
+      "description": "Media del sitio: {{average}}",
+      "dimension": "Desglose",
+      "segment": "Segmento",
+      "share": "Cuota de sesiones",
+      "sessions": "Sesiones",
+      "duration": "Sesión media",
+      "rate": "Tasa de conversión",
+      "vsAverage": "Frente a la media"
+    },
+    "empty": {
+      "title": "No hay sesiones registradas",
+      "description": "No hay datos para este desglose en el periodo."
+    }
+  },
+  "alerts": {
+    "title": "Alertas",
+    "description": "Anomalías detectadas en tus métricas clave y las reglas que las vigilan.",
+    "create": "Nueva regla",
+    "updated": "Alerta actualizada",
+    "kpis": {
+      "open": "Alertas abiertas",
+      "critical": "Críticas abiertas",
+      "acknowledged": "Revisadas",
+      "rules": "Reglas activas",
+      "rulesValue": "{{active}} de {{total}}"
+    },
+    "severity": {
+      "critical": "Crítica",
+      "warning": "Aviso",
+      "info": "Info"
+    },
+    "status": {
+      "open": "Abiertas",
+      "acknowledged": "Revisadas",
+      "muted": "Silenciadas",
+      "all": "Todas"
+    },
+    "metrics": {
+      "sessions": "Sesiones",
+      "conversionRate": "Tasa de conversión",
+      "bounceRate": "Tasa de rebote",
+      "revenue": "Ingresos",
+      "pageLoad": "Tiempo de carga",
+      "signups": "Registros"
+    },
+    "conditions": {
+      "drops": "baja un",
+      "rises": "sube un",
+      "changes": "varía un"
+    },
+    "windows": {
+      "1h": "1 hora",
+      "24h": "24 horas",
+      "7d": "7 días"
+    },
+    "notify": {
+      "email": "Correo",
+      "slack": "Slack",
+      "inApp": "En la app"
+    },
+    "feed": {
+      "title": "Anomalías",
+      "description": "Métricas que se salieron de su rango previsto",
+      "filter": "Estado",
+      "drop": "{{metric}}: caída del {{change}}",
+      "rise": "{{metric}}: subida del {{change}}",
+      "versus": "{{value}} frente a {{expected}} previsto",
+      "acknowledge": "Marcar como revisada",
+      "mute": "Silenciar",
+      "reopen": "Reabrir",
+      "empty": {
+        "title": "Todo en orden",
+        "description": "No hay alertas con este estado."
+      }
+    },
+    "rules": {
+      "title": "Reglas de alerta",
+      "description": "Se comparan con la previsión de cada ventana",
+      "created": "Regla creada",
+      "updated": "Regla actualizada",
+      "deleted": "Regla eliminada",
+      "summary": "{{metric}} {{condition}} {{threshold}} % en {{window}}",
+      "triggered_one": "Se activó una vez en 30 días",
+      "triggered_other": "Se activó {{count}} veces en 30 días",
+      "toggle": "Activar {{name}}",
+      "delete": "Eliminar {{name}}",
+      "deleteTitle": "¿Eliminar «{{name}}»?",
+      "deleteDescription": "Las alertas anteriores siguen en el listado, pero no se generarán nuevas.",
+      "deleteConfirm": "Eliminar regla",
+      "empty": {
+        "title": "Aún no hay reglas",
+        "description": "Crea una regla para recibir un aviso cuando una métrica cambie."
+      }
+    },
+    "form": {
+      "title": "Nueva regla de alerta",
+      "description": "Recibe un aviso cuando una métrica se desvíe de su previsión más que el umbral.",
+      "name": "Nombre",
+      "namePlaceholder": "p. ej. Caída de conversión en el pago",
+      "metric": "Métrica",
+      "condition": "Condición",
+      "window": "Ventana de tiempo",
+      "severity": "Gravedad",
+      "notify": "Avisar por",
+      "threshold": "Umbral",
+      "thresholdHint": "Cambio frente a la previsión, 1–500 %.",
+      "cancel": "Cancelar",
+      "save": "Crear regla",
+      "errors": {
+        "name": "Usa al menos 3 caracteres",
+        "threshold": "Introduce un umbral entre el 1 % y el 500 %"
+      }
+    }
+  },
+  "shell": {
+    "categories": {
+      "alerts": "Alertas",
+      "goals": "Objetivos",
+      "reports": "Informes"
+    },
+    "notifications": {
+      "spike": {
+        "title": "Pico de tráfico: +240 % en 15 min",
+        "body": "La mayoría de visitas llegan desde news.ycombinator.com."
+      },
+      "bounce": {
+        "title": "Tasa de rebote por encima del umbral",
+        "body": "/pricing alcanzó el 71 % (alerta fijada en el 60 %)."
+      },
+      "goal": {
+        "title": "Objetivo cumplido: 1.000 registros",
+        "body": "Meta mensual alcanzada 6 días antes."
+      },
+      "experiment": {
+        "title": "El experimento es significativo",
+        "body": "El checkout B convierte un 8,4 % mejor (95 % de confianza)."
+      },
+      "report": {
+        "title": "El informe semanal está listo",
+        "body": "Sesiones +12 %, tasa de conversión del 3,1 %."
+      },
+      "campaign": {
+        "title": "La campaña «Black Friday» terminó",
+        "body": "18.420 sesiones y 96 k$ de ingresos atribuidos."
+      }
+    },
+    "create": {
+      "report": {
+        "label": "Nuevo informe",
+        "description": "Crea un informe personalizado"
+      },
+      "goal": {
+        "label": "Añadir objetivo",
+        "description": "Mide una conversión"
+      },
+      "funnel": {
+        "label": "Crear embudo",
+        "description": "Descubre dónde se van las visitas"
+      },
+      "alert": {
+        "label": "Nueva alerta",
+        "description": "Recibe avisos de cambios"
+      }
+    },
+    "account": {
+      "reports": "Mis informes",
+      "alerts": "Mis alertas"
+    }
+  }
+}

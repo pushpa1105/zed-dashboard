@@ -1,0 +1,785 @@
+{
+  "workspace": {
+    "name": "HR",
+    "description": "People, hiring, time off and payroll",
+    "category": "People"
+  },
+  "nav": {
+    "overview": "Overview",
+    "people": "People",
+    "directory": "Directory",
+    "orgChart": "Org chart",
+    "recruitment": "Recruitment",
+    "openRoles": "Open roles",
+    "careersSite": "Careers site",
+    "referrals": "Referrals",
+    "timeOff": "Time off",
+    "payroll": "Payroll",
+    "payRuns": "Pay runs",
+    "benefits": "Benefits",
+    "performance": "Performance",
+    "settings": "Settings",
+    "help": "HR handbook",
+    "onboarding": "Onboarding",
+    "time": "Time",
+    "attendance": "Attendance",
+    "learning": "Learning",
+    "training": "Courses & assignments",
+    "overdueTraining": "Overdue training",
+    "engagement": "Engagement",
+    "documents": "Documents",
+    "allDocuments": "All documents",
+    "awaitingSignature": "Awaiting signature"
+  },
+  "title": "Hiring & people",
+  "description": "Hiring activity, interviews and people operations.",
+  "careersSite": "View careers site",
+  "tabs": {
+    "overview": "Overview",
+    "calendar": "Calendar",
+    "tasks": "Tasks",
+    "activity": "Activity"
+  },
+  "report": {
+    "title": "Analytics report",
+    "range": {
+      "label": "Date range",
+      "7d": "Last 7 days",
+      "14d": "Last 14 days",
+      "30d": "Last 30 days",
+      "90d": "Last 90 days"
+    },
+    "comparedTo": "compared to",
+    "compare": {
+      "previous": "Previous period",
+      "lastYear": "Same period last year"
+    },
+    "current": "Applications",
+    "previous": "Comparison",
+    "stats": {
+      "newCandidates": "New candidates",
+      "applications": "Job applications",
+      "totalCandidates": "Total candidates",
+      "employees": "Employees"
+    },
+    "inRange": "in the selected range",
+    "entirePeriod": "for the entire period"
+  },
+  "interviews": {
+    "title": "Upcoming interviews",
+    "join": "Join with Google Meet",
+    "reschedule": "Reschedule",
+    "cancel": "Cancel interview",
+    "copy": "Copy meeting link",
+    "copied": "Meeting link copied",
+    "more": "More actions"
+  },
+  "openings": {
+    "title": "Applications to review",
+    "columns": {
+      "name": "Name",
+      "published": "Published",
+      "candidates": "Candidates"
+    },
+    "none": "No applicants yet"
+  },
+  "headcount": {
+    "title": "Headcount by department",
+    "employees": "Employees"
+  },
+  "pipeline": {
+    "title": "Hiring pipeline",
+    "description": "Candidates at each stage this quarter.",
+    "conversion": "{{value}}% advance"
+  },
+  "onboarding": {
+    "title": "Onboarding",
+    "starts": "Starts {{date}}",
+    "started": "Started {{date}}"
+  },
+  "activity": {
+    "title": "Hiring activity"
+  },
+  "calendarTab": {
+    "title": "Interview calendar",
+    "description": "Days with scheduled interviews are highlighted."
+  },
+  "newJob": {
+    "button": "New job",
+    "title": "Post a new job",
+    "description": "It goes live on the careers site right away.",
+    "fields": {
+      "title": "Job title",
+      "department": "Department",
+      "location": "Location",
+      "type": "Employment type"
+    },
+    "placeholders": {
+      "title": "e.g. Senior Frontend Engineer",
+      "location": "e.g. Remote (EU) or Berlin"
+    },
+    "types": {
+      "fullTime": "Full-time",
+      "partTime": "Part-time",
+      "contract": "Contract"
+    },
+    "submit": "Publish job",
+    "cancel": "Cancel",
+    "created": "Job posted"
+  },
+  "error": {
+    "title": "Couldn't load this section",
+    "retry": "Try again"
+  },
+  "common": {
+    "back": "Back",
+    "notFound": "We couldn't find that record.",
+    "department": "Department",
+    "location": "Location",
+    "status": "Status",
+    "allDepartments": "All departments",
+    "days": "{{count}} days",
+    "view": {
+      "cards": "Cards",
+      "table": "Table"
+    },
+    "remind": "Send reminder",
+    "reminded": "Reminder sent",
+    "previous": "Previous page",
+    "next": "Next page",
+    "pageOf": "Page {{page}} of {{total}}"
+  },
+  "status": {
+    "active": "Active",
+    "onLeave": "On leave",
+    "onboarding": "Onboarding"
+  },
+  "employment": {
+    "fullTime": "Full-time",
+    "partTime": "Part-time",
+    "contract": "Contract"
+  },
+  "leave": {
+    "vacation": "Vacation",
+    "sick": "Sick leave",
+    "parental": "Parental leave",
+    "personal": "Personal day"
+  },
+  "directory": {
+    "title": "People directory",
+    "description": "Everyone at the company, by team and location.",
+    "search": "Search by name, role or email…",
+    "count": "{{count}} people",
+    "columns": {
+      "name": "Name",
+      "department": "Department",
+      "location": "Location",
+      "startDate": "Start date",
+      "status": "Status",
+      "type": "Type"
+    },
+    "reportsTo": "Reports to {{name}}"
+  },
+  "profile": {
+    "tabs": {
+      "overview": "Overview",
+      "job": "Job",
+      "timeOff": "Time off",
+      "documents": "Documents",
+      "performance": "Performance"
+    },
+    "message": "Message",
+    "manager": "Manager",
+    "reports": "Direct reports",
+    "noReports": "No direct reports.",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "location": "Location",
+    "started": "Start date",
+    "tenure": "Tenure",
+    "years": "{{count}} years",
+    "salary": "Annual salary",
+    "level": "Level",
+    "levelValue": "L{{level}}",
+    "employment": "Employment",
+    "history": "Role history",
+    "present": "Present",
+    "balances": "Balances",
+    "used": "{{used}} of {{total}} days used",
+    "requests": "Requests",
+    "noRequests": "No time off booked.",
+    "reviews": "Reviews",
+    "rating": "Rating",
+    "goals": "Goals"
+  },
+  "org": {
+    "title": "Org chart",
+    "description": "Reporting lines across the company. Click a card to expand its team.",
+    "zoomIn": "Zoom in",
+    "zoomOut": "Zoom out",
+    "reset": "Reset view",
+    "expandAll": "Expand all",
+    "collapseAll": "Collapse all",
+    "reports": "{{count}} reports",
+    "legend": "Departments"
+  },
+  "recruitment": {
+    "title": "Open roles",
+    "description": "Every role you are hiring for and where candidates stand.",
+    "applicants": "Applicants",
+    "inInterview": "In interviews",
+    "published": "Published {{date}}",
+    "status": {
+      "open": "Open",
+      "paused": "Paused"
+    },
+    "viewPipeline": "View pipeline",
+    "moved": "Candidate moved",
+    "back": "All roles",
+    "stages": {
+      "applied": "Applied",
+      "screening": "Screening",
+      "interview": "Interview",
+      "offer": "Offer",
+      "hired": "Hired"
+    },
+    "boardDescription": "{{department}} · {{location}}. Drag candidates to move them through the process.",
+    "appliedOn": "Applied {{date}}",
+    "timeToHire": "Avg. time to hire",
+    "acceptance": "Offer acceptance"
+  },
+  "timeOff": {
+    "title": "Time off",
+    "description": "Who is out this month, and the requests waiting on you.",
+    "queue": "Waiting for approval",
+    "queueDescription": "Approve or decline; the employee is notified.",
+    "approve": "Approve",
+    "decline": "Decline",
+    "decided": "Request updated",
+    "noPending": "You're all caught up.",
+    "outToday": "Out today",
+    "previous": "Previous month",
+    "next": "Next month",
+    "today": "Today",
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "declined": "Declined"
+    }
+  },
+  "payroll": {
+    "title": "Payroll",
+    "description": "Monthly pay runs: review, approve and see where the money goes.",
+    "next": "Next pay run",
+    "payDate": "Pays on {{date}}",
+    "ytdGross": "Gross pay, year to date",
+    "avgNet": "Average net per employee",
+    "columns": {
+      "period": "Period",
+      "payDate": "Pay date",
+      "employees": "Employees",
+      "gross": "Gross",
+      "taxes": "Taxes",
+      "net": "Net",
+      "status": "Status"
+    },
+    "status": {
+      "draft": "Draft",
+      "pendingApproval": "Needs approval",
+      "paid": "Paid"
+    },
+    "approve": "Approve run",
+    "approved": "Pay run approved",
+    "view": "Review"
+  },
+  "payRun": {
+    "title": "Pay run · {{period}}",
+    "description": "Pays on {{date}} to {{count}} employees.",
+    "back": "All pay runs",
+    "byDepartment": "Gross by department",
+    "components": {
+      "title": "Earnings breakdown",
+      "base": "Base salary",
+      "overtime": "Overtime",
+      "bonus": "Bonuses",
+      "allowances": "Allowances"
+    },
+    "gross": "Gross",
+    "taxes": "Taxes",
+    "deductions": "Deductions",
+    "net": "Net pay",
+    "lines": "Employee lines",
+    "employee": "Employee"
+  },
+  "performance": {
+    "title": "Performance",
+    "description": "Review cycles, company goals and how ratings are spread.",
+    "cycles": "Review cycles",
+    "completion": "{{done}} of {{total}} reviews",
+    "due": "Due {{date}}",
+    "cycleStatus": {
+      "inProgress": "In progress",
+      "scheduled": "Scheduled",
+      "closed": "Closed"
+    },
+    "goals": "Company goals",
+    "goalStatus": {
+      "onTrack": "On track",
+      "atRisk": "At risk",
+      "offTrack": "Off track"
+    },
+    "distribution": "Rating distribution",
+    "distributionDescription": "Latest rating per employee (1–5)",
+    "people": "People",
+    "pending": "Reviews not started",
+    "pendingDescription": "Managers who still need to write a review",
+    "reviewer": "Reviewer: {{name}}",
+    "remind": "Remind",
+    "reminded": "Reminder sent to {{name}}"
+  },
+  "settings": {
+    "title": "HR settings",
+    "description": "Leave policies, the work week and people notifications.",
+    "policies": {
+      "title": "Leave policy",
+      "description": "Applies to full-time employees.",
+      "vacation": "Vacation days per year",
+      "sick": "Paid sick days",
+      "carryOver": "Allow carry-over",
+      "carryOverHint": "Unused vacation moves to next year (up to 5 days)."
+    },
+    "week": {
+      "title": "Work week",
+      "description": "Days counted as working days for time-off requests."
+    },
+    "notifications": {
+      "title": "Notifications",
+      "description": "Who hears about what.",
+      "approvals": "Email managers about new requests",
+      "approvalsHint": "Daily digest at 9:00 local time.",
+      "anniversaries": "Celebrate work anniversaries",
+      "anniversariesHint": "Post in #general on the day.",
+      "onboarding": "Send onboarding checklists",
+      "onboardingHint": "New hires get their list a week before day one."
+    },
+    "weekdays": {
+      "mon": "Mon",
+      "tue": "Tue",
+      "wed": "Wed",
+      "thu": "Thu",
+      "fri": "Fri",
+      "sat": "Sat",
+      "sun": "Sun"
+    },
+    "save": "Save changes",
+    "saved": "HR settings saved"
+  },
+  "attendance": {
+    "title": "Attendance",
+    "description": "Who is clocked in today, weekly timesheets and overtime to review.",
+    "stats": {
+      "in": "Clocked in now",
+      "break": "On break",
+      "logged": "Hours logged",
+      "overtime": "People with overtime"
+    },
+    "liveOnly": "Live for the current week only",
+    "timesheets": "Timesheets",
+    "week": "Week of {{from}} – {{to}}",
+    "previousWeek": "Previous week",
+    "nextWeek": "Next week",
+    "thisWeek": "This week",
+    "filters": {
+      "all": "All",
+      "submitted": "Awaiting approval",
+      "overtime": "Overtime"
+    },
+    "approveAll": "Approve submitted ({{count}})",
+    "approve": "Approve",
+    "approveFor": "Approve timesheet for {{name}}",
+    "approved": "Timesheets approved",
+    "empty": "No timesheets match this filter.",
+    "longDay": "Longer than a 10-hour day",
+    "overtimeHours": "+{{hours}} h",
+    "columns": {
+      "employee": "Employee",
+      "total": "Total",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "clock": {
+      "in": "Clocked in",
+      "break": "On break",
+      "out": "Clocked out",
+      "absent": "Absent"
+    },
+    "status": {
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "approved": "Approved"
+    }
+  },
+  "onboardingPage": {
+    "title": "Onboarding",
+    "description": "Checklists for every new hire, from contract to their first month.",
+    "hires": "New hires",
+    "empty": "Nobody is onboarding right now.",
+    "stats": {
+      "active": "New hires onboarding",
+      "upcoming": "Starting soon",
+      "overdue": "Overdue tasks",
+      "completion": "Overall completion"
+    },
+    "fields": {
+      "department": "Department",
+      "startDate": "Start date",
+      "manager": "Manager",
+      "buddy": "Buddy"
+    },
+    "phases": {
+      "beforeStart": "Before day one",
+      "week1": "First week",
+      "month1": "First month"
+    },
+    "done": "{{done}} of {{total}} done",
+    "owners": {
+      "hr": "HR",
+      "it": "IT",
+      "manager": "Manager",
+      "newHire": "New hire"
+    },
+    "overdue": "Overdue"
+  },
+  "benefits": {
+    "title": "Benefits",
+    "description": "Plans on offer, what they cost and who is enrolled.",
+    "stats": {
+      "monthly": "Employer cost per month",
+      "perEmployee": "Cost per employee",
+      "participation": "Enrollment rate",
+      "pending": "Pending enrollments"
+    },
+    "costByCategory": "Cost by category",
+    "perMonth": "per month",
+    "plans": "Benefit plans",
+    "enrolledOf": "{{enrolled}} of {{eligible}} enrolled",
+    "categories": {
+      "health": "Health",
+      "dental": "Dental",
+      "vision": "Vision",
+      "retirement": "Retirement",
+      "life": "Life & disability",
+      "wellness": "Wellness",
+      "other": "Other"
+    },
+    "fields": {
+      "provider": "Provider",
+      "renewal": "Renews on",
+      "employerCost": "Employer cost / month",
+      "employeeCost": "Employee cost / month"
+    },
+    "coverage": "What it covers",
+    "members": "Enrolled employees ({{count}})",
+    "enrollments": "Employee enrollment",
+    "enrollmentsHint": "Plans each employee is enrolled in and what they cost the company.",
+    "search": "Search employees…",
+    "status": {
+      "all": "All",
+      "enrolled": "Enrolled",
+      "pending": "Pending",
+      "waived": "Waived"
+    },
+    "columns": {
+      "employee": "Employee",
+      "department": "Department",
+      "plans": "Plans",
+      "cost": "Employer cost",
+      "status": "Status"
+    },
+    "noMatches": "No employees match your filters."
+  },
+  "candidate": {
+    "appliedFor": "Candidate for {{job}} · {{department}}",
+    "back": "Back to pipeline",
+    "resume": "Résumé",
+    "experience": "Experience",
+    "education": "Education",
+    "skills": "Skills",
+    "scorecards": "Interview scorecards",
+    "scorecardsHint": "Feedback from everyone who has met the candidate.",
+    "noScorecards": "No interviews yet.",
+    "recommendation": {
+      "strongYes": "Strong yes",
+      "yes": "Yes",
+      "no": "No",
+      "strongNo": "Strong no"
+    },
+    "criteria": {
+      "technical": "Technical skills",
+      "communication": "Communication",
+      "problemSolving": "Problem solving",
+      "cultureAdd": "Culture add"
+    },
+    "moveTo": "Move to stage",
+    "advance": "Move to {{stage}}",
+    "fields": {
+      "email": "Email",
+      "phone": "Phone",
+      "location": "Location",
+      "source": "Source",
+      "applied": "Applied",
+      "salary": "Expected salary"
+    }
+  },
+  "training": {
+    "title": "Training",
+    "description": "Course catalog, assignments and compliance training across the company.",
+    "stats": {
+      "courses": "Courses in catalog",
+      "inProgress": "Assignments in progress",
+      "compliance": "Compliance completion",
+      "overdue": "Overdue assignments"
+    },
+    "catalog": "Course catalog",
+    "categories": {
+      "compliance": "Compliance",
+      "leadership": "Leadership",
+      "technical": "Technical",
+      "product": "Product",
+      "wellbeing": "Wellbeing"
+    },
+    "formats": {
+      "online": "Online course",
+      "workshop": "Workshop",
+      "video": "Video"
+    },
+    "hours": "{{count}} h",
+    "learners": "Learners: {{count}}",
+    "required": "Required",
+    "optional": "Optional",
+    "complianceTitle": "Compliance by department",
+    "complianceHint": "Completion of required courses.",
+    "overdueCount": "{{count}} overdue",
+    "completion": "Completion",
+    "completedOf": "{{completed}} of {{total}} completed",
+    "fields": {
+      "format": "Format",
+      "duration": "Duration",
+      "rating": "Rating",
+      "type": "Type"
+    },
+    "assignments": "Assignments",
+    "assignmentsHint": "{{count}} assignments, sorted by due date.",
+    "search": "Search people or courses…",
+    "noMatches": "No assignments match your filters.",
+    "status": {
+      "all": "All",
+      "notStarted": "Not started",
+      "inProgress": "In progress",
+      "overdue": "Overdue",
+      "completed": "Completed"
+    },
+    "columns": {
+      "employee": "Employee",
+      "course": "Course",
+      "department": "Department",
+      "due": "Due",
+      "progress": "Progress",
+      "status": "Status"
+    },
+    "assign": {
+      "button": "Assign training",
+      "title": "Assign training",
+      "description": "Enroll employees in a course and set a due date.",
+      "course": "Course",
+      "coursePlaceholder": "Choose a course",
+      "people": "Employees",
+      "peoplePlaceholder": "Choose employees",
+      "due": "Due date",
+      "cancel": "Cancel",
+      "submit": "Assign"
+    },
+    "assigned": "Training assigned"
+  },
+  "engagement": {
+    "title": "Engagement surveys",
+    "description": "Pulse and annual surveys, eNPS and anonymous feedback.",
+    "stats": {
+      "enps": "Employee NPS",
+      "responseRate": "Response rate",
+      "avgScore": "Average score",
+      "comments": "Anonymous comments"
+    },
+    "enpsTrend": "eNPS trend",
+    "enpsHint": "Last 12 months. The split shows the latest month.",
+    "promoters": "Promoters",
+    "passives": "Passives",
+    "detractors": "Detractors",
+    "surveys": "Surveys",
+    "surveysHint": "Scheduled, running and past surveys.",
+    "status": {
+      "scheduled": "Scheduled",
+      "active": "Open",
+      "closed": "Closed"
+    },
+    "responses": "{{count}} responses",
+    "reminded": "Reminder sent to everyone who has not responded",
+    "heatTitle": "Scores by question and department",
+    "heatHint": "Average answer from 1 (strongly disagree) to 5 (strongly agree).",
+    "question": "Question",
+    "company": "Company",
+    "low": "Low",
+    "high": "High",
+    "questions": {
+      "recommend": "I would recommend this company as a great place to work.",
+      "growth": "I see a clear path to grow my career here.",
+      "manager": "My manager supports me and gives useful feedback.",
+      "recognition": "I am recognized when I do great work.",
+      "workload": "My workload is manageable.",
+      "mission": "I believe in what the company is trying to achieve.",
+      "tools": "I have the tools and resources to do my job well.",
+      "belonging": "I feel I belong on my team."
+    },
+    "topics": {
+      "recommend": "Advocacy",
+      "growth": "Growth",
+      "manager": "Manager",
+      "recognition": "Recognition",
+      "workload": "Workload",
+      "mission": "Mission",
+      "tools": "Tools",
+      "belonging": "Belonging"
+    },
+    "comments": "Anonymous comments",
+    "commentsHint": "From the latest survey. Names are never stored.",
+    "sentiment": {
+      "all": "All",
+      "positive": "Positive",
+      "neutral": "Neutral",
+      "negative": "Negative"
+    },
+    "noComments": "No comments with this sentiment."
+  },
+  "documents": {
+    "title": "Documents & policies",
+    "description": "Company policies and employee documents, and who has signed them.",
+    "stats": {
+      "documents": "Documents",
+      "signedRate": "Acknowledgement rate",
+      "pending": "Signatures pending",
+      "pastDue": "Past due"
+    },
+    "library": "Document library",
+    "libraryHint": "Open a document to see who has signed it and its version history.",
+    "search": "Search documents…",
+    "noMatches": "No documents match your filters.",
+    "kinds": {
+      "all": "All",
+      "policy": "Policy",
+      "employee": "Employee document"
+    },
+    "status": {
+      "all": "Any status",
+      "pending": "Awaiting signature",
+      "complete": "Fully signed"
+    },
+    "categories": {
+      "conduct": "Conduct",
+      "security": "Security",
+      "privacy": "Privacy",
+      "workplace": "Workplace",
+      "safety": "Health & safety",
+      "expenses": "Expenses",
+      "contract": "Contract",
+      "nda": "Confidentiality",
+      "equity": "Equity"
+    },
+    "columns": {
+      "document": "Document",
+      "version": "Version",
+      "due": "Sign by",
+      "signed": "Signed",
+      "actions": "Actions"
+    },
+    "byDepartment": "Signatures by department",
+    "byDepartmentHint": "Across every document that needs acknowledgement.",
+    "chart": {
+      "signed": "Signed",
+      "pending": "Pending"
+    },
+    "versionLabel": "Version {{version}}",
+    "fields": {
+      "owner": "Owner",
+      "updated": "Last updated",
+      "due": "Sign by",
+      "audience": "Recipients"
+    },
+    "signedOf": "{{signed}} of {{total}} signed",
+    "tabs": {
+      "pending": "Pending ({{count}})",
+      "signed": "Signed ({{count}})",
+      "history": "History"
+    },
+    "remindedOn": "Reminded {{date}}",
+    "allSigned": "Everyone has signed this document.",
+    "noneSigned": "Nobody has signed yet.",
+    "reminded": "Reminder sent to everyone who has not signed"
+  },
+  "shell": {
+    "categories": {
+      "requests": "Requests",
+      "people": "People",
+      "payroll": "Payroll"
+    },
+    "notifications": {
+      "leave": {
+        "title": "Mia Rodriguez requested time off",
+        "body": "Dec 22 – Jan 2 · 7 working days of annual leave."
+      },
+      "candidate": {
+        "title": "New applicant for Senior Designer",
+        "body": "Noah Wilson · 8 years of experience · referral."
+      },
+      "payroll": {
+        "title": "November payroll closes tomorrow",
+        "body": "Approve 214 payslips before 17:00."
+      },
+      "onboarding": {
+        "title": "3 new hires start on Monday",
+        "body": "Laptops ordered; 2 onboarding checklists incomplete."
+      },
+      "review": {
+        "title": "Performance reviews are 68% complete",
+        "body": "12 managers still have reviews to submit."
+      },
+      "anniversary": {
+        "title": "2 work anniversaries this week",
+        "body": "Ethan Clark (5 years) and Grace Hall (10 years)."
+      }
+    },
+    "create": {
+      "employee": {
+        "label": "Add employee",
+        "description": "Create a profile and contract"
+      },
+      "job": {
+        "label": "Post a job",
+        "description": "Open a new position"
+      },
+      "leave": {
+        "label": "Request time off",
+        "description": "Holiday, sick or personal leave"
+      },
+      "payRun": {
+        "label": "Run payroll",
+        "description": "Start a new pay run"
+      }
+    },
+    "account": {
+      "timeOff": "My time off",
+      "documents": "My documents",
+      "training": "My training"
+    }
+  }
+}

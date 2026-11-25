@@ -1,0 +1,68 @@
+{
+  "nav": "Kanban",
+  "title": "Kanban",
+  "description": "Plan work across boards, columns and swimlanes.",
+  "board": "Board",
+  "add": "Add",
+  "cancel": "Cancel",
+  "addCard": "Add a card",
+  "cardPlaceholder": "What needs doing? Press Enter to add",
+  "addColumn": "Add column",
+  "columnPlaceholder": "Column name",
+  "unassigned": "Unassigned",
+  "swimlanes": "Swimlanes by assignee",
+  "hint": "Drag cards between columns, or focus one and use Space plus the arrow keys. Press Enter to open a card.",
+  "filters": {
+    "search": "Filter cards…",
+    "assignees": "Filter by assignee",
+    "labels": "Labels",
+    "clear": "Clear filters"
+  },
+  "wip": {
+    "title": "Work-in-progress limit",
+    "none": "No limit",
+    "limit": "{{count}} cards",
+    "hint": "Limit: {{limit}} cards"
+  },
+  "column": {
+    "menu": "Options for {{name}}"
+  },
+  "priority": {
+    "low": "Low priority",
+    "medium": "Medium priority",
+    "high": "High priority",
+    "urgent": "Urgent"
+  },
+  "due": {
+    "today": "Today",
+    "tomorrow": "Tomorrow",
+    "overdue": "{{date}} (overdue)"
+  },
+  "error": {
+    "title": "Couldn't load the board",
+    "description": "The board service didn't respond. Try again in a moment.",
+    "retry": "Try again"
+  },
+  "sheet": {
+    "title": "Card title",
+    "status": "Status",
+    "priority": "Priority",
+    "assignees": "Assignees",
+    "noAssignees": "Assign someone",
+    "labels": "Labels",
+    "due": "Due date",
+    "clearDue": "Clear due date",
+    "description": "Description",
+    "descriptionPlaceholder": "Add context, links or acceptance criteria…",
+    "checklist": "Checklist",
+    "addItem": "Add an item",
+    "removeItem": "Remove {{item}}",
+    "comments": "Comments ({{count}})",
+    "commentPlaceholder": "Write a comment…",
+    "comment": "Comment"
+  },
+  "toast": {
+    "cardAdded": "Card added",
+    "columnAdded": "Column added"
+  }
+}

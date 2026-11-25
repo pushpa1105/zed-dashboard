@@ -1,0 +1,684 @@
+{
+  "workspace": {
+    "name": "CRM",
+    "description": "Embudo, oportunidades, contactos y actividades",
+    "category": "Ventas"
+  },
+  "nav": {
+    "sections": {
+      "sales": "Ventas",
+      "contacts": "Contactos",
+      "activities": "Actividades",
+      "reports": "Informes",
+      "settings": "Ajustes"
+    },
+    "overview": "Resumen",
+    "pipeline": "Embudo",
+    "deals": "Todas las oportunidades",
+    "people": "Personas",
+    "companies": "Empresas",
+    "segments": "Segmentos",
+    "tasks": "Tareas",
+    "meetings": "Llamadas y reuniones",
+    "reports": "Ganadas/perdidas",
+    "forecasts": "Previsiones",
+    "settings": "Ajustes del embudo",
+    "integrations": "Integraciones",
+    "help": "Centro de ayuda",
+    "soon": "Pronto",
+    "leads": "Bandeja de leads",
+    "sequences": "Secuencias de email",
+    "quotes": "Cotizaciones",
+    "allQuotes": "Todas las cotizaciones",
+    "awaitingReply": "Esperando respuesta",
+    "products": "Lista de precios",
+    "activity": "Actividad"
+  },
+  "stages": {
+    "lead": "Lead",
+    "qualified": "Calificado",
+    "proposal": "Propuesta",
+    "negotiation": "Negociación",
+    "won": "Ganado",
+    "lost": "Perdido"
+  },
+  "common": {
+    "owner": "Responsable",
+    "value": "Valor",
+    "stage": "Etapa",
+    "company": "Empresa",
+    "closeDate": "Fecha de cierre",
+    "source": "Origen",
+    "probability": "Probabilidad",
+    "viewAll": "Ver todo",
+    "search": "Buscar…",
+    "notFound": "No encontramos ese registro.",
+    "back": "Volver"
+  },
+  "error": {
+    "title": "No se pudo cargar esta sección",
+    "retry": "Reintentar"
+  },
+  "overview": {
+    "title": "Resumen de ventas",
+    "description": "Trimestre en curso: dónde está la cifra y qué se cierra a continuación.",
+    "newDeal": "Nueva oportunidad",
+    "quota": {
+      "title": "Cumplimiento de cuota",
+      "description": "Ganado este trimestre",
+      "of": "de {{quota}} de cuota",
+      "attained": "alcanzado",
+      "remaining": "Pendiente de cerrar",
+      "weekly": "Necesario por semana"
+    },
+    "stats": {
+      "pipeline": "Embudo abierto",
+      "weighted": "Previsión ponderada",
+      "openDeals": "Oportunidades abiertas",
+      "winRate": "Tasa de éxito",
+      "weightedHint": "valor × probabilidad de la etapa",
+      "openDealsHint": "en 4 etapas",
+      "winRateHint": "de las cerradas"
+    },
+    "funnel": {
+      "title": "Embudo por etapa",
+      "description": "Número y valor de oportunidades por etapa",
+      "deals": "{{count}} oportunidades",
+      "total": "Embudo abierto total"
+    },
+    "forecast": {
+      "title": "Previsión frente a objetivo",
+      "description": "Reservas acumuladas por semana",
+      "closed": "Cerrado",
+      "forecast": "Previsión",
+      "target": "Objetivo"
+    },
+    "leaderboard": {
+      "title": "Clasificación",
+      "description": "Ganado por comercial este trimestre",
+      "deals": "{{count}} oportunidades"
+    },
+    "closing": {
+      "title": "Cierres en las próximas 3 semanas",
+      "description": "Oportunidades abiertas por fecha de cierre",
+      "overdue": "Vencida"
+    }
+  },
+  "pipeline": {
+    "title": "Embudo",
+    "description": "Arrastra oportunidades entre etapas. Los totales se actualizan al momento.",
+    "addDeal": "Añadir oportunidad",
+    "weighted": "Ponderado {{value}}",
+    "count": "{{count}} oportunidades",
+    "moved": "Oportunidad movida",
+    "created": "Oportunidad creada",
+    "age": "{{count}} d en el embudo",
+    "search": "Filtrar oportunidades…",
+    "allOwners": "Todos los responsables"
+  },
+  "quickAdd": {
+    "title": "Añadir una oportunidad",
+    "description": "Se crea en la etapa elegida; puedes moverla después.",
+    "name": "Nombre",
+    "namePlaceholder": "p. ej. Northwind · Licencia multisede",
+    "company": "Empresa",
+    "companyPlaceholder": "Elige una empresa",
+    "value": "Valor (USD)",
+    "stage": "Etapa",
+    "submit": "Añadir",
+    "cancel": "Cancelar"
+  },
+  "deals": {
+    "title": "Todas las oportunidades",
+    "description": "Todas las oportunidades, abiertas y cerradas. Ordena, filtra y exporta.",
+    "search": "Buscar oportunidades o empresas…",
+    "export": "Exportar CSV",
+    "columns": {
+      "name": "Oportunidad",
+      "company": "Empresa",
+      "stage": "Etapa",
+      "value": "Valor",
+      "probability": "Prob.",
+      "owner": "Responsable",
+      "source": "Origen",
+      "closeDate": "Cierre"
+    },
+    "totals": "{{count}} oportunidades · {{value}}",
+    "reset": "Restablecer"
+  },
+  "deal": {
+    "progress": "Progreso de etapas",
+    "activity": "Actividad",
+    "activityDescription": "Todo lo ocurrido en esta oportunidad",
+    "contacts": "Contactos",
+    "primary": "Principal",
+    "products": "Productos",
+    "total": "Total",
+    "quantity": "Cant.",
+    "notes": "Notas",
+    "notePlaceholder": "Escribe una nota para el equipo… (Ctrl+Intro para guardar)",
+    "addNote": "Añadir nota",
+    "noteAdded": "Nota añadida",
+    "details": "Detalles",
+    "closesIn": "Cierra {{when}}",
+    "createdAt": "Creada"
+  },
+  "people": {
+    "title": "Personas",
+    "description": "Contactos en cuentas de clientes y potenciales.",
+    "search": "Buscar por nombre, correo o empresa…",
+    "columns": {
+      "name": "Nombre",
+      "company": "Empresa",
+      "tags": "Etiquetas",
+      "status": "Estado",
+      "owner": "Responsable",
+      "lastContacted": "Último contacto"
+    },
+    "status": {
+      "customer": "Cliente",
+      "prospect": "Potencial",
+      "churned": "Perdido"
+    },
+    "count": "{{count}} personas"
+  },
+  "companies": {
+    "title": "Empresas",
+    "description": "Cuentas con su embudo abierto y contactos.",
+    "search": "Buscar empresas…",
+    "industry": "Sector",
+    "employees": "{{count}} empleados",
+    "contacts": "Contactos",
+    "openDeals": "Abiertas",
+    "pipeline": "Embudo",
+    "revenue": "Facturación anual",
+    "allIndustries": "Todos los sectores"
+  },
+  "contact": {
+    "tabs": {
+      "activity": "Actividad",
+      "emails": "Correos",
+      "deals": "Oportunidades",
+      "files": "Archivos"
+    },
+    "about": "Información",
+    "email": "Correo",
+    "phone": "Teléfono",
+    "company": "Empresa",
+    "owner": "Responsable",
+    "tags": "Etiquetas",
+    "lastContacted": "Último contacto",
+    "sendEmail": "Correo",
+    "call": "Llamar",
+    "inbound": "Recibido",
+    "outbound": "Enviado",
+    "noDeals": "Aún no hay oportunidades con esta empresa."
+  },
+  "tasks": {
+    "title": "Tareas",
+    "description": "Seguimientos de tus oportunidades, agrupados por vencimiento.",
+    "overdue": "Vencidas",
+    "today": "Para hoy",
+    "upcoming": "Próximas",
+    "done": "Completadas",
+    "showDone": "Mostrar completadas",
+    "empty": "Nada por aquí.",
+    "priority": {
+      "high": "Alta",
+      "medium": "Media",
+      "low": "Baja"
+    },
+    "progress": "{{done}} de {{total}} hechas esta semana"
+  },
+  "meetings": {
+    "title": "Llamadas y reuniones",
+    "description": "Tu agenda de los próximos días y lo ocurrido en llamadas pasadas.",
+    "logCall": "Registrar llamada",
+    "upcoming": "Próximas",
+    "past": "Pasadas",
+    "kind": {
+      "call": "Llamada",
+      "meeting": "Reunión",
+      "demo": "Demo"
+    },
+    "minutes": "{{count}} min",
+    "logged": "Llamada registrada",
+    "noOutcome": "Sin resultado aún",
+    "form": {
+      "title": "Registrar una llamada",
+      "description": "Anota una llamada que ya ocurrió.",
+      "with": "Contacto",
+      "withPlaceholder": "¿Con quién hablaste?",
+      "subject": "Asunto",
+      "duration": "Duración (minutos)",
+      "outcome": "Resultado",
+      "submit": "Guardar llamada",
+      "outcomes": {
+        "positive": "Positivo",
+        "followUp": "Requiere seguimiento",
+        "noAnswer": "Sin respuesta"
+      }
+    }
+  },
+  "reports": {
+    "title": "Informe de ganadas/perdidas",
+    "description": "Cómo se cierran las oportunidades, cuánto tardan y de dónde vienen.",
+    "winRate": "Tasa de éxito",
+    "cycle": "Ciclo de venta medio",
+    "cycleValue": "{{count}} días",
+    "dealSize": "Tamaño medio",
+    "trend": {
+      "title": "Tasa de éxito y duración del ciclo",
+      "description": "Últimos 6 meses",
+      "winRate": "Tasa de éxito (%)",
+      "cycle": "Ciclo (días)"
+    },
+    "sources": {
+      "title": "Atribución por origen",
+      "description": "De dónde vino el ingreso ganado",
+      "source": "Origen",
+      "deals": "Oport.",
+      "won": "Ganadas",
+      "conversion": "Conversión",
+      "revenue": "Ingresos"
+    },
+    "loss": {
+      "title": "Por qué perdemos",
+      "description": "Motivos registrados en oportunidades perdidas"
+    },
+    "owners": {
+      "title": "Por comercial",
+      "description": "Tasa de éxito por ejecutivo de cuentas"
+    }
+  },
+  "settings": {
+    "title": "Ajustes del embudo",
+    "description": "Etapas, probabilidades y reglas que mantienen el embudo limpio.",
+    "stages": {
+      "title": "Etapas",
+      "description": "Probabilidad usada para la previsión ponderada."
+    },
+    "rules": {
+      "title": "Reglas de higiene",
+      "description": "Automatizaciones que se ejecutan al cambiar oportunidades.",
+      "rotting": "Marcar oportunidades estancadas",
+      "rottingHint": "Resalta oportunidades sin actividad durante 14 días.",
+      "autoAssign": "Reparto rotatorio de leads entrantes",
+      "autoAssignHint": "Reparte los nuevos leads por igual entre el equipo.",
+      "lossReason": "Exigir motivo de pérdida",
+      "lossReasonHint": "Pide un motivo cuando una oportunidad pasa a Perdido."
+    },
+    "save": "Guardar cambios",
+    "saved": "Ajustes del embudo guardados"
+  },
+  "company": {
+    "firmographics": "Datos de la empresa",
+    "headcount": "Empleados",
+    "location": "Sede",
+    "wonRevenue": "Ingresos ganados",
+    "openDeals": "Oportunidades abiertas",
+    "openDealsHint": "Oportunidades aún en juego con esta cuenta",
+    "noOpenDeals": "No hay oportunidades abiertas con esta empresa.",
+    "contactsHint": "Personas con las que trabajamos en esta cuenta",
+    "noContacts": "Todavía no hay contactos en esta empresa.",
+    "activityHint": "Oportunidades, llamadas y reuniones con esta cuenta",
+    "noActivity": "Todavía no hay actividad registrada."
+  },
+  "leads": {
+    "title": "Bandeja de leads",
+    "description": "Leads nuevos entrantes y salientes. Califica los mejores y conviértelos en oportunidades.",
+    "filterStatus": "Filtrar por estado",
+    "all": "Todos",
+    "search": "Buscar leads o empresas…",
+    "allSources": "Todos los orígenes",
+    "empty": "No hay leads aquí",
+    "emptyHint": "Prueba otro estado o borra los filtros.",
+    "selected_one": "{{count}} lead seleccionado",
+    "selected_other": "{{count}} leads seleccionados",
+    "clearSelection": "Borrar selección",
+    "selectAll": "Seleccionar todos los leads",
+    "select": "Seleccionar a {{name}}",
+    "actionsFor": "Acciones para {{name}}",
+    "viewDeal": "Convertido · ver oportunidad",
+    "columns": {
+      "lead": "Lead",
+      "company": "Empresa",
+      "source": "Origen",
+      "score": "Puntuación",
+      "value": "Valor est.",
+      "received": "Recibido",
+      "status": "Estado",
+      "actions": "Acciones"
+    },
+    "status": {
+      "new": "Nuevo",
+      "qualified": "Calificado",
+      "disqualified": "Descartado",
+      "converted": "Convertido"
+    },
+    "actions": {
+      "qualify": "Calificar",
+      "disqualify": "Descartar",
+      "convert": "Convertir en oportunidad"
+    },
+    "score": {
+      "hot": "Caliente",
+      "warm": "Tibio",
+      "cold": "Frío"
+    },
+    "done": {
+      "qualify_one": "{{count}} lead calificado",
+      "qualify_other": "{{count}} leads calificados",
+      "disqualify_one": "{{count}} lead descartado",
+      "disqualify_other": "{{count}} leads descartados",
+      "convert_one": "{{count}} lead convertido en oportunidad",
+      "convert_other": "{{count}} leads convertidos en oportunidades"
+    }
+  },
+  "sequences": {
+    "title": "Secuencias de email",
+    "description": "Contacto automatizado en varios pasos y el rendimiento de cada secuencia.",
+    "new": "Nueva secuencia",
+    "edit": "Editar secuencia",
+    "editShort": "Editar",
+    "editNamed": "Editar {{name}}",
+    "saved": "Secuencia guardada",
+    "empty": "Todavía no hay secuencias",
+    "emptyHint": "Crea una secuencia para automatizar tus seguimientos.",
+    "stats": {
+      "active": "Secuencias activas",
+      "enrolled": "Contactos inscritos",
+      "openRate": "Tasa media de apertura",
+      "replyRate": "Tasa media de respuesta"
+    },
+    "enrolled": "Inscritos",
+    "inProgress": "En curso",
+    "openRate": "Apertura",
+    "replyRate": "Respuesta",
+    "status": {
+      "active": "Activa",
+      "paused": "En pausa",
+      "draft": "Borrador"
+    },
+    "meta_one": "{{owner}} · {{count}} paso · actualizada el {{date}}",
+    "meta_other": "{{owner}} · {{count}} pasos · actualizada el {{date}}",
+    "day": "Día {{n}}",
+    "stepN": "Paso {{n}}",
+    "kind": {
+      "email": "Email",
+      "call": "Llamada",
+      "task": "Tarea"
+    },
+    "form": {
+      "description": "Los pasos se ejecutan en orden; la espera cuenta desde el paso anterior.",
+      "name": "Nombre",
+      "namePlaceholder": "p. ej. Seguimiento de demo entrante",
+      "status": "Estado",
+      "steps": "Pasos",
+      "kind": "Tipo",
+      "delay": "Espera (días)",
+      "subject": "Asunto",
+      "addStep": "Añadir paso",
+      "removeStep": "Eliminar paso {{n}}",
+      "save": "Guardar secuencia"
+    }
+  },
+  "forecast": {
+    "title": "Previsión y cuotas",
+    "description": "Dónde cerrará el trimestre, por categoría de previsión y por comercial.",
+    "quota": "Cuota del equipo",
+    "ofQuota": "{{pct}} % de la cuota",
+    "categories": {
+      "closed": "Ganado",
+      "commit": "Comprometido",
+      "bestCase": "Mejor caso",
+      "pipeline": "Embudo"
+    },
+    "byMonth": "Previsión por mes",
+    "byMonthHint": "Valor de las oportunidades por mes de cierre previsto y categoría",
+    "outlook": "Perspectiva del trimestre",
+    "outlookHint": "Cobertura acumulada de la cuota del equipo",
+    "outlookNote": "Comprometido = etapa de negociación, mejor caso = etapa de propuesta, embudo = etapas anteriores.",
+    "leaderboard": "Clasificación del equipo",
+    "leaderboardHint": "Cumplimiento de cuota y previsión abierta por comercial",
+    "rep": "Comercial",
+    "attainment": "Cumplimiento de cuota",
+    "quotaOf": "de {{quota}} de cuota",
+    "top": "Mejor comercial"
+  },
+  "quotes": {
+    "title": "Cotizaciones",
+    "description": "Propuestas enviadas a clientes, cuánto valen y cuándo vencen.",
+    "new": "Nueva cotización",
+    "created": "Borrador de cotización creado",
+    "filterStatus": "Filtrar por estado",
+    "search": "Buscar cotizaciones, oportunidades o empresas…",
+    "empty": "No hay cotizaciones aquí",
+    "emptyHint": "Prueba otro estado o crea una cotización desde una oportunidad abierta.",
+    "expired": "Vencida",
+    "totals": "{{count}} cotizaciones · {{value}}",
+    "status": {
+      "draft": "Borrador",
+      "sent": "Enviada",
+      "accepted": "Aceptada",
+      "declined": "Rechazada"
+    },
+    "columns": {
+      "quote": "Cotización",
+      "company": "Empresa",
+      "status": "Estado",
+      "total": "Total",
+      "validUntil": "Válida hasta",
+      "owner": "Responsable",
+      "createdAt": "Creada"
+    },
+    "stats": {
+      "open": "Esperando respuesta",
+      "accepted": "Aceptadas",
+      "rate": "Tasa de aceptación",
+      "expiring": "Requieren atención",
+      "awaiting_one": "{{count}} cotización enviada",
+      "awaiting_other": "{{count}} cotizaciones enviadas",
+      "quotes_one": "{{count}} cotización",
+      "quotes_other": "{{count}} cotizaciones",
+      "decided_one": "de {{count}} cotización resuelta",
+      "decided_other": "de {{count}} cotizaciones resueltas",
+      "expiringHint": "Enviadas que vencen en 7 días o ya vencieron"
+    },
+    "form": {
+      "title": "Nueva cotización",
+      "description": "Crea un borrador para una oportunidad abierta. Las líneas se añaden en el editor.",
+      "deal": "Oportunidad",
+      "dealPlaceholder": "Elige una oportunidad abierta",
+      "validity": "Validez",
+      "days_one": "{{count}} día",
+      "days_other": "{{count}} días",
+      "submit": "Crear borrador"
+    }
+  },
+  "quote": {
+    "saved": "Cotización guardada",
+    "statusChanged": "Cotización actualizada",
+    "summary": "Resumen",
+    "subtotal": "Subtotal",
+    "discount": "Descuento",
+    "tax": "Impuestos",
+    "total": "Total",
+    "save": "Guardar borrador",
+    "saveFirst": "Guarda los cambios antes de enviarla.",
+    "details": "Detalles",
+    "deal": "Oportunidad",
+    "contact": "Contacto",
+    "lines": {
+      "title": "Líneas",
+      "hint": "Los precios parten del precio de lista; ajusta cantidad y precio unitario por línea.",
+      "locked": "Esta cotización ya se envió, así que sus líneas están bloqueadas.",
+      "product": "Producto",
+      "quantity": "Cant.",
+      "unitPrice": "Precio unitario",
+      "amount": "Importe",
+      "quantityOf": "Cantidad de {{name}}",
+      "unitPriceOf": "Precio unitario de {{name}}",
+      "remove": "Quitar {{name}}",
+      "add": "Añadir un producto…"
+    },
+    "actions": {
+      "sent": "Marcar como enviada",
+      "accepted": "Marcar como aceptada",
+      "declined": "Marcar como rechazada"
+    }
+  },
+  "products": {
+    "title": "Productos y lista de precios",
+    "description": "Todo lo que puedes cotizar, con precio de lista, costo y margen.",
+    "new": "Nuevo producto",
+    "edit": "Editar producto",
+    "editNamed": "Editar {{name}}",
+    "toggle": "Activo: {{name}}",
+    "saved": "Producto guardado",
+    "search": "Buscar por nombre o SKU…",
+    "allCategories": "Todas las categorías",
+    "empty": "Ningún producto coincide",
+    "emptyHint": "Borra la búsqueda o elige otra categoría.",
+    "marginChart": "Margen por categoría",
+    "marginChartHint": "Margen bruto medio a precio de lista",
+    "category": {
+      "platform": "Plataforma",
+      "addon": "Complemento",
+      "services": "Servicios",
+      "support": "Soporte"
+    },
+    "visibility": {
+      "all": "Todos",
+      "active": "Activos",
+      "inactive": "Inactivos"
+    },
+    "columns": {
+      "product": "Producto",
+      "sku": "SKU",
+      "category": "Categoría",
+      "listPrice": "Precio de lista",
+      "cost": "Costo",
+      "margin": "Margen",
+      "active": "Activo"
+    },
+    "stats": {
+      "active": "Productos activos",
+      "avgMargin": "Margen medio",
+      "lowMargin": "Productos con margen bajo",
+      "bestMargin": "Mejor margen",
+      "ofTotal_one": "de {{count}} en el catálogo",
+      "ofTotal_other": "de {{count}} en el catálogo",
+      "below": "Por debajo del {{pct}}% de margen"
+    },
+    "form": {
+      "description": "Los cambios se aplican a nuevas cotizaciones; las enviadas conservan sus precios.",
+      "name": "Nombre",
+      "margin": "Margen bruto a precio de lista: {{pct}}%",
+      "active": "Disponible para cotizar",
+      "activeHint": "Los productos inactivos siguen en las cotizaciones existentes, pero no se pueden añadir.",
+      "save": "Guardar producto",
+      "costAboveList": "El costo no puede superar el precio de lista"
+    }
+  },
+  "activity": {
+    "title": "Actividad",
+    "description": "Llamadas, correos, reuniones, notas y cambios de etapa de todo el equipo.",
+    "log": "Registrar actividad",
+    "logged": "Actividad registrada",
+    "lastDays_one": "Último día",
+    "lastDays_other": "Últimos {{count}} días",
+    "allTime": "Todo el periodo",
+    "apply": "Aplicar",
+    "byDay": "Actividad por día",
+    "byDayHint": "Cada interacción del periodo seleccionado, por tipo",
+    "byRep": "Por comercial",
+    "timeline": "Cronología",
+    "filterType": "Filtrar por tipo",
+    "empty": "No hay actividad en esta vista",
+    "emptyHint": "Amplía el rango de fechas o elige otro responsable.",
+    "showMore": "Ver más (quedan {{count}})",
+    "stageMoved": "{{deal}} cambió de etapa",
+    "types": {
+      "call": "Llamadas",
+      "email": "Correos",
+      "meeting": "Reuniones",
+      "note": "Notas",
+      "stage": "Cambios de etapa"
+    },
+    "stats": {
+      "total": "Actividades",
+      "conversations": "Llamadas y reuniones",
+      "deals": "Oportunidades trabajadas",
+      "topRep": "Más activo",
+      "activities_one": "{{count}} actividad",
+      "activities_other": "{{count}} actividades"
+    },
+    "form": {
+      "title": "Registrar actividad",
+      "description": "Registra algo que ya ocurrió en una oportunidad.",
+      "type": "Tipo",
+      "deal": "Oportunidad",
+      "dealPlaceholder": "¿Sobre qué oportunidad fue?",
+      "summary": "Resumen",
+      "detail": "Detalles",
+      "submit": "Guardar actividad"
+    }
+  },
+  "shell": {
+    "categories": {
+      "deals": "Negocios",
+      "mentions": "Menciones",
+      "tasks": "Tareas"
+    },
+    "notifications": {
+      "won": {
+        "title": "Negocio ganado: renovación de Northwind",
+        "body": "84.000 $ de ARR cerrados por Sofia Davis. Embudo actualizado."
+      },
+      "mention": {
+        "title": "Liam Johnson te mencionó en Acme Corp",
+        "body": "«@tú ¿puedes unirte a la llamada de precios del jueves?»"
+      },
+      "overdue": {
+        "title": "3 tareas vencidas",
+        "body": "Los seguimientos de Globex, Initech y Umbrella están atrasados."
+      },
+      "quote": {
+        "title": "El presupuesto Q-2291 fue visto",
+        "body": "Globex abrió tu presupuesto 4 veces en la última hora."
+      },
+      "lead": {
+        "title": "Nuevo lead asignado",
+        "body": "Emma Brown de Stark Industries, desde la página de precios."
+      },
+      "meeting": {
+        "title": "Reunión movida al viernes a las 10:00",
+        "body": "La revisión trimestral con Initech se reprogramó."
+      }
+    },
+    "create": {
+      "deal": {
+        "label": "Nuevo negocio",
+        "description": "Añade una oportunidad al embudo"
+      },
+      "contact": {
+        "label": "Añadir contacto",
+        "description": "Una persona a la que vendes"
+      },
+      "company": {
+        "label": "Añadir empresa",
+        "description": "Una cuenta con sus contactos"
+      },
+      "quote": {
+        "label": "Crear presupuesto",
+        "description": "Cotiza productos para un negocio"
+      }
+    },
+    "account": {
+      "pipeline": "Mi embudo",
+      "tasks": "Mis tareas",
+      "forecast": "Mi previsión"
+    }
+  }
+}

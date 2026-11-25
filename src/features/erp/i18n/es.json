@@ -1,0 +1,1002 @@
+{
+  "workspace": {
+    "name": "ERP",
+    "description": "Finanzas, compras, facturación y proyectos",
+    "category": "Operaciones"
+  },
+  "common": {
+    "errorTitle": "No se pudo cargar esta vista",
+    "errorDescription": "Revisa tu conexión e inténtalo de nuevo.",
+    "retry": "Reintentar"
+  },
+  "nav": {
+    "sections": {
+      "main": "Principal",
+      "finance": "Finanzas",
+      "trade": "Ventas y compras",
+      "planning": "Planificación"
+    },
+    "overview": "Resumen",
+    "accounting": "Contabilidad",
+    "accounts": "Plan de cuentas",
+    "journal": "Asientos contables",
+    "journalNew": "Nuevo asiento",
+    "reports": "Estados financieros",
+    "invoices": "Facturas",
+    "purchasing": "Compras",
+    "payables": "Facturas de proveedor y pedidos",
+    "vendors": "Proveedores",
+    "budgets": "Presupuestos",
+    "projects": "Proyectos",
+    "payroll": "Nóminas",
+    "taxGuide": "Guía de impuestos",
+    "reconciliation": "Conciliación bancaria",
+    "fixedAssets": "Activos fijos",
+    "purchaseOrders": "Órdenes de compra",
+    "expenseClaims": "Gastos de empleados",
+    "sales": "Ventas",
+    "receivables": "Cuentas por cobrar",
+    "overdueCustomers": "Clientes morosos",
+    "salesOrders": "Pedidos de venta",
+    "quotes": "Presupuestos abiertos",
+    "cashForecast": "Previsión de tesorería"
+  },
+  "accounts": {
+    "title": "Plan de cuentas",
+    "description": "Movimientos y saldos del ejercicio 2026, agrupados por tipo de cuenta.",
+    "totals": {
+      "debits": "Total debe",
+      "credits": "Total haber",
+      "difference": "Diferencia",
+      "balanced": "El balance de comprobación cuadra",
+      "unbalanced": "Descuadrado",
+      "accounts": "Cuentas de movimiento",
+      "trialBalance": "Balance de comprobación"
+    },
+    "table": {
+      "title": "Cuentas",
+      "description": "Despliega un grupo para ver sus cuentas."
+    },
+    "collapseAll": "Contraer todo",
+    "expandAll": "Desplegar todo",
+    "search": "Buscar por nombre o código",
+    "types": {
+      "all": "Todas",
+      "asset": "Activo",
+      "liability": "Pasivo",
+      "equity": "Patrimonio",
+      "revenue": "Ingresos",
+      "expense": "Gastos"
+    },
+    "columns": {
+      "code": "Código",
+      "account": "Cuenta",
+      "type": "Tipo",
+      "debit": "Debe",
+      "credit": "Haber",
+      "balance": "Saldo"
+    },
+    "empty": "Ninguna cuenta coincide con la búsqueda."
+  },
+  "journal": {
+    "title": "Asientos contables",
+    "description": "Todos los asientos manuales del libro mayor.",
+    "newEntry": "Nuevo asiento",
+    "list": {
+      "title": "Asientos",
+      "description": "Haz clic en un asiento para ver sus líneas.",
+      "empty": "No hay asientos en esta vista."
+    },
+    "filters": {
+      "all": "Todos",
+      "posted": "Contabilizado",
+      "draft": "Borrador"
+    },
+    "columns": {
+      "entry": "Asiento",
+      "date": "Fecha",
+      "memo": "Concepto",
+      "author": "Autor",
+      "status": "Estado",
+      "amount": "Importe",
+      "account": "Cuenta",
+      "debit": "Debe",
+      "credit": "Haber"
+    },
+    "form": {
+      "title": "Nuevo asiento",
+      "description": "El debe y el haber deben cuadrar para poder contabilizar.",
+      "details": "Datos del asiento",
+      "date": "Fecha",
+      "reference": "Referencia",
+      "memo": "Concepto",
+      "memoPlaceholder": "¿A qué corresponde este asiento?",
+      "lines": "Líneas",
+      "linesDescription": "Cada línea es un cargo o un abono.",
+      "addLine": "Añadir línea",
+      "account": "Cuenta",
+      "accountPlaceholder": "Elige una cuenta",
+      "accountSearch": "Buscar cuentas",
+      "debit": "Debe",
+      "credit": "Haber",
+      "removeLine": "Quitar línea",
+      "totals": "Totales",
+      "summary": "Resumen",
+      "difference": "Diferencia",
+      "checks": {
+        "twoLines": "Al menos dos líneas con cuenta",
+        "oneSide": "Cada línea tiene solo debe o solo haber",
+        "balance": "El debe es igual al haber"
+      },
+      "post": "Contabilizar",
+      "saveDraft": "Guardar borrador",
+      "saved": "Asiento guardado",
+      "saveFailed": "No se pudo guardar el asiento",
+      "errors": {
+        "oneSide": "Indica debe o haber, no ambos",
+        "twoLines": "Añade al menos dos líneas",
+        "balance": "El debe y el haber deben cuadrar"
+      }
+    }
+  },
+  "reports": {
+    "title": "Estados financieros",
+    "description": "Cuenta de resultados trimestral y balance, directamente del mayor.",
+    "print": "Imprimir",
+    "export": "Exportar a Excel",
+    "exported": "Estado exportado",
+    "pnl": "Cuenta de resultados",
+    "balance": "Balance",
+    "line": "Partida",
+    "kpis": {
+      "revenue": "Ingresos",
+      "ytd": "En lo que va de año",
+      "grossMargin": "Margen bruto",
+      "netMargin": "Margen neto",
+      "netByQuarter": "Beneficio neto por trimestre",
+      "netIncome": "Beneficio neto"
+    },
+    "pnlTitle": "Cuenta de resultados",
+    "pnlDescription": "Ejercicio 2026 por trimestre. Haz clic en una sección para contraerla.",
+    "balanceTitle": "Balance de situación",
+    "balanceDescription": "Situación al cierre de cada trimestre."
+  },
+  "invoices": {
+    "title": "Facturas",
+    "description": "Cuentas por cobrar, antigüedad y cobros.",
+    "new": "Nueva factura",
+    "aging": {
+      "title": "Antigüedad de saldos",
+      "description": "Saldos pendientes por días de retraso. Elige un tramo para filtrar.",
+      "outstanding": "Pendiente",
+      "clear": "Quitar filtro",
+      "buckets": {
+        "current": "Al día",
+        "1-30": "1–30 días",
+        "31-60": "31–60 días",
+        "61-90": "61–90 días",
+        "90+": "Más de 90 días"
+      },
+      "count_one": "{{count}} factura",
+      "count_other": "{{count}} facturas"
+    },
+    "kpis": {
+      "collected": "Cobrado este mes",
+      "overdue": "Saldo vencido",
+      "dso": "Plazo medio de cobro",
+      "days_one": "{{count}} día",
+      "days_other": "{{count}} días"
+    },
+    "list": {
+      "title": "Todas las facturas",
+      "empty": "No hay facturas en esta vista."
+    },
+    "status": {
+      "all": "Todas",
+      "draft": "Borrador",
+      "open": "Abierta",
+      "overdue": "Vencida",
+      "paid": "Pagada"
+    },
+    "columns": {
+      "invoice": "Factura",
+      "customer": "Cliente",
+      "issued": "Emitida",
+      "due": "Vence",
+      "status": "Estado",
+      "amount": "Importe",
+      "balance": "Pendiente"
+    },
+    "daysLate_one": "{{count}} día de retraso",
+    "daysLate_other": "{{count}} días de retraso",
+    "actionFailed": "No se pudo actualizar la factura"
+  },
+  "invoice": {
+    "title": "Factura {{id}}",
+    "back": "Todas las facturas",
+    "print": "Imprimir",
+    "invoice": "Factura",
+    "status": {
+      "draft": "Borrador",
+      "open": "Abierta",
+      "overdue": "Vencida",
+      "paid": "Pagada"
+    },
+    "billTo": "Facturar a",
+    "issued": "Emitida",
+    "due": "Vence",
+    "daysLate_one": "{{count}} día de retraso",
+    "daysLate_other": "{{count}} días de retraso",
+    "item": "Concepto",
+    "qty": "Cant.",
+    "price": "Precio unitario",
+    "lineTotal": "Importe",
+    "subtotal": "Subtotal",
+    "tax": "Impuesto ({{rate}}%)",
+    "total": "Total",
+    "paid": "Pagado",
+    "footer": "Paga por transferencia a Chase ••4821 (ABA 021000021) o con tarjeta desde el enlace del correo. Dudas: billing@orbitly.co",
+    "balanceDue": "Saldo pendiente",
+    "paidOf": "{{paid}} pagado de {{total}}",
+    "recordPayment": "Registrar cobro",
+    "sendReminder": "Enviar recordatorio",
+    "activity": "Actividad",
+    "paymentHint": "Puedes aplicar hasta {{balance}} a esta factura.",
+    "amount": "Importe",
+    "cancel": "Cancelar",
+    "confirmPayment": "Registrar cobro",
+    "reminded": "Recordatorio enviado a {{email}}",
+    "paymentRecorded": "Cobro registrado"
+  },
+  "payables": {
+    "title": "Facturas de proveedor y pedidos",
+    "description": "{{amount}} pendiente de aprobación.",
+    "actionFailed": "No se pudo actualizar el documento",
+    "done": {
+      "submit": "{{id}} enviado a aprobación",
+      "approve": "{{id}} aprobado",
+      "reject": "{{id}} rechazado",
+      "pay": "{{id}} marcado como pagado"
+    },
+    "steps": {
+      "draft": "Borrador",
+      "submitted": "Enviado",
+      "waiting": "Aún no enviado",
+      "approved": "Aprobado",
+      "approver": "Pendiente de {{name}}",
+      "paid": "Pagado",
+      "due": "Vence el {{date}}"
+    },
+    "kind": {
+      "po": "Pedido de compra",
+      "bill": "Factura de proveedor"
+    },
+    "status": {
+      "all": "Todos",
+      "draft": "Borrador",
+      "pending": "Pendiente",
+      "approved": "Aprobado",
+      "paid": "Pagado",
+      "rejected": "Rechazado"
+    },
+    "rejectedTitle": "Rechazado",
+    "fields": {
+      "requester": "Solicitado por",
+      "approver": "Aprobador",
+      "due": "Vencimiento"
+    },
+    "actions": {
+      "submit": "Enviar a aprobación",
+      "approve": "Aprobar",
+      "reject": "Rechazar",
+      "pay": "Marcar como pagado"
+    },
+    "closed": "Este documento está cerrado.",
+    "rejectTitle": "Rechazar {{id}}",
+    "rejectDescription": "El solicitante verá tu nota y podrá reenviarlo.",
+    "rejectNote": "Motivo",
+    "cancel": "Cancelar",
+    "queue_one": "{{count}} documento",
+    "queue_other": "{{count}} documentos",
+    "empty": "No hay nada aquí.",
+    "select": "Selecciona un documento para revisarlo."
+  },
+  "budgets": {
+    "title": "Presupuestos",
+    "description": "Gasto frente a lo previsto en cada departamento.",
+    "quarter": "Trimestre",
+    "quarterOption": "T{{quarter}} 2026",
+    "burn": {
+      "title": "Consumo del presupuesto",
+      "description": "Parte del presupuesto del T{{quarter}} ya gastada.",
+      "used": "del presupuesto usado",
+      "spent": "Gastado",
+      "budget": "Presupuesto",
+      "ytdSpent": "Gastado en el año",
+      "ytdBudget": "Presupuesto del año"
+    },
+    "chart": {
+      "title": "Presupuesto frente a real",
+      "description": "Por departamento en el trimestre elegido.",
+      "budget": "Presupuesto",
+      "actual": "Real"
+    },
+    "variance": {
+      "title": "Desviación",
+      "description": "Positivo significa por debajo del presupuesto; los excesos se marcan en rojo.",
+      "department": "Departamento",
+      "progress": "Usado",
+      "variance": "Desviación"
+    }
+  },
+  "vendors": {
+    "title": "Proveedores",
+    "description": "Proveedores, condiciones de pago y saldos abiertos.",
+    "other": "Otros",
+    "mix": {
+      "title": "Gasto por categoría",
+      "description": "Compras en lo que va de año.",
+      "ytd": "Gastado en el año"
+    },
+    "top": {
+      "title": "Principales proveedores",
+      "description": "Mayor gasto en lo que va de año."
+    },
+    "list": {
+      "title_one": "{{count}} proveedor",
+      "title_other": "{{count}} proveedores"
+    },
+    "search": "Buscar proveedores",
+    "all": "Todos",
+    "columns": {
+      "vendor": "Proveedor",
+      "contact": "Contacto",
+      "terms": "Condiciones",
+      "rating": "Valoración",
+      "onTime": "A tiempo",
+      "balance": "Saldo abierto",
+      "status": "Estado"
+    },
+    "status": {
+      "active": "Activo",
+      "on-hold": "En pausa"
+    },
+    "category": "Categoría"
+  },
+  "overview": {
+    "title": "Resumen de ERP",
+    "description": "Finanzas, compras, facturación y proyectos"
+  },
+  "finance": {
+    "title": "Resumen financiero",
+    "greeting": {
+      "morning": "Buenos días, {{name}}",
+      "afternoon": "Buenas tardes, {{name}}",
+      "evening": "Buenas noches, {{name}}"
+    },
+    "description": "Caja, gastos y constitución de la empresa de un vistazo.",
+    "sections": {
+      "label": "Sección del espacio de trabajo",
+      "dashboard": "Panel",
+      "finance": "Finanzas",
+      "accounts": "Cuentas",
+      "payroll": "RR. HH. y nómina"
+    },
+    "periods": {
+      "label": "Periodo",
+      "month": "Mensual",
+      "quarter": "Trimestral",
+      "year": "Anual"
+    },
+    "kpis": {
+      "balance": "Saldo bancario",
+      "uncategorized": "Transacciones sin categoría",
+      "uncategorizedHint": "Requieren categoría antes del cierre",
+      "employees": "Empleados trabajando hoy",
+      "employeesHint": "Registrados esta mañana",
+      "spend": "Gasto con tarjeta esta semana",
+      "vsLast": "vs. periodo anterior"
+    },
+    "sales": {
+      "title": "Ventas promedio",
+      "description": "Resumen de ventas de todos los canales",
+      "cashIn": "Entradas",
+      "cashOut": "Salidas"
+    },
+    "formation": {
+      "title": "Estado de constitución",
+      "inProgress": "En curso",
+      "estimated": "Procesamiento estimado",
+      "businessDays": "{{count}} días hábiles",
+      "step": "Paso {{step}} de {{steps}}",
+      "view": "Ver estado"
+    },
+    "success": {
+      "title": "Tasa de éxito",
+      "description": "Pagos liquidados en el primer intento",
+      "total": "Transacciones",
+      "processing": "En proceso",
+      "vsLast": "{{delta}} % mejor que el periodo anterior"
+    },
+    "table": {
+      "title": "Actividad reciente",
+      "description": "Mensajes y transacciones que requieren atención",
+      "name": "De",
+      "subject": "Asunto",
+      "invited": "Invitados",
+      "invitedCount": "{{count}} invitados",
+      "status": "Estado",
+      "amount": "Importe",
+      "date": "Fecha",
+      "viewAll": "Ver todo"
+    },
+    "status": {
+      "completed": "Completado",
+      "pending": "Pendiente",
+      "urgent": "Urgente",
+      "failed": "Fallido"
+    },
+    "error": {
+      "title": "No se pudo cargar el resumen financiero",
+      "description": "Revisa tu conexión e inténtalo de nuevo.",
+      "retry": "Reintentar"
+    },
+    "actions": {
+      "export": "Exportar",
+      "open": "Ver detalles"
+    }
+  },
+  "projects": {
+    "title": "Proyectos",
+    "description": "Entregas, carga de trabajo y operaciones que requieren atención.",
+    "newProject": "Nuevo proyecto",
+    "share": "Compartir",
+    "sales": {
+      "title": "Ventas totales",
+      "compared": "Frente a {{value}} el año pasado"
+    },
+    "projects": {
+      "title": "Mis proyectos",
+      "description": "Por año, con el objetivo de entregas.",
+      "done": "Completados",
+      "created": "Nuevos",
+      "late": "Atrasados",
+      "target": "Objetivo {{value}}"
+    },
+    "tasks": {
+      "title": "Mis tareas",
+      "description": "Avance por estado en este sprint."
+    },
+    "capacity": {
+      "title": "Capacidad del equipo",
+      "description": "Horas registradas frente a horas disponibles este mes.",
+      "used": "{{used}} de {{total}} h",
+      "label": "reservado"
+    },
+    "analysis": {
+      "title": "Análisis de proyectos",
+      "description": "Horas registradas vs. planificadas esta semana.",
+      "hours": "Registradas",
+      "planned": "Planificadas"
+    },
+    "calendar": {
+      "title": "Fechas límite",
+      "description": "Los días resaltados tienen un hito.",
+      "upcoming": "Próximo: {{name}}"
+    },
+    "clients": {
+      "title": "Clientes nuevos",
+      "since": "Desde el {{date}}"
+    },
+    "activity": {
+      "title": "Actividad reciente"
+    },
+    "operations": {
+      "title": "Últimas operaciones",
+      "description": "Trabajo abierto en todos los proyectos.",
+      "columns": {
+        "id": "ID",
+        "name": "Nombre",
+        "owner": "Responsable",
+        "status": "Estado",
+        "value": "Valor",
+        "due": "Vence",
+        "actions": "Acciones"
+      },
+      "actions": {
+        "view": "Ver",
+        "edit": "Editar progreso",
+        "delete": "Eliminar"
+      },
+      "details": "Detalles de la operación",
+      "progress": "Progreso",
+      "save": "Guardar",
+      "cancel": "Cancelar",
+      "confirmTitle": "¿Eliminar esta operación?",
+      "confirmDescription": "«{{name}}» se quitará de la lista. Podrás deshacerlo durante unos segundos.",
+      "empty": "No hay operaciones abiertas. ¡Buen trabajo!",
+      "toast": {
+        "deleted": "Operación eliminada",
+        "restored": "Operación restaurada",
+        "updated": "Progreso actualizado",
+        "undo": "Deshacer"
+      }
+    },
+    "error": {
+      "title": "No se pudo cargar este bloque",
+      "retry": "Reintentar"
+    }
+  },
+  "purchaseOrders": {
+    "title": "Órdenes de compra",
+    "description": "Compromisos con proveedores, desde la aprobación hasta la recepción.",
+    "actionFailed": "No se pudo actualizar la orden de compra",
+    "approveOne": "Aprobar {{id}}",
+    "receivedOf": "Unidades recibidas de {{id}}",
+    "done": {
+      "approve": "{{id}} aprobada",
+      "receive": "Mercancía recibida para {{id}}",
+      "close": "{{id}} cerrada"
+    },
+    "actions": {
+      "approve": "Aprobar",
+      "receive": "Recibir pendiente",
+      "close": "Cerrar orden"
+    },
+    "kpis": {
+      "awaiting": "Pendiente de aprobación",
+      "open": "Compromisos abiertos",
+      "received": "Recibidas, sin cerrar",
+      "orders_one": "{{count}} orden",
+      "orders_other": "{{count}} órdenes"
+    },
+    "list": {
+      "title": "Órdenes",
+      "filter": "Filtrar por estado",
+      "empty": "No hay órdenes de compra en esta vista."
+    },
+    "status": {
+      "all": "Todas",
+      "draft": "Borrador",
+      "approved": "Aprobada",
+      "received": "Recibida",
+      "closed": "Cerrada"
+    },
+    "columns": {
+      "po": "OC",
+      "vendor": "Proveedor",
+      "expected": "Prevista",
+      "status": "Estado",
+      "received": "Recibido",
+      "total": "Total"
+    },
+    "detail": {
+      "back": "Todas las órdenes",
+      "title": "Orden de compra {{id}}",
+      "lines": "Líneas",
+      "item": "Artículo",
+      "ordered": "Pedido",
+      "lineReceived": "Unidades recibidas de {{sku}}",
+      "unitPrice": "Precio unitario",
+      "orderTotal": "Total de la orden",
+      "summary": "Resumen",
+      "receiving": "Progreso de recepción",
+      "activity": "Actividad",
+      "fields": {
+        "buyer": "Comprador",
+        "created": "Creada",
+        "expected": "Entrega prevista",
+        "vendor": "Proveedor"
+      }
+    }
+  },
+  "reconciliation": {
+    "title": "Conciliación bancaria",
+    "description": "{{account}} · extracto de noviembre de 2026",
+    "actionFailed": "No se pudo actualizar la conciliación",
+    "progress": "Líneas del extracto conciliadas",
+    "kpis": {
+      "statement": "Saldo del extracto",
+      "books": "Saldo contable",
+      "reconciled": "Saldo conciliado",
+      "difference": "Diferencia sin conciliar"
+    },
+    "bank": {
+      "title": "Extracto bancario",
+      "description": "Movimientos del banco sin conciliar.",
+      "empty": "Todas las líneas del extracto están conciliadas."
+    },
+    "ledger": {
+      "title": "Libro mayor",
+      "description": "Asientos de caja sin conciliar.",
+      "empty": "Todos los asientos están conciliados.",
+      "suggested": "Mismo importe"
+    },
+    "matchBar": {
+      "hint": "Selecciona una línea del banco y un asiento para conciliarlos.",
+      "ready": "Listo para conciliar {{amount}}.",
+      "mismatch": "Los importes difieren en {{amount}}. Solo se pueden conciliar importes iguales.",
+      "match": "Conciliar"
+    },
+    "matched": {
+      "title_one": "{{count}} pareja conciliada",
+      "title_other": "{{count}} parejas conciliadas",
+      "label": "Parejas conciliadas",
+      "date": "Fecha",
+      "bank": "Línea bancaria",
+      "books": "Asiento contable",
+      "amount": "Importe",
+      "unmatch": "Deshacer",
+      "unmatchOne": "Deshacer conciliación de {{id}}",
+      "empty": "Aún no hay nada conciliado."
+    }
+  },
+  "assets": {
+    "title": "Activos fijos",
+    "description": "Registro de activos, valores contables y amortización del ejercicio 2026.",
+    "add": "Añadir activo",
+    "fullyDepreciated": "Totalmente amortizado",
+    "years_one": "{{count}} año",
+    "years_other": "{{count}} años",
+    "kpis": {
+      "cost": "Coste de adquisición",
+      "book": "Valor neto contable",
+      "accumulated": "Amortización acumulada",
+      "expense": "Gasto de amortización {{year}}"
+    },
+    "chart": {
+      "title": "Calendario de amortización",
+      "portfolio": "Todos los activos, cinco años antes y después de 2026",
+      "scope": "Activo a mostrar",
+      "allAssets": "Todos los activos",
+      "depreciation": "Amortización"
+    },
+    "register": {
+      "title": "Registro de activos",
+      "description": "Selecciona un activo para ver su calendario.",
+      "empty": "Aún no hay activos registrados."
+    },
+    "columns": {
+      "asset": "Activo",
+      "acquired": "Adquirido",
+      "method": "Método",
+      "cost": "Coste",
+      "accumulated": "Acumulada",
+      "bookValue": "Valor contable"
+    },
+    "categories": {
+      "buildings": "Edificios",
+      "machinery": "Maquinaria",
+      "vehicles": "Vehículos",
+      "computers": "Equipos informáticos",
+      "furniture": "Mobiliario"
+    },
+    "methods": {
+      "straight-line": "Lineal",
+      "declining-balance": "Saldo decreciente"
+    },
+    "form": {
+      "title": "Añadir activo fijo",
+      "description": "El calendario de amortización se calcula al guardar.",
+      "name": "Nombre",
+      "namePlaceholder": "p. ej. Fresadora CNC",
+      "category": "Categoría",
+      "location": "Ubicación",
+      "acquired": "Fecha de adquisición",
+      "usefulLife": "Vida útil",
+      "years": "años",
+      "cost": "Coste",
+      "salvage": "Valor residual",
+      "method": "Método de amortización",
+      "cancel": "Cancelar",
+      "submit": "Añadir activo",
+      "saved": "Activo añadido al registro",
+      "saveFailed": "No se pudo añadir el activo",
+      "errors": {
+        "cost": "El coste debe ser mayor que cero",
+        "life": "Entre 1 y 50 años",
+        "salvage": "El valor residual debe ser menor que el coste"
+      }
+    }
+  },
+  "expenses": {
+    "title": "Gastos de empleados",
+    "description": "Reembolsos de empleados pendientes de revisión.",
+    "actionFailed": "No se pudo actualizar el gasto",
+    "done": {
+      "approve": "{{id}} aprobado",
+      "reject": "{{id}} rechazado"
+    },
+    "actions": {
+      "approve": "Aprobar",
+      "reject": "Rechazar",
+      "confirmReject": "Rechazar gasto"
+    },
+    "kpis": {
+      "pending": "Pendiente de revisión",
+      "approved": "Aprobado",
+      "missing": "Sin justificante",
+      "claims_one": "{{count}} gasto",
+      "claims_other": "{{count}} gastos",
+      "missingHint": "Gastos pendientes sin justificante"
+    },
+    "breakdown": {
+      "title": "Gasto por categoría",
+      "description": "Gastos pendientes y aprobados.",
+      "total": "Total"
+    },
+    "list": {
+      "title": "Gastos",
+      "filter": "Filtrar por estado",
+      "empty": "No hay gastos en esta vista."
+    },
+    "status": {
+      "all": "Todos",
+      "pending": "Pendiente",
+      "approved": "Aprobado",
+      "rejected": "Rechazado"
+    },
+    "columns": {
+      "employee": "Empleado",
+      "claim": "Gasto",
+      "submitted": "Enviado",
+      "receipts": "Justificantes",
+      "status": "Estado",
+      "amount": "Importe"
+    },
+    "categories": {
+      "travel": "Viajes",
+      "lodging": "Alojamiento",
+      "meals": "Comidas",
+      "software": "Software",
+      "equipment": "Equipamiento",
+      "mileage": "Kilometraje"
+    },
+    "receipts": {
+      "title": "Justificantes",
+      "missing": "No hay justificante adjunto. Pide al empleado que lo suba antes de aprobar.",
+      "file": "Justificante {{n}}",
+      "none": "Ninguno"
+    },
+    "fields": {
+      "employee": "Empleado",
+      "department": "Departamento",
+      "category": "Categoría",
+      "submitted": "Enviado"
+    },
+    "rejectedTitle": "Rechazado",
+    "rejectNote": "Motivo del rechazo",
+    "cancel": "Cancelar"
+  },
+  "receivables": {
+    "title": "Cuentas por cobrar",
+    "description": "Saldos pendientes por cliente y antigüedad, con extractos y recordatorios de pago.",
+    "kpis": {
+      "outstanding": "Pendiente de cobro",
+      "overdue": "Vencido",
+      "critical": "Más de 90 días",
+      "overLimit": "Sobre el límite de crédito",
+      "customers_one": "{{count}} cliente",
+      "customers_other": "{{count}} clientes",
+      "share": "{{pct}} % del total",
+      "overLimitHint": "Clientes por encima de su límite"
+    },
+    "chart": {
+      "title": "Antigüedad por cliente",
+      "description": "Los ocho saldos más altos, divididos por días de vencimiento."
+    },
+    "list": {
+      "title": "Saldos de clientes",
+      "search": "Buscar clientes",
+      "filter": "Filtrar clientes",
+      "empty": "Ningún cliente coincide con esta vista."
+    },
+    "views": {
+      "all": "Todos",
+      "overdue": "Vencidos",
+      "critical": "+90 días"
+    },
+    "columns": {
+      "customer": "Cliente",
+      "balance": "Saldo",
+      "reminded": "Último recordatorio",
+      "invoice": "Factura",
+      "due": "Vencimiento"
+    },
+    "daysLate_one": "{{count}} día de retraso",
+    "daysLate_other": "{{count}} días de retraso",
+    "reminder": {
+      "send": "Enviar recordatorio",
+      "sendTo": "Enviar recordatorio a {{name}}",
+      "sent": "Recordatorio de pago enviado",
+      "failed": "No se pudo enviar el recordatorio",
+      "last": "Último recordatorio: {{date}}",
+      "never": "Aún no se ha enviado ningún recordatorio"
+    },
+    "statement": {
+      "title": "Extracto — {{name}}",
+      "balance": "Saldo pendiente",
+      "overLimit": "Este cliente supera su límite de crédito de {{limit}}.",
+      "credit": "Crédito utilizado",
+      "invoices": "Facturas pendientes",
+      "empty": "No hay facturas pendientes."
+    }
+  },
+  "salesOrders": {
+    "title": "Pedidos de venta",
+    "description": "Presupuestos y pedidos desde la confirmación hasta la factura.",
+    "kpis": {
+      "quote": "Presupuestos abiertos",
+      "confirmed": "Cartera confirmada",
+      "fulfilled": "Listos para facturar",
+      "invoiced": "Facturado",
+      "orders_one": "{{count}} pedido",
+      "orders_other": "{{count}} pedidos"
+    },
+    "list": {
+      "title": "Pedidos",
+      "search": "Buscar pedidos",
+      "filter": "Filtrar por estado",
+      "empty": "Ningún pedido coincide con este filtro."
+    },
+    "status": {
+      "all": "Todos",
+      "quote": "Presupuesto",
+      "confirmed": "Confirmado",
+      "fulfilled": "Entregado",
+      "invoiced": "Facturado"
+    },
+    "columns": {
+      "order": "Pedido",
+      "customer": "Cliente",
+      "delivery": "Entrega",
+      "status": "Estado",
+      "total": "Total"
+    },
+    "actions": {
+      "confirm": "Confirmar",
+      "invoice": "Crear factura",
+      "confirmOne": "Confirmar {{id}}",
+      "invoiceOne": "Crear factura para {{id}}"
+    },
+    "done": {
+      "confirm": "{{id}} confirmado",
+      "invoice": "Factura {{invoice}} creada para {{id}}"
+    },
+    "actionFailed": "No se pudo actualizar el pedido",
+    "fields": {
+      "rep": "Comercial",
+      "created": "Fecha del pedido",
+      "delivery": "Entrega"
+    },
+    "detail": {
+      "title": "Pedido de venta {{id}}",
+      "lines": "Líneas del pedido",
+      "item": "Artículo",
+      "qty": "Cant.",
+      "price": "Precio unitario",
+      "amount": "Importe",
+      "discount": "{{pct}} % de descuento",
+      "subtotal": "Subtotal",
+      "tax": "Impuesto sobre ventas",
+      "total": "Total",
+      "history": "Historial",
+      "openInvoice": "Abrir {{id}}"
+    }
+  },
+  "cashForecast": {
+    "title": "Previsión de tesorería",
+    "description": "Cobros y pagos previstos para las próximas 13 semanas.",
+    "scenario": {
+      "label": "Escenario",
+      "base": "Base",
+      "optimistic": "Optimista",
+      "pessimistic": "Pesimista"
+    },
+    "kpis": {
+      "opening": "Saldo inicial",
+      "openingHint": "A fecha de {{date}}",
+      "closing": "Saldo final (semana 13)",
+      "low": "Saldo mínimo",
+      "net": "Variación neta de {{amount}}",
+      "lowHint": "Semana del {{date}}"
+    },
+    "charts": {
+      "week": "S{{n}}",
+      "flows": "Flujos semanales",
+      "flowsDescription": "Entradas, salidas y movimiento neto por semana.",
+      "inflow": "Entradas",
+      "outflow": "Salidas",
+      "net": "Neto",
+      "balance": "Saldo acumulado",
+      "balanceDescription": "Caja al cierre de cada semana frente a la política de caja mínima.",
+      "closing": "Saldo final",
+      "minimum": "Caja mínima"
+    },
+    "items": {
+      "title": "Partidas previstas",
+      "description": "Cada cobro y pago que compone la previsión.",
+      "filter": "Filtrar por sentido",
+      "all": "Todas",
+      "inflow": "Entradas",
+      "outflow": "Salidas",
+      "empty": "No hay nada previsto en este periodo."
+    },
+    "columns": {
+      "date": "Fecha",
+      "item": "Partida",
+      "confidence": "Certeza",
+      "amount": "Importe"
+    },
+    "categories": {
+      "receipts": "Cobro de cliente",
+      "bookings": "Nuevas ventas",
+      "payroll": "Nóminas",
+      "rent": "Alquiler",
+      "debt": "Servicio de la deuda",
+      "software": "Software",
+      "suppliers": "Proveedores",
+      "tax": "Impuestos"
+    },
+    "confidence": {
+      "committed": "Comprometido",
+      "expected": "Previsto",
+      "estimated": "Estimado"
+    }
+  },
+  "shell": {
+    "categories": {
+      "approvals": "Aprobaciones",
+      "finance": "Finanzas",
+      "purchasing": "Compras"
+    },
+    "notifications": {
+      "po": {
+        "title": "Daniel Kim solicitó una aprobación",
+        "body": "Orden de compra PO-7713 · 18.240 $ para Contoso Supplies."
+      },
+      "expense": {
+        "title": "4 gastos pendientes de revisión",
+        "body": "Total 2.318,50 $, el más antiguo enviado hace 3 días."
+      },
+      "overdue": {
+        "title": "La factura INV-3307 lleva 30 días vencida",
+        "body": "Fabrikam debe 27.600 $. ¿Enviar un recordatorio?"
+      },
+      "recon": {
+        "title": "Conciliación bancaria completada",
+        "body": "Octubre cuadrado: 412 movimientos, 0 diferencias."
+      },
+      "budget": {
+        "title": "Marketing está al 92 % del presupuesto",
+        "body": "Quedan 8.000 $ para el resto del trimestre."
+      },
+      "payment": {
+        "title": "Remesa de pagos programada",
+        "body": "23 facturas de proveedores (64.150 $) se pagarán el viernes."
+      }
+    },
+    "create": {
+      "invoice": {
+        "label": "Nueva factura",
+        "description": "Factura a un cliente"
+      },
+      "journal": {
+        "label": "Asiento contable",
+        "description": "Registra un asiento manual"
+      },
+      "po": {
+        "label": "Orden de compra",
+        "description": "Pide a un proveedor"
+      },
+      "expense": {
+        "label": "Nota de gastos",
+        "description": "Envía un recibo"
+      }
+    },
+    "account": {
+      "approvals": "Mis aprobaciones",
+      "expenses": "Mis gastos"
+    }
+  }
+}

@@ -1,0 +1,7 @@
+import { defineRoute } from '@/core/config/routes';
+
+/** Routes of the {{titleCase name}} workspace. Every path starts with the workspace prefix. */
+export const {{camelCase name}}Routes = {
+  overview: defineRoute('/{{kebabCase name}}'),
+  records: defineRoute('/{{kebabCase name}}/records'),
+} as const;

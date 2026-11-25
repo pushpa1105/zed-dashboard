@@ -1,0 +1,63 @@
+{
+  "nav": "Chat",
+  "title": "Messages",
+  "description": "Team conversations",
+  "list": {
+    "label": "Conversations",
+    "new": "New message",
+    "search": "Search conversations",
+    "filter": "Filter conversations",
+    "all": "All",
+    "unread": "Unread",
+    "groups": "Groups",
+    "empty": "No conversations match.",
+    "pinned": "Pinned",
+    "muted": "Muted",
+    "you": "You",
+    "unreadCount": "{{count}} unread"
+  },
+  "thread": {
+    "pick": "Pick a conversation to start chatting.",
+    "back": "Back to conversations",
+    "typing": "{{name}} is typing…",
+    "online": "Online",
+    "offline": "Offline",
+    "members": "{{count}} members, {{online}} online",
+    "today": "Today",
+    "yesterday": "Yesterday",
+    "reply": "Reply",
+    "react": "Add reaction",
+    "read": "Read",
+    "sent": "Sent",
+    "call": "Start call",
+    "video": "Start video call",
+    "callUnavailable": "Calls are not available in the demo.",
+    "emptyTitle": "No messages yet",
+    "emptyHint": "Say hello to get the conversation going."
+  },
+  "composer": {
+    "label": "Message",
+    "placeholder": "Message {{name}}",
+    "send": "Send",
+    "attach": "Attach files",
+    "hint": "Enter to send, Shift + Enter for a new line",
+    "replyingTo": "Replying to {{name}}",
+    "cancelReply": "Cancel reply",
+    "removeFile": "Remove {{name}}"
+  },
+  "reactions": {
+    "plusOne": "+1",
+    "thanks": "Thanks",
+    "nice": "Nice",
+    "agreed": "Agreed"
+  },
+  "details": {
+    "title": "Details",
+    "close": "Close details",
+    "pin": "Pin to top",
+    "mute": "Mute notifications",
+    "members": "Members ({{count}})",
+    "files": "Shared files ({{count}})",
+    "noFiles": "No files shared yet."
+  }
+}

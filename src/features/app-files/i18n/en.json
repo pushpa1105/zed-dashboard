@@ -1,0 +1,112 @@
+{
+  "nav": "Files",
+  "title": "Files",
+  "description": "Shared drive",
+  "sidebar": {
+    "all": "All files",
+    "recent": "Recent",
+    "starred": "Starred",
+    "folders": "Folders",
+    "storage": "Storage",
+    "usedOf": "{{used}} of {{quota}}",
+    "types": {
+      "documents": "Documents",
+      "images": "Images",
+      "media": "Video & audio",
+      "other": "Other"
+    }
+  },
+  "toolbar": {
+    "newFolder": "New folder",
+    "upload": "Upload",
+    "search": "Search all files",
+    "sort": "Sort by",
+    "view": "View",
+    "grid": "Grid",
+    "list": "List",
+    "results": "Results for \"{{q}}\""
+  },
+  "sort": {
+    "name": "Name",
+    "updated": "Last modified",
+    "size": "Size",
+    "type": "Type"
+  },
+  "columns": {
+    "name": "Name",
+    "owner": "Owner",
+    "modified": "Modified",
+    "size": "Size",
+    "actions": "Actions"
+  },
+  "item": {
+    "folderMeta": "{{count}} items · {{size}}",
+    "items": "{{count}} items",
+    "select": "Select {{name}}",
+    "selectAll": "Select all",
+    "starred": "Starred"
+  },
+  "actions": {
+    "open": "Open",
+    "preview": "Preview",
+    "rename": "Rename",
+    "star": "Add to starred",
+    "unstar": "Remove from starred",
+    "delete": "Delete",
+    "download": "Download",
+    "more": "More actions for {{name}}"
+  },
+  "bulk": {
+    "selected": "{{count}} selected",
+    "star": "Star",
+    "clear": "Clear selection"
+  },
+  "preview": {
+    "type": "Type",
+    "opened": "Last opened",
+    "downloadDemo": "Downloads are disabled in the demo."
+  },
+  "types": {
+    "folder": "Folder",
+    "image": "Image",
+    "pdf": "PDF document",
+    "doc": "Document",
+    "sheet": "Spreadsheet",
+    "slides": "Presentation",
+    "video": "Video",
+    "audio": "Audio",
+    "archive": "Archive",
+    "code": "Source code"
+  },
+  "newFolder": {
+    "title": "New folder",
+    "description": "The folder is created inside the folder you are viewing.",
+    "name": "Folder name",
+    "placeholder": "e.g. Contracts 2026",
+    "create": "Create folder",
+    "cancel": "Cancel"
+  },
+  "upload": {
+    "title": "Upload files",
+    "description": "Files are added to the current folder. Up to 10 files, 50 MB each.",
+    "drop": "Drop files here or browse",
+    "hint": "Any file type",
+    "done": "Done"
+  },
+  "confirm": {
+    "title": "Delete {{count}} items?",
+    "description": "Folders are deleted with everything inside them. This can't be undone."
+  },
+  "empty": {
+    "folder": "This folder is empty",
+    "folderHint": "Upload files or create a folder to get started.",
+    "noResults": "No files match your search",
+    "noStarred": "Nothing starred yet"
+  },
+  "toast": {
+    "folderCreated": "Folder created",
+    "deleted": "Deleted",
+    "renamed": "Renamed to {{name}}",
+    "uploaded": "{{count}} files uploaded"
+  }
+}

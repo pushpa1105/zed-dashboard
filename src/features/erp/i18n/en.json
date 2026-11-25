@@ -1,0 +1,1002 @@
+{
+  "workspace": {
+    "name": "ERP",
+    "description": "Finance, purchasing, invoicing and projects",
+    "category": "Operations"
+  },
+  "common": {
+    "errorTitle": "Couldn't load this view",
+    "errorDescription": "Check your connection and try again.",
+    "retry": "Try again"
+  },
+  "nav": {
+    "sections": {
+      "main": "Main",
+      "finance": "Finance",
+      "trade": "Sales & purchasing",
+      "planning": "Planning"
+    },
+    "overview": "Overview",
+    "accounting": "Accounting",
+    "accounts": "Chart of accounts",
+    "journal": "Journal entries",
+    "journalNew": "New journal entry",
+    "reports": "Financial statements",
+    "invoices": "Invoices",
+    "purchasing": "Purchasing",
+    "payables": "Bills & purchase orders",
+    "vendors": "Vendors",
+    "budgets": "Budgets",
+    "projects": "Projects",
+    "payroll": "Payroll",
+    "taxGuide": "Tax filing guide",
+    "reconciliation": "Bank reconciliation",
+    "fixedAssets": "Fixed assets",
+    "purchaseOrders": "Purchase orders",
+    "expenseClaims": "Expense claims",
+    "sales": "Sales",
+    "receivables": "Receivables",
+    "overdueCustomers": "Overdue customers",
+    "salesOrders": "Sales orders",
+    "quotes": "Open quotes",
+    "cashForecast": "Cash flow forecast"
+  },
+  "accounts": {
+    "title": "Chart of accounts",
+    "description": "Period activity and balances for FY2026, grouped by account type.",
+    "totals": {
+      "debits": "Total debits",
+      "credits": "Total credits",
+      "difference": "Difference",
+      "balanced": "Trial balance is in balance",
+      "unbalanced": "Out of balance",
+      "accounts": "Posting accounts",
+      "trialBalance": "Trial balance"
+    },
+    "table": {
+      "title": "Accounts",
+      "description": "Expand a group to see its posting accounts."
+    },
+    "collapseAll": "Collapse all",
+    "expandAll": "Expand all",
+    "search": "Search by name or code",
+    "types": {
+      "all": "All",
+      "asset": "Assets",
+      "liability": "Liabilities",
+      "equity": "Equity",
+      "revenue": "Revenue",
+      "expense": "Expenses"
+    },
+    "columns": {
+      "code": "Code",
+      "account": "Account",
+      "type": "Type",
+      "debit": "Debit",
+      "credit": "Credit",
+      "balance": "Balance"
+    },
+    "empty": "No accounts match your search."
+  },
+  "journal": {
+    "title": "Journal entries",
+    "description": "Every manual posting to the general ledger.",
+    "newEntry": "New entry",
+    "list": {
+      "title": "Entries",
+      "description": "Click an entry to see its lines.",
+      "empty": "No entries in this view."
+    },
+    "filters": {
+      "all": "All",
+      "posted": "Posted",
+      "draft": "Draft"
+    },
+    "columns": {
+      "entry": "Entry",
+      "date": "Date",
+      "memo": "Memo",
+      "author": "Author",
+      "status": "Status",
+      "amount": "Amount",
+      "account": "Account",
+      "debit": "Debit",
+      "credit": "Credit"
+    },
+    "form": {
+      "title": "New journal entry",
+      "description": "Debits must equal credits before the entry can be posted.",
+      "details": "Entry details",
+      "date": "Date",
+      "reference": "Reference",
+      "memo": "Memo",
+      "memoPlaceholder": "What is this entry for?",
+      "lines": "Lines",
+      "linesDescription": "Each line is either a debit or a credit.",
+      "addLine": "Add line",
+      "account": "Account",
+      "accountPlaceholder": "Choose an account",
+      "accountSearch": "Search accounts",
+      "debit": "Debit",
+      "credit": "Credit",
+      "removeLine": "Remove line",
+      "totals": "Totals",
+      "summary": "Summary",
+      "difference": "Difference",
+      "checks": {
+        "twoLines": "At least two lines with an account",
+        "oneSide": "Each line has only a debit or a credit",
+        "balance": "Debits equal credits"
+      },
+      "post": "Post entry",
+      "saveDraft": "Save as draft",
+      "saved": "Journal entry saved",
+      "saveFailed": "Couldn't save the entry",
+      "errors": {
+        "oneSide": "Enter a debit or a credit, not both",
+        "twoLines": "Add at least two lines",
+        "balance": "Debits and credits must balance"
+      }
+    }
+  },
+  "reports": {
+    "title": "Financial statements",
+    "description": "Quarterly profit and loss and the balance sheet, straight from the ledger.",
+    "print": "Print",
+    "export": "Export to Excel",
+    "exported": "Statement exported",
+    "pnl": "Profit & loss",
+    "balance": "Balance sheet",
+    "line": "Line item",
+    "kpis": {
+      "revenue": "Revenue",
+      "ytd": "Year to date",
+      "grossMargin": "Gross margin",
+      "netMargin": "Net margin",
+      "netByQuarter": "Net income by quarter",
+      "netIncome": "Net income"
+    },
+    "pnlTitle": "Profit & loss statement",
+    "pnlDescription": "FY2026 by quarter. Click a section to collapse it.",
+    "balanceTitle": "Balance sheet",
+    "balanceDescription": "Position at each quarter end."
+  },
+  "invoices": {
+    "title": "Invoices",
+    "description": "Receivables, aging and collections.",
+    "new": "New invoice",
+    "aging": {
+      "title": "Receivables aging",
+      "description": "Unpaid balances by days past due. Pick a bucket to filter.",
+      "outstanding": "Outstanding",
+      "clear": "Clear filter",
+      "buckets": {
+        "current": "Current",
+        "1-30": "1–30 days",
+        "31-60": "31–60 days",
+        "61-90": "61–90 days",
+        "90+": "Over 90 days"
+      },
+      "count_one": "{{count}} invoice",
+      "count_other": "{{count}} invoices"
+    },
+    "kpis": {
+      "collected": "Collected this month",
+      "overdue": "Overdue balance",
+      "dso": "Average days to pay",
+      "days_one": "{{count}} day",
+      "days_other": "{{count}} days"
+    },
+    "list": {
+      "title": "All invoices",
+      "empty": "No invoices in this view."
+    },
+    "status": {
+      "all": "All",
+      "draft": "Draft",
+      "open": "Open",
+      "overdue": "Overdue",
+      "paid": "Paid"
+    },
+    "columns": {
+      "invoice": "Invoice",
+      "customer": "Customer",
+      "issued": "Issued",
+      "due": "Due",
+      "status": "Status",
+      "amount": "Amount",
+      "balance": "Balance"
+    },
+    "daysLate_one": "{{count}} day late",
+    "daysLate_other": "{{count}} days late",
+    "actionFailed": "Couldn't update the invoice"
+  },
+  "invoice": {
+    "title": "Invoice {{id}}",
+    "back": "All invoices",
+    "print": "Print",
+    "invoice": "Invoice",
+    "status": {
+      "draft": "Draft",
+      "open": "Open",
+      "overdue": "Overdue",
+      "paid": "Paid"
+    },
+    "billTo": "Bill to",
+    "issued": "Issued",
+    "due": "Due",
+    "daysLate_one": "{{count}} day late",
+    "daysLate_other": "{{count}} days late",
+    "item": "Item",
+    "qty": "Qty",
+    "price": "Unit price",
+    "lineTotal": "Amount",
+    "subtotal": "Subtotal",
+    "tax": "Sales tax ({{rate}}%)",
+    "total": "Total",
+    "paid": "Paid",
+    "footer": "Pay by ACH to Chase ••4821 (routing 021000021) or by card from the payment link in your email. Questions: billing@orbitly.co",
+    "balanceDue": "Balance due",
+    "paidOf": "{{paid}} paid of {{total}}",
+    "recordPayment": "Record payment",
+    "sendReminder": "Send reminder",
+    "activity": "Activity",
+    "paymentHint": "Up to {{balance}} can be applied to this invoice.",
+    "amount": "Amount",
+    "cancel": "Cancel",
+    "confirmPayment": "Record payment",
+    "reminded": "Reminder sent to {{email}}",
+    "paymentRecorded": "Payment recorded"
+  },
+  "payables": {
+    "title": "Bills & purchase orders",
+    "description": "{{amount}} is waiting for approval.",
+    "actionFailed": "Couldn't update the document",
+    "done": {
+      "submit": "{{id}} submitted for approval",
+      "approve": "{{id}} approved",
+      "reject": "{{id}} rejected",
+      "pay": "{{id}} marked as paid"
+    },
+    "steps": {
+      "draft": "Draft",
+      "submitted": "Submitted",
+      "waiting": "Not submitted yet",
+      "approved": "Approved",
+      "approver": "Waiting on {{name}}",
+      "paid": "Paid",
+      "due": "Due {{date}}"
+    },
+    "kind": {
+      "po": "Purchase order",
+      "bill": "Vendor bill"
+    },
+    "status": {
+      "all": "All",
+      "draft": "Draft",
+      "pending": "Pending",
+      "approved": "Approved",
+      "paid": "Paid",
+      "rejected": "Rejected"
+    },
+    "rejectedTitle": "Rejected",
+    "fields": {
+      "requester": "Requested by",
+      "approver": "Approver",
+      "due": "Payment due"
+    },
+    "actions": {
+      "submit": "Submit for approval",
+      "approve": "Approve",
+      "reject": "Reject",
+      "pay": "Mark as paid"
+    },
+    "closed": "This document is closed.",
+    "rejectTitle": "Reject {{id}}",
+    "rejectDescription": "The requester sees your note and can resubmit.",
+    "rejectNote": "Reason",
+    "cancel": "Cancel",
+    "queue_one": "{{count}} document",
+    "queue_other": "{{count}} documents",
+    "empty": "Nothing here.",
+    "select": "Select a document to review it."
+  },
+  "budgets": {
+    "title": "Budgets",
+    "description": "Spend against plan for every department.",
+    "quarter": "Quarter",
+    "quarterOption": "Q{{quarter}} 2026",
+    "burn": {
+      "title": "Budget burn",
+      "description": "Share of the Q{{quarter}} budget spent so far.",
+      "used": "of budget used",
+      "spent": "Spent",
+      "budget": "Budget",
+      "ytdSpent": "Spent YTD",
+      "ytdBudget": "Budget YTD"
+    },
+    "chart": {
+      "title": "Budget vs actual",
+      "description": "By department for the selected quarter.",
+      "budget": "Budget",
+      "actual": "Actual"
+    },
+    "variance": {
+      "title": "Variance",
+      "description": "Positive means under budget; overspend is flagged in red.",
+      "department": "Department",
+      "progress": "Used",
+      "variance": "Variance"
+    }
+  },
+  "vendors": {
+    "title": "Vendors",
+    "description": "Suppliers, payment terms and open balances.",
+    "other": "Other",
+    "mix": {
+      "title": "Spend by category",
+      "description": "Year-to-date purchases.",
+      "ytd": "Spent YTD"
+    },
+    "top": {
+      "title": "Top vendors",
+      "description": "Largest year-to-date spend."
+    },
+    "list": {
+      "title_one": "{{count}} vendor",
+      "title_other": "{{count}} vendors"
+    },
+    "search": "Search vendors",
+    "all": "All",
+    "columns": {
+      "vendor": "Vendor",
+      "contact": "Contact",
+      "terms": "Terms",
+      "rating": "Rating",
+      "onTime": "On time",
+      "balance": "Open balance",
+      "status": "Status"
+    },
+    "status": {
+      "active": "Active",
+      "on-hold": "On hold"
+    },
+    "category": "Category"
+  },
+  "overview": {
+    "title": "ERP overview",
+    "description": "Finance, purchasing, invoicing and projects"
+  },
+  "finance": {
+    "title": "Finance overview",
+    "greeting": {
+      "morning": "Good morning, {{name}}",
+      "afternoon": "Good afternoon, {{name}}",
+      "evening": "Good evening, {{name}}"
+    },
+    "description": "Cash, spending and company formation at a glance.",
+    "sections": {
+      "label": "Workspace section",
+      "dashboard": "Dashboard",
+      "finance": "Finance",
+      "accounts": "Accounts",
+      "payroll": "HR & Payroll"
+    },
+    "periods": {
+      "label": "Period",
+      "month": "Monthly",
+      "quarter": "Quarterly",
+      "year": "Yearly"
+    },
+    "kpis": {
+      "balance": "Your bank balance",
+      "uncategorized": "Uncategorized transactions",
+      "uncategorizedHint": "Need a category before close",
+      "employees": "Employees working today",
+      "employeesHint": "Checked in this morning",
+      "spend": "This week's card spending",
+      "vsLast": "vs last period"
+    },
+    "sales": {
+      "title": "Average sales",
+      "description": "Sales overview from all channels",
+      "cashIn": "Cash in",
+      "cashOut": "Cash out"
+    },
+    "formation": {
+      "title": "Formation status",
+      "inProgress": "In progress",
+      "estimated": "Estimated processing",
+      "businessDays": "{{count}} business days",
+      "step": "Step {{step}} of {{steps}}",
+      "view": "View status"
+    },
+    "success": {
+      "title": "Success rate",
+      "description": "Share of payments settled on the first attempt",
+      "total": "Transactions",
+      "processing": "Processing",
+      "vsLast": "{{delta}}% better than last period"
+    },
+    "table": {
+      "title": "Recent activity",
+      "description": "Messages and transactions that need attention",
+      "name": "From",
+      "subject": "Subject",
+      "invited": "Invited",
+      "invitedCount": "{{count}} invited",
+      "status": "Status",
+      "amount": "Amount",
+      "date": "Date",
+      "viewAll": "View all"
+    },
+    "status": {
+      "completed": "Completed",
+      "pending": "Pending",
+      "urgent": "Urgent",
+      "failed": "Failed"
+    },
+    "error": {
+      "title": "Couldn't load the finance overview",
+      "description": "Check your connection and try again.",
+      "retry": "Try again"
+    },
+    "actions": {
+      "export": "Export",
+      "open": "Open details"
+    }
+  },
+  "projects": {
+    "title": "Projects",
+    "description": "Delivery, workload and the operations that need attention.",
+    "newProject": "New project",
+    "share": "Share",
+    "sales": {
+      "title": "Overall sales",
+      "compared": "Compared to {{value}} last year"
+    },
+    "projects": {
+      "title": "My projects",
+      "description": "Per year, with the delivery target.",
+      "done": "Done",
+      "created": "New",
+      "late": "Late",
+      "target": "Target {{value}}"
+    },
+    "tasks": {
+      "title": "My tasks",
+      "description": "Completion by state, this sprint."
+    },
+    "capacity": {
+      "title": "Team capacity",
+      "description": "Logged hours against available hours this month.",
+      "used": "{{used}} of {{total}} h",
+      "label": "booked"
+    },
+    "analysis": {
+      "title": "Project analysis",
+      "description": "Logged vs. planned hours this week.",
+      "hours": "Logged",
+      "planned": "Planned"
+    },
+    "calendar": {
+      "title": "Deadlines",
+      "description": "Highlighted days have a milestone due.",
+      "upcoming": "Next: {{name}}"
+    },
+    "clients": {
+      "title": "New clients",
+      "since": "Joined {{date}}"
+    },
+    "activity": {
+      "title": "Recent activity"
+    },
+    "operations": {
+      "title": "Latest operations",
+      "description": "Open work items across all projects.",
+      "columns": {
+        "id": "ID",
+        "name": "Name",
+        "owner": "Owner",
+        "status": "Status",
+        "value": "Value",
+        "due": "Due",
+        "actions": "Actions"
+      },
+      "actions": {
+        "view": "View",
+        "edit": "Edit progress",
+        "delete": "Delete"
+      },
+      "details": "Operation details",
+      "progress": "Progress",
+      "save": "Save",
+      "cancel": "Cancel",
+      "confirmTitle": "Delete this operation?",
+      "confirmDescription": "“{{name}}” will be removed from the list. You can undo this for a few seconds.",
+      "empty": "No open operations. Nice work.",
+      "toast": {
+        "deleted": "Operation deleted",
+        "restored": "Operation restored",
+        "updated": "Progress updated",
+        "undo": "Undo"
+      }
+    },
+    "error": {
+      "title": "Couldn't load this widget",
+      "retry": "Try again"
+    }
+  },
+  "purchaseOrders": {
+    "title": "Purchase orders",
+    "description": "Commitments to suppliers, from approval to goods received.",
+    "actionFailed": "Couldn't update the purchase order",
+    "approveOne": "Approve {{id}}",
+    "receivedOf": "Units received for {{id}}",
+    "done": {
+      "approve": "{{id}} approved",
+      "receive": "Goods received for {{id}}",
+      "close": "{{id}} closed"
+    },
+    "actions": {
+      "approve": "Approve",
+      "receive": "Receive remaining",
+      "close": "Close order"
+    },
+    "kpis": {
+      "awaiting": "Awaiting approval",
+      "open": "Open commitments",
+      "received": "Received, not closed",
+      "orders_one": "{{count}} order",
+      "orders_other": "{{count}} orders"
+    },
+    "list": {
+      "title": "Orders",
+      "filter": "Filter by status",
+      "empty": "No purchase orders in this view."
+    },
+    "status": {
+      "all": "All",
+      "draft": "Draft",
+      "approved": "Approved",
+      "received": "Received",
+      "closed": "Closed"
+    },
+    "columns": {
+      "po": "PO",
+      "vendor": "Vendor",
+      "expected": "Expected",
+      "status": "Status",
+      "received": "Received",
+      "total": "Total"
+    },
+    "detail": {
+      "back": "All purchase orders",
+      "title": "Purchase order {{id}}",
+      "lines": "Line items",
+      "item": "Item",
+      "ordered": "Ordered",
+      "lineReceived": "Units received for {{sku}}",
+      "unitPrice": "Unit price",
+      "orderTotal": "Order total",
+      "summary": "Summary",
+      "receiving": "Receiving progress",
+      "activity": "Activity",
+      "fields": {
+        "buyer": "Buyer",
+        "created": "Created",
+        "expected": "Expected delivery",
+        "vendor": "Vendor"
+      }
+    }
+  },
+  "reconciliation": {
+    "title": "Bank reconciliation",
+    "description": "{{account}} · November 2026 statement",
+    "actionFailed": "Couldn't update the match",
+    "progress": "Statement lines reconciled",
+    "kpis": {
+      "statement": "Statement balance",
+      "books": "Book balance",
+      "reconciled": "Reconciled balance",
+      "difference": "Unreconciled difference"
+    },
+    "bank": {
+      "title": "Bank statement",
+      "description": "Unmatched lines from the bank feed.",
+      "empty": "Every statement line is matched."
+    },
+    "ledger": {
+      "title": "General ledger",
+      "description": "Unmatched cash entries in the books.",
+      "empty": "Every ledger entry is matched.",
+      "suggested": "Same amount"
+    },
+    "matchBar": {
+      "hint": "Select one bank line and one ledger entry to match them.",
+      "ready": "Ready to match {{amount}}.",
+      "mismatch": "Amounts differ by {{amount}}. Only equal amounts can be matched.",
+      "match": "Match"
+    },
+    "matched": {
+      "title_one": "{{count}} matched pair",
+      "title_other": "{{count}} matched pairs",
+      "label": "Matched pairs",
+      "date": "Date",
+      "bank": "Bank line",
+      "books": "Ledger entry",
+      "amount": "Amount",
+      "unmatch": "Unmatch",
+      "unmatchOne": "Unmatch {{id}}",
+      "empty": "Nothing matched yet."
+    }
+  },
+  "assets": {
+    "title": "Fixed assets",
+    "description": "Asset register, book values and depreciation for FY2026.",
+    "add": "Add asset",
+    "fullyDepreciated": "Fully depreciated",
+    "years_one": "{{count}} year",
+    "years_other": "{{count}} years",
+    "kpis": {
+      "cost": "Acquisition cost",
+      "book": "Net book value",
+      "accumulated": "Accumulated depreciation",
+      "expense": "Depreciation expense {{year}}"
+    },
+    "chart": {
+      "title": "Depreciation schedule",
+      "portfolio": "All assets, five years either side of FY2026",
+      "scope": "Asset to chart",
+      "allAssets": "All assets",
+      "depreciation": "Depreciation"
+    },
+    "register": {
+      "title": "Asset register",
+      "description": "Select an asset to chart its schedule.",
+      "empty": "No assets registered yet."
+    },
+    "columns": {
+      "asset": "Asset",
+      "acquired": "Acquired",
+      "method": "Method",
+      "cost": "Cost",
+      "accumulated": "Accumulated",
+      "bookValue": "Book value"
+    },
+    "categories": {
+      "buildings": "Buildings",
+      "machinery": "Machinery",
+      "vehicles": "Vehicles",
+      "computers": "Computers",
+      "furniture": "Furniture"
+    },
+    "methods": {
+      "straight-line": "Straight-line",
+      "declining-balance": "Declining balance"
+    },
+    "form": {
+      "title": "Add fixed asset",
+      "description": "The depreciation schedule is calculated when you save.",
+      "name": "Name",
+      "namePlaceholder": "e.g. CNC milling machine",
+      "category": "Category",
+      "location": "Location",
+      "acquired": "Acquisition date",
+      "usefulLife": "Useful life",
+      "years": "years",
+      "cost": "Cost",
+      "salvage": "Salvage value",
+      "method": "Depreciation method",
+      "cancel": "Cancel",
+      "submit": "Add asset",
+      "saved": "Asset added to the register",
+      "saveFailed": "Couldn't add the asset",
+      "errors": {
+        "cost": "Cost must be greater than zero",
+        "life": "Between 1 and 50 years",
+        "salvage": "Salvage value must be lower than cost"
+      }
+    }
+  },
+  "expenses": {
+    "title": "Expense claims",
+    "description": "Employee reimbursements waiting for review.",
+    "actionFailed": "Couldn't update the claim",
+    "done": {
+      "approve": "{{id}} approved",
+      "reject": "{{id}} rejected"
+    },
+    "actions": {
+      "approve": "Approve",
+      "reject": "Reject",
+      "confirmReject": "Reject claim"
+    },
+    "kpis": {
+      "pending": "Pending review",
+      "approved": "Approved",
+      "missing": "Missing receipts",
+      "claims_one": "{{count}} claim",
+      "claims_other": "{{count}} claims",
+      "missingHint": "Pending claims without a receipt"
+    },
+    "breakdown": {
+      "title": "Spend by category",
+      "description": "Pending and approved claims.",
+      "total": "Total"
+    },
+    "list": {
+      "title": "Claims",
+      "filter": "Filter by status",
+      "empty": "No claims in this view."
+    },
+    "status": {
+      "all": "All",
+      "pending": "Pending",
+      "approved": "Approved",
+      "rejected": "Rejected"
+    },
+    "columns": {
+      "employee": "Employee",
+      "claim": "Claim",
+      "submitted": "Submitted",
+      "receipts": "Receipts",
+      "status": "Status",
+      "amount": "Amount"
+    },
+    "categories": {
+      "travel": "Travel",
+      "lodging": "Lodging",
+      "meals": "Meals",
+      "software": "Software",
+      "equipment": "Equipment",
+      "mileage": "Mileage"
+    },
+    "receipts": {
+      "title": "Receipts",
+      "missing": "No receipt attached. Ask the employee to upload one before approving.",
+      "file": "Receipt {{n}}",
+      "none": "None"
+    },
+    "fields": {
+      "employee": "Employee",
+      "department": "Department",
+      "category": "Category",
+      "submitted": "Submitted"
+    },
+    "rejectedTitle": "Rejected",
+    "rejectNote": "Reason for rejection",
+    "cancel": "Cancel"
+  },
+  "receivables": {
+    "title": "Receivables",
+    "description": "Open balances by customer and age, with statements and payment reminders.",
+    "kpis": {
+      "outstanding": "Outstanding",
+      "overdue": "Overdue",
+      "critical": "Over 90 days",
+      "overLimit": "Over credit limit",
+      "customers_one": "{{count}} customer",
+      "customers_other": "{{count}} customers",
+      "share": "{{pct}}% of the total",
+      "overLimitHint": "Customers above their limit"
+    },
+    "chart": {
+      "title": "Aging by customer",
+      "description": "The eight largest balances, split by days past due."
+    },
+    "list": {
+      "title": "Customer balances",
+      "search": "Search customers",
+      "filter": "Filter customers",
+      "empty": "No customers match this view."
+    },
+    "views": {
+      "all": "All",
+      "overdue": "Overdue",
+      "critical": "90+ days"
+    },
+    "columns": {
+      "customer": "Customer",
+      "balance": "Balance",
+      "reminded": "Last reminder",
+      "invoice": "Invoice",
+      "due": "Due"
+    },
+    "daysLate_one": "{{count}} day late",
+    "daysLate_other": "{{count}} days late",
+    "reminder": {
+      "send": "Send reminder",
+      "sendTo": "Send reminder to {{name}}",
+      "sent": "Payment reminder sent",
+      "failed": "Couldn't send the reminder",
+      "last": "Last reminder {{date}}",
+      "never": "No reminder sent yet"
+    },
+    "statement": {
+      "title": "Statement — {{name}}",
+      "balance": "Open balance",
+      "overLimit": "This customer is over its {{limit}} credit limit.",
+      "credit": "Credit used",
+      "invoices": "Open invoices",
+      "empty": "No open invoices."
+    }
+  },
+  "salesOrders": {
+    "title": "Sales orders",
+    "description": "Quotes and orders from confirmation to invoice.",
+    "kpis": {
+      "quote": "Open quotes",
+      "confirmed": "Confirmed backlog",
+      "fulfilled": "Ready to invoice",
+      "invoiced": "Invoiced",
+      "orders_one": "{{count}} order",
+      "orders_other": "{{count}} orders"
+    },
+    "list": {
+      "title": "Orders",
+      "search": "Search orders",
+      "filter": "Filter by status",
+      "empty": "No orders match this filter."
+    },
+    "status": {
+      "all": "All",
+      "quote": "Quote",
+      "confirmed": "Confirmed",
+      "fulfilled": "Fulfilled",
+      "invoiced": "Invoiced"
+    },
+    "columns": {
+      "order": "Order",
+      "customer": "Customer",
+      "delivery": "Delivery",
+      "status": "Status",
+      "total": "Total"
+    },
+    "actions": {
+      "confirm": "Confirm",
+      "invoice": "Create invoice",
+      "confirmOne": "Confirm {{id}}",
+      "invoiceOne": "Create invoice for {{id}}"
+    },
+    "done": {
+      "confirm": "{{id}} confirmed",
+      "invoice": "Invoice {{invoice}} created for {{id}}"
+    },
+    "actionFailed": "Couldn't update the order",
+    "fields": {
+      "rep": "Sales rep",
+      "created": "Ordered",
+      "delivery": "Delivery"
+    },
+    "detail": {
+      "title": "Sales order {{id}}",
+      "lines": "Order lines",
+      "item": "Item",
+      "qty": "Qty",
+      "price": "Unit price",
+      "amount": "Amount",
+      "discount": "{{pct}}% discount",
+      "subtotal": "Subtotal",
+      "tax": "Sales tax",
+      "total": "Total",
+      "history": "History",
+      "openInvoice": "Open {{id}}"
+    }
+  },
+  "cashForecast": {
+    "title": "Cash flow forecast",
+    "description": "Expected receipts and payments for the next 13 weeks.",
+    "scenario": {
+      "label": "Scenario",
+      "base": "Base",
+      "optimistic": "Optimistic",
+      "pessimistic": "Pessimistic"
+    },
+    "kpis": {
+      "opening": "Opening balance",
+      "openingHint": "As of {{date}}",
+      "closing": "Closing balance (week 13)",
+      "low": "Lowest balance",
+      "net": "{{amount}} net change",
+      "lowHint": "Week of {{date}}"
+    },
+    "charts": {
+      "week": "W{{n}}",
+      "flows": "Weekly cash flows",
+      "flowsDescription": "Inflows, outflows and net movement per week.",
+      "inflow": "Inflow",
+      "outflow": "Outflow",
+      "net": "Net",
+      "balance": "Running balance",
+      "balanceDescription": "Closing cash per week against the minimum cash policy.",
+      "closing": "Closing balance",
+      "minimum": "Minimum cash"
+    },
+    "items": {
+      "title": "Expected items",
+      "description": "Each receipt and payment behind the forecast.",
+      "filter": "Filter by direction",
+      "all": "All",
+      "inflow": "Inflows",
+      "outflow": "Outflows",
+      "empty": "Nothing expected in this window."
+    },
+    "columns": {
+      "date": "Date",
+      "item": "Item",
+      "confidence": "Confidence",
+      "amount": "Amount"
+    },
+    "categories": {
+      "receipts": "Customer receipt",
+      "bookings": "New sales",
+      "payroll": "Payroll",
+      "rent": "Rent",
+      "debt": "Debt service",
+      "software": "Software",
+      "suppliers": "Suppliers",
+      "tax": "Taxes"
+    },
+    "confidence": {
+      "committed": "Committed",
+      "expected": "Expected",
+      "estimated": "Estimated"
+    }
+  },
+  "shell": {
+    "categories": {
+      "approvals": "Approvals",
+      "finance": "Finance",
+      "purchasing": "Purchasing"
+    },
+    "notifications": {
+      "po": {
+        "title": "Daniel Kim requested approval",
+        "body": "Purchase order PO-7713 · $18,240 to Contoso Supplies."
+      },
+      "expense": {
+        "title": "4 expense claims awaiting review",
+        "body": "Total $2,318.50, oldest submitted 3 days ago."
+      },
+      "overdue": {
+        "title": "Invoice INV-3307 is 30 days overdue",
+        "body": "Fabrikam owes $27,600. Send a reminder?"
+      },
+      "recon": {
+        "title": "Bank reconciliation complete",
+        "body": "October matched: 412 transactions, 0 differences."
+      },
+      "budget": {
+        "title": "Marketing is at 92% of budget",
+        "body": "$8,000 left for the rest of the quarter."
+      },
+      "payment": {
+        "title": "Payment run scheduled",
+        "body": "23 vendor bills ($64,150) will be paid on Friday."
+      }
+    },
+    "create": {
+      "invoice": {
+        "label": "New invoice",
+        "description": "Bill a customer"
+      },
+      "journal": {
+        "label": "Journal entry",
+        "description": "Post a manual entry"
+      },
+      "po": {
+        "label": "Purchase order",
+        "description": "Order from a vendor"
+      },
+      "expense": {
+        "label": "Expense claim",
+        "description": "Submit a receipt"
+      }
+    },
+    "account": {
+      "approvals": "My approvals",
+      "expenses": "My expenses"
+    }
+  }
+}

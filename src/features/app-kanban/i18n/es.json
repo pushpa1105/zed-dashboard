@@ -1,0 +1,68 @@
+{
+  "nav": "Kanban",
+  "title": "Kanban",
+  "description": "Planifica el trabajo con tableros, columnas y calles.",
+  "board": "Tablero",
+  "add": "Añadir",
+  "cancel": "Cancelar",
+  "addCard": "Añadir tarjeta",
+  "cardPlaceholder": "¿Qué hay que hacer? Pulsa Intro para añadir",
+  "addColumn": "Añadir columna",
+  "columnPlaceholder": "Nombre de la columna",
+  "unassigned": "Sin asignar",
+  "swimlanes": "Calles por responsable",
+  "hint": "Arrastra tarjetas entre columnas, o enfoca una y usa Espacio y las flechas. Pulsa Intro para abrirla.",
+  "filters": {
+    "search": "Filtrar tarjetas…",
+    "assignees": "Filtrar por responsable",
+    "labels": "Etiquetas",
+    "clear": "Quitar filtros"
+  },
+  "wip": {
+    "title": "Límite de trabajo en curso",
+    "none": "Sin límite",
+    "limit": "{{count}} tarjetas",
+    "hint": "Límite: {{limit}} tarjetas"
+  },
+  "column": {
+    "menu": "Opciones de {{name}}"
+  },
+  "priority": {
+    "low": "Prioridad baja",
+    "medium": "Prioridad media",
+    "high": "Prioridad alta",
+    "urgent": "Urgente"
+  },
+  "due": {
+    "today": "Hoy",
+    "tomorrow": "Mañana",
+    "overdue": "{{date}} (vencida)"
+  },
+  "error": {
+    "title": "No se pudo cargar el tablero",
+    "description": "El servicio de tableros no respondió. Inténtalo de nuevo en un momento.",
+    "retry": "Reintentar"
+  },
+  "sheet": {
+    "title": "Título de la tarjeta",
+    "status": "Estado",
+    "priority": "Prioridad",
+    "assignees": "Responsables",
+    "noAssignees": "Asigna a alguien",
+    "labels": "Etiquetas",
+    "due": "Fecha límite",
+    "clearDue": "Quitar fecha límite",
+    "description": "Descripción",
+    "descriptionPlaceholder": "Añade contexto, enlaces o criterios de aceptación…",
+    "checklist": "Lista de tareas",
+    "addItem": "Añadir elemento",
+    "removeItem": "Quitar {{item}}",
+    "comments": "Comentarios ({{count}})",
+    "commentPlaceholder": "Escribe un comentario…",
+    "comment": "Comentar"
+  },
+  "toast": {
+    "cardAdded": "Tarjeta añadida",
+    "columnAdded": "Columna añadida"
+  }
+}

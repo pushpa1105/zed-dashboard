@@ -1,0 +1,841 @@
+{
+  "workspace": {
+    "name": "Logística",
+    "description": "Envíos, flota, rutas y seguimiento",
+    "category": "Transporte"
+  },
+  "nav": {
+    "sections": {
+      "operations": "Operaciones",
+      "network": "Red",
+      "more": "Más",
+      "finance": "Finanzas",
+      "partners": "Socios"
+    },
+    "overview": "Resumen",
+    "shipments": "Envíos",
+    "exceptions": "Incidencias",
+    "fleetGroup": "Flota",
+    "fleet": "Vehículos",
+    "drivers": "Conductores",
+    "routes": "Planificador de rutas",
+    "docks": "Agenda de muelles",
+    "customs": "Aduanas",
+    "carrierSlots": "Franjas de transportista",
+    "carrierPortal": "Portal de transportistas",
+    "myShift": "Mi turno",
+    "dispatch": "Despacho",
+    "billing": "Facturación de fletes",
+    "carriers": "Transportistas",
+    "slas": "SLA de clientes",
+    "slaCustomers": "Todos los clientes",
+    "slaBreached": "Incumplidos",
+    "performance": "Informes de rendimiento"
+  },
+  "status": {
+    "booked": "Reservado",
+    "picked_up": "Recogido",
+    "in_transit": "En tránsito",
+    "at_hub": "En centro",
+    "out_for_delivery": "En reparto",
+    "delivered": "Entregado",
+    "exception": "Incidencia"
+  },
+  "mode": {
+    "road": "Carretera",
+    "rail": "Tren",
+    "sea": "Mar",
+    "air": "Aéreo"
+  },
+  "severity": {
+    "critical": "Crítica",
+    "high": "Alta",
+    "medium": "Media",
+    "low": "Baja"
+  },
+  "vehicleStatus": {
+    "on_route": "En ruta",
+    "idle": "Parado",
+    "charging": "Cargando",
+    "maintenance": "Mantenimiento"
+  },
+  "driverStatus": {
+    "driving": "Conduciendo",
+    "on_break": "En pausa",
+    "available": "Disponible",
+    "off_duty": "Fuera de servicio"
+  },
+  "actions": {
+    "cancel": "Cancelar"
+  },
+  "error": {
+    "title": "No se pudieron cargar los datos",
+    "description": "El servicio de logística no respondió. Revisa la conexión e inténtalo de nuevo.",
+    "retry": "Reintentar"
+  },
+  "table": {
+    "asc": "Orden ascendente",
+    "desc": "Orden descendente",
+    "clearSort": "Quitar orden",
+    "hide": "Ocultar columna",
+    "pinStart": "Fijar a la izquierda",
+    "pinEnd": "Fijar a la derecha",
+    "unpin": "Desfijar",
+    "reset": "Restablecer",
+    "columns": "Columnas",
+    "compact": "Compacta",
+    "default": "Normal",
+    "comfortable": "Amplia",
+    "export": "Exportar",
+    "rowsPerPage": "Filas por página",
+    "range": "{{from}}–{{to}} de {{total}}",
+    "first": "Primera página",
+    "previous": "Página anterior",
+    "next": "Página siguiente",
+    "last": "Última página"
+  },
+  "overview": {
+    "title": "Resumen de la red",
+    "description": "Vista en directo de cada ruta, centro y envío en movimiento.",
+    "live": "En directo · se actualiza cada minuto",
+    "allShipments": "Todos los envíos",
+    "legend": {
+      "active": "Ruta activa",
+      "planned": "Ruta en pausa",
+      "vehicle": "Vehículo"
+    },
+    "kpi": {
+      "inTransit": "En tránsito",
+      "vsLastWeek": "vs. semana pasada",
+      "onTime": "Entregas a tiempo",
+      "avgDelay": "Retraso medio",
+      "minutes": "{{value}} min",
+      "exceptions": "Incidencias abiertas",
+      "critical": "{{count}} críticas"
+    },
+    "map": {
+      "title": "Mapa de la red",
+      "description": "El grosor de la línea sigue el número de envíos de cada ruta."
+    },
+    "exceptions": {
+      "title": "Requiere atención",
+      "description": "Primero las más graves",
+      "openQueue": "Abrir la cola de incidencias"
+    },
+    "volume": {
+      "title": "Entregas de los últimos 14 días",
+      "description": "Entregas completadas y devoluciones al remitente",
+      "delivered": "Entregados",
+      "returned": "Devueltos"
+    },
+    "carriers": {
+      "title": "Puntualidad por transportista",
+      "description": "Porcentaje de entregas dentro de la franja reservada",
+      "shipments": "{{count}} envíos"
+    },
+    "lanes": {
+      "title": "Rutas con más volumen",
+      "description": "Envíos reservados actualmente en cada ruta",
+      "lane": "Ruta",
+      "shipments": "Envíos",
+      "onTime": "A tiempo",
+      "status": "Estado",
+      "active": "Operativa",
+      "paused": "En pausa"
+    }
+  },
+  "shipments": {
+    "title": "Envíos",
+    "description": "Cada expedición reservada por carretera, tren, mar y aire.",
+    "priority": "Prioritario",
+    "late": "{{value}} de retraso",
+    "pallets": "{{count}} palés",
+    "columns": {
+      "id": "Envío",
+      "customer": "Cliente",
+      "route": "Ruta",
+      "status": "Estado",
+      "mode": "Modo",
+      "carrier": "Transportista",
+      "progress": "Progreso",
+      "eta": "Llegada estimada",
+      "load": "Carga"
+    },
+    "scope": {
+      "label": "Mostrar",
+      "all": "Todos",
+      "active": "En movimiento",
+      "priority": "Prioritarios",
+      "late": "Con retraso"
+    },
+    "search": "Busca ID, cliente, pedido o ciudad…",
+    "exported": "Envíos exportados a CSV",
+    "empty": "Ningún envío coincide",
+    "emptyHint": "Quita un filtro o busca otra referencia."
+  },
+  "shipment": {
+    "reported": "Incidencia registrada. Operaciones ha sido avisado.",
+    "report": "Registrar incidencia",
+    "reportTitle": "Registrar un problema con {{id}}",
+    "reportDescription": "La incidencia pasa a la cola de operaciones y pausa la actualización automática de la llegada.",
+    "reportNote": "¿Qué ha pasado?",
+    "reportPlaceholder": "p. ej. Destinatario cerrado, el conductor espera en la puerta 3 desde las 14:10",
+    "reportSubmit": "Registrar incidencia",
+    "back": "Todos los envíos",
+    "linkCopied": "Enlace de seguimiento copiado",
+    "copyFailed": "No se pudo acceder al portapapeles",
+    "copyLink": "Copiar enlace de seguimiento",
+    "from": "Origen",
+    "to": "Destino",
+    "eta": "Llegada estimada",
+    "delay": "Retraso",
+    "onTime": "A tiempo",
+    "shipped": "Enviado",
+    "trailer": "Remolque",
+    "tracking": "Seguimiento",
+    "trackingDescription": "Escaneos y eventos que informa el transportista",
+    "planned": "Previsto",
+    "map": "Ruta",
+    "package": "Expedición",
+    "contents": "Contenido",
+    "dimensions": "Dimensiones",
+    "weight": "Peso bruto",
+    "value": "Valor declarado",
+    "temperature": "Temperatura",
+    "pod": "Prueba de entrega",
+    "photo": "Foto de entrega {{n}}",
+    "podPending": "Aún no entregado",
+    "podPendingHint": "La firma y las fotos aparecen aquí cuando el conductor completa la entrega."
+  },
+  "exceptions": {
+    "title": "Cola de incidencias",
+    "description": "Clasifica los problemas de la red, sigue el protocolo y ciérralos.",
+    "type": {
+      "delay": "Retraso",
+      "damage": "Daño",
+      "address": "Dirección",
+      "customs": "Aduanas",
+      "temperature": "Temperatura",
+      "capacity": "Capacidad"
+    },
+    "escalated": "Escalada",
+    "opened": "Abierta {{when}}",
+    "playbook": "Protocolo",
+    "ownedBy": "Responsable:",
+    "unassigned": "Nadie se ha hecho cargo todavía",
+    "assignMe": "Asignármela",
+    "escalate": "Escalar",
+    "resolve": "Resolver",
+    "toast": {
+      "resolve": "{{id}} resuelta",
+      "assign": "{{id}} asignada a ti",
+      "escalate": "{{id}} escalada"
+    },
+    "all": "Todas",
+    "emptyTitle": "Cola vacía",
+    "emptyDescription": "No hay incidencias con esta gravedad. Buen trabajo.",
+    "nothingSelected": "Selecciona una incidencia para ver los detalles"
+  },
+  "fleet": {
+    "title": "Vehículos",
+    "description": "Estado, energía y mantenimiento de cada vehículo de la flota.",
+    "filter": "Filtrar por estado",
+    "all": "Todos",
+    "charge": "Batería",
+    "fuel": "Combustible",
+    "kind": {
+      "electric_van": "Furgoneta eléctrica",
+      "rigid_truck": "Camión rígido",
+      "tractor_unit": "Cabeza tractora",
+      "reefer": "Frigorífico"
+    },
+    "load": "Carga",
+    "odometer": "Kilometraje",
+    "inWorkshop": "En el taller",
+    "serviceDue": "Revisión en {{km}} km",
+    "serviceIn": "Próxima revisión en {{km}} km",
+    "unassigned": "Sin conductor asignado",
+    "kpi": {
+      "onRoute": "En ruta",
+      "onRouteHint": "vehículos en la calle ahora",
+      "load": "Carga media",
+      "loadHint": "de los vehículos en ruta",
+      "charging": "Cargando",
+      "chargingHint": "furgonetas eléctricas en base",
+      "service": "Revisión pendiente",
+      "serviceHint": "en menos de 2.000 km"
+    }
+  },
+  "drivers": {
+    "title": "Conductores",
+    "description": "Horas de servicio, asignaciones y entregas de hoy.",
+    "roster": "Plantilla",
+    "rosterDescription": "{{onDuty}} de {{total}} conductores de servicio",
+    "hoursLeft": "{{driving}} h conducidas · quedan {{left}} h",
+    "hoursTooltip": "{{driving}} h conduciendo, {{duty}} h de servicio en una ventana de 13 h",
+    "columns": {
+      "driver": "Conductor",
+      "status": "Estado",
+      "vehicle": "Vehículo",
+      "today": "Conducción hoy",
+      "week": "Esta semana",
+      "drops": "Entregas",
+      "rating": "Valoración"
+    },
+    "compliance": "Alertas de cumplimiento",
+    "complianceDescription": "Conductores cerca de un límite legal",
+    "allClear": "Todos están dentro de sus horas.",
+    "alertDaily": "{{hours}} h conducidas hoy, cerca del límite de 9 h",
+    "alertWeekly": "{{hours}} h esta semana, cerca del límite de 56 h",
+    "legend": "Cómo leer las barras",
+    "legendDriving": "Tiempo de conducción",
+    "legendDuty": "Otro servicio (carga, papeleo)",
+    "legendLimit": "Límite diario de 9 h de conducción"
+  },
+  "routes": {
+    "title": "Planificador de rutas",
+    "description": "Ordena las paradas, revisa las franjas de entrega y guarda el plan.",
+    "pick": "Elige una ruta",
+    "saved": "Orden guardado y enviado a la app del conductor",
+    "kpi": {
+      "distance": "Distancia",
+      "drive": "Tiempo de conducción",
+      "finish": "De vuelta en base a las {{time}}",
+      "late": "Paradas tarde",
+      "lateHint": "Llegan después de cerrar la franja",
+      "allOnTime": "Todas las paradas dentro de su franja",
+      "load": "Carga del vehículo",
+      "parcels": "{{count}} de {{capacity}} bultos"
+    },
+    "stops": "Paradas",
+    "stopsDescription": "Las llegadas se recalculan al reordenar",
+    "optimise": "Optimizar",
+    "unsaved": "Cambios sin guardar",
+    "savedState": "Coincide con el plan publicado",
+    "reset": "Deshacer",
+    "save": "Guardar orden",
+    "departs": "Sale a las {{time}}",
+    "window": "Franja {{from}}–{{to}}",
+    "wait": "espera {{value}}",
+    "moveUp": "Subir {{name}}",
+    "moveDown": "Bajar {{name}}",
+    "map": "Mapa",
+    "mapDescription": "{{km}} km ida y vuelta desde la base"
+  },
+  "docks": {
+    "title": "Agenda de muelles",
+    "description": "Franjas de carga y descarga de hoy en Rotterdam Waalhaven.",
+    "booked": "Franja reservada",
+    "dock": "Muelle",
+    "window": "Franja",
+    "trailer": "Remolque",
+    "pallets": "Palés",
+    "status": "Estado",
+    "slotStatus": {
+      "scheduled": "Programada",
+      "arrived": "Llegado",
+      "loading": "Cargando",
+      "done": "Terminada"
+    },
+    "book": "Reservar franja",
+    "bookTitle": "Reservar una franja de muelle",
+    "bookDescription": "El transportista recibe una confirmación con el muelle y la hora.",
+    "direction": "Sentido",
+    "inbound": "Entrada",
+    "outbound": "Salida",
+    "start": "Inicio",
+    "duration": "Duración",
+    "minutes": "{{value}} min",
+    "carrier": "Transportista",
+    "confirm": "Reservar",
+    "utilisation": "{{value}}% reservado",
+    "now": "Ahora",
+    "inboundToday": "Franjas de entrada hoy",
+    "outboundToday": "Franjas de salida hoy",
+    "atDocks": "Camiones en muelle",
+    "schedule": "Hoy",
+    "scheduleDescription": "Pulsa una franja para ver el detalle. Hora local {{time}}."
+  },
+  "expiry": {
+    "expired": "Vencido",
+    "expiring": "Vence pronto",
+    "valid": "Vigente"
+  },
+  "serviceType": {
+    "oil_service": "Cambio de aceite y filtros",
+    "brakes": "Pastillas y discos de freno",
+    "tyres": "Cambio de neumáticos",
+    "inspection": "Inspección técnica",
+    "electrical": "Revisión de batería y alta tensión"
+  },
+  "documentType": {
+    "registration": "Permiso de circulación",
+    "insurance": "Certificado de seguro",
+    "inspection": "Certificado de inspección",
+    "tachograph": "Calibración del tacógrafo"
+  },
+  "safetyEvent": {
+    "harsh_braking": "Frenada brusca",
+    "speeding": "Exceso de velocidad",
+    "harsh_cornering": "Giro brusco",
+    "phone_use": "Uso del móvil al volante",
+    "idling": "Ralentí excesivo"
+  },
+  "vehicle": {
+    "title": "Vehículo",
+    "back": "Todos los vehículos",
+    "specs": "Especificaciones",
+    "model": "Modelo",
+    "vin": "VIN",
+    "year": "Año del modelo",
+    "payload": "Carga útil",
+    "battery": "Batería",
+    "tank": "Depósito",
+    "location": "Ubicación",
+    "driver": "Conductor",
+    "kpi": {
+      "odometer": "Odómetro",
+      "consumption": "Consumo",
+      "lastWeek": "la semana pasada",
+      "distance": "Distancia",
+      "twelveWeeks": "últimas 12 semanas",
+      "service": "Próximo servicio en"
+    },
+    "efficiency": {
+      "fuel": "Eficiencia de combustible",
+      "electric": "Eficiencia energética",
+      "description": "Consumo semanal en {{unit}}",
+      "average": "Media de 12 semanas"
+    },
+    "maintenance": {
+      "title": "Historial de mantenimiento",
+      "description": "Órdenes de trabajo completadas",
+      "date": "Fecha",
+      "work": "Trabajo realizado",
+      "workshop": "Taller",
+      "odometer": "Odómetro",
+      "cost": "Coste"
+    },
+    "upcoming": {
+      "title": "Próximos servicios",
+      "due": "Previsto el {{date}}",
+      "dueKm": "o a los {{km}} km"
+    },
+    "documents": {
+      "title": "Documentos",
+      "expires": "vence el {{date}}"
+    }
+  },
+  "driver": {
+    "title": "Conductor",
+    "back": "Todos los conductores",
+    "description": "Base en {{base}}",
+    "kpi": {
+      "onTime": "Puntualidad",
+      "deliveries": "Entregas",
+      "last30": "últimos 30 días",
+      "rating": "Valoración",
+      "ratingHint": "según opiniones de clientes",
+      "safety": "Puntuación de seguridad",
+      "safetyHint": "sobre 100, según telemática"
+    },
+    "hos": {
+      "title": "Tiempos de conducción",
+      "description": "Límites UE: 9 h de conducción al día, 13 h de jornada, 56 h de conducción a la semana",
+      "driving": "Conducción hoy",
+      "duty": "Jornada hoy",
+      "week": "Conducción esta semana",
+      "value": "{{value}} / {{max}} h",
+      "drivingSeries": "Conducción",
+      "dutySeries": "Jornada"
+    },
+    "profile": {
+      "title": "Perfil",
+      "status": "Estado",
+      "base": "Base",
+      "vehicle": "Vehículo",
+      "license": "Permiso ({{class}})",
+      "hired": "Alta",
+      "distance": "Distancia, 30 días"
+    },
+    "trips": {
+      "title": "Viajes recientes",
+      "description": "Últimos ocho viajes completados",
+      "date": "Fecha",
+      "route": "Ruta",
+      "distance": "Distancia",
+      "stops": "Paradas",
+      "arrival": "Llegada",
+      "onTime": "A tiempo",
+      "late": "{{value}} de retraso"
+    },
+    "safety": {
+      "title": "Eventos de seguridad",
+      "description": "Alertas de telemática, las más recientes primero",
+      "empty": "Sin eventos de seguridad",
+      "emptyHint": "No hay incidencias en las dos últimas semanas."
+    }
+  },
+  "dispatch": {
+    "title": "Despacho",
+    "description": "Asigna los pedidos de hoy a los conductores de turno. Arrastra una tarjeta o usa su menú.",
+    "board": "Tablero de despacho",
+    "assign": "Asignar a",
+    "assignTo": "Asignar {{id}}",
+    "unassign": "Devolver a sin asignar",
+    "drag": "Arrastrar {{id}}",
+    "dropHere": "Suelta pedidos aquí",
+    "poolVan": "Furgoneta de reserva",
+    "hoursLeft": "quedan {{value}} h",
+    "load": "{{load}} de {{capacity}}",
+    "assigned": "{{id}} asignado a {{name}}",
+    "unassigned": "{{id}} devuelto a sin asignar",
+    "unassignedColumn": "Sin asignar",
+    "kpi": {
+      "unassigned": "Pedidos sin asignar",
+      "priority_one": "{{count}} prioritario",
+      "priority_other": "{{count}} prioritarios",
+      "assigned": "Asignados",
+      "assignedHint": "de los pedidos de hoy",
+      "weight": "Peso por asignar",
+      "weightHint": "aún sin asignar",
+      "overloaded": "Sobre capacidad",
+      "overloadedHint": "de {{count}} conductores de turno"
+    }
+  },
+  "billing": {
+    "title": "Facturación de fletes",
+    "description": "Compara las facturas de transportistas con la cotización y apruébalas o recúrrelas.",
+    "invoices": "Facturas de transportistas",
+    "invoicesDescription": "La desviación se mide frente a la tarifa cotizada",
+    "filter": "Filtrar facturas",
+    "all": "Todas",
+    "flagged": "Desviación",
+    "status": {
+      "pending": "Pendiente",
+      "approved": "Aprobada",
+      "disputed": "Recurrida"
+    },
+    "variance": {
+      "high": "Más de un 10 % sobre la cotización",
+      "review": "Por encima de la cotización, revisar",
+      "ok": "Coincide con la cotización"
+    },
+    "columns": {
+      "invoice": "Factura",
+      "carrier": "Transportista",
+      "lane": "Ruta",
+      "quoted": "Cotizado",
+      "invoiced": "Facturado",
+      "variance": "Desviación",
+      "status": "Estado",
+      "actions": "Acciones"
+    },
+    "approve": "Aprobar",
+    "approveInvoice": "Aprobar {{number}}",
+    "dispute": "Recurrir",
+    "disputeInvoice": "Recurrir {{number}}",
+    "disputeTitle": "Recurrir {{number}}",
+    "disputeDescription": "Se avisa al transportista y el pago queda retenido hasta resolver la reclamación.",
+    "disputeReason": "Motivo",
+    "disputePlaceholder": "p. ej. Recargo por combustible superior al 12 % acordado",
+    "toast": {
+      "approve": "{{number}} aprobada para pago",
+      "dispute": "{{number}} recurrida"
+    },
+    "costPerKm": {
+      "title": "Coste por km",
+      "description": "Tarifa media facturada por modo, últimos seis meses",
+      "contract": "Tarifa contratada"
+    },
+    "carriers": {
+      "title": "Desviación por transportista",
+      "description": "Facturado sobre cotizado, todas las facturas"
+    },
+    "kpi": {
+      "pending": "Pendiente de aprobar",
+      "invoices_one": "{{count}} factura",
+      "invoices_other": "{{count}} facturas",
+      "overQuote": "Facturado sobre cotización",
+      "flagged_one": "{{count}} factura por encima del 10 %",
+      "flagged_other": "{{count}} facturas por encima del 10 %",
+      "disputed": "En reclamación",
+      "roadRate": "Coste por km en carretera",
+      "vsLastMonth": "vs el mes pasado"
+    },
+    "emptyTitle": "No hay facturas",
+    "emptyDescription": "Nada coincide con este filtro. Prueba con otro estado."
+  },
+  "carriers": {
+    "title": "Transportistas",
+    "description": "Transportistas asociados por modo, con nivel de servicio, coste y evaluación.",
+    "table": "Transportistas asociados",
+    "tableDescription": "Las barras marcan el objetivo de puntualidad de la red",
+    "filter": "Filtrar por modo",
+    "all": "Todos los modos",
+    "emptyTitle": "No hay transportistas para este modo",
+    "emptyDescription": "Elige otro modo para ver sus transportistas.",
+    "status": {
+      "active": "Activo",
+      "suspended": "Suspendido"
+    },
+    "columns": {
+      "carrier": "Transportista",
+      "mode": "Modo",
+      "onTime": "Puntualidad",
+      "trend": "Tendencia 6 meses",
+      "damage": "Tasa de daños",
+      "costIndex": "Índice de coste",
+      "scorecard": "Evaluación",
+      "status": "Estado",
+      "actions": "Acciones"
+    },
+    "shipmentsIn_one": "{{country}} · {{count}} envío",
+    "shipmentsIn_other": "{{country}} · {{count}} envíos",
+    "trendLabel": "Puntualidad de {{name}}, últimos 6 meses",
+    "activate": "Activar",
+    "suspend": "Suspender",
+    "activateCarrier": "Activar {{name}}",
+    "suspendCarrier": "Suspender {{name}}",
+    "suspendTitle": "¿Suspender {{name}}?",
+    "suspendDescription": "No se asignarán envíos nuevos a este transportista hasta que se reactive. Los envíos ya reservados no se ven afectados.",
+    "toast": {
+      "active": "Transportista reactivado",
+      "suspended": "Transportista suspendido"
+    },
+    "kpi": {
+      "active": "Transportistas activos",
+      "shipmentsHint_one": "{{count}} envío en 90 días",
+      "shipmentsHint_other": "{{count}} envíos en 90 días",
+      "onTime": "Puntualidad (ponderada)",
+      "target": "Objetivo {{target}} %",
+      "damage": "Tasa de daños",
+      "damageHint": "Ponderada por envíos",
+      "costIndex": "Índice de coste medio",
+      "costHint": "Media del mercado = 100",
+      "shipments": "Envíos (90 días)"
+    },
+    "ranking": {
+      "title": "Puntualidad por transportista",
+      "description": "Transportistas activos, últimos 90 días"
+    },
+    "mix": {
+      "title": "Envíos por modo",
+      "description": "Todos los transportistas, últimos 90 días",
+      "center": "Envíos"
+    },
+    "score": {
+      "onTime": "Puntualidad",
+      "damage": "Daños",
+      "cost": "Coste",
+      "compliance": "Cumplimiento",
+      "service": "Servicio"
+    },
+    "sheet": {
+      "loading": "Transportista",
+      "scorecard": "Evaluación",
+      "overall": "Global",
+      "score": "Puntuación",
+      "contract": "Contrato",
+      "contact": "Contacto",
+      "paymentTerms": "Plazo de pago",
+      "days_one": "{{count}} día",
+      "days_other": "{{count}} días",
+      "start": "Inicio del contrato",
+      "end": "Fin del contrato",
+      "lanes": "Rutas contratadas",
+      "lane": "Ruta",
+      "rate": "Tarifa / km",
+      "shipments": "Envíos"
+    }
+  },
+  "slas": {
+    "title": "SLA de clientes",
+    "description": "Objetivos de nivel de servicio frente al rendimiento real, incumplimientos y notas de crédito.",
+    "customers": "Clientes",
+    "customersDescription": "Selecciona un cliente para ver su tendencia semanal",
+    "filter": "Filtrar por estado del SLA",
+    "all": "Todos",
+    "emptyTitle": "No hay clientes en este estado",
+    "emptyDescription": "Prueba con otro filtro.",
+    "health": {
+      "met": "Cumplido",
+      "at_risk": "En riesgo",
+      "breached": "Incumplido"
+    },
+    "tier": {
+      "platinum": "SLA Platino",
+      "gold": "SLA Oro",
+      "standard": "SLA Estándar"
+    },
+    "columns": {
+      "customer": "Cliente",
+      "shipments": "Envíos (30 d)",
+      "onTime": "Puntualidad",
+      "transit": "Tiempo de tránsito",
+      "breaches": "Incumplimientos",
+      "health": "SLA"
+    },
+    "versus": "{{actual}} / {{target}}",
+    "kpi": {
+      "meeting": "Clientes que cumplen el SLA",
+      "meetingHint": "Objetivos de puntualidad y de tránsito",
+      "onTime": "Puntualidad (ponderada)",
+      "target": "Objetivo ponderado {{target}}",
+      "breaches": "Incumplimientos (30 días)",
+      "open_one": "{{count}} sin nota de crédito",
+      "open_other": "{{count}} sin nota de crédito",
+      "credits": "Créditos emitidos",
+      "creditNotes_one": "{{count}} nota de crédito",
+      "creditNotes_other": "{{count}} notas de crédito"
+    },
+    "trend": {
+      "title": "{{customer}}: puntualidad semanal",
+      "description": "Últimas 12 semanas frente al objetivo contratado",
+      "target": "Objetivo del SLA"
+    },
+    "causes": {
+      "title": "Causas raíz",
+      "description": "Todos los incumplimientos de los últimos 30 días"
+    },
+    "cause": {
+      "carrier_delay": "Retraso del transportista",
+      "weather": "Meteorología",
+      "customs": "Retención en aduana",
+      "capacity": "Falta de capacidad",
+      "handling": "Manipulación en el hub",
+      "address": "Problema de dirección"
+    },
+    "metric": {
+      "on_time": "Entrega tardía",
+      "transit": "Tránsito excedido"
+    },
+    "breaches": {
+      "title": "Incumplimientos del SLA",
+      "description": "Cada incumplimiento con su causa raíz; emite una nota de crédito cuando el contrato lo prevea",
+      "shipment": "Envío",
+      "metric": "Incumplimiento",
+      "delay": "Retraso",
+      "rootCause": "Causa raíz",
+      "credit": "Crédito",
+      "allCauses": "Todas las causas",
+      "filter": "Filtrar por crédito",
+      "open": "Abiertos",
+      "credited": "Abonados",
+      "all": "Todos",
+      "creditedAmount": "{{amount}} abonado",
+      "emptyTitle": "No hay incumplimientos",
+      "emptyDescription": "Nada coincide con estos filtros."
+    },
+    "credit": {
+      "title": "Nota de crédito para {{customer}}",
+      "description": "Envío {{shipment}}, importe del flete {{charge}}.",
+      "amount": "Importe del crédito",
+      "hint": "Sugerido: 15 % del flete. No puede superar ese importe.",
+      "issue": "Emitir nota de crédito",
+      "issued": "Nota de crédito emitida",
+      "action": "Nota de crédito",
+      "issueFor": "Emitir una nota de crédito para {{shipment}}"
+    }
+  },
+  "performance": {
+    "title": "Informes de rendimiento",
+    "description": "Entregas puntuales, coste por envío y ocupación en toda la red.",
+    "period": "Periodo del informe",
+    "periods": {
+      "30d": "30 días",
+      "90d": "90 días",
+      "12m": "12 meses"
+    },
+    "exported": "Informe de rutas descargado",
+    "kpi": {
+      "onTime": "Entregas puntuales",
+      "cost": "Coste por envío",
+      "utilisation": "Ocupación",
+      "shipments": "Envíos",
+      "vsPrevious": "frente al periodo anterior"
+    },
+    "charts": {
+      "onTime": "Entregas puntuales",
+      "target": "Objetivo",
+      "utilisation": "Ocupación de carga",
+      "cost": "Coste por envío"
+    },
+    "lanes": {
+      "title": "Rendimiento por ruta",
+      "description": "Todas las rutas contratadas del periodo, de mayor a menor volumen",
+      "lane": "Ruta",
+      "mode": "Modo",
+      "shipments": "Envíos",
+      "onTime": "Puntualidad",
+      "transit": "Tránsito medio",
+      "cost": "Coste / envío",
+      "perKm": "{{rate}}/km",
+      "utilisation": "Ocupación",
+      "emptyTitle": "Sin datos de rutas",
+      "emptyDescription": "No se registraron envíos en este periodo."
+    },
+    "csv": {
+      "origin": "Origen",
+      "destination": "Destino",
+      "mode": "Modo",
+      "distanceKm": "Distancia (km)",
+      "shipments": "Envíos",
+      "onTimePct": "Puntualidad (%)",
+      "transitHours": "Tránsito medio (h)",
+      "costPerShipment": "Coste por envío (EUR)",
+      "utilisationPct": "Ocupación (%)"
+    }
+  },
+  "shell": {
+    "categories": {
+      "exceptions": "Incidencias",
+      "shipments": "Envíos",
+      "fleet": "Flota"
+    },
+    "notifications": {
+      "delay": {
+        "title": "El envío SH-90412 lleva 3 horas de retraso",
+        "body": "Carretera cortada en la I-80. Llegada estimada a las 16:40."
+      },
+      "damaged": {
+        "title": "Carlos Diaz notificó mercancía dañada",
+        "body": "2 de 18 cajas aplastadas en la entrega a Fabrikam."
+      },
+      "delivered": {
+        "title": "142 envíos entregados hoy",
+        "body": "98,6 % a tiempo · 2 todavía en reparto."
+      },
+      "maintenance": {
+        "title": "El camión TX-204 necesita revisión",
+        "body": "Cambio de aceite y frenos en 300 km."
+      },
+      "dock": {
+        "title": "El muelle 4 queda libre desde las 14:00",
+        "body": "La próxima llegada prevista pasa a mañana."
+      },
+      "sla": {
+        "title": "Informe de SLA de Contoso listo",
+        "body": "Entrega al día siguiente cumplida en el 97,2 % de los pedidos."
+      }
+    },
+    "create": {
+      "shipment": {
+        "label": "Nuevo envío",
+        "description": "Reserva recogida y entrega"
+      },
+      "dispatch": {
+        "label": "Despachar carga",
+        "description": "Asigna conductor y vehículo"
+      },
+      "route": {
+        "label": "Planificar ruta",
+        "description": "Optimiza rutas con varias paradas"
+      }
+    },
+    "account": {
+      "dispatch": "Mi panel de despacho",
+      "routes": "Mis rutas"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "fields": {
+    "email": "Email",
+    "password": "Password",
+    "firstName": "First name",
+    "lastName": "Last name"
+  },
+  "signIn": {
+    "title": "Welcome back",
+    "description": "Sign in to your account to continue",
+    "submit": "Sign in",
+    "noAccount": "Don't have an account?",
+    "demo": "The form is prefilled with the demo account: just press Sign in.",
+    "demoAdmin": "Admin demo",
+    "demoMember": "Member demo",
+    "orWithEmail": "or sign in with email"
+  },
+  "signUp": {
+    "title": "Create an account",
+    "description": "Start building in less than a minute",
+    "submit": "Create account",
+    "haveAccount": "Already have an account?"
+  }
+}

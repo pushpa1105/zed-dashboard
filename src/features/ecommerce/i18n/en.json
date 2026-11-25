@@ -1,0 +1,932 @@
+{
+  "workspace": {
+    "name": "E-commerce",
+    "description": "Orders, products, customers and revenue",
+    "category": "Retail"
+  },
+  "nav": {
+    "sections": {
+      "store": "Store",
+      "catalog": "Catalog",
+      "customers": "Customers",
+      "marketing": "Marketing",
+      "configuration": "Configuration"
+    },
+    "overview": "Overview",
+    "orders": "Orders",
+    "allOrders": "All orders",
+    "pending": "Pending",
+    "returns": "Returns",
+    "catalog": "Catalog",
+    "products": "Products",
+    "categories": "Categories",
+    "inventory": "Low stock",
+    "customers": "Customers",
+    "reviews": "Reviews",
+    "discounts": "Discounts",
+    "giftCards": "Gift cards",
+    "storefront": "View storefront",
+    "transactions": "Transactions",
+    "settings": "Store settings",
+    "abandonedCarts": "Abandoned carts",
+    "salesReports": "Sales reports"
+  },
+  "common": {
+    "error": "Couldn't load this data. Check your connection and try again.",
+    "cancel": "Cancel",
+    "notePlaceholder": "Leave a note for your team…",
+    "addNote": "Add note",
+    "previous": "Previous page",
+    "next": "Next page",
+    "pageOf": "Page {{page}} of {{total}}"
+  },
+  "status": {
+    "pending": "Pending",
+    "processing": "Processing",
+    "shipped": "Shipped",
+    "delivered": "Delivered",
+    "cancelled": "Cancelled",
+    "refunded": "Refunded"
+  },
+  "payment": {
+    "paid": "Paid",
+    "pending": "Payment pending",
+    "refunded": "Refunded",
+    "partially_refunded": "Partially refunded"
+  },
+  "channel": {
+    "online": "Online store",
+    "pos": "Point of sale",
+    "marketplace": "Marketplace",
+    "social": "Social shop"
+  },
+  "stock": {
+    "out": "Out of stock",
+    "count_one": "{{count}} in stock",
+    "count_other": "{{count}} in stock"
+  },
+  "productStatus": {
+    "active": "Active",
+    "draft": "Draft",
+    "archived": "Archived"
+  },
+  "segments": {
+    "vip": "VIP",
+    "repeat": "Repeat",
+    "new": "New",
+    "at_risk": "At risk"
+  },
+  "orders": {
+    "title": "Orders",
+    "description": "Every order across the online store, POS and marketplaces.",
+    "export": "Export CSV",
+    "select": "Select order",
+    "col": {
+      "order": "Order",
+      "date": "Date",
+      "customer": "Customer",
+      "channel": "Channel",
+      "payment": "Payment",
+      "fulfilment": "Fulfilment",
+      "items": "Items",
+      "total": "Total"
+    },
+    "tabs": {
+      "all": "All",
+      "pending": "Pending",
+      "processing": "Processing",
+      "shipped": "Shipped",
+      "delivered": "Delivered",
+      "cancelled": "Cancelled",
+      "refunded": "Refunded"
+    },
+    "search": "Search orders, names or emails",
+    "reset": "Reset",
+    "columns": "Columns",
+    "empty": {
+      "title": "No orders match",
+      "description": "Try another status tab or clear the filters."
+    },
+    "bulk": {
+      "selected_one": "{{count}} order selected",
+      "selected_other": "{{count}} orders selected",
+      "clear": "Clear",
+      "process": "Mark processing",
+      "ship": "Mark shipped",
+      "cancel": "Cancel orders"
+    },
+    "toast": {
+      "updated": "Orders updated"
+    }
+  },
+  "order": {
+    "back": "All orders",
+    "notFound": "Order not found",
+    "loading": "Loading order…",
+    "title": "Order {{number}}",
+    "placed": "Placed {{date}} · {{channel}}",
+    "refund": "Refund",
+    "markShipped": "Mark as shipped",
+    "markDelivered": "Mark as delivered",
+    "items_one": "{{count}} item",
+    "items_other": "{{count}} items",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "shipping": "Shipping",
+    "free": "Free",
+    "tax": "Tax",
+    "total": "Total",
+    "refunded": "Refunded",
+    "net": "Net payment",
+    "fulfilment": "Fulfilment",
+    "carrier": "Shipped with {{carrier}}",
+    "notShipped": "Not shipped yet",
+    "tracking": "Tracking",
+    "copy": "Copy tracking number",
+    "awaiting": "A tracking number appears here once the parcel is handed to a carrier.",
+    "timeline": "Timeline",
+    "timelineHint": "Order events and notes from your team",
+    "customer": "Customer",
+    "lifetimeOrders": "Orders",
+    "lifetimeSpend": "Lifetime spend",
+    "phone": "Phone",
+    "segment": "Segment",
+    "viewCustomer": "View customer",
+    "shippingAddress": "Shipping address",
+    "payment": "Payment",
+    "charged": "Charged {{amount}}",
+    "toast": {
+      "refunded": "Refund issued",
+      "noted": "Note added"
+    }
+  },
+  "refund": {
+    "title": "Issue a refund",
+    "description": "Up to {{amount}} can still be refunded to the original payment method.",
+    "amount": "Amount",
+    "reason": "Reason",
+    "reasons": {
+      "damaged": "Arrived damaged",
+      "wrongItem": "Wrong item sent",
+      "notAsDescribed": "Not as described",
+      "changedMind": "Customer changed mind",
+      "other": "Other"
+    },
+    "restock": "Restock items",
+    "restockHint": "Return the refunded units to available inventory.",
+    "submit": "Refund"
+  },
+  "products": {
+    "title": "Products",
+    "description_one": "{{count}} product in your catalog",
+    "description_other": "{{count}} products in your catalog",
+    "add": "Add product",
+    "addHint": "Product creation is disabled in the demo",
+    "categories": "Categories",
+    "allCategories": "All products",
+    "stock": "Inventory",
+    "stockFilter": {
+      "all": "Any stock",
+      "in": "In stock",
+      "low": "Low stock",
+      "out": "Out of stock"
+    },
+    "search": "Search products, SKUs or vendors",
+    "sortLabel": "Sort products",
+    "sort": {
+      "bestselling": "Best selling",
+      "newest": "Recently updated",
+      "priceAsc": "Price: low to high",
+      "priceDesc": "Price: high to low",
+      "stockAsc": "Stock: lowest first"
+    },
+    "grid": "Grid view",
+    "list": "List view",
+    "showing_one": "{{count}} product",
+    "showing_other": "{{count}} products",
+    "empty": {
+      "title": "No products found",
+      "description": "Nothing matches these filters.",
+      "reset": "Clear filters"
+    },
+    "sale": "Sale",
+    "col": {
+      "product": "Product",
+      "status": "Status",
+      "inventory": "Inventory",
+      "category": "Category",
+      "updated": "Updated",
+      "price": "Price"
+    },
+    "variants_one": "{{count}} variant",
+    "variants_other": "{{count}} variants"
+  },
+  "editor": {
+    "loading": "Loading product…",
+    "back": "Back to products",
+    "notFound": "Product not found",
+    "general": "General",
+    "name": "Title",
+    "descriptionLabel": "Description",
+    "media": "Media",
+    "mediaHint": "Up to 8 images, 5 MB each. The first one is the cover.",
+    "dropTitle": "Drop images here or browse",
+    "dropHint": "PNG, JPG or WebP",
+    "pricing": "Pricing",
+    "price": "Price",
+    "compareAt": "Compare-at price",
+    "cost": "Cost per item",
+    "margin": "Margin",
+    "profit": "Profit per item",
+    "variants": "Variants",
+    "variantsHint": "Sizes or options, each with its own SKU, price and stock.",
+    "addVariant": "Add variant",
+    "variant": "Option",
+    "sku": "SKU",
+    "stock": "Stock",
+    "remove": "Remove variant",
+    "seo": "Search engine listing",
+    "seoHint": "How this product appears in search results.",
+    "handle": "URL handle",
+    "handleHint": "Lowercase letters, numbers and dashes.",
+    "seoTitle": "Page title",
+    "seoDescription": "Meta description",
+    "status": "Status",
+    "statusHint": {
+      "active": "Visible on every sales channel.",
+      "draft": "Hidden until you publish it.",
+      "archived": "Hidden and excluded from reports."
+    },
+    "organization": "Organization",
+    "category": "Category",
+    "vendor": "Vendor",
+    "tags": "Tags",
+    "performance": "Performance",
+    "sold": "Units sold",
+    "rating": "Rating",
+    "unsaved_one": "{{count}} unsaved change",
+    "unsaved_other": "{{count}} unsaved changes",
+    "discard": "Discard",
+    "save": "Save",
+    "toast": {
+      "saved": "Product saved"
+    }
+  },
+  "categories": {
+    "title": "Categories",
+    "description": "Organize the catalog into collections. Order here is the order on the storefront.",
+    "products_one": "{{count}} product",
+    "products_other": "{{count}} products",
+    "visible": "Show {{name}} on the storefront",
+    "moveUp": "Move {{name}} up",
+    "moveDown": "Move {{name}} down",
+    "stats": {
+      "collections": "Top-level collections",
+      "subcategories": "Subcategories",
+      "hidden": "Hidden from storefront"
+    },
+    "tree": "Category tree",
+    "treeHint": "Use the arrows to reorder within a level."
+  },
+  "customers": {
+    "title": "Customers",
+    "description": "Everyone who has bought from you, grouped by behaviour.",
+    "since": "Customer since {{date}}",
+    "loading": "Loading customer",
+    "subscribed": "Subscribed to email",
+    "notSubscribed": "Not subscribed",
+    "col": {
+      "customer": "Customer",
+      "segment": "Segment",
+      "location": "Location",
+      "orders": "Orders",
+      "spent": "Spent",
+      "lastOrder": "Last order"
+    },
+    "aov": "Avg. order",
+    "recentOrders": "Recent orders",
+    "stats": {
+      "total": "Customers",
+      "vipHint": "Lifetime spend over $1,800",
+      "riskHint": "No order in 120 days",
+      "ltv": "Avg. lifetime value",
+      "ltvHint": "In the current view",
+      "totalHint": "Across all segments"
+    },
+    "segments": "Segments",
+    "all": "All",
+    "search": "Search name, email or city",
+    "empty": "No customers match your search",
+    "truncated": "Showing the {{shown}} most recent of {{total}} customers"
+  },
+  "reviews": {
+    "title": "Reviews",
+    "description": "Approve reviews before they appear on product pages.",
+    "summary": "Rating summary",
+    "basedOn_one": "Based on {{count}} published review",
+    "basedOn_other": "Based on {{count}} published reviews",
+    "tabs": {
+      "pending": "Needs review",
+      "approved": "Published",
+      "rejected": "Rejected",
+      "all": "All"
+    },
+    "empty": {
+      "title": "Queue is clear",
+      "description": "New reviews will show up here."
+    },
+    "verified": "Verified buyer",
+    "on": "Review of",
+    "reject": "Reject",
+    "approve": "Approve",
+    "undo": "Undo",
+    "toast": {
+      "approved": "Published {{author}}'s review",
+      "rejected": "Rejected {{author}}'s review"
+    }
+  },
+  "discounts": {
+    "title": "Discounts",
+    "description": "Codes and automatic offers, with usage against their limits.",
+    "new": "Create discount",
+    "copy": "Copy code",
+    "off": "off",
+    "appliesTo": "Applies to",
+    "minSpend": "Minimum spend",
+    "used": "Redemptions",
+    "noEnd": "no end date",
+    "end": "End now",
+    "status": {
+      "active": "Active",
+      "scheduled": "Scheduled",
+      "expired": "Expired"
+    },
+    "groups": {
+      "active": "Active",
+      "scheduled": "Scheduled",
+      "expired": "Expired"
+    },
+    "type": {
+      "percentage": "Percentage",
+      "fixed": "Fixed amount",
+      "free_shipping": "Free shipping"
+    },
+    "create": {
+      "title": "Create discount code",
+      "description": "Customers enter the code at checkout.",
+      "code": "Code",
+      "generate": "Generate",
+      "type": "Type",
+      "percent": "Percentage off",
+      "amount": "Amount off",
+      "minSpend": "Minimum spend",
+      "limit": "Usage limit",
+      "limitHint": "Leave empty for unlimited",
+      "appliesTo": "Applies to",
+      "appliesToPlaceholder": "e.g. Outerwear",
+      "submit": "Create code"
+    },
+    "toast": {
+      "created": "Discount created",
+      "updated": "Discount ended"
+    }
+  },
+  "giftCards": {
+    "title": "Gift cards",
+    "description": "Issued cards, their remaining balances and where they were spent.",
+    "new": "Issue gift card",
+    "never": "Never",
+    "search": "Search code, name or email",
+    "stats": {
+      "outstanding": "Outstanding balance",
+      "issued": "Total issued",
+      "redeemed": "Total redeemed",
+      "active": "Active cards"
+    },
+    "chart": {
+      "title": "Issued vs redeemed",
+      "description": "Card value per month, last 12 months",
+      "issued": "Issued",
+      "redeemed": "Redeemed"
+    },
+    "mix": "Cards by status",
+    "mixHint": "All issued cards",
+    "tabs": {
+      "all": "All",
+      "active": "Active",
+      "redeemed": "Redeemed",
+      "expired": "Expired",
+      "disabled": "Disabled"
+    },
+    "status": {
+      "active": "Active",
+      "redeemed": "Redeemed",
+      "expired": "Expired",
+      "disabled": "Disabled"
+    },
+    "col": {
+      "code": "Code",
+      "recipient": "Recipient",
+      "balance": "Balance",
+      "status": "Status",
+      "issued": "Issued",
+      "expires": "Expires"
+    },
+    "source": {
+      "purchase": "Bought by a customer",
+      "staff": "Issued by staff"
+    },
+    "empty": {
+      "title": "No gift cards found",
+      "description": "Try another status or search term."
+    },
+    "sheet": {
+      "title": "Gift card",
+      "description": "Balance, recipient and redemption history.",
+      "copy": "Copy code",
+      "of": "of {{value}} original value",
+      "email": "Email",
+      "source": "Source",
+      "note": "Message",
+      "history": "Redemption history",
+      "noHistory": "This card has not been used yet.",
+      "disable": "Disable card",
+      "enable": "Re-enable card"
+    },
+    "issue": {
+      "title": "Issue a gift card",
+      "description": "The recipient gets the code by email and can use it at checkout.",
+      "name": "Recipient name",
+      "email": "Recipient email",
+      "value": "Value",
+      "valueRange": "Enter a value between $5 and $2,000",
+      "expiry": "Expires after",
+      "expiryOptions": {
+        "6": "6 months",
+        "12": "12 months",
+        "24": "24 months",
+        "never": "Never"
+      },
+      "note": "Message",
+      "noteHint": "Optional. Included in the email to the recipient.",
+      "submit": "Issue card"
+    },
+    "toast": {
+      "issued": "Gift card issued",
+      "updated": "Gift card updated"
+    }
+  },
+  "carts": {
+    "title": "Abandoned carts",
+    "description": "Checkouts that were started but not completed, and how many came back.",
+    "sendAll_one": "Email {{count}} cart",
+    "sendAll_other": "Email {{count}} carts",
+    "send": "Send email",
+    "items_one": "{{count}} item",
+    "items_other": "{{count}} items",
+    "confirm": {
+      "title": "Send recovery emails?",
+      "description_one": "{{count}} customer who has not been contacted gets a reminder with a link back to their cart.",
+      "description_other": "{{count}} customers who have not been contacted get a reminder with a link back to their cart.",
+      "submit": "Send emails"
+    },
+    "stats": {
+      "abandonedValue": "Value left in carts",
+      "recoveredValue": "Recovered revenue",
+      "recoveryRate": "Recovery rate",
+      "pendingEmails": "Not contacted"
+    },
+    "chart": {
+      "title": "Recovery rate",
+      "description": "Share of abandoned carts recovered, per week",
+      "rate": "Recovery rate",
+      "goal": "Goal"
+    },
+    "funnel": {
+      "title": "Recovery funnel",
+      "description": "Last eight weeks",
+      "all": "Abandoned",
+      "sent": "Emailed",
+      "recovered": "Recovered"
+    },
+    "tabs": {
+      "all": "All",
+      "not_sent": "Not contacted",
+      "sent": "Email sent",
+      "recovered": "Recovered"
+    },
+    "recovery": {
+      "not_sent": "Not contacted",
+      "sent": "Email sent",
+      "recovered": "Recovered"
+    },
+    "col": {
+      "customer": "Customer",
+      "items": "Items",
+      "value": "Cart value",
+      "lastSeen": "Last seen",
+      "recovery": "Recovery",
+      "action": "Action"
+    },
+    "step": {
+      "cart": "Cart",
+      "shipping": "Shipping details",
+      "payment": "Payment"
+    },
+    "sheet": {
+      "step": "Left at",
+      "emailSent": "Email sent",
+      "recovered": "Recovered",
+      "viewCustomer": "View customer profile"
+    },
+    "empty": {
+      "title": "No carts here",
+      "description": "Abandoned carts in this state will show up here."
+    },
+    "toast": {
+      "sent": "Recovery email sent"
+    }
+  },
+  "reports": {
+    "title": "Sales reports",
+    "description": "Revenue by channel, category and product for the period you pick.",
+    "export": "Export CSV",
+    "period": "Period",
+    "channel": "Channel",
+    "vsPrevious": "vs previous period",
+    "periods": {
+      "7d": "Last 7 days",
+      "30d": "Last 30 days",
+      "60d": "Last 60 days"
+    },
+    "summary": {
+      "revenue": "Net revenue",
+      "orders": "Orders",
+      "units": "Units sold",
+      "aov": "Average order value"
+    },
+    "trend": {
+      "title": "Revenue over time",
+      "description": "Daily net revenue by sales channel"
+    },
+    "channels": {
+      "title": "Sales by channel",
+      "description": "Share of net revenue"
+    },
+    "categories": {
+      "title": "Sales by category",
+      "description": "Product revenue per top-level category"
+    },
+    "products": {
+      "title": "Top products",
+      "description_one": "Top 10 of {{count}} product sold",
+      "description_other": "Top 10 of {{count}} products sold"
+    },
+    "col": {
+      "product": "Product",
+      "category": "Category",
+      "units": "Units",
+      "orders": "Orders",
+      "revenue": "Revenue",
+      "share": "Share"
+    },
+    "units_one": "{{count}} unit",
+    "units_other": "{{count}} units",
+    "empty": {
+      "title": "No sales in this period",
+      "description": "Pick a longer period or another channel."
+    }
+  },
+  "overview": {
+    "title": "Store performance",
+    "description": "Sales, fulfilment and customers across every channel.",
+    "year": "Year",
+    "kpis": {
+      "revenue": "Revenue",
+      "costs": "Costs",
+      "profit": "Profit",
+      "shipments": "Shipments",
+      "hint": "from last month"
+    },
+    "orderRate": {
+      "title": "Yearly order rate",
+      "description": "Orders per month compared with the previous year",
+      "thisYear": "This year",
+      "lastYear": "Last year"
+    },
+    "carrying": {
+      "title": "Carrying costs",
+      "description": "Warehousing and inventory holding",
+      "hint": "from last month",
+      "value": "Cost"
+    },
+    "performance": {
+      "title": "Performance",
+      "description": "Orders by payment state this week",
+      "target": "Target",
+      "paid": "Paid",
+      "pending": "Pending"
+    },
+    "channels": {
+      "title": "Sales by channel",
+      "center": "Net sales"
+    },
+    "orders": {
+      "title": "Recent orders",
+      "description": "Latest orders across all channels",
+      "order": "Order",
+      "customer": "Customer",
+      "product": "Product",
+      "date": "Date",
+      "amount": "Amount",
+      "status": "Status",
+      "quantity": "Qty {{count}}",
+      "viewAll": "View all orders"
+    },
+    "status": {
+      "paid": "Paid",
+      "pending": "Pending",
+      "shipped": "Shipped",
+      "refunded": "Refunded"
+    },
+    "products": {
+      "title": "Top products",
+      "description": "Ranked by revenue",
+      "product": "Product",
+      "sold": "Sold",
+      "revenue": "Revenue",
+      "stock": "Stock",
+      "trend": "Trend",
+      "lowStock": "Low"
+    },
+    "ratings": {
+      "title": "Top customers",
+      "description": "Average rating and spend",
+      "orders": "{{count}} orders"
+    },
+    "summary": {
+      "title": "Needs attention"
+    },
+    "error": {
+      "title": "Couldn't load store data",
+      "description": "Check your connection and try again.",
+      "retry": "Try again"
+    },
+    "actions": {
+      "more": "More options"
+    }
+  },
+  "customer": {
+    "back": "All customers",
+    "notFound": "Customer not found",
+    "email": "Send email",
+    "ltv": "Lifetime value",
+    "spend": "Spend over time",
+    "spendHint": "Order value per month, last 12 months",
+    "history": "Order history",
+    "historyHint_one": "{{count}} order",
+    "historyHint_other": "{{count}} orders",
+    "noOrders": "No orders yet",
+    "contact": "Contact",
+    "addresses": "Addresses",
+    "address": {
+      "home": "Home",
+      "work": "Work",
+      "default": "Default"
+    },
+    "notes": "Notes",
+    "notesHint": "Only visible to your team",
+    "noNotes": "No notes yet."
+  },
+  "transactions": {
+    "title": "Transactions",
+    "description": "Every charge and refund, with processing fees and payouts to your bank.",
+    "volume": "Payment volume",
+    "volumeHint": "Settled payments over the last 30 days",
+    "summary": {
+      "gross": "Gross sales",
+      "refunds": "Refunds",
+      "fees": "Fees",
+      "net": "Net"
+    },
+    "type": {
+      "charge": "Charge",
+      "refund": "Refund"
+    },
+    "method": {
+      "card": "Card",
+      "apple_pay": "Apple Pay",
+      "paypal": "PayPal",
+      "in_person": "In person"
+    },
+    "status": {
+      "succeeded": "Succeeded",
+      "pending": "Pending",
+      "failed": "Failed"
+    },
+    "col": {
+      "date": "Date",
+      "transaction": "Transaction",
+      "method": "Method",
+      "status": "Status",
+      "amount": "Amount",
+      "fee": "Fee",
+      "net": "Net"
+    },
+    "empty": {
+      "title": "No transactions match",
+      "description": "Try removing a status or method filter."
+    }
+  },
+  "payouts": {
+    "title": "Payouts",
+    "schedule_one": "{{interval}} payouts on a {{count}}-day rolling basis",
+    "schedule_other": "{{interval}} payouts on a {{count}}-day rolling basis",
+    "interval": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    },
+    "next": "Next payout · {{date}}",
+    "pending": "On the way to your bank",
+    "recent": "Recent payouts",
+    "payments_one": "{{count}} payment",
+    "payments_other": "{{count}} payments",
+    "status": {
+      "paid": "Paid",
+      "in_transit": "In transit",
+      "scheduled": "Scheduled"
+    }
+  },
+  "returns": {
+    "title": "Returns",
+    "description": "Review return requests, then approve and refund them.",
+    "stats": {
+      "requested": "Awaiting review",
+      "approved": "Awaiting refund",
+      "all": "Total returns",
+      "refunded": "Refunded"
+    },
+    "tabs": {
+      "all": "All",
+      "requested": "Requested",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "refunded": "Refunded"
+    },
+    "status": {
+      "requested": "Requested",
+      "approved": "Approved",
+      "rejected": "Rejected",
+      "refunded": "Refunded"
+    },
+    "approve": "Approve",
+    "reject": "Reject",
+    "refund": "Refund",
+    "confirm": {
+      "title": "Refund {{number}}?",
+      "description": "{{amount}} goes back to the original payment method and is deducted from order {{order}}."
+    },
+    "empty": {
+      "title": "Nothing here",
+      "description": "Return requests in this state will show up here."
+    },
+    "reasons": "Return reasons",
+    "reasonsHint": "All return requests",
+    "toast": {
+      "updated": "Return updated"
+    }
+  },
+  "settings": {
+    "title": "Store settings",
+    "description": "Store details, shipping, taxes and notifications.",
+    "tabs": {
+      "general": "General",
+      "shipping": "Shipping",
+      "taxes": "Taxes",
+      "notifications": "Notifications"
+    },
+    "hints": {
+      "general": "How your store appears to customers and on invoices.",
+      "shipping": "Where you ship and what customers pay at checkout.",
+      "taxes": "Sales tax collected at checkout.",
+      "notifications": "Emails sent to customers and to your staff."
+    },
+    "discard": "Discard",
+    "save": "Save changes",
+    "toast": {
+      "saved": "Settings saved"
+    },
+    "general": {
+      "storeName": "Store name",
+      "contactEmail": "Contact email",
+      "contactEmailHint": "Customers reply to this address.",
+      "phone": "Phone",
+      "currency": "Store currency",
+      "timezone": "Time zone",
+      "weightUnit": "Weight unit",
+      "kg": "Kilograms",
+      "lb": "Pounds",
+      "orderPrefix": "Order number prefix",
+      "orderPrefixHint": "Shown before every order number."
+    },
+    "shipping": {
+      "zone": "Zone {{index}}",
+      "zoneName": "Zone name",
+      "removeZone": "Remove zone",
+      "countries": "Countries",
+      "countriesHint": "Press Enter after each country.",
+      "rateName": "Rate name",
+      "price": "Price",
+      "freeOver": "Free over",
+      "never": "Never",
+      "removeRate": "Remove rate",
+      "addRate": "Add rate",
+      "addZone": "Add shipping zone",
+      "standard": "Standard"
+    },
+    "taxes": {
+      "pricesIncludeTax": "Prices include tax",
+      "pricesIncludeTaxHint": "Catalog prices already contain sales tax.",
+      "chargeOnShipping": "Charge tax on shipping",
+      "chargeOnShippingHint": "Apply the regional rate to shipping costs too.",
+      "rates": "Regional rates",
+      "region": "Region",
+      "rate": "Rate",
+      "remove": "Remove rate",
+      "add": "Add region"
+    },
+    "notifications": {
+      "staffEmail": "Staff email",
+      "staffEmailHint": "Receives new order and stock alerts.",
+      "orderConfirmation": "Order confirmation",
+      "orderConfirmationHint": "Email customers a receipt when they place an order.",
+      "shippingUpdates": "Shipping updates",
+      "shippingUpdatesHint": "Email customers when their order ships and is delivered.",
+      "abandonedCart": "Abandoned cart reminder",
+      "abandonedCartHint": "Remind customers about items left in their cart after 4 hours.",
+      "lowStock": "Low stock alerts",
+      "lowStockHint": "Email staff when a variant drops below the threshold.",
+      "dailySummary": "Daily summary",
+      "dailySummaryHint": "Email staff a recap of sales every morning.",
+      "threshold": "Low stock threshold",
+      "thresholdHint": "Alert when stock falls below this many units.",
+      "units": "units"
+    }
+  },
+  "shell": {
+    "categories": {
+      "orders": "Orders",
+      "stock": "Stock",
+      "customers": "Customers"
+    },
+    "notifications": {
+      "order": {
+        "title": "New order #10482",
+        "body": "Olivia Martin · 3 items · $248.00, paid with Visa."
+      },
+      "lowStock": {
+        "title": "Low stock: Aero Runner 2",
+        "body": "Only 4 left in size 42. Restock before the weekend sale."
+      },
+      "review": {
+        "title": "Jackson Lee left a 2-star review",
+        "body": "“Arrived late and the box was damaged.” Reply to keep the rating up."
+      },
+      "return": {
+        "title": "Return requested for #10433",
+        "body": "Reason: wrong size. Refund of $89.00 pending approval."
+      },
+      "carts": {
+        "title": "12 carts abandoned today",
+        "body": "$1,920 in potential revenue. Send a recovery email."
+      },
+      "payout": {
+        "title": "Payout of $12,480 sent",
+        "body": "It should reach your bank account in 1–2 business days."
+      }
+    },
+    "create": {
+      "product": {
+        "label": "Add product",
+        "description": "List a new item in the catalog"
+      },
+      "order": {
+        "label": "Create order",
+        "description": "Take a phone or in-store order"
+      },
+      "discount": {
+        "label": "New discount",
+        "description": "Codes, automatic and BOGO offers"
+      },
+      "giftCard": {
+        "label": "Issue gift card",
+        "description": "Send store credit to a customer"
+      }
+    },
+    "account": {
+      "store": "Store settings",
+      "payouts": "Payouts"
+    }
+  }
+}

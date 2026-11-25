@@ -1,0 +1,129 @@
+{
+  "actions": {
+    "cancel": "Cancelar",
+    "save": "Guardar",
+    "saveChanges": "Guardar cambios",
+    "create": "Crear",
+    "delete": "Eliminar",
+    "edit": "Editar",
+    "back": "Volver",
+    "search": "Buscar",
+    "loading": "Cargando…"
+  },
+  "shell": {
+    "account": "Cuenta",
+    "signOut": "Cerrar sesión",
+    "toggleSidebar": "Mostrar/ocultar barra lateral",
+    "language": "Idioma",
+    "commandMenu": "Buscar o ir a…",
+    "commandEmpty": "Sin resultados.",
+    "commandPages": "Páginas",
+    "commandActions": "Acciones",
+    "commandTheme": "Tema",
+    "noNotifications": "Estás al día",
+    "more": "Más",
+    "appDescription": "Aplicaciones, componentes y ajustes",
+    "openMenu": "Abrir menú",
+    "switchWorkspace": "Cambiar de panel",
+    "browseTemplates": "Ver todas las plantillas",
+    "markAllRead": "Marcar todo como leído",
+    "notifications": "Notificaciones",
+    "noNotificationsHint": "Aquí aparecerá la nueva actividad.",
+    "notificationsAll": "Todas",
+    "notificationsUnread": "Sin leer",
+    "newCount_one": "{{count}} nueva",
+    "newCount_other": "{{count}} nuevas",
+    "markRead": "Marcar como leída",
+    "today": "Hoy",
+    "earlier": "Anteriores",
+    "viewAll": "Ver todo",
+    "notificationSettings": "Ajustes",
+    "create": "Crear",
+    "createIn": "Crear en {{workspace}}",
+    "sample": {
+      "categories": {
+        "activity": "Actividad",
+        "system": "Sistema"
+      },
+      "mention": {
+        "title": "Hannah Morgan te ha mencionado",
+        "body": "«¿Puedes revisar la hoja de ruta del T4 antes del viernes?»"
+      },
+      "payment": {
+        "title": "Pago recibido",
+        "body": "La factura INV-2041 se ha pagado por completo (4.250,00 $)."
+      },
+      "report": {
+        "title": "Tu informe semanal está listo",
+        "body": "El tráfico ha subido un 12 % respecto a la semana pasada."
+      },
+      "security": {
+        "title": "Nuevo inicio de sesión desde Chrome en Windows",
+        "body": "Si no has sido tú, cambia tu contraseña ahora."
+      },
+      "release": {
+        "title": "Novedad: vistas guardadas",
+        "body": "Guarda filtros en cualquier tabla y compártelos con tu equipo."
+      }
+    }
+  },
+  "pager": {
+    "previous": "Página anterior",
+    "next": "Página siguiente",
+    "status": "Página {{page}} de {{totalPages}}"
+  },
+  "theme": {
+    "customize": "Personalizar tema",
+    "description": "Los cambios se guardan en este dispositivo y se aplican al instante.",
+    "mode": "Modo",
+    "light": "Claro",
+    "dark": "Oscuro",
+    "system": "Sistema",
+    "color": "Color",
+    "customColor": "Color personalizado",
+    "radius": "Radio",
+    "font": "Fuente",
+    "scale": "Escala",
+    "reset": "Restablecer",
+    "copyCss": "Copiar CSS",
+    "copied": "CSS del tema copiado al portapapeles",
+    "copyFailed": "No se pudo acceder al portapapeles",
+    "layout": "Diseño",
+    "tab": "Tema"
+  },
+  "errors": {
+    "notFound": "Página no encontrada",
+    "notFoundDescription": "La página que buscas no existe o se ha movido.",
+    "forbidden": "No tienes acceso a esta página",
+    "goHome": "Ir al inicio",
+    "somethingWrong": "Algo salió mal",
+    "somethingWrongDescription": "Ocurrió un error inesperado. Intenta recargar la página.",
+    "refresh": "Recargar"
+  },
+  "validation": {
+    "required": "Obligatorio",
+    "email": "Introduce un correo válido",
+    "passwordMin": "La contraseña debe tener al menos 5 caracteres",
+    "tooLong": "Es demasiado largo"
+  },
+  "navGroups": {
+    "general": "General",
+    "dashboards": "Paneles",
+    "apps": "Aplicaciones",
+    "components": "Componentes",
+    "pages": "Páginas",
+    "account": "Cuenta"
+  },
+  "brand": {
+    "title": "Marca",
+    "name": "Nombre del producto",
+    "logo": "Logotipo",
+    "logoDark": "Logotipo sobre fondos oscuros",
+    "mark": "Icono (cuadrado)",
+    "upload": "Subir",
+    "remove": "Quitar imagen",
+    "hint": "SVG, PNG, WebP o JPEG de hasta 500 KB. Sin logotipo se muestran el icono y el nombre. Para aplicar una marca a todos, defínela en src/core/brand/config.ts.",
+    "tooLarge": "Elige una imagen de menos de 500 KB",
+    "reset": "Restablecer marca"
+  }
+}

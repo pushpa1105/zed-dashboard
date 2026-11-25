@@ -1,0 +1,84 @@
+{
+  "nav": "Calendar",
+  "title": "Calendar",
+  "description": "Meetings, focus time and travel across your calendars.",
+  "newEvent": "New event",
+  "myCalendars": "My calendars",
+  "upNext": "Up next",
+  "nothingUpcoming": "Nothing in the next 7 days.",
+  "today": "Today",
+  "previous": "Previous",
+  "next": "Next",
+  "viewLabel": "Calendar view",
+  "now": "Now",
+  "edit": "Edit",
+  "allDay": "All day",
+  "more": "+{{count}} more",
+  "guests": "{{count}} guests",
+  "views": {
+    "month": "Month",
+    "week": "Week",
+    "day": "Day",
+    "agenda": "Agenda"
+  },
+  "error": {
+    "title": "Couldn't load your calendar",
+    "description": "The events service didn't respond. Try again in a moment.",
+    "retry": "Try again"
+  },
+  "calendars": {
+    "work": "Work",
+    "team": "Team",
+    "personal": "Personal",
+    "travel": "Travel",
+    "holidays": "Holidays"
+  },
+  "repeat": {
+    "none": "Does not repeat",
+    "daily": "Every day",
+    "weekdays": "Every weekday",
+    "weekly": "Every week",
+    "monthly": "Every month"
+  },
+  "agenda": {
+    "emptyTitle": "A clear month",
+    "emptyDescription": "No events in the next 30 days for the calendars you show.",
+    "today": "Today",
+    "tomorrow": "Tomorrow"
+  },
+  "dialog": {
+    "newTitle": "New event",
+    "editTitle": "Edit event",
+    "description": "Changes to a repeating event apply to the whole series.",
+    "title": "Title",
+    "titlePlaceholder": "e.g. Pricing review",
+    "allDay": "All day",
+    "starts": "Starts",
+    "ends": "Ends",
+    "startDate": "Start date",
+    "startTime": "Start time",
+    "endDate": "End date",
+    "endTime": "End time",
+    "calendar": "Calendar",
+    "repeat": "Repeat",
+    "location": "Location",
+    "locationPlaceholder": "Room, address or video link",
+    "guests": "Guests",
+    "guestsPlaceholder": "Add email and press Enter",
+    "notes": "Notes",
+    "delete": "Delete",
+    "cancel": "Cancel",
+    "save": "Save changes",
+    "create": "Create event",
+    "errors": {
+      "title": "Give the event a title",
+      "range": "The event must end after it starts",
+      "email": "Enter a valid email address"
+    }
+  },
+  "toast": {
+    "created": "Event created",
+    "updated": "Event updated",
+    "deleted": "Event deleted"
+  }
+}

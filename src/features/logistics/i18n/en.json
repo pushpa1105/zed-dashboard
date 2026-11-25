@@ -1,0 +1,841 @@
+{
+  "workspace": {
+    "name": "Logistics",
+    "description": "Shipments, fleet, routes and tracking",
+    "category": "Transport"
+  },
+  "nav": {
+    "sections": {
+      "operations": "Operations",
+      "network": "Network",
+      "more": "More",
+      "finance": "Finance",
+      "partners": "Partners"
+    },
+    "overview": "Overview",
+    "shipments": "Shipments",
+    "exceptions": "Exceptions",
+    "fleetGroup": "Fleet",
+    "fleet": "Vehicles",
+    "drivers": "Drivers",
+    "routes": "Route planner",
+    "docks": "Dock schedule",
+    "customs": "Customs",
+    "carrierSlots": "Carrier slots",
+    "carrierPortal": "Carrier portal",
+    "myShift": "My shift",
+    "dispatch": "Dispatch board",
+    "billing": "Freight billing",
+    "carriers": "Carriers",
+    "slas": "Customer SLAs",
+    "slaCustomers": "All customers",
+    "slaBreached": "Breached",
+    "performance": "Performance reports"
+  },
+  "status": {
+    "booked": "Booked",
+    "picked_up": "Picked up",
+    "in_transit": "In transit",
+    "at_hub": "At hub",
+    "out_for_delivery": "Out for delivery",
+    "delivered": "Delivered",
+    "exception": "Exception"
+  },
+  "mode": {
+    "road": "Road",
+    "rail": "Rail",
+    "sea": "Sea",
+    "air": "Air"
+  },
+  "severity": {
+    "critical": "Critical",
+    "high": "High",
+    "medium": "Medium",
+    "low": "Low"
+  },
+  "vehicleStatus": {
+    "on_route": "On route",
+    "idle": "Idle",
+    "charging": "Charging",
+    "maintenance": "Maintenance"
+  },
+  "driverStatus": {
+    "driving": "Driving",
+    "on_break": "On break",
+    "available": "Available",
+    "off_duty": "Off duty"
+  },
+  "actions": {
+    "cancel": "Cancel"
+  },
+  "error": {
+    "title": "Couldn't load this data",
+    "description": "The logistics service didn't respond. Check your connection and try again.",
+    "retry": "Try again"
+  },
+  "table": {
+    "asc": "Sort ascending",
+    "desc": "Sort descending",
+    "clearSort": "Clear sort",
+    "hide": "Hide column",
+    "pinStart": "Pin left",
+    "pinEnd": "Pin right",
+    "unpin": "Unpin",
+    "reset": "Reset",
+    "columns": "Columns",
+    "compact": "Compact",
+    "default": "Default",
+    "comfortable": "Comfortable",
+    "export": "Export",
+    "rowsPerPage": "Rows per page",
+    "range": "{{from}}–{{to}} of {{total}}",
+    "first": "First page",
+    "previous": "Previous page",
+    "next": "Next page",
+    "last": "Last page"
+  },
+  "overview": {
+    "title": "Network overview",
+    "description": "Live view of every lane, hub and shipment in motion.",
+    "live": "Live · refreshed every minute",
+    "allShipments": "All shipments",
+    "legend": {
+      "active": "Active lane",
+      "planned": "Paused lane",
+      "vehicle": "Vehicle"
+    },
+    "kpi": {
+      "inTransit": "In transit",
+      "vsLastWeek": "vs last week",
+      "onTime": "On-time delivery",
+      "avgDelay": "Average delay",
+      "minutes": "{{value}} min",
+      "exceptions": "Open exceptions",
+      "critical": "{{count}} critical"
+    },
+    "map": {
+      "title": "Network map",
+      "description": "Line weight follows the number of shipments on each lane."
+    },
+    "exceptions": {
+      "title": "Needs attention",
+      "description": "Highest severity first",
+      "openQueue": "Open the exception queue"
+    },
+    "volume": {
+      "title": "Deliveries, last 14 days",
+      "description": "Completed drops and returns to sender",
+      "delivered": "Delivered",
+      "returned": "Returned"
+    },
+    "carriers": {
+      "title": "Carrier on-time rate",
+      "description": "Share of drops within the booked window",
+      "shipments": "{{count}} shipments"
+    },
+    "lanes": {
+      "title": "Busiest lanes",
+      "description": "Shipments currently booked on each lane",
+      "lane": "Lane",
+      "shipments": "Shipments",
+      "onTime": "On time",
+      "status": "Status",
+      "active": "Running",
+      "paused": "Paused"
+    }
+  },
+  "shipments": {
+    "title": "Shipments",
+    "description": "Every booked consignment across road, rail, sea and air.",
+    "priority": "Priority",
+    "late": "{{value}} late",
+    "pallets": "{{count}} pallets",
+    "columns": {
+      "id": "Shipment",
+      "customer": "Customer",
+      "route": "Route",
+      "status": "Status",
+      "mode": "Mode",
+      "carrier": "Carrier",
+      "progress": "Progress",
+      "eta": "ETA",
+      "load": "Load"
+    },
+    "scope": {
+      "label": "Show",
+      "all": "All",
+      "active": "Moving",
+      "priority": "Priority",
+      "late": "Late"
+    },
+    "search": "Search ID, customer, PO or city…",
+    "exported": "Shipments exported to CSV",
+    "empty": "No shipments match",
+    "emptyHint": "Clear a filter or search for a different reference."
+  },
+  "shipment": {
+    "reported": "Exception reported. Operations has been notified.",
+    "report": "Report exception",
+    "reportTitle": "Report a problem with {{id}}",
+    "reportDescription": "The exception goes to the operations queue and pauses automatic ETA updates.",
+    "reportNote": "What happened?",
+    "reportPlaceholder": "e.g. Consignee closed, driver waiting at gate 3 since 14:10",
+    "reportSubmit": "Report exception",
+    "back": "All shipments",
+    "linkCopied": "Tracking link copied",
+    "copyFailed": "Couldn't access the clipboard",
+    "copyLink": "Copy tracking link",
+    "from": "From",
+    "to": "To",
+    "eta": "Estimated arrival",
+    "delay": "Delay",
+    "onTime": "On time",
+    "shipped": "Shipped",
+    "trailer": "Trailer",
+    "tracking": "Tracking",
+    "trackingDescription": "Scans and events reported by the carrier",
+    "planned": "Planned",
+    "map": "Route",
+    "package": "Consignment",
+    "contents": "Contents",
+    "dimensions": "Dimensions",
+    "weight": "Gross weight",
+    "value": "Declared value",
+    "temperature": "Temperature",
+    "pod": "Proof of delivery",
+    "photo": "Delivery photo {{n}}",
+    "podPending": "Not delivered yet",
+    "podPendingHint": "Signature and photos appear here once the driver completes the drop."
+  },
+  "exceptions": {
+    "title": "Exception queue",
+    "description": "Triage problems on the network, follow the playbook, close them out.",
+    "type": {
+      "delay": "Delay",
+      "damage": "Damage",
+      "address": "Address",
+      "customs": "Customs",
+      "temperature": "Temperature",
+      "capacity": "Capacity"
+    },
+    "escalated": "Escalated",
+    "opened": "Opened {{when}}",
+    "playbook": "Playbook",
+    "ownedBy": "Owned by",
+    "unassigned": "Nobody owns this yet",
+    "assignMe": "Assign to me",
+    "escalate": "Escalate",
+    "resolve": "Resolve",
+    "toast": {
+      "resolve": "{{id}} resolved",
+      "assign": "{{id}} assigned to you",
+      "escalate": "{{id}} escalated"
+    },
+    "all": "All",
+    "emptyTitle": "Queue is clear",
+    "emptyDescription": "No exceptions at this severity. Nice work.",
+    "nothingSelected": "Select an exception to see the details"
+  },
+  "fleet": {
+    "title": "Vehicles",
+    "description": "Status, energy and servicing for every vehicle in the fleet.",
+    "filter": "Filter by status",
+    "all": "All",
+    "charge": "Battery",
+    "fuel": "Fuel",
+    "kind": {
+      "electric_van": "Electric van",
+      "rigid_truck": "Rigid truck",
+      "tractor_unit": "Tractor unit",
+      "reefer": "Reefer"
+    },
+    "load": "Load",
+    "odometer": "Odometer",
+    "inWorkshop": "In the workshop",
+    "serviceDue": "Service due in {{km}} km",
+    "serviceIn": "Next service in {{km}} km",
+    "unassigned": "No driver assigned",
+    "kpi": {
+      "onRoute": "On route",
+      "onRouteHint": "vehicles out right now",
+      "load": "Average load",
+      "loadHint": "of vehicles on route",
+      "charging": "Charging",
+      "chargingHint": "electric vans at depots",
+      "service": "Service due",
+      "serviceHint": "within 2,000 km"
+    }
+  },
+  "drivers": {
+    "title": "Drivers",
+    "description": "Hours of service, assignments and today's drops.",
+    "roster": "Roster",
+    "rosterDescription": "{{onDuty}} of {{total}} drivers on duty",
+    "hoursLeft": "{{driving}} h driven · {{left}} h left",
+    "hoursTooltip": "{{driving}} h driving, {{duty}} h on duty of a 13 h window",
+    "columns": {
+      "driver": "Driver",
+      "status": "Status",
+      "vehicle": "Vehicle",
+      "today": "Driving today",
+      "week": "This week",
+      "drops": "Drops",
+      "rating": "Rating"
+    },
+    "compliance": "Compliance alerts",
+    "complianceDescription": "Drivers close to a legal limit",
+    "allClear": "Everyone is within their hours.",
+    "alertDaily": "{{hours}} h driven today, the 9 h limit is close",
+    "alertWeekly": "{{hours}} h this week, the 56 h limit is close",
+    "legend": "How to read the bars",
+    "legendDriving": "Driving time",
+    "legendDuty": "Other duty (loading, paperwork)",
+    "legendLimit": "9 h daily driving limit"
+  },
+  "routes": {
+    "title": "Route planner",
+    "description": "Order the stops, check the delivery windows, save the plan.",
+    "pick": "Choose a route",
+    "saved": "Route order saved and sent to the driver app",
+    "kpi": {
+      "distance": "Distance",
+      "drive": "Driving time",
+      "finish": "Back at depot {{time}}",
+      "late": "Late stops",
+      "lateHint": "Arrive after the window closes",
+      "allOnTime": "Every stop inside its window",
+      "load": "Vehicle load",
+      "parcels": "{{count}} of {{capacity}} parcels"
+    },
+    "stops": "Stops",
+    "stopsDescription": "ETAs update as you reorder",
+    "optimise": "Optimise",
+    "unsaved": "Unsaved changes",
+    "savedState": "Matches the published plan",
+    "reset": "Reset",
+    "save": "Save order",
+    "departs": "Departs {{time}}",
+    "window": "Window {{from}}–{{to}}",
+    "wait": "waits {{value}}",
+    "moveUp": "Move {{name}} up",
+    "moveDown": "Move {{name}} down",
+    "map": "Map",
+    "mapDescription": "{{km}} km round trip from the depot"
+  },
+  "docks": {
+    "title": "Dock schedule",
+    "description": "Today's loading and unloading slots at Rotterdam Waalhaven.",
+    "booked": "Slot booked",
+    "dock": "Dock",
+    "window": "Window",
+    "trailer": "Trailer",
+    "pallets": "Pallets",
+    "status": "Status",
+    "slotStatus": {
+      "scheduled": "Scheduled",
+      "arrived": "Arrived",
+      "loading": "Loading",
+      "done": "Done"
+    },
+    "book": "Book a slot",
+    "bookTitle": "Book a dock slot",
+    "bookDescription": "The carrier gets a confirmation with the dock and time.",
+    "direction": "Direction",
+    "inbound": "Inbound",
+    "outbound": "Outbound",
+    "start": "Start",
+    "duration": "Duration",
+    "minutes": "{{value}} min",
+    "carrier": "Carrier",
+    "confirm": "Book slot",
+    "utilisation": "{{value}}% booked",
+    "now": "Now",
+    "inboundToday": "Inbound slots today",
+    "outboundToday": "Outbound slots today",
+    "atDocks": "Trucks at the docks",
+    "schedule": "Today",
+    "scheduleDescription": "Click a slot for details. Local time {{time}}."
+  },
+  "expiry": {
+    "expired": "Expired",
+    "expiring": "Expires soon",
+    "valid": "Valid"
+  },
+  "serviceType": {
+    "oil_service": "Oil and filter service",
+    "brakes": "Brake pads and discs",
+    "tyres": "Tyre replacement",
+    "inspection": "Roadworthiness inspection",
+    "electrical": "Battery and high-voltage check"
+  },
+  "documentType": {
+    "registration": "Vehicle registration",
+    "insurance": "Insurance certificate",
+    "inspection": "Inspection certificate",
+    "tachograph": "Tachograph calibration"
+  },
+  "safetyEvent": {
+    "harsh_braking": "Harsh braking",
+    "speeding": "Speeding",
+    "harsh_cornering": "Harsh cornering",
+    "phone_use": "Phone use while driving",
+    "idling": "Excessive idling"
+  },
+  "vehicle": {
+    "title": "Vehicle",
+    "back": "All vehicles",
+    "specs": "Specifications",
+    "model": "Model",
+    "vin": "VIN",
+    "year": "Model year",
+    "payload": "Payload",
+    "battery": "Battery",
+    "tank": "Fuel tank",
+    "location": "Location",
+    "driver": "Driver",
+    "kpi": {
+      "odometer": "Odometer",
+      "consumption": "Consumption",
+      "lastWeek": "last week",
+      "distance": "Distance",
+      "twelveWeeks": "last 12 weeks",
+      "service": "Next service in"
+    },
+    "efficiency": {
+      "fuel": "Fuel efficiency",
+      "electric": "Energy efficiency",
+      "description": "Weekly consumption in {{unit}}",
+      "average": "12-week average"
+    },
+    "maintenance": {
+      "title": "Maintenance history",
+      "description": "Completed work orders",
+      "date": "Date",
+      "work": "Work done",
+      "workshop": "Workshop",
+      "odometer": "Odometer",
+      "cost": "Cost"
+    },
+    "upcoming": {
+      "title": "Upcoming service",
+      "due": "Due {{date}}",
+      "dueKm": "or at {{km}} km"
+    },
+    "documents": {
+      "title": "Documents",
+      "expires": "expires {{date}}"
+    }
+  },
+  "driver": {
+    "title": "Driver",
+    "back": "All drivers",
+    "description": "Based at {{base}}",
+    "kpi": {
+      "onTime": "On-time rate",
+      "deliveries": "Deliveries",
+      "last30": "last 30 days",
+      "rating": "Rating",
+      "ratingHint": "from customer feedback",
+      "safety": "Safety score",
+      "safetyHint": "out of 100, from telematics"
+    },
+    "hos": {
+      "title": "Hours of service",
+      "description": "EU limits: 9 h driving a day, 13 h duty window, 56 h driving a week",
+      "driving": "Driving today",
+      "duty": "On duty today",
+      "week": "Driving this week",
+      "value": "{{value}} / {{max}} h",
+      "drivingSeries": "Driving",
+      "dutySeries": "On duty"
+    },
+    "profile": {
+      "title": "Profile",
+      "status": "Status",
+      "base": "Home base",
+      "vehicle": "Vehicle",
+      "license": "Licence ({{class}})",
+      "hired": "Hired",
+      "distance": "Distance, 30 days"
+    },
+    "trips": {
+      "title": "Recent trips",
+      "description": "Last eight completed trips",
+      "date": "Date",
+      "route": "Route",
+      "distance": "Distance",
+      "stops": "Stops",
+      "arrival": "Arrival",
+      "onTime": "On time",
+      "late": "{{value}} late"
+    },
+    "safety": {
+      "title": "Safety events",
+      "description": "Telematics alerts, newest first",
+      "empty": "No safety events",
+      "emptyHint": "Nothing reported in the last two weeks."
+    }
+  },
+  "dispatch": {
+    "title": "Dispatch board",
+    "description": "Assign today's orders to drivers on shift. Drag a card or use its menu.",
+    "board": "Dispatch board",
+    "assign": "Assign to",
+    "assignTo": "Assign {{id}}",
+    "unassign": "Move back to unassigned",
+    "drag": "Drag {{id}}",
+    "dropHere": "Drop orders here",
+    "poolVan": "Pool van",
+    "hoursLeft": "{{value}} h left",
+    "load": "{{load}} of {{capacity}}",
+    "assigned": "{{id}} assigned to {{name}}",
+    "unassigned": "{{id}} moved back to unassigned",
+    "unassignedColumn": "Unassigned",
+    "kpi": {
+      "unassigned": "Unassigned orders",
+      "priority_one": "{{count}} priority",
+      "priority_other": "{{count}} priority",
+      "assigned": "Assigned",
+      "assignedHint": "of today's orders",
+      "weight": "Weight to place",
+      "weightHint": "still unassigned",
+      "overloaded": "Over capacity",
+      "overloadedHint": "of {{count}} drivers on shift"
+    }
+  },
+  "billing": {
+    "title": "Freight billing",
+    "description": "Check carrier invoices against the quote, then approve or dispute them.",
+    "invoices": "Carrier invoices",
+    "invoicesDescription": "Variance is measured against the quoted rate",
+    "filter": "Filter invoices",
+    "all": "All",
+    "flagged": "Variance",
+    "status": {
+      "pending": "Pending",
+      "approved": "Approved",
+      "disputed": "Disputed"
+    },
+    "variance": {
+      "high": "More than 10% over the quote",
+      "review": "Above the quote, review",
+      "ok": "Matches the quote"
+    },
+    "columns": {
+      "invoice": "Invoice",
+      "carrier": "Carrier",
+      "lane": "Lane",
+      "quoted": "Quoted",
+      "invoiced": "Invoiced",
+      "variance": "Variance",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "approve": "Approve",
+    "approveInvoice": "Approve {{number}}",
+    "dispute": "Dispute",
+    "disputeInvoice": "Dispute {{number}}",
+    "disputeTitle": "Dispute {{number}}",
+    "disputeDescription": "The carrier is notified and payment is held until the dispute is resolved.",
+    "disputeReason": "Reason",
+    "disputePlaceholder": "e.g. Fuel surcharge above the agreed 12%",
+    "toast": {
+      "approve": "{{number}} approved for payment",
+      "dispute": "{{number}} disputed"
+    },
+    "costPerKm": {
+      "title": "Cost per km",
+      "description": "Average invoiced rate by mode, last six months",
+      "contract": "Contract rate"
+    },
+    "carriers": {
+      "title": "Variance by carrier",
+      "description": "Invoiced over quoted, all invoices"
+    },
+    "kpi": {
+      "pending": "Awaiting approval",
+      "invoices_one": "{{count}} invoice",
+      "invoices_other": "{{count}} invoices",
+      "overQuote": "Billed over quote",
+      "flagged_one": "{{count}} invoice above 10%",
+      "flagged_other": "{{count}} invoices above 10%",
+      "disputed": "In dispute",
+      "roadRate": "Road cost per km",
+      "vsLastMonth": "vs last month"
+    },
+    "emptyTitle": "No invoices here",
+    "emptyDescription": "Nothing matches this filter. Try another status."
+  },
+  "carriers": {
+    "title": "Carriers",
+    "description": "Partner carriers by mode, with service levels, cost and scorecards.",
+    "table": "Partner carriers",
+    "tableDescription": "Bars mark the network on-time target",
+    "filter": "Filter by mode",
+    "all": "All modes",
+    "emptyTitle": "No carriers for this mode",
+    "emptyDescription": "Pick another mode to see its carriers.",
+    "status": {
+      "active": "Active",
+      "suspended": "Suspended"
+    },
+    "columns": {
+      "carrier": "Carrier",
+      "mode": "Mode",
+      "onTime": "On-time",
+      "trend": "6-month trend",
+      "damage": "Damage rate",
+      "costIndex": "Cost index",
+      "scorecard": "Scorecard",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "shipmentsIn_one": "{{country}} · {{count}} shipment",
+    "shipmentsIn_other": "{{country}} · {{count}} shipments",
+    "trendLabel": "{{name}} on-time rate, last 6 months",
+    "activate": "Activate",
+    "suspend": "Suspend",
+    "activateCarrier": "Activate {{name}}",
+    "suspendCarrier": "Suspend {{name}}",
+    "suspendTitle": "Suspend {{name}}?",
+    "suspendDescription": "No new shipments will be tendered to this carrier until it is reactivated. Shipments already booked are not affected.",
+    "toast": {
+      "active": "Carrier reactivated",
+      "suspended": "Carrier suspended"
+    },
+    "kpi": {
+      "active": "Active carriers",
+      "shipmentsHint_one": "{{count}} shipment in 90 days",
+      "shipmentsHint_other": "{{count}} shipments in 90 days",
+      "onTime": "On-time (weighted)",
+      "target": "Target {{target}}%",
+      "damage": "Damage rate",
+      "damageHint": "Weighted by shipments",
+      "costIndex": "Avg. cost index",
+      "costHint": "Market average = 100",
+      "shipments": "Shipments (90 days)"
+    },
+    "ranking": {
+      "title": "On-time by carrier",
+      "description": "Active carriers, last 90 days"
+    },
+    "mix": {
+      "title": "Shipments by mode",
+      "description": "All carriers, last 90 days",
+      "center": "Shipments"
+    },
+    "score": {
+      "onTime": "On-time",
+      "damage": "Damage",
+      "cost": "Cost",
+      "compliance": "Compliance",
+      "service": "Service"
+    },
+    "sheet": {
+      "loading": "Carrier",
+      "scorecard": "Scorecard",
+      "overall": "Overall",
+      "score": "Score",
+      "contract": "Contract",
+      "contact": "Contact",
+      "paymentTerms": "Payment terms",
+      "days_one": "{{count}} day",
+      "days_other": "{{count}} days",
+      "start": "Contract start",
+      "end": "Contract end",
+      "lanes": "Contracted lanes",
+      "lane": "Lane",
+      "rate": "Rate / km",
+      "shipments": "Shipments"
+    }
+  },
+  "slas": {
+    "title": "Customer SLAs",
+    "description": "Service-level targets against actual performance, breaches and credit notes.",
+    "customers": "Customers",
+    "customersDescription": "Select a customer to see its weekly trend",
+    "filter": "Filter by SLA health",
+    "all": "All",
+    "emptyTitle": "No customers in this state",
+    "emptyDescription": "Try another filter.",
+    "health": {
+      "met": "Met",
+      "at_risk": "At risk",
+      "breached": "Breached"
+    },
+    "tier": {
+      "platinum": "Platinum SLA",
+      "gold": "Gold SLA",
+      "standard": "Standard SLA"
+    },
+    "columns": {
+      "customer": "Customer",
+      "shipments": "Shipments (30 d)",
+      "onTime": "On-time",
+      "transit": "Transit time",
+      "breaches": "Breaches",
+      "health": "SLA"
+    },
+    "versus": "{{actual}} / {{target}}",
+    "kpi": {
+      "meeting": "Customers meeting SLA",
+      "meetingHint": "Both on-time and transit targets",
+      "onTime": "On-time (weighted)",
+      "target": "Weighted target {{target}}",
+      "breaches": "Breaches (30 days)",
+      "open_one": "{{count}} without a credit note",
+      "open_other": "{{count}} without a credit note",
+      "credits": "Credits issued",
+      "creditNotes_one": "{{count}} credit note",
+      "creditNotes_other": "{{count}} credit notes"
+    },
+    "trend": {
+      "title": "{{customer}}: weekly on-time",
+      "description": "Last 12 weeks against the contracted target",
+      "target": "SLA target"
+    },
+    "causes": {
+      "title": "Root causes",
+      "description": "All breaches in the last 30 days"
+    },
+    "cause": {
+      "carrier_delay": "Carrier delay",
+      "weather": "Weather",
+      "customs": "Customs hold",
+      "capacity": "Capacity shortfall",
+      "handling": "Hub handling",
+      "address": "Address issue"
+    },
+    "metric": {
+      "on_time": "Late delivery",
+      "transit": "Transit time exceeded"
+    },
+    "breaches": {
+      "title": "SLA breaches",
+      "description": "Each breach with its root cause; issue a credit note where the contract calls for one",
+      "shipment": "Shipment",
+      "metric": "Breach",
+      "delay": "Delay",
+      "rootCause": "Root cause",
+      "credit": "Credit",
+      "allCauses": "All causes",
+      "filter": "Filter by credit",
+      "open": "Open",
+      "credited": "Credited",
+      "all": "All",
+      "creditedAmount": "{{amount}} credited",
+      "emptyTitle": "No breaches here",
+      "emptyDescription": "Nothing matches these filters."
+    },
+    "credit": {
+      "title": "Credit note for {{customer}}",
+      "description": "Shipment {{shipment}}, freight charge {{charge}}.",
+      "amount": "Credit amount",
+      "hint": "Suggested: 15% of the freight charge. It can't exceed the charge.",
+      "issue": "Issue credit note",
+      "issued": "Credit note issued",
+      "action": "Credit note",
+      "issueFor": "Issue a credit note for {{shipment}}"
+    }
+  },
+  "performance": {
+    "title": "Performance reports",
+    "description": "On-time delivery, cost per shipment and utilisation across the network.",
+    "period": "Reporting period",
+    "periods": {
+      "30d": "30 days",
+      "90d": "90 days",
+      "12m": "12 months"
+    },
+    "exported": "Lane report downloaded",
+    "kpi": {
+      "onTime": "On-time delivery",
+      "cost": "Cost per shipment",
+      "utilisation": "Utilisation",
+      "shipments": "Shipments",
+      "vsPrevious": "vs previous period"
+    },
+    "charts": {
+      "onTime": "On-time delivery",
+      "target": "Target",
+      "utilisation": "Load utilisation",
+      "cost": "Cost per shipment"
+    },
+    "lanes": {
+      "title": "Lane performance",
+      "description": "Every contracted lane in the period, busiest first",
+      "lane": "Lane",
+      "mode": "Mode",
+      "shipments": "Shipments",
+      "onTime": "On-time",
+      "transit": "Avg. transit",
+      "cost": "Cost / shipment",
+      "perKm": "{{rate}}/km",
+      "utilisation": "Utilisation",
+      "emptyTitle": "No lane data",
+      "emptyDescription": "No shipments were recorded in this period."
+    },
+    "csv": {
+      "origin": "Origin",
+      "destination": "Destination",
+      "mode": "Mode",
+      "distanceKm": "Distance (km)",
+      "shipments": "Shipments",
+      "onTimePct": "On-time (%)",
+      "transitHours": "Avg. transit (h)",
+      "costPerShipment": "Cost per shipment (EUR)",
+      "utilisationPct": "Utilisation (%)"
+    }
+  },
+  "shell": {
+    "categories": {
+      "exceptions": "Exceptions",
+      "shipments": "Shipments",
+      "fleet": "Fleet"
+    },
+    "notifications": {
+      "delay": {
+        "title": "SH-90412 is delayed 3 hours",
+        "body": "Road closure on I-80. ETA moved to 16:40."
+      },
+      "damaged": {
+        "title": "Carlos Diaz reported damaged goods",
+        "body": "2 of 18 cartons crushed on delivery to Fabrikam."
+      },
+      "delivered": {
+        "title": "142 shipments delivered today",
+        "body": "98.6% on time · 2 still out for delivery."
+      },
+      "maintenance": {
+        "title": "Truck TX-204 due for service",
+        "body": "Oil change and brake check in 300 km."
+      },
+      "dock": {
+        "title": "Dock 4 is free from 14:00",
+        "body": "Next scheduled arrival moved to tomorrow."
+      },
+      "sla": {
+        "title": "SLA report for Contoso ready",
+        "body": "Next-day delivery met for 97.2% of orders."
+      }
+    },
+    "create": {
+      "shipment": {
+        "label": "New shipment",
+        "description": "Book a pickup and delivery"
+      },
+      "dispatch": {
+        "label": "Dispatch load",
+        "description": "Assign a driver and vehicle"
+      },
+      "route": {
+        "label": "Plan route",
+        "description": "Optimise multi-stop routes"
+      }
+    },
+    "account": {
+      "dispatch": "My dispatch board",
+      "routes": "My routes"
+    }
+  }
+}

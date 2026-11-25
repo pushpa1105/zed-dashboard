@@ -1,0 +1,953 @@
+{
+  "nav": "Forms & inputs",
+  "tabs": {
+    "forms": "Forms & inputs",
+    "selects": "Selects & autocomplete",
+    "overlays": "Dialogs & overlays",
+    "layouts": "Form layouts",
+    "auth": "Auth forms",
+    "inputs": "More inputs"
+  },
+  "commands": {
+    "selects": "Open select & autocomplete demos",
+    "overlays": "Open dialog & overlay demos",
+    "layouts": "Open form layout examples",
+    "auth": "Open sign-in and security forms",
+    "inputs": "Open advanced input demos"
+  },
+  "forms": {
+    "title": "Forms & inputs",
+    "description": "Validated forms, a multi-step wizard and every input in the kit."
+  },
+  "validation": {
+    "companyName": "Use at least 2 characters",
+    "website": "Enter a domain like acme.com",
+    "teams": "Pick at least one team",
+    "password": "At least 8 characters, including a number",
+    "workspace": "Name your workspace (3+ characters)",
+    "slug": "Lowercase letters, numbers and dashes only",
+    "code": "Enter the 6-digit code"
+  },
+  "company": {
+    "title": "Company profile",
+    "description": "A real-world form: zod schema, react-hook-form, async lookups and a sticky save bar.",
+    "sections": {
+      "company": "Company",
+      "companyHint": "How your organization appears to teammates and customers.",
+      "contact": "Contact & location",
+      "contactHint": "Used for invoices and regional defaults.",
+      "team": "Team & access",
+      "teamHint": "Who works here and who administers the account.",
+      "branding": "Branding & add-ons",
+      "brandingHint": "Accent color for reports, plus optional add-ons.",
+      "notifications": "Notifications",
+      "notificationsHint": "Choose what lands in the admin inbox."
+    },
+    "logo": "Upload logo",
+    "removeLogo": "Remove",
+    "logoHint": "SVG, PNG or JPG. Square, at least 256 px.",
+    "name": "Company name",
+    "website": "Website",
+    "industry": "Industry",
+    "industryPlaceholder": "Search or add an industry",
+    "founded": "Founded",
+    "size": "Company size",
+    "sizeHint": "{{range}} people",
+    "sizes": {
+      "1-10": "Startup",
+      "11-50": "Small",
+      "51-200": "Mid-size",
+      "201+": "Enterprise"
+    },
+    "about": "About",
+    "aboutHint": "Shown on your public profile. Plain text.",
+    "country": "Country",
+    "countryPlaceholder": "Start typing a country",
+    "phone": "Phone",
+    "budget": "Annual software budget",
+    "budgetHint": "Helps us suggest the right plan.",
+    "teams": "Teams",
+    "teamsPlaceholder": "Select teams",
+    "keywords": "Keywords",
+    "keywordsHint": "Press Enter or comma to add. Up to 8.",
+    "adminEmail": "Admin email",
+    "password": "Admin password",
+    "brandColor": "Brand color",
+    "addonsLabel": "Add-ons",
+    "addons": {
+      "sso": "Single sign-on",
+      "ssoHint": "SAML and SCIM provisioning for your identity provider.",
+      "ai": "AI summaries",
+      "aiHint": "Weekly written summaries of every dashboard.",
+      "priority": "Priority support",
+      "priorityHint": "One-hour response time and a named engineer."
+    },
+    "digest": "Weekly digest",
+    "digestHint": "A Monday email with last week’s numbers.",
+    "security": "Security alerts",
+    "securityHint": "New sign-ins, role changes and API key use.",
+    "unsaved_one": "{{count}} unsaved change",
+    "unsaved_other": "{{count}} unsaved changes",
+    "discard": "Discard",
+    "save": "Save profile",
+    "saved": "Company profile saved",
+    "hint": "Edit any field to see the save bar. Name the company “taken” to see a server error."
+  },
+  "wizard": {
+    "title": "Onboarding wizard",
+    "description": "Four steps, each validated before moving on. Completed steps are clickable.",
+    "steps": {
+      "workspace": "Workspace",
+      "workspaceHint": "Name and URL",
+      "use": "Use case",
+      "useHint": "What you’ll track",
+      "team": "Team",
+      "teamHint": "Invite and billing",
+      "verify": "Verify",
+      "verifyHint": "Confirm your email"
+    },
+    "workspaceName": "Workspace name",
+    "slug": "URL",
+    "slugHint": "app.acme.io/your-slug",
+    "uses": {
+      "analytics": "Product analytics",
+      "analyticsHint": "Funnels, retention and revenue",
+      "ops": "Operations",
+      "opsHint": "Orders, shipments, inventory",
+      "crm": "Sales & CRM",
+      "crmHint": "Pipeline and accounts"
+    },
+    "invites": "Invite teammates",
+    "invitesHint": "Paste a list of emails; we split on commas and new lines.",
+    "invalidEmail": "“{{email}}” is not a valid email",
+    "billing": "Billing",
+    "monthly": "Monthly",
+    "yearly": "Yearly · save 20%",
+    "codeSent": "We sent a 6-digit code to your inbox (any 6 digits work here).",
+    "code": "Verification code",
+    "back": "Back",
+    "next": "Continue",
+    "finish": "Create workspace",
+    "stepOf": "Step {{n}} of {{total}}",
+    "created": "Workspace created",
+    "doneTitle": "{{name}} is ready",
+    "doneText": "Invites are on their way. You can change any of this later in settings.",
+    "restart": "Start over"
+  },
+  "gallery": {
+    "title": "Inputs",
+    "description": "Every standalone input with its live value.",
+    "dates": "Dates & times",
+    "datesText": "Range with presets, date + time, and a 12-hour time picker.",
+    "range": "Reporting period",
+    "dateTime": "Publish at",
+    "time": "Daily sync",
+    "numbers": "Numbers",
+    "numbersText": "Steppers, percent formatting and a two-thumb range. Arrow keys step, Shift ×10.",
+    "quantity": "Seats",
+    "discount": "Discount",
+    "priceRange": "Price range",
+    "min": "Min",
+    "max": "Max",
+    "choice": "Choice controls",
+    "choiceText": "Segmented control, tri-state checkbox group and ratings.",
+    "view": "View",
+    "grid": "Grid",
+    "list": "List",
+    "rows": "Rows",
+    "allPermissions": "All permissions",
+    "rating": "Rating",
+    "text": "Text",
+    "textText": "Search with “/” shortcut, click-to-edit and @mentions.",
+    "search": "Search",
+    "searchPlaceholder": "Search invoices…",
+    "inlineEdit": "Inline edit",
+    "titleRequired": "Title can’t be empty",
+    "renamed": "Renamed",
+    "mentions": "Comment",
+    "mentionsPlaceholder": "Type @ to mention someone",
+    "security": "Credentials",
+    "securityText": "Password strength with rules, and a one-time code.",
+    "password": "New password",
+    "otp": "One-time code",
+    "otpDone": "Code {{code}} entered",
+    "color": "Color",
+    "colorText": "Swatches, native picker and a validated hex field.",
+    "upload": "File upload",
+    "uploadText": "Drag and drop, type and size checks, previews and per-file progress.",
+    "dropTitle": "Drop receipts or images here"
+  },
+  "states": {
+    "title": "States & validation",
+    "description": "Inline feedback, plus how every control looks disabled, read-only or invalid.",
+    "inlineTitle": "Inline validation",
+    "inlineText": "Debounced availability check and format feedback while typing.",
+    "username": "Username",
+    "usernameShort": "At least 3 characters",
+    "usernameTaken": "@{{name}} is taken",
+    "usernameFree": "Available",
+    "usernameHint": "Try one that is taken: {{names}}",
+    "email": "Work email",
+    "emailError": "That doesn’t look like a full email address",
+    "emailOk": "Looks good",
+    "disabledTitle": "Disabled & read-only",
+    "disabledText": "Disabled fields can’t be focused; read-only fields can be copied.",
+    "text": "Text",
+    "readOnly": "Organization ID",
+    "select": "Teams",
+    "date": "Start date",
+    "number": "Usage",
+    "rating": "Score",
+    "checkbox": "Checkbox",
+    "switch": "Switch",
+    "errorTitle": "Error states",
+    "errorText": "Every control shares the same invalid style and message placement.",
+    "website": "Website",
+    "teams": "Teams",
+    "seats": "Seats",
+    "seatsError": "At least one seat is required",
+    "notes": "Notes",
+    "notesError": "Add a little more detail"
+  },
+  "selects": {
+    "title": "Selects & autocomplete",
+    "description": "From a plain select to server-backed, hierarchical and dual-list pickers.",
+    "multi": "Multi-select",
+    "multiText": "Groups, descriptions, select-all, disabled options and “+N” overflow.",
+    "capped": "Capped & creatable",
+    "cappedText": "Up to 3 values; type a name that isn’t listed to create it.",
+    "combobox": "Combobox",
+    "comboboxText": "Single searchable value with icons, groups and clear.",
+    "creatable": "Creatable select",
+    "creatableText": "Pick a label or create a new one on the fly.",
+    "labelPlaceholder": "Choose or create a label",
+    "asyncUser": "Async autocomplete",
+    "asyncUserText": "Searches 200 people on the mock API. Debounced, cancellable, keyboard friendly.",
+    "userPlaceholder": "Search people by name, email or team",
+    "asyncMulti": "Async multi-select",
+    "asyncMultiText": "Pick several countries. Type “error” to see the failure state.",
+    "countryPlaceholder": "Add countries",
+    "typeToSearch": "Type to search",
+    "noMatches": "No matches",
+    "loadError": "Couldn’t load results. Try again.",
+    "tree": "Tree select",
+    "treeText": "Hierarchical checkboxes; parents show partial selection.",
+    "treeInline": "Inline tree",
+    "treeInlineText": "The same tree rendered in place, for filters and permission editors.",
+    "cascader": "Cascader",
+    "cascaderText": "Region → country → city, one column per level.",
+    "tags": "Tag input",
+    "tagsText": "Emails as chips: validated, de-duplicated, paste-friendly.",
+    "transfer": "Transfer list",
+    "transferText": "Move permissions between “available” and “granted”.",
+    "available": "Available",
+    "granted": "Granted",
+    "basic": "Basic selects",
+    "basicText": "For short, fixed lists: Radix select and the native element.",
+    "radixSelect": "Plan",
+    "plans": "Plans",
+    "native": "Region (native)"
+  },
+  "overlays": {
+    "title": "Dialogs & overlays",
+    "description": "Dialogs, sheets, drawers, popovers, menus and tooltips, with real content."
+  },
+  "dialogs": {
+    "title": "Dialogs",
+    "description": "Basic, form, scrolling, full-screen, multi-step and nested.",
+    "basic": "Basic",
+    "basicTitle": "Your export is ready",
+    "basicText": "We emailed a download link to you. It expires in 24 hours.",
+    "gotIt": "Got it",
+    "form": "Invite member",
+    "formTitle": "Invite a teammate",
+    "formText": "They’ll get an email with a link to join this workspace.",
+    "email": "Email",
+    "role": "Role",
+    "member": "Member",
+    "admin": "Admin",
+    "teams": "Teams",
+    "cancel": "Cancel",
+    "sendInvite": "Send invite",
+    "invited": "Invitation sent to {{email}}",
+    "typed": "Delete project",
+    "typedTitle": "Delete this project?",
+    "typedText": "All dashboards, API keys and 14 months of history will be removed. This can’t be undone.",
+    "typeToConfirm": "Type the project name to confirm:",
+    "deleteForever": "Delete forever",
+    "deleted": "{{name}} deleted",
+    "restored": "Restored",
+    "undo": "Undo",
+    "scroll": "Long content",
+    "scrollTitle": "Data processing terms",
+    "scrollText": "Header and footer stay put while the body scrolls.",
+    "terms": {
+      "0": "Scope of processing",
+      "1": "Sub-processors",
+      "2": "Security measures",
+      "3": "Data retention"
+    },
+    "termsBody": "We process customer data only to provide the service, under documented instructions. Access is limited to personnel who need it, logged, and reviewed quarterly. Data is encrypted in transit and at rest.",
+    "decline": "Decline",
+    "accept": "Accept",
+    "fullscreen": "Full screen",
+    "fullscreenTitle": "Edit release notes",
+    "fullscreenText": "A full-screen editor with a settings rail.",
+    "publish": "Publish to changelog",
+    "publishHint": "Visible to all customers",
+    "notify": "Email subscribers",
+    "notifyHint": "2,318 subscribers",
+    "done": "Done",
+    "multiStep": "Multi-step",
+    "importTitle": "Import contacts",
+    "importText": "Upload a CSV, map the columns, then review.",
+    "stepSource": "Source",
+    "stepMap": "Map fields",
+    "stepReview": "Review",
+    "stepBody": {
+      "0": "contacts-2026.csv · 1,204 rows detected",
+      "1": "“E-mail” → email · “Company” → organization · “Phone” → phone",
+      "2": "1,198 new · 6 duplicates will be merged"
+    },
+    "startImport": "Start import",
+    "importing": "Importing 1,204 contacts…",
+    "imported": "Import finished",
+    "importFailed": "Import failed",
+    "nested": "Nested",
+    "nestedTitle": "Workspace settings",
+    "nestedText": "A dialog can open another one on top; focus returns correctly.",
+    "openAnother": "Open another dialog",
+    "innerTitle": "Second level",
+    "innerText": "Press Escape to close only this one.",
+    "close": "Close",
+    "destructiveTitle": "Destructive confirmations",
+    "destructiveText": "An alert dialog, and a typed confirmation followed by an undo toast.",
+    "alert": "Revoke API key",
+    "alertTitle": "Revoke this API key?",
+    "alertText": "Integrations using it will stop working immediately.",
+    "revoke": "Revoke",
+    "revoked": "API key revoked"
+  },
+  "panels": {
+    "sheets": "Sheets",
+    "sheetsText": "A filter panel from each edge.",
+    "sides": {
+      "top": "Top",
+      "right": "Right",
+      "bottom": "Bottom",
+      "left": "Left"
+    },
+    "sheetTitle": "Filters",
+    "sheetText": "Narrow down the transactions list.",
+    "dateRange": "Date range",
+    "amount": "Amount",
+    "onlyMine": "Only mine",
+    "onlyMineHint": "Created or assigned to me",
+    "apply": "Apply filters",
+    "applied": "Filters applied",
+    "reset": "Reset",
+    "drawers": "Drawers",
+    "drawersText": "Bottom drawers with drag-to-dismiss and snap points.",
+    "drawer": "Feedback drawer",
+    "drawerTitle": "Send feedback",
+    "drawerText": "What could be better on this page?",
+    "feedbackPlaceholder": "Your feedback…",
+    "send": "Send",
+    "thanks": "Thanks for the feedback",
+    "snapDrawer": "Snap points",
+    "snapTitle": "Delivery route",
+    "snapText": "Drag up to expand, down to collapse.",
+    "stop": "Stop {{n}}",
+    "popovers": "Popovers & hover cards",
+    "popoversText": "A small form in a popover, and a profile preview on hover.",
+    "popoverForm": "Set reminder",
+    "reminderTitle": "Reminder",
+    "reminderText": "We’ll notify you in the app and by email.",
+    "what": "What",
+    "when": "When",
+    "reminderDefault": "Review Q4 forecast",
+    "save": "Save reminder",
+    "reminderSet": "Reminder set",
+    "hoverRole": "Product Designer · Design team",
+    "tasks": "Tasks",
+    "projects": "Projects",
+    "rating": "Rating",
+    "tooltips": "Tooltips",
+    "tooltipsText": "Four placements, rich text, and a reason on a disabled button.",
+    "tooltipOn": "Tooltip on the {{side}}",
+    "info": "More info",
+    "richTooltip": "Revenue is recognized when an invoice is paid, not when it is sent.",
+    "disabledAction": "Export",
+    "disabledReason": "Select at least one row to export"
+  },
+  "menus": {
+    "dropdowns": "Dropdown menus",
+    "dropdownsText": "Shortcuts, submenus, checkbox and radio items, row actions.",
+    "account": "Account",
+    "myAccount": "My account",
+    "profile": "Profile",
+    "billing": "Billing",
+    "shortcuts": "Keyboard shortcuts",
+    "invite": "Invite users",
+    "byEmail": "Email",
+    "byLink": "Invite link",
+    "more": "More…",
+    "api": "API (admins only)",
+    "logout": "Log out",
+    "view": "View",
+    "columns": "Columns",
+    "cols": {
+      "status": "Status",
+      "owner": "Owner",
+      "updated": "Last updated"
+    },
+    "density": "Density",
+    "compact": "Compact",
+    "comfortable": "Comfortable",
+    "rowActions": "Row actions",
+    "edit": "Edit",
+    "editing": "Editing…",
+    "duplicate": "Duplicate",
+    "archive": "Archive",
+    "delete": "Delete",
+    "trashed": "Moved to trash",
+    "context": "Context menu",
+    "contextText": "Right-click (or long-press) the area.",
+    "rightClick": "Right-click here",
+    "open": "Open",
+    "rename": "Rename",
+    "share": "Share",
+    "copyLink": "Copy link",
+    "starred": "Starred",
+    "sortBy": "Sort by",
+    "sortName": "Name",
+    "sortDate": "Date modified",
+    "command": "Command palette",
+    "commandText": "The ⌘K list, embedded in a page.",
+    "commandPlaceholder": "Type a command or search…",
+    "suggestions": "Suggestions",
+    "newDoc": "New document",
+    "newProject": "New project",
+    "favorites": "Favorites",
+    "settings": "Settings",
+    "ran": "Ran “{{label}}”",
+    "menubar": "Menubar",
+    "menubarText": "Desktop-style application menu with submenus and toggles.",
+    "file": "File",
+    "export": "Export",
+    "print": "Print…",
+    "undo": "Undo",
+    "redo": "Redo",
+    "ruler": "Show ruler"
+  },
+  "layouts": {
+    "title": "Form layouts",
+    "description": "One account form in eight layouts, plus checkout, survey and long-form patterns.",
+    "jump": "Jump to an example",
+    "saved": "Account saved",
+    "savedFor": "Changes for {{name}} are live.",
+    "searchTimezone": "Search time zones",
+    "bioPlaceholder": "Product designer in Lisbon. Into type, maps and good coffee.",
+    "cancel": "Cancel",
+    "reset": "Reset",
+    "save": "Save changes",
+    "invite": "Invite",
+    "openModal": "Edit account in a dialog",
+    "modalTitle": "Edit account",
+    "modalDescription": "Update the basics. Your teammates see these details on mentions.",
+    "openDrawer": "Edit account in a drawer",
+    "drawerTitle": "Account details",
+    "drawerDescription": "Everything about this member, in one scrollable panel.",
+    "settingsNav": "Settings sections",
+    "fields": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "role": "Role",
+      "timezone": "Time zone",
+      "bio": "Bio",
+      "newsletter": "Product updates"
+    },
+    "hints": {
+      "email": "Used for sign-in and notifications.",
+      "timezone": "Reports and reminders follow this zone.",
+      "bio": "Shown on your profile. 160 characters max.",
+      "newsletter": "One email a month about new features."
+    },
+    "roles": {
+      "owner": "Owner",
+      "admin": "Admin",
+      "editor": "Editor",
+      "viewer": "Viewer"
+    },
+    "sections": {
+      "profile": "Profile",
+      "profileHint": "How you appear across the workspace.",
+      "access": "Access",
+      "accessHint": "Sign-in email and permission level."
+    },
+    "settingsTabs": {
+      "profile": "Profile",
+      "regional": "Region & role",
+      "notifications": "Notifications",
+      "advanced": "Advanced"
+    },
+    "settingsHints": {
+      "profile": "Your name and short bio.",
+      "regional": "Time zone and workspace permissions.",
+      "notifications": "Where and how often we reach you.",
+      "advanced": "API tokens and data export."
+    },
+    "demos": {
+      "stacked": {
+        "title": "Stacked",
+        "description": "One column, labels above. Best for short, focused forms."
+      },
+      "grid": {
+        "title": "Two-column grid",
+        "description": "Short related fields side by side, long ones full width."
+      },
+      "horizontal": {
+        "title": "Horizontal",
+        "description": "Labels and hints in a left column, like settings pages."
+      },
+      "inline": {
+        "title": "Inline",
+        "description": "A single row for quick actions such as inviting a member."
+      },
+      "cards": {
+        "title": "Card sections",
+        "description": "Each group in its own card to separate concerns."
+      },
+      "settings": {
+        "title": "Settings with sub-navigation",
+        "description": "A side menu switches between groups; one item is disabled."
+      },
+      "modal": {
+        "title": "Modal",
+        "description": "Edit without leaving the page; closes on success."
+      },
+      "drawer": {
+        "title": "Drawer",
+        "description": "A side sheet with a scrolling body and pinned actions."
+      },
+      "checkout": {
+        "title": "Checkout",
+        "description": "Address, delivery options, formatted card fields and a live order summary."
+      },
+      "survey": {
+        "title": "Survey",
+        "description": "NPS scale, star rating, matrix of radios, multiple choice and comments."
+      },
+      "long": {
+        "title": "Long form with progress",
+        "description": "A sticky section index that tracks what is done and where you are."
+      }
+    }
+  },
+  "checkout": {
+    "cardInvalid": "Check the card number",
+    "expiryInvalid": "Use a future date as MM/YY",
+    "cvcInvalid": "3 or 4 digits",
+    "paid": "Payment received",
+    "paidDescription": "A receipt is on its way to your inbox.",
+    "contact": "Contact",
+    "email": "Email for the receipt",
+    "shippingAddress": "Shipping address",
+    "fullName": "Full name",
+    "address": "Street address",
+    "city": "City",
+    "postcode": "Postcode",
+    "country": "Country",
+    "delivery": "Delivery",
+    "standard": "Standard",
+    "standardEta": "4–6 business days",
+    "express": "Express",
+    "expressEta": "2 business days",
+    "overnight": "Overnight",
+    "overnightEta": "Next business day",
+    "free": "Free",
+    "payment": "Payment",
+    "secure": "Encrypted",
+    "cardNumber": "Card number",
+    "expiry": "Expiry",
+    "cvc": "Security code",
+    "billingSame": "Billing address is the same as shipping",
+    "testCard": "Demo: use 4242 4242 4242 4242 with any future expiry.",
+    "summary": "Order summary",
+    "subtotal": "Subtotal",
+    "shippingCost": "Shipping",
+    "tax": "Estimated tax",
+    "total": "Total",
+    "pay": "Pay {{amount}}"
+  },
+  "survey": {
+    "matrixRequired": "Rate every row",
+    "thanks": "Thanks for the feedback",
+    "nps": "How likely are you to recommend us to a colleague?",
+    "npsLow": "Not likely",
+    "npsHigh": "Very likely",
+    "satisfaction": "Overall satisfaction",
+    "matrix": "How would you rate…",
+    "scale": {
+      "1": "Poor",
+      "2": "Fair",
+      "3": "Good",
+      "4": "Very good",
+      "5": "Excellent"
+    },
+    "rows": {
+      "speed": "Speed",
+      "reliability": "Reliability",
+      "docs": "Documentation",
+      "support": "Support"
+    },
+    "features": "Which features do you use weekly?",
+    "featuresHint": "Pick any that apply.",
+    "featureOptions": {
+      "dashboards": "Dashboards",
+      "alerts": "Alerts",
+      "exports": "Scheduled exports",
+      "api": "API",
+      "sso": "Single sign-on"
+    },
+    "selectAll": "Select all",
+    "comment": "Anything else?",
+    "commentPlaceholder": "What should we build next?",
+    "submit": "Send feedback"
+  },
+  "longForm": {
+    "consentRequired": "Please confirm the details are correct",
+    "submitted": "Application submitted",
+    "fields": {
+      "firstName": "First name",
+      "lastName": "Last name",
+      "birthDate": "Date of birth",
+      "email": "Email",
+      "phone": "Phone",
+      "street": "Street address",
+      "city": "City",
+      "company": "Current company",
+      "jobTitle": "Job title",
+      "startDate": "Start date"
+    },
+    "sections": {
+      "personal": "Personal details",
+      "contact": "Contact",
+      "address": "Address",
+      "employment": "Employment",
+      "documents": "Documents",
+      "review": "Review & submit"
+    },
+    "hints": {
+      "personal": "As shown on your ID.",
+      "contact": "We only use these to reach you about this application.",
+      "address": "Where you live today.",
+      "employment": "Your current or most recent role.",
+      "documents": "Optional: CV, references or certificates.",
+      "review": "Check everything before sending."
+    },
+    "progress": "Progress",
+    "index": "Form sections",
+    "dropTitle": "Drop documents here",
+    "dropHint": "PDF or images, up to 3 files",
+    "consent": "I confirm the information above is accurate and complete.",
+    "submit": "Submit application"
+  },
+  "auth": {
+    "title": "Auth forms",
+    "description": "Sign-in, recovery and security screens as reusable components, wired to a mock API.",
+    "toasts": {
+      "signedIn": "Signed in",
+      "signedUp": "Account created",
+      "reset": "Password updated",
+      "verified": "Code verified",
+      "twoFactor": "Two-factor authentication is on",
+      "unlocked": "Welcome back"
+    },
+    "sso": "SSO",
+    "passkey": "Passkey",
+    "orEmail": "or with email",
+    "email": "Email",
+    "workEmail": "Work email",
+    "password": "Password",
+    "newPassword": "New password",
+    "confirmPassword": "Confirm password",
+    "name": "Full name",
+    "forgotLink": "Forgot password?",
+    "passwordRule": "At least 8 characters",
+    "termsRequired": "Accept the terms to continue",
+    "passwordsMismatch": "Passwords don't match",
+    "signIn": {
+      "title": "Sign in to Northwind",
+      "description": "Welcome back. Pick up where you left off.",
+      "noAccount": "New here?",
+      "create": "Create an account",
+      "remember": "Keep me signed in",
+      "submit": "Sign in"
+    },
+    "signUp": {
+      "title": "Create your workspace",
+      "description": "Free for 14 days. No card required.",
+      "terms": "I agree to the Terms of Service and Privacy Policy.",
+      "submit": "Create account"
+    },
+    "forgot": {
+      "title": "Reset your password",
+      "description": "Enter your email and we'll send you a reset link.",
+      "submit": "Send reset link",
+      "sentTitle": "Check your inbox",
+      "sentDescription": "We sent a reset link to {{email}}. It expires in 30 minutes.",
+      "tryAnother": "Use a different email"
+    },
+    "reset": {
+      "title": "Choose a new password",
+      "description": "Make it different from passwords you use elsewhere.",
+      "submit": "Update password"
+    },
+    "otp": {
+      "title": "Enter the code",
+      "description": "We texted a 6-digit code to {{phone}}.",
+      "submit": "Verify",
+      "resendIn": "Resend code in {{seconds}}s",
+      "resend": "Resend code",
+      "hint": "Demo: the code is 123456."
+    },
+    "twoFactor": {
+      "title": "Set up two-factor authentication",
+      "description": "Scan the code with an authenticator app, then enter the 6-digit code it shows.",
+      "manual": "Can't scan? Enter this key manually:",
+      "verify": "Verify and continue",
+      "codesTitle": "Save your backup codes",
+      "codesDescription": "Each code works once if you lose access to your authenticator.",
+      "copy": "Copy",
+      "copied": "Backup codes copied",
+      "download": "Download",
+      "finish": "I've saved them"
+    },
+    "lock": {
+      "title": "Welcome back, {{name}}",
+      "description": "Your session was locked after 15 minutes of inactivity.",
+      "lockedAt": "Locked at {{time}}",
+      "unlock": "Unlock",
+      "hint": "Demo password: password"
+    },
+    "stages": {
+      "signIn": {
+        "label": "Sign in",
+        "hint": "SSO and passkey options, remember me, forgot link."
+      },
+      "signUp": {
+        "label": "Sign up",
+        "hint": "Password strength meter and terms consent."
+      },
+      "forgot": {
+        "label": "Forgot password",
+        "hint": "Request a link, then a confirmation state."
+      },
+      "reset": {
+        "label": "Reset password",
+        "hint": "New password with a matching confirmation."
+      },
+      "otp": {
+        "label": "One-time code",
+        "hint": "Auto-submits when complete; resend countdown."
+      },
+      "twoFactor": {
+        "label": "Two-factor setup",
+        "hint": "QR code, manual key, then backup codes."
+      },
+      "lock": {
+        "label": "Lock screen",
+        "hint": "Re-enter the password to resume a session."
+      }
+    }
+  },
+  "inputs": {
+    "title": "More inputs",
+    "description": "Sizes, floating labels, masks, live validation, rich text, signatures, trees, sliders and uploads.",
+    "demos": {
+      "sizes": {
+        "title": "Sizes",
+        "description": "Small, default and large controls line up on the same baseline."
+      },
+      "floating": {
+        "title": "Floating labels",
+        "description": "Outlined and filled variants; the label moves out of the way as you type."
+      },
+      "validation": {
+        "title": "Live validation",
+        "description": "Debounced checks with an inline icon and a message, plus clear buttons."
+      },
+      "masks": {
+        "title": "Input masks",
+        "description": "Card, IBAN, phone, date and time formatting as you type."
+      },
+      "rich": {
+        "title": "Rich text editor",
+        "description": "Headings, lists, links and formatting without extra dependencies."
+      },
+      "signature": {
+        "title": "Signature pad",
+        "description": "Draw with mouse, pen or touch; undo and clear."
+      },
+      "tree": {
+        "title": "Tree select",
+        "description": "Single, multiple with search, lazily loaded branches and an inline tree."
+      },
+      "chips": {
+        "title": "Chips & tags",
+        "description": "Selectable chips in three styles, and free-form tags."
+      },
+      "sliders": {
+        "title": "Sliders",
+        "description": "Marks, labelled stops, value bubbles, ranges and vertical sliders."
+      },
+      "toggles": {
+        "title": "Switches & toggles",
+        "description": "Switch sizes and placements, toggle groups, segmented controls, icon toggles."
+      },
+      "uploads": {
+        "title": "Uploads",
+        "description": "Avatar, attachment button, image gallery and drag-and-drop zone."
+      }
+    },
+    "sizes": {
+      "sm": "Small",
+      "default": "Default",
+      "lg": "Large",
+      "input": "Search members",
+      "select": "Frequency",
+      "tree": "Team",
+      "button": "Apply"
+    },
+    "freq": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    },
+    "floating": {
+      "fullName": "Full name",
+      "email": "Email address",
+      "company": "Company",
+      "website": "Website",
+      "websiteError": "Add a domain, e.g. northwind.io"
+    },
+    "masks": {
+      "card": "Card number",
+      "iban": "IBAN",
+      "phone": "Phone (US)",
+      "date": "Date",
+      "time": "Time",
+      "raw": "Stored"
+    },
+    "validation": {
+      "username": "Username",
+      "usernameOk": "That username is available",
+      "usernameTaken": "Taken, or uses characters other than a–z, 0–9 and _",
+      "website": "Website",
+      "urlOk": "Looks good",
+      "urlBad": "Enter a full URL starting with https://",
+      "coupon": "Coupon code",
+      "couponOk": "Code applied: discount added",
+      "couponBad": "That code is not valid. Try TEAM25.",
+      "search": "Search (large, clearable)"
+    },
+    "rich": {
+      "placeholder": "Write release notes, a brief or a comment…",
+      "bold": "Bold",
+      "italic": "Italic",
+      "underline": "Underline",
+      "strike": "Strikethrough",
+      "heading": "Heading",
+      "paragraph": "Paragraph",
+      "quote": "Quote",
+      "bullet": "Bulleted list",
+      "ordered": "Numbered list",
+      "link": "Add link",
+      "unlink": "Remove link",
+      "undo": "Undo",
+      "redo": "Redo",
+      "linkPrompt": "Link URL",
+      "words": "{{count}} words"
+    },
+    "signature": {
+      "placeholder": "Sign here",
+      "clear": "Clear",
+      "undo": "Undo",
+      "signed": "Signature captured as an image.",
+      "unsigned": "Not signed yet."
+    },
+    "tree": {
+      "single": "Single (any level)",
+      "multi": "Multiple with search",
+      "async": "Lazy-loaded folders",
+      "inline": "Inline tree with search",
+      "filter": "Filter…",
+      "pickFolder": "Choose a folder"
+    },
+    "chips": {
+      "soft": "Soft (multiple)",
+      "solid": "Solid (single)",
+      "outline": "Outline, small",
+      "tags": "Free-form tags",
+      "tagsPlaceholder": "Add a tag and press Enter",
+      "options": {
+        "remote": "Remote",
+        "hybrid": "Hybrid",
+        "onsite": "On-site",
+        "fullTime": "Full-time",
+        "contract": "Contract",
+        "senior": "Senior"
+      }
+    },
+    "sliders": {
+      "marks": "Snap to marks",
+      "range": "Price range with value bubbles",
+      "stepped": "Experience level",
+      "min": "Minimum",
+      "max": "Maximum",
+      "volume": "Volume",
+      "band": "Band",
+      "levels": {
+        "1": "Intern",
+        "2": "Junior",
+        "3": "Mid",
+        "4": "Senior",
+        "5": "Lead"
+      }
+    },
+    "toggles": {
+      "small": "Small switch",
+      "default": "Default switch",
+      "labelLeft": "Label on the left",
+      "disabled": "Disabled (on)",
+      "rowLabel": "Weekly digest",
+      "rowDescription": "A summary of activity every Monday at 9:00.",
+      "group": "Formatting (multiple)",
+      "align": "Alignment (single)",
+      "segmented": "Segmented",
+      "light": "Light",
+      "dark": "Dark",
+      "system": "System",
+      "favorite": "Favorite",
+      "save": "Save",
+      "like": "Like"
+    },
+    "uploads": {
+      "avatar": "Avatar",
+      "upload": "Upload",
+      "remove": "Remove",
+      "avatarHint": "PNG or JPG, at least 256 px.",
+      "button": "Attachment button",
+      "attach": "Attach files",
+      "none": "No files attached",
+      "gallery": "Image gallery",
+      "addImage": "Add image",
+      "cover": "Cover",
+      "dropzone": "Drag and drop",
+      "dropTitle": "Drop files to upload",
+      "dropHint": "Images or PDF, up to 5 MB each"
+    }
+  }
+}

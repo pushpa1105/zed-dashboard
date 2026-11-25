@@ -1,0 +1,684 @@
+{
+  "workspace": {
+    "name": "CRM",
+    "description": "Pipeline, deals, contacts and activities",
+    "category": "Sales"
+  },
+  "nav": {
+    "sections": {
+      "sales": "Sales",
+      "contacts": "Contacts",
+      "activities": "Activities",
+      "reports": "Reports",
+      "settings": "Settings"
+    },
+    "overview": "Overview",
+    "pipeline": "Pipeline",
+    "deals": "All deals",
+    "people": "People",
+    "companies": "Companies",
+    "segments": "Segments",
+    "tasks": "Tasks",
+    "meetings": "Calls & meetings",
+    "reports": "Win/loss report",
+    "forecasts": "Forecasts",
+    "settings": "Pipeline settings",
+    "integrations": "Integrations",
+    "help": "Help center",
+    "soon": "Soon",
+    "leads": "Leads inbox",
+    "sequences": "Email sequences",
+    "quotes": "Quotes",
+    "allQuotes": "All quotes",
+    "awaitingReply": "Awaiting reply",
+    "products": "Price book",
+    "activity": "Activity feed"
+  },
+  "stages": {
+    "lead": "Lead",
+    "qualified": "Qualified",
+    "proposal": "Proposal",
+    "negotiation": "Negotiation",
+    "won": "Won",
+    "lost": "Lost"
+  },
+  "common": {
+    "owner": "Owner",
+    "value": "Value",
+    "stage": "Stage",
+    "company": "Company",
+    "closeDate": "Close date",
+    "source": "Source",
+    "probability": "Probability",
+    "viewAll": "View all",
+    "search": "Search…",
+    "notFound": "We couldn't find that record.",
+    "back": "Back"
+  },
+  "error": {
+    "title": "Couldn't load this section",
+    "retry": "Try again"
+  },
+  "overview": {
+    "title": "Sales overview",
+    "description": "Quarter to date: where the number stands and what closes next.",
+    "newDeal": "New deal",
+    "quota": {
+      "title": "Quota attainment",
+      "description": "Closed-won this quarter",
+      "of": "of {{quota}} quota",
+      "attained": "attained",
+      "remaining": "Still to close",
+      "weekly": "Needed per week"
+    },
+    "stats": {
+      "pipeline": "Open pipeline",
+      "weighted": "Weighted forecast",
+      "openDeals": "Open deals",
+      "winRate": "Win rate",
+      "weightedHint": "value × stage probability",
+      "openDealsHint": "across 4 stages",
+      "winRateHint": "of closed deals"
+    },
+    "funnel": {
+      "title": "Pipeline by stage",
+      "description": "Deal count and value at each stage",
+      "deals": "{{count}} deals",
+      "total": "Total open pipeline"
+    },
+    "forecast": {
+      "title": "Forecast vs target",
+      "description": "Cumulative bookings by week",
+      "closed": "Closed",
+      "forecast": "Forecast",
+      "target": "Target"
+    },
+    "leaderboard": {
+      "title": "Leaderboard",
+      "description": "Closed-won by rep this quarter",
+      "deals": "{{count}} deals"
+    },
+    "closing": {
+      "title": "Closing in the next 3 weeks",
+      "description": "Open deals sorted by close date",
+      "overdue": "Past due"
+    }
+  },
+  "pipeline": {
+    "title": "Pipeline",
+    "description": "Drag deals between stages. Totals update as you go.",
+    "addDeal": "Add deal",
+    "weighted": "Weighted {{value}}",
+    "count": "{{count}} deals",
+    "moved": "Deal moved",
+    "created": "Deal created",
+    "age": "{{count}}d in pipeline",
+    "search": "Filter deals…",
+    "allOwners": "All owners"
+  },
+  "quickAdd": {
+    "title": "Add a deal",
+    "description": "It lands in the stage you pick; you can move it later.",
+    "name": "Deal name",
+    "namePlaceholder": "e.g. Northwind · Multi-site license",
+    "company": "Company",
+    "companyPlaceholder": "Choose a company",
+    "value": "Value (USD)",
+    "stage": "Stage",
+    "submit": "Add deal",
+    "cancel": "Cancel"
+  },
+  "deals": {
+    "title": "All deals",
+    "description": "Every deal, open and closed. Sort, filter and export.",
+    "search": "Search deals or companies…",
+    "export": "Export CSV",
+    "columns": {
+      "name": "Deal",
+      "company": "Company",
+      "stage": "Stage",
+      "value": "Value",
+      "probability": "Prob.",
+      "owner": "Owner",
+      "source": "Source",
+      "closeDate": "Close date"
+    },
+    "totals": "{{count}} deals · {{value}}",
+    "reset": "Reset"
+  },
+  "deal": {
+    "progress": "Stage progress",
+    "activity": "Activity",
+    "activityDescription": "Everything that happened on this deal",
+    "contacts": "Contacts",
+    "primary": "Primary",
+    "products": "Products",
+    "total": "Total",
+    "quantity": "Qty",
+    "notes": "Notes",
+    "notePlaceholder": "Write a note for the team… (Ctrl+Enter to save)",
+    "addNote": "Add note",
+    "noteAdded": "Note added",
+    "details": "Details",
+    "closesIn": "Closes {{when}}",
+    "createdAt": "Created"
+  },
+  "people": {
+    "title": "People",
+    "description": "Contacts at customer and prospect accounts.",
+    "search": "Search by name, email or company…",
+    "columns": {
+      "name": "Name",
+      "company": "Company",
+      "tags": "Tags",
+      "status": "Status",
+      "owner": "Owner",
+      "lastContacted": "Last contacted"
+    },
+    "status": {
+      "customer": "Customer",
+      "prospect": "Prospect",
+      "churned": "Churned"
+    },
+    "count": "{{count}} people"
+  },
+  "companies": {
+    "title": "Companies",
+    "description": "Accounts with their open pipeline and contacts.",
+    "search": "Search companies…",
+    "industry": "Industry",
+    "employees": "{{count}} employees",
+    "contacts": "Contacts",
+    "openDeals": "Open deals",
+    "pipeline": "Pipeline",
+    "revenue": "Annual revenue",
+    "allIndustries": "All industries"
+  },
+  "contact": {
+    "tabs": {
+      "activity": "Activity",
+      "emails": "Emails",
+      "deals": "Deals",
+      "files": "Files"
+    },
+    "about": "About",
+    "email": "Email",
+    "phone": "Phone",
+    "company": "Company",
+    "owner": "Owner",
+    "tags": "Tags",
+    "lastContacted": "Last contacted",
+    "sendEmail": "Email",
+    "call": "Call",
+    "inbound": "Received",
+    "outbound": "Sent",
+    "noDeals": "No deals with this company yet."
+  },
+  "tasks": {
+    "title": "Tasks",
+    "description": "Follow-ups across your deals, grouped by when they are due.",
+    "overdue": "Overdue",
+    "today": "Due today",
+    "upcoming": "Upcoming",
+    "done": "Completed",
+    "showDone": "Show completed",
+    "empty": "Nothing here.",
+    "priority": {
+      "high": "High",
+      "medium": "Medium",
+      "low": "Low"
+    },
+    "progress": "{{done}} of {{total}} done this week"
+  },
+  "meetings": {
+    "title": "Calls & meetings",
+    "description": "Your agenda for the next days, and what happened on past calls.",
+    "logCall": "Log a call",
+    "upcoming": "Upcoming",
+    "past": "Past",
+    "kind": {
+      "call": "Call",
+      "meeting": "Meeting",
+      "demo": "Demo"
+    },
+    "minutes": "{{count}} min",
+    "logged": "Call logged",
+    "noOutcome": "No outcome yet",
+    "form": {
+      "title": "Log a call",
+      "description": "Record a call that already happened.",
+      "with": "Contact",
+      "withPlaceholder": "Who did you talk to?",
+      "subject": "Subject",
+      "duration": "Duration (minutes)",
+      "outcome": "Outcome",
+      "submit": "Save call",
+      "outcomes": {
+        "positive": "Positive",
+        "followUp": "Needs follow-up",
+        "noAnswer": "No answer"
+      }
+    }
+  },
+  "reports": {
+    "title": "Win/loss report",
+    "description": "How deals close, how long it takes, and where they come from.",
+    "winRate": "Win rate",
+    "cycle": "Average sales cycle",
+    "cycleValue": "{{count}} days",
+    "dealSize": "Average deal size",
+    "trend": {
+      "title": "Win rate and cycle length",
+      "description": "Last 6 months",
+      "winRate": "Win rate (%)",
+      "cycle": "Cycle (days)"
+    },
+    "sources": {
+      "title": "Source attribution",
+      "description": "Where won revenue came from",
+      "source": "Source",
+      "deals": "Deals",
+      "won": "Won",
+      "conversion": "Conversion",
+      "revenue": "Revenue"
+    },
+    "loss": {
+      "title": "Why we lose",
+      "description": "Loss reasons logged on closed-lost deals"
+    },
+    "owners": {
+      "title": "By rep",
+      "description": "Win rate per account executive"
+    }
+  },
+  "settings": {
+    "title": "Pipeline settings",
+    "description": "Stages, probabilities and the rules that keep the pipeline clean.",
+    "stages": {
+      "title": "Stages",
+      "description": "Default win probability used for the weighted forecast."
+    },
+    "rules": {
+      "title": "Hygiene rules",
+      "description": "Automations that run when deals change.",
+      "rotting": "Flag stale deals",
+      "rottingHint": "Highlight deals with no activity for 14 days.",
+      "autoAssign": "Round-robin new inbound leads",
+      "autoAssignHint": "Distribute new leads evenly across the team.",
+      "lossReason": "Require a loss reason",
+      "lossReasonHint": "Ask for a reason when a deal moves to Lost."
+    },
+    "save": "Save changes",
+    "saved": "Pipeline settings saved"
+  },
+  "company": {
+    "firmographics": "Firmographics",
+    "headcount": "Employees",
+    "location": "Headquarters",
+    "wonRevenue": "Closed-won revenue",
+    "openDeals": "Open deals",
+    "openDealsHint": "Deals still in play with this account",
+    "noOpenDeals": "No open deals with this company.",
+    "contactsHint": "People we work with at this account",
+    "noContacts": "No contacts at this company yet.",
+    "activityHint": "Deals, calls and meetings with this account",
+    "noActivity": "No activity recorded yet."
+  },
+  "leads": {
+    "title": "Leads inbox",
+    "description": "New inbound and outbound leads. Qualify the best, convert them into deals.",
+    "filterStatus": "Filter by status",
+    "all": "All",
+    "search": "Search leads or companies…",
+    "allSources": "All sources",
+    "empty": "No leads here",
+    "emptyHint": "Try another status or clear the filters.",
+    "selected_one": "{{count}} lead selected",
+    "selected_other": "{{count}} leads selected",
+    "clearSelection": "Clear selection",
+    "selectAll": "Select all leads",
+    "select": "Select {{name}}",
+    "actionsFor": "Actions for {{name}}",
+    "viewDeal": "Converted · view deal",
+    "columns": {
+      "lead": "Lead",
+      "company": "Company",
+      "source": "Source",
+      "score": "Score",
+      "value": "Est. value",
+      "received": "Received",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "status": {
+      "new": "New",
+      "qualified": "Qualified",
+      "disqualified": "Disqualified",
+      "converted": "Converted"
+    },
+    "actions": {
+      "qualify": "Qualify",
+      "disqualify": "Disqualify",
+      "convert": "Convert to deal"
+    },
+    "score": {
+      "hot": "Hot",
+      "warm": "Warm",
+      "cold": "Cold"
+    },
+    "done": {
+      "qualify_one": "{{count}} lead qualified",
+      "qualify_other": "{{count}} leads qualified",
+      "disqualify_one": "{{count}} lead disqualified",
+      "disqualify_other": "{{count}} leads disqualified",
+      "convert_one": "{{count}} lead converted to a deal",
+      "convert_other": "{{count}} leads converted to deals"
+    }
+  },
+  "sequences": {
+    "title": "Email sequences",
+    "description": "Automated multi-step outreach and how each sequence performs.",
+    "new": "New sequence",
+    "edit": "Edit sequence",
+    "editShort": "Edit",
+    "editNamed": "Edit {{name}}",
+    "saved": "Sequence saved",
+    "empty": "No sequences yet",
+    "emptyHint": "Create a sequence to automate your follow-ups.",
+    "stats": {
+      "active": "Active sequences",
+      "enrolled": "Contacts enrolled",
+      "openRate": "Avg. open rate",
+      "replyRate": "Avg. reply rate"
+    },
+    "enrolled": "Enrolled",
+    "inProgress": "In progress",
+    "openRate": "Open rate",
+    "replyRate": "Reply rate",
+    "status": {
+      "active": "Active",
+      "paused": "Paused",
+      "draft": "Draft"
+    },
+    "meta_one": "{{owner}} · {{count}} step · updated {{date}}",
+    "meta_other": "{{owner}} · {{count}} steps · updated {{date}}",
+    "day": "Day {{n}}",
+    "stepN": "Step {{n}}",
+    "kind": {
+      "email": "Email",
+      "call": "Call",
+      "task": "Task"
+    },
+    "form": {
+      "description": "Steps run in order; the wait counts from the previous step.",
+      "name": "Name",
+      "namePlaceholder": "e.g. Inbound demo follow-up",
+      "status": "Status",
+      "steps": "Steps",
+      "kind": "Type",
+      "delay": "Wait (days)",
+      "subject": "Subject",
+      "addStep": "Add step",
+      "removeStep": "Remove step {{n}}",
+      "save": "Save sequence"
+    }
+  },
+  "forecast": {
+    "title": "Forecast & quotas",
+    "description": "Where the quarter will land, by forecast category and by rep.",
+    "quota": "Team quota",
+    "ofQuota": "{{pct}}% of quota",
+    "categories": {
+      "closed": "Closed won",
+      "commit": "Commit",
+      "bestCase": "Best case",
+      "pipeline": "Pipeline"
+    },
+    "byMonth": "Forecast by month",
+    "byMonthHint": "Deal value by expected close month and category",
+    "outlook": "Quarter outlook",
+    "outlookHint": "Cumulative coverage of the team quota",
+    "outlookNote": "Commit = negotiation stage, best case = proposal stage, pipeline = earlier stages.",
+    "leaderboard": "Team leaderboard",
+    "leaderboardHint": "Quota attainment and open forecast per rep",
+    "rep": "Rep",
+    "attainment": "Quota attainment",
+    "quotaOf": "of {{quota}} quota",
+    "top": "Top performer"
+  },
+  "quotes": {
+    "title": "Quotes",
+    "description": "Proposals sent to customers, what they are worth and when they expire.",
+    "new": "New quote",
+    "created": "Draft quote created",
+    "filterStatus": "Filter by status",
+    "search": "Search quotes, deals or companies…",
+    "empty": "No quotes here",
+    "emptyHint": "Try another status, or create a quote from an open deal.",
+    "expired": "Expired",
+    "totals": "{{count}} quotes · {{value}}",
+    "status": {
+      "draft": "Draft",
+      "sent": "Sent",
+      "accepted": "Accepted",
+      "declined": "Declined"
+    },
+    "columns": {
+      "quote": "Quote",
+      "company": "Company",
+      "status": "Status",
+      "total": "Total",
+      "validUntil": "Valid until",
+      "owner": "Owner",
+      "createdAt": "Created"
+    },
+    "stats": {
+      "open": "Awaiting reply",
+      "accepted": "Accepted",
+      "rate": "Acceptance rate",
+      "expiring": "Need attention",
+      "awaiting_one": "{{count}} quote sent",
+      "awaiting_other": "{{count}} quotes sent",
+      "quotes_one": "{{count}} quote",
+      "quotes_other": "{{count}} quotes",
+      "decided_one": "of {{count}} decided quote",
+      "decided_other": "of {{count}} decided quotes",
+      "expiringHint": "Sent quotes expiring within 7 days or already expired"
+    },
+    "form": {
+      "title": "New quote",
+      "description": "Start a draft for an open deal. You add line items in the builder.",
+      "deal": "Deal",
+      "dealPlaceholder": "Choose an open deal",
+      "validity": "Valid for",
+      "days_one": "{{count}} day",
+      "days_other": "{{count}} days",
+      "submit": "Create draft"
+    }
+  },
+  "quote": {
+    "saved": "Quote saved",
+    "statusChanged": "Quote updated",
+    "summary": "Summary",
+    "subtotal": "Subtotal",
+    "discount": "Discount",
+    "tax": "Tax",
+    "total": "Total",
+    "save": "Save draft",
+    "saveFirst": "Save your changes before sending.",
+    "details": "Details",
+    "deal": "Deal",
+    "contact": "Contact",
+    "lines": {
+      "title": "Line items",
+      "hint": "Prices start at list price; adjust quantity and unit price per line.",
+      "locked": "This quote has been sent, so its line items are locked.",
+      "product": "Product",
+      "quantity": "Qty",
+      "unitPrice": "Unit price",
+      "amount": "Amount",
+      "quantityOf": "Quantity of {{name}}",
+      "unitPriceOf": "Unit price of {{name}}",
+      "remove": "Remove {{name}}",
+      "add": "Add a product…"
+    },
+    "actions": {
+      "sent": "Mark as sent",
+      "accepted": "Mark as accepted",
+      "declined": "Mark as declined"
+    }
+  },
+  "products": {
+    "title": "Products & price book",
+    "description": "Everything you can quote, with list price, cost and margin.",
+    "new": "New product",
+    "edit": "Edit product",
+    "editNamed": "Edit {{name}}",
+    "toggle": "Active: {{name}}",
+    "saved": "Product saved",
+    "search": "Search by name or SKU…",
+    "allCategories": "All categories",
+    "empty": "No products match",
+    "emptyHint": "Clear the search or pick another category.",
+    "marginChart": "Margin by category",
+    "marginChartHint": "Average gross margin at list price",
+    "category": {
+      "platform": "Platform",
+      "addon": "Add-on",
+      "services": "Services",
+      "support": "Support"
+    },
+    "visibility": {
+      "all": "All",
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "columns": {
+      "product": "Product",
+      "sku": "SKU",
+      "category": "Category",
+      "listPrice": "List price",
+      "cost": "Cost",
+      "margin": "Margin",
+      "active": "Active"
+    },
+    "stats": {
+      "active": "Active products",
+      "avgMargin": "Average margin",
+      "lowMargin": "Low-margin products",
+      "bestMargin": "Best margin",
+      "ofTotal_one": "of {{count}} in the catalog",
+      "ofTotal_other": "of {{count}} in the catalog",
+      "below": "Below {{pct}}% margin"
+    },
+    "form": {
+      "description": "Changes apply to new quotes; sent quotes keep their prices.",
+      "name": "Name",
+      "margin": "Gross margin at list price: {{pct}}%",
+      "active": "Available for quoting",
+      "activeHint": "Inactive products stay on existing quotes but cannot be added.",
+      "save": "Save product",
+      "costAboveList": "Cost cannot be higher than the list price"
+    }
+  },
+  "activity": {
+    "title": "Activity feed",
+    "description": "Calls, emails, meetings, notes and stage changes across the team.",
+    "log": "Log activity",
+    "logged": "Activity logged",
+    "lastDays_one": "Last {{count}} day",
+    "lastDays_other": "Last {{count}} days",
+    "allTime": "All time",
+    "apply": "Apply",
+    "byDay": "Activity by day",
+    "byDayHint": "Every touchpoint in the selected period, by type",
+    "byRep": "By rep",
+    "timeline": "Timeline",
+    "filterType": "Filter by type",
+    "empty": "No activity in this view",
+    "emptyHint": "Widen the date range or pick another owner.",
+    "showMore": "Show more ({{count}} left)",
+    "stageMoved": "{{deal}} changed stage",
+    "types": {
+      "call": "Calls",
+      "email": "Emails",
+      "meeting": "Meetings",
+      "note": "Notes",
+      "stage": "Stage changes"
+    },
+    "stats": {
+      "total": "Activities",
+      "conversations": "Calls & meetings",
+      "deals": "Deals touched",
+      "topRep": "Most active",
+      "activities_one": "{{count}} activity",
+      "activities_other": "{{count}} activities"
+    },
+    "form": {
+      "title": "Log activity",
+      "description": "Record something that already happened on a deal.",
+      "type": "Type",
+      "deal": "Deal",
+      "dealPlaceholder": "Which deal was it about?",
+      "summary": "Summary",
+      "detail": "Details",
+      "submit": "Save activity"
+    }
+  },
+  "shell": {
+    "categories": {
+      "deals": "Deals",
+      "mentions": "Mentions",
+      "tasks": "Tasks"
+    },
+    "notifications": {
+      "won": {
+        "title": "Deal won: Northwind renewal",
+        "body": "$84,000 ARR closed by Sofia Davis. Pipeline updated."
+      },
+      "mention": {
+        "title": "Liam Johnson mentioned you on Acme Corp",
+        "body": "“@you can you join the pricing call on Thursday?”"
+      },
+      "overdue": {
+        "title": "3 tasks are overdue",
+        "body": "Follow-ups for Globex, Initech and Umbrella are past due."
+      },
+      "quote": {
+        "title": "Quote Q-2291 was viewed",
+        "body": "Globex opened your quote 4 times in the last hour."
+      },
+      "lead": {
+        "title": "New lead assigned to you",
+        "body": "Emma Brown from Stark Industries, via the pricing page."
+      },
+      "meeting": {
+        "title": "Meeting moved to Friday 10:00",
+        "body": "Quarterly review with Initech was rescheduled."
+      }
+    },
+    "create": {
+      "deal": {
+        "label": "New deal",
+        "description": "Add an opportunity to the pipeline"
+      },
+      "contact": {
+        "label": "Add contact",
+        "description": "A person you sell to"
+      },
+      "company": {
+        "label": "Add company",
+        "description": "An account with its contacts"
+      },
+      "quote": {
+        "label": "Create quote",
+        "description": "Price products for a deal"
+      }
+    },
+    "account": {
+      "pipeline": "My pipeline",
+      "tasks": "My tasks",
+      "forecast": "My forecast"
+    }
+  }
+}

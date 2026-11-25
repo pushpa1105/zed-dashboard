@@ -1,0 +1,665 @@
+{
+  "nav": "Page templates",
+  "title": "Page templates",
+  "description": "Authentication, account, marketing and status pages",
+  "gallery": {
+    "back": "All page templates",
+    "title": "Page templates",
+    "description": "Ready-made screens around your dashboards: sign-in flows, account pages, pricing and status pages.",
+    "groups": {
+      "auth": "Authentication",
+      "account": "Account & help",
+      "marketing": "Marketing",
+      "status": "Errors & status"
+    },
+    "count_one": "{{count}} template",
+    "count_other": "{{count}} templates",
+    "inApp": "In app",
+    "fullPage": "Full page"
+  },
+  "templates": {
+    "authSplit": {
+      "title": "Sign in · split",
+      "body": "Brand panel with proof points beside the form."
+    },
+    "authIllustrated": {
+      "title": "Sign up · illustrated",
+      "body": "Card with an illustration, social sign-up and password strength."
+    },
+    "authMinimal": {
+      "title": "Sign in · minimal",
+      "body": "Magic link first, password as the fallback."
+    },
+    "authOtp": {
+      "title": "Two-step verification",
+      "body": "Six-digit code with resend timer and error state."
+    },
+    "authForgot": {
+      "title": "Forgot password",
+      "body": "Reset request and a clear “what happens next”."
+    },
+    "authLock": {
+      "title": "Lock screen",
+      "body": "Session locked after inactivity; unlock with a password."
+    },
+    "profile": {
+      "title": "Profile",
+      "body": "Cover, stats, about card, pinned projects, team and activity."
+    },
+    "account": {
+      "title": "Account settings",
+      "body": "Profile, security, notifications, billing and integrations."
+    },
+    "help": {
+      "title": "Help center",
+      "body": "Search, categories, articles, FAQ and contact options."
+    },
+    "onboarding": {
+      "title": "Onboarding",
+      "body": "Setup checklist with progress, walkthrough and invites."
+    },
+    "pricing": {
+      "title": "Pricing",
+      "body": "Four plans, a billing toggle, full comparison and FAQ."
+    },
+    "comingSoon": {
+      "title": "Coming soon",
+      "body": "Launch countdown with a waitlist and feature teasers."
+    },
+    "notFound": {
+      "title": "404 · helpful",
+      "body": "Search and the three most likely destinations."
+    },
+    "notFoundAlt": {
+      "title": "404 · illustrated",
+      "body": "Big number, short copy and an illustration."
+    },
+    "serverError": {
+      "title": "500 · server error",
+      "body": "Request id to share with support, retry and status."
+    },
+    "maintenance": {
+      "title": "Maintenance",
+      "body": "Planned downtime with live progress and updates."
+    }
+  },
+  "auth": {
+    "providers": {
+      "google": "Google",
+      "github": "GitHub",
+      "microsoft": "Microsoft"
+    },
+    "toast": {
+      "signedIn": "Signed in (template)",
+      "provider": "Continue with {{provider}}: connect your OAuth provider here",
+      "created": "Account created (template)"
+    },
+    "fields": {
+      "email": "Email",
+      "password": "Password",
+      "name": "Full name",
+      "company": "Company",
+      "workEmail": "Work email"
+    },
+    "errors": {
+      "email": "Enter a valid email address",
+      "password": "Use at least 8 characters",
+      "required": "Required",
+      "terms": "Please accept the terms to continue"
+    },
+    "forgotLink": "Forgot password?",
+    "show": "Show password",
+    "hide": "Hide password",
+    "remember": "Keep me signed in for 30 days",
+    "signIn": "Sign in",
+    "signUp": "Create an account",
+    "noAccount": "New to {{brand}}?",
+    "haveAccount": "Already have an account?",
+    "orEmail": "or continue with email",
+    "or": "or",
+    "legal": "By continuing you agree to the Terms of Service and Privacy Policy.",
+    "split": {
+      "title": "Welcome back",
+      "subtitle": "Sign in to the workspace your team uses every morning.",
+      "stats": {
+        "teams": {
+          "value": "1,200+",
+          "label": "teams on {{brand}}"
+        },
+        "uptime": {
+          "value": "99.98%",
+          "label": "uptime this year"
+        },
+        "saved": {
+          "value": "6 h",
+          "label": "saved per analyst / week"
+        }
+      },
+      "quote": "Our month-end close went from four days to one. The revenue bridge used to be a spreadsheet only I understood.",
+      "author": "Marta Lindqvist · VP Finance, Fieldwork"
+    },
+    "illustrated": {
+      "title": "Create your workspace",
+      "subtitle": "Free for 14 days. No credit card required.",
+      "terms": "I agree to the Terms of Service and the Data Processing Agreement.",
+      "submit": "Create workspace"
+    },
+    "minimal": {
+      "title": "Sign in",
+      "subtitle": "We will email you a link that signs you in. No password to remember.",
+      "sendLink": "Email me a sign-in link",
+      "sentTitle": "Check your email",
+      "sentBody": "We sent a sign-in link to {{email}}. It expires in 15 minutes.",
+      "useAnother": "Use a different email",
+      "usePassword": "Sign in with a password instead",
+      "useLink": "Email me a link instead"
+    },
+    "otp": {
+      "title": "Enter your verification code",
+      "subtitle": "We sent a 6-digit code to {{email}}.",
+      "verify": "Verify",
+      "wrong": "That code is not right. Check the latest email and try again.",
+      "resendIn": "Resend code in {{seconds}}s",
+      "resend": "Resend code",
+      "resent": "A new code is on its way",
+      "verified": "Verified (template)",
+      "hint": "Any code works in this template except 000000.",
+      "otherMethod": "Use another method"
+    },
+    "forgot": {
+      "back": "Back to sign in",
+      "title": "Reset your password",
+      "subtitle": "Enter the email you use for {{brand}} and we will send you a reset link.",
+      "submit": "Send reset link",
+      "sentTitle": "Check your inbox",
+      "sentBody": "If an account exists for {{email}}, a reset link is on its way.",
+      "steps": {
+        "open": "Open the email from {{brand}} (check spam too).",
+        "click": "Click “Reset password”. The link works for 30 minutes.",
+        "choose": "Choose a new password and sign in."
+      },
+      "noEmail": "Nothing after 5 minutes?",
+      "tryAgain": "Try again"
+    },
+    "lock": {
+      "locked": "Locked after 15 minutes of inactivity",
+      "unlock": "Unlock",
+      "unlocked": "Unlocked (template)",
+      "notYou": "Not you? Sign in as someone else"
+    }
+  },
+  "status": {
+    "home": "Go to the home page",
+    "back": "Go back",
+    "retry": "Try again",
+    "notFound": {
+      "code": "Error 404",
+      "title": "We could not find that page",
+      "body": "The link may be out of date, or the page was moved when we reorganized the workspace.",
+      "search": "Search pages, dashboards and docs",
+      "links": {
+        "dashboard": {
+          "title": "Dashboard",
+          "body": "Pick up where you left off."
+        },
+        "docs": {
+          "title": "Documentation",
+          "body": "Guides for every feature."
+        },
+        "support": {
+          "title": "Support",
+          "body": "We reply within a few hours."
+        }
+      }
+    },
+    "notFoundAlt": {
+      "title": "This page wandered off",
+      "body": "It is not where we left it. Head back, or start again from the home page."
+    },
+    "serverError": {
+      "code": "Error 500",
+      "title": "Something broke on our side",
+      "body": "Your data is safe. The team has been alerted; most issues like this are fixed within minutes.",
+      "requestId": "Request id (share this with support)",
+      "statusPage": "Status page"
+    },
+    "maintenance": {
+      "badge": "Planned maintenance",
+      "title": "We are upgrading the database",
+      "body": "{{brand}} is read-only until about 03:00 UTC while we move to faster storage. Dashboards still load; edits and alerts resume when we are done.",
+      "notify": "Notify me",
+      "subscribed": "We will email you when we are back",
+      "progress": "Progress",
+      "eta": "Estimated completion: 03:05 UTC",
+      "steps": {
+        "backup": "Full backup taken and verified",
+        "migrate": "Data migrated to the new cluster",
+        "reindex": "Rebuilding search indexes",
+        "verify": "Verification and switch-over"
+      }
+    },
+    "comingSoon": {
+      "eyebrow": "{{brand}} Canvas · launching soon",
+      "title": "Whiteboards that understand your metrics",
+      "body": "Drag a number onto a canvas and it stays live. Plan quarters, run reviews and present without exporting a single chart.",
+      "notify": "Notify me",
+      "joined": "You are on the list",
+      "count": "2,418 people are already waiting.",
+      "units": {
+        "days": "Days",
+        "hours": "Hours",
+        "minutes": "Min",
+        "seconds": "Sec"
+      },
+      "teasers": {
+        "canvas": {
+          "title": "Live metric cards",
+          "body": "Numbers refresh on the canvas, with their definition one click away."
+        },
+        "share": {
+          "title": "Share with guests",
+          "body": "Send a read-only canvas to people outside your workspace."
+        },
+        "ai": {
+          "title": "Summaries",
+          "body": "One paragraph on what changed since the last review."
+        }
+      }
+    }
+  },
+  "pricing": {
+    "title": "Plans that grow with your team",
+    "subtitle": "Start free, upgrade when you need more seats, sources or control. Cancel any time.",
+    "monthly": "Monthly",
+    "yearly": "Yearly · save 20%",
+    "popular": "Most popular",
+    "perMonth": "/ month",
+    "billedYearly": "${{total}} billed yearly",
+    "chosen": "{{plan}} selected (template)",
+    "compare": "Compare plans",
+    "feature": "Feature",
+    "yes": "Included",
+    "no": "Not included",
+    "values": {
+      "unlimited": "Unlimited",
+      "daily": "Daily",
+      "hourly": "Hourly",
+      "fiveMin": "Every 5 min",
+      "oneMin": "Every minute"
+    },
+    "groups": {
+      "usage": "Usage",
+      "features": "Features",
+      "security": "Security & support"
+    },
+    "rows": {
+      "seats": "Editor seats",
+      "dashboards": "Dashboards",
+      "sources": "Data sources",
+      "refresh": "Refresh rate",
+      "alerts": "Metric alerts",
+      "embedding": "Embedded dashboards",
+      "api": "REST API",
+      "rls": "Row-level permissions",
+      "sso": "SAML SSO",
+      "audit": "Audit log",
+      "sla": "99.9% uptime SLA"
+    },
+    "plans": {
+      "free": {
+        "name": "Free",
+        "for": "For trying {{brand}} on a side project",
+        "cta": "Start free",
+        "features": {
+          "a": "1 editor, unlimited viewers",
+          "b": "3 dashboards",
+          "c": "Community support"
+        }
+      },
+      "starter": {
+        "name": "Starter",
+        "for": "For small teams with one data source",
+        "cta": "Choose Starter",
+        "features": {
+          "a": "5 editors",
+          "b": "Hourly refresh",
+          "c": "Email support"
+        }
+      },
+      "growth": {
+        "name": "Growth",
+        "for": "For companies that report to a board",
+        "cta": "Choose Growth",
+        "features": {
+          "a": "25 editors",
+          "b": "Alerts and embedding",
+          "c": "Row-level permissions"
+        }
+      },
+      "scale": {
+        "name": "Scale",
+        "for": "For regulated and fast-growing teams",
+        "cta": "Choose Scale",
+        "features": {
+          "a": "Unlimited editors",
+          "b": "SSO, SCIM and audit log",
+          "c": "Dedicated success manager"
+        }
+      }
+    },
+    "faq": {
+      "title": "Billing questions",
+      "subtitle": "Anything else? Our team answers within a working day.",
+      "items": {
+        "q1": {
+          "q": "Who counts as an editor?",
+          "a": "Anyone who can create or change dashboards. Viewers are always free and unlimited."
+        },
+        "q2": {
+          "q": "Can I switch plans later?",
+          "a": "Yes. Upgrades apply immediately and are prorated; downgrades apply at the next renewal."
+        },
+        "q3": {
+          "q": "Do you offer discounts?",
+          "a": "50% off for nonprofits and education, and startup credits for companies under two years old."
+        },
+        "q4": {
+          "q": "What payment methods do you accept?",
+          "a": "Cards on all plans, plus invoices and bank transfer on yearly Growth and Scale."
+        },
+        "q5": {
+          "q": "What happens to my data if I cancel?",
+          "a": "You keep read-only access for 30 days and can export everything. After that it is deleted."
+        }
+      }
+    },
+    "enterprise": {
+      "title": "Need more than 100 seats or a private deployment?",
+      "body": "Custom contracts, on-premise options and a security review with our team.",
+      "cta": "Talk to sales",
+      "toast": "A specialist will reach out within one working day"
+    }
+  },
+  "profile": {
+    "status": {
+      "onTrack": "On track",
+      "atRisk": "At risk",
+      "done": "Done"
+    },
+    "progress": "Progress",
+    "due": "Due {{date}}",
+    "joined": "Joined {{date}}",
+    "toast": {
+      "message": "Opening a conversation…",
+      "follow": "You now follow {{name}}"
+    },
+    "message": "Message",
+    "follow": "Follow",
+    "more": "More actions",
+    "stats": {
+      "projects": "Projects",
+      "reviews": "Reviews given",
+      "response": "Avg. response time"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "projects": "Projects",
+      "team": "Team",
+      "activity": "Activity"
+    },
+    "about": "About",
+    "skills": "Skills",
+    "pinned": "Pinned projects",
+    "pinnedHint": "What Hannah is working on this quarter",
+    "recent": "Recent activity",
+    "view": "View"
+  },
+  "account": {
+    "title": "Account settings",
+    "description": "Manage your profile, security, notifications and billing.",
+    "saved": "Changes saved",
+    "cancel": "Cancel",
+    "save": "Save changes",
+    "sections": {
+      "profile": "Profile",
+      "security": "Security",
+      "notifications": "Notifications",
+      "billing": "Billing",
+      "integrations": "Integrations"
+    },
+    "profile": {
+      "description": "This is how teammates see you across the workspace.",
+      "photo": "Photo",
+      "photoHint": "Square, at least 256 px.",
+      "name": "Name",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "email": "Email",
+      "emailHint": "We send sign-in links and alerts here.",
+      "timezone": "Time zone",
+      "bio": "Bio",
+      "bioHint": "Shown on your profile. Plain text."
+    },
+    "security": {
+      "password": "Password",
+      "passwordHint": "Use a long password you do not use anywhere else.",
+      "update": "Update password",
+      "current": "Current password",
+      "new": "New password",
+      "twoFactor": "Two-step verification",
+      "twoFactorHint": "Add a second step when you sign in from a new device.",
+      "app": "Authenticator app",
+      "appHint": "Codes from 1Password, Authy or Google Authenticator.",
+      "keys": "Security keys",
+      "keysHint": "YubiKey, Touch ID or Windows Hello.",
+      "sessions": "Active sessions",
+      "sessionsHint": "Devices signed in to your account.",
+      "signOutOthers": "Sign out other sessions",
+      "thisDevice": "This device",
+      "revoke": "Sign out",
+      "revoked": "Session signed out"
+    },
+    "notifications": {
+      "description": "Choose where each kind of update reaches you.",
+      "event": "Event",
+      "channels": {
+        "email": "Email",
+        "push": "Push",
+        "slack": "Slack"
+      },
+      "events": {
+        "mentions": {
+          "title": "Mentions",
+          "hint": "Someone @mentions you in a comment"
+        },
+        "assigned": {
+          "title": "Assignments",
+          "hint": "A task or review is assigned to you"
+        },
+        "digest": {
+          "title": "Weekly digest",
+          "hint": "Monday summary of your dashboards"
+        },
+        "alerts": {
+          "title": "Metric alerts",
+          "hint": "A metric crosses a threshold you set"
+        },
+        "billing": {
+          "title": "Billing",
+          "hint": "Invoices, payment failures and renewals"
+        },
+        "product": {
+          "title": "Product news",
+          "hint": "New features, at most twice a month"
+        }
+      }
+    },
+    "billing": {
+      "plan": "Current plan",
+      "upgrade": "Upgrade",
+      "perMonth": "per month",
+      "planName": "Growth plan · renews on Dec 1, 2026",
+      "seats": "Editor seats",
+      "dashboards": "Dashboards",
+      "api": "API requests this month",
+      "method": "Payment method",
+      "card": "Visa · business card",
+      "change": "Change payment method",
+      "invoices": "Invoices",
+      "invoice": "Invoice",
+      "date": "Date",
+      "status": "Status",
+      "amount": "Amount",
+      "download": "Download PDF",
+      "statuses": {
+        "paid": "Paid",
+        "refunded": "Refunded"
+      }
+    },
+    "integrations": {
+      "connected": "{{name}} connected",
+      "disconnected": "{{name}} disconnected",
+      "items": {
+        "slack": "Send alerts and digests to channels.",
+        "github": "Link deploys to metric changes.",
+        "stripe": "Sync revenue, refunds and churn.",
+        "gdrive": "Export reports to shared folders.",
+        "jira": "Create issues from anomalies.",
+        "hubspot": "Pull pipeline and deal data."
+      }
+    }
+  },
+  "help": {
+    "title": "How can we help?",
+    "subtitle": "Search 104 articles or browse by topic.",
+    "search": "Search for articles, e.g. “SSO”",
+    "popular": "Popular: invite your team · connect Postgres · schedule to Slack",
+    "categories": {
+      "start": {
+        "title": "Getting started",
+        "body": "Set up your workspace and team."
+      },
+      "dashboards": {
+        "title": "Dashboards",
+        "body": "Build, share and schedule."
+      },
+      "data": {
+        "title": "Data sources",
+        "body": "Connect and model your data."
+      },
+      "billing": {
+        "title": "Billing",
+        "body": "Plans, invoices and payments."
+      },
+      "security": {
+        "title": "Security",
+        "body": "SSO, roles and permissions."
+      },
+      "api": {
+        "title": "API",
+        "body": "Tokens, endpoints and webhooks."
+      }
+    },
+    "articles_one": "{{count}} article",
+    "articles_other": "{{count}} articles",
+    "featured": "Featured articles",
+    "results_one": "{{count}} article",
+    "results_other": "{{count}} articles",
+    "allTopics": "All topics",
+    "minutes_one": "{{count}} min read",
+    "minutes_other": "{{count}} min read",
+    "noResults": "No articles match your search.",
+    "faq": "Frequently asked",
+    "faqItems": {
+      "q1": {
+        "q": "How do I add teammates?",
+        "a": "Open Settings → Members and invite by email. Viewers are free on every plan."
+      },
+      "q2": {
+        "q": "Why does a number differ between dashboards?",
+        "a": "Usually two different metric versions or filters. Open the number to see its definition and version."
+      },
+      "q3": {
+        "q": "Can I connect a database behind a firewall?",
+        "a": "Yes, through an SSH tunnel or by allow-listing our static IP addresses."
+      },
+      "q4": {
+        "q": "How do I cancel?",
+        "a": "Settings → Billing → Cancel plan. You keep read-only access for 30 days."
+      }
+    },
+    "contact": "Still need help?",
+    "channels": {
+      "chat": {
+        "title": "Live chat",
+        "meta": "Typically replies in 4 minutes",
+        "cta": "Start a chat",
+        "toast": "Chat opened (template)"
+      },
+      "email": {
+        "title": "Email",
+        "meta": "support@orbitly.io · within a day",
+        "cta": "Write to us",
+        "toast": "Email draft opened (template)"
+      },
+      "call": {
+        "title": "Call us",
+        "meta": "Mon–Fri, 9:00–18:00 CET",
+        "cta": "Book a call",
+        "toast": "Call booked (template)"
+      }
+    },
+    "status": "All systems operational"
+  },
+  "onboarding": {
+    "title": "Get set up",
+    "description": "Six short steps to a workspace your team will actually use.",
+    "completed": "“{{step}}” completed",
+    "checklist": "Setup checklist",
+    "progress": "{{done}} of {{total}} done",
+    "minutes_one": "About {{count}} minute",
+    "minutes_other": "About {{count}} minutes",
+    "steps": {
+      "profile": {
+        "title": "Complete your profile",
+        "body": "Add a photo and your role so teammates know who they are talking to.",
+        "cta": "Open profile"
+      },
+      "connect": {
+        "title": "Connect a data source",
+        "body": "Postgres, BigQuery, Snowflake or a CSV. Connections are read-only.",
+        "cta": "Connect data"
+      },
+      "dashboard": {
+        "title": "Create your first dashboard",
+        "body": "Start from a template; every chart can be edited later.",
+        "cta": "Use a template"
+      },
+      "invite": {
+        "title": "Invite your team",
+        "body": "Dashboards are more useful when the people who act on them can see them.",
+        "cta": "Invite people"
+      },
+      "alert": {
+        "title": "Set up an alert",
+        "body": "Get a message when a metric crosses a threshold, instead of checking every day.",
+        "cta": "Create alert"
+      },
+      "mobile": {
+        "title": "Install the mobile app",
+        "body": "Your morning numbers on iOS and Android, with push alerts.",
+        "cta": "Get the app"
+      }
+    },
+    "tour": "Two-minute tour",
+    "tourHint": "Watch how a team at Fieldwork runs its Monday review.",
+    "tourToast": "Video playback is a placeholder in this template",
+    "invite": "Invite teammates",
+    "inviteHint": "Press Enter or comma after each email.",
+    "invitePlaceholder": "name@company.com",
+    "invalidEmail": "Enter a valid email address",
+    "send": "Send invites",
+    "invited_one": "{{count}} invite sent",
+    "invited_other": "{{count}} invites sent"
+  }
+}

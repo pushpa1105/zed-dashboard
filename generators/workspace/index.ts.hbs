@@ -1,0 +1,35 @@
+import { LayoutDashboard, List } from 'lucide-react';
+
+import { defineFeature } from '@/core/feature/define-feature';
+
+import en from './i18n/en.json';
+import { {{camelCase name}}Routes as r } from './routes';
+
+export default defineFeature({
+  id: '{{kebabCase name}}',
+  i18n: { en },
+  workspace: {
+    basePath: '/{{kebabCase name}}',
+    name: (t) => t('{{kebabCase name}}:workspace.name'),
+    description: (t) => t('{{kebabCase name}}:workspace.description'),
+    category: (t) => t('{{kebabCase name}}:workspace.category'),
+    icon: LayoutDashboard,
+    layout: '{{layout}}',
+    order: 100,
+    nav: [
+      {
+        id: 'main',
+        label: (t) => t('{{kebabCase name}}:nav.sections.main'),
+        icon: LayoutDashboard,
+        items: [
+          { to: r.overview.href(), icon: LayoutDashboard, label: (t) => t('{{kebabCase name}}:nav.overview') },
+          { to: r.records.href(), icon: List, label: (t) => t('{{kebabCase name}}:nav.records') },
+        ],
+      },
+    ],
+    routes: [
+      { path: r.overview.path, page: () => import('./pages/overview-page') },
+      { path: r.records.path, page: () => import('./pages/records-page') },
+    ],
+  },
+});

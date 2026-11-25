@@ -1,0 +1,84 @@
+{
+  "nav": "Calendario",
+  "title": "Calendario",
+  "description": "Reuniones, tiempo de concentración y viajes de todos tus calendarios.",
+  "newEvent": "Nuevo evento",
+  "myCalendars": "Mis calendarios",
+  "upNext": "Próximamente",
+  "nothingUpcoming": "Nada en los próximos 7 días.",
+  "today": "Hoy",
+  "previous": "Anterior",
+  "next": "Siguiente",
+  "viewLabel": "Vista del calendario",
+  "now": "Ahora",
+  "edit": "Editar",
+  "allDay": "Todo el día",
+  "more": "+{{count}} más",
+  "guests": "{{count}} invitados",
+  "views": {
+    "month": "Mes",
+    "week": "Semana",
+    "day": "Día",
+    "agenda": "Agenda"
+  },
+  "error": {
+    "title": "No se pudo cargar tu calendario",
+    "description": "El servicio de eventos no respondió. Inténtalo de nuevo en un momento.",
+    "retry": "Reintentar"
+  },
+  "calendars": {
+    "work": "Trabajo",
+    "team": "Equipo",
+    "personal": "Personal",
+    "travel": "Viajes",
+    "holidays": "Festivos"
+  },
+  "repeat": {
+    "none": "No se repite",
+    "daily": "Cada día",
+    "weekdays": "Cada día laborable",
+    "weekly": "Cada semana",
+    "monthly": "Cada mes"
+  },
+  "agenda": {
+    "emptyTitle": "Un mes despejado",
+    "emptyDescription": "No hay eventos en los próximos 30 días en los calendarios visibles.",
+    "today": "Hoy",
+    "tomorrow": "Mañana"
+  },
+  "dialog": {
+    "newTitle": "Nuevo evento",
+    "editTitle": "Editar evento",
+    "description": "Los cambios en un evento periódico se aplican a toda la serie.",
+    "title": "Título",
+    "titlePlaceholder": "p. ej. Revisión de precios",
+    "allDay": "Todo el día",
+    "starts": "Empieza",
+    "ends": "Termina",
+    "startDate": "Fecha de inicio",
+    "startTime": "Hora de inicio",
+    "endDate": "Fecha de fin",
+    "endTime": "Hora de fin",
+    "calendar": "Calendario",
+    "repeat": "Repetir",
+    "location": "Ubicación",
+    "locationPlaceholder": "Sala, dirección o enlace de vídeo",
+    "guests": "Invitados",
+    "guestsPlaceholder": "Añade un correo y pulsa Intro",
+    "notes": "Notas",
+    "delete": "Eliminar",
+    "cancel": "Cancelar",
+    "save": "Guardar cambios",
+    "create": "Crear evento",
+    "errors": {
+      "title": "Ponle un título al evento",
+      "range": "El evento debe terminar después de empezar",
+      "email": "Introduce un correo válido"
+    }
+  },
+  "toast": {
+    "created": "Evento creado",
+    "updated": "Evento actualizado",
+    "deleted": "Evento eliminado"
+  }
+}

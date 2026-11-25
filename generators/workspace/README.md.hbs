@@ -1,0 +1,13 @@
+# {{titleCase name}} workspace
+
+| Page     | Route                        |
+| -------- | ---------------------------- |
+| Overview | `/{{kebabCase name}}`         |
+| Records  | `/{{kebabCase name}}/records` |
+
+- Manifest (menu, routes, layout): `index.ts`
+- Data: `model/` (Zod schemas), `api/` (queries), mock endpoints in `src/mocks/handlers/{{kebabCase name}}.ts`
+- Texts: `i18n/en.json`, `i18n/es.json`
+
+Add a page: create it in `pages/`, add its route to `routes.ts` and to `workspace.routes`, and a
+menu entry to `workspace.nav`. See docs/adding-a-dashboard.md.

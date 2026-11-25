@@ -1,0 +1,862 @@
+{
+  "workspace": {
+    "name": "Analytics",
+    "description": "Traffic, audiences, campaigns and reports",
+    "category": "Marketing"
+  },
+  "nav": {
+    "sections": {
+      "main": "Analytics"
+    },
+    "overview": "Overview",
+    "realtime": "Realtime",
+    "audience": "Audience",
+    "acquisition": "Acquisition",
+    "channels": "Channels & sources",
+    "channelsHint": "Where visitors come from, with tagged links",
+    "campaigns": "Campaigns",
+    "campaignsHint": "Paid and social campaign performance",
+    "behavior": "Behavior",
+    "pages": "Pages",
+    "funnels": "Funnels",
+    "heatmaps": "Heatmaps",
+    "sessions": "Session replays",
+    "reports": "Reports",
+    "docs": "Chart docs",
+    "retention": "Retention",
+    "events": "Events",
+    "conversions": "Conversions",
+    "goals": "Goals",
+    "goalsHint": "Conversion targets and the value they bring in",
+    "experiments": "Experiments",
+    "experimentsHint": "A/B tests with lift and confidence",
+    "new": "New",
+    "demographics": "Overview",
+    "demographicsHint": "Users, ages, devices and new vs. returning",
+    "geography": "Geography",
+    "geographyHint": "Sessions by country and region",
+    "technology": "Devices & technology",
+    "technologyHint": "Devices, systems, browsers and screens",
+    "alerts": "Alerts"
+  },
+  "home": {
+    "title": "Analytics",
+    "description": "Traffic, orders and revenue for your storefront.",
+    "kpis": {
+      "pageViews": "Total page views",
+      "users": "Total users",
+      "orders": "Total orders",
+      "sales": "Total sales",
+      "extra": "You made an extra <1>{{value}}</1> this year"
+    },
+    "visitors": {
+      "title": "Unique visitors",
+      "granularity": "Granularity",
+      "month": "Month",
+      "week": "Week",
+      "pageViews": "Page views",
+      "sessions": "Sessions"
+    },
+    "income": {
+      "title": "Income overview",
+      "subtitle": "This week's statistics",
+      "value": "Income"
+    },
+    "orders": {
+      "title": "Recent orders",
+      "tracking": "Tracking no.",
+      "product": "Product name",
+      "quantity": "Total order",
+      "status": "Status",
+      "amount": "Total amount"
+    },
+    "status": {
+      "approved": "Approved",
+      "pending": "Pending",
+      "rejected": "Rejected"
+    },
+    "report": {
+      "title": "Analytics report",
+      "trend": "Finance growth"
+    },
+    "traffic": {
+      "title": "Traffic by weekday and hour",
+      "description": "Sessions per 3-hour block, last 4 weeks",
+      "sessions": "{{value}} sessions"
+    },
+    "sales": {
+      "title": "Sales report",
+      "subtitle": "This week's statistics",
+      "income": "Income",
+      "costs": "Cost of sales"
+    },
+    "error": {
+      "title": "Couldn't load analytics",
+      "description": "Check your connection and try again.",
+      "retry": "Try again"
+    },
+    "actions": {
+      "more": "More options"
+    }
+  },
+  "campaigns": {
+    "title": "Campaigns",
+    "description": "Reach, engagement and pipeline across every channel.",
+    "export": "Export",
+    "period": {
+      "label": "Period",
+      "7d": "Last 7 days",
+      "30d": "Last 30 days",
+      "90d": "Last 90 days"
+    },
+    "kpis": {
+      "domains": "Total domains",
+      "projects": "Active campaigns",
+      "clicks": "Total clicks",
+      "links": "Tracked links",
+      "hint": "vs previous period"
+    },
+    "traffic": {
+      "title": "Impressions vs. uniques",
+      "description": "How many people your content reached, and how many were new.",
+      "impressions": "Impressions",
+      "uniques": "Uniques"
+    },
+    "ledger": {
+      "title": "Earnings & expenses",
+      "description": "Latest transactions for this workspace.",
+      "tabs": {
+        "earnings": "Earnings",
+        "expenses": "Expenses",
+        "payouts": "Payout status"
+      },
+      "columns": {
+        "id": "Reference",
+        "type": "Type",
+        "date": "Date",
+        "amount": "Amount",
+        "status": "Status"
+      },
+      "status": {
+        "paid": "Paid",
+        "pending": "Pending",
+        "failed": "Failed"
+      },
+      "net": "Net this period"
+    },
+    "deals": {
+      "title": "Deals",
+      "description": "Opened vs. closed deals.",
+      "monthly": "Monthly",
+      "weekly": "Weekly",
+      "open": "Open deals",
+      "closed": "Closed deals"
+    },
+    "posts": {
+      "title": "Post activity",
+      "description": "Top posts by reach.",
+      "reach": "Reach",
+      "viewAll": "View all posts"
+    },
+    "postStats": {
+      "title": "Post stats",
+      "description": "Posts published per weekday.",
+      "posts": "Posts",
+      "peak": "Busiest day: {{day}}"
+    },
+    "channels": {
+      "title": "Channel mix",
+      "description": "Engagement score by channel.",
+      "current": "This period",
+      "previous": "Previous period"
+    },
+    "funnel": {
+      "title": "Campaign funnel",
+      "description": "From first visit to closed deal.",
+      "overall": "Overall conversion",
+      "ofPrevious": "{{value}}% of previous step"
+    },
+    "error": {
+      "title": "Couldn't load this widget",
+      "retry": "Try again"
+    }
+  },
+  "range": {
+    "label": "Date range",
+    "vs": "vs",
+    "compare": "Compare with",
+    "options": {
+      "7d": "Last 7 days",
+      "28d": "Last 28 days",
+      "90d": "Last 90 days"
+    },
+    "compareOptions": {
+      "previous": "Previous period",
+      "year": "Same period last year",
+      "none": "No comparison"
+    }
+  },
+  "error": {
+    "title": "Couldn’t load analytics",
+    "description": "The data didn’t arrive. Check your connection and try again.",
+    "retry": "Retry"
+  },
+  "realtime": {
+    "title": "Realtime",
+    "description": "Who is on the site right now. Refreshes every 5 seconds.",
+    "pause": "Pause updates",
+    "resume": "Resume updates",
+    "active": {
+      "title": "Active users right now",
+      "description": "Visitors with activity in the last 5 minutes",
+      "hint": "across all pages and devices",
+      "perMinute": "Users per minute, last 30 minutes",
+      "users": "Users"
+    },
+    "devices": {
+      "desktop": "Desktop",
+      "mobile": "Mobile",
+      "tablet": "Tablet"
+    },
+    "stream": {
+      "title": "Live events",
+      "description": "Newest first",
+      "ago": "{{value}} ago"
+    },
+    "events": {
+      "page_view": "Viewed",
+      "signup": "Signed up on",
+      "add_to_cart": "Added to cart on",
+      "purchase": "Purchased on",
+      "trial_start": "Started a trial on"
+    },
+    "topPages": {
+      "title": "Top pages now",
+      "description": "Active users per page"
+    }
+  },
+  "audience": {
+    "title": "Audience",
+    "description": "Who your visitors are and how they come back.",
+    "totals": {
+      "users": "Users",
+      "new": "New users",
+      "session": "Avg. session",
+      "engagement": "Engagement rate"
+    },
+    "returning": {
+      "title": "New vs returning",
+      "description": "Daily users, stacked",
+      "new": "New",
+      "returning": "Returning"
+    },
+    "devices": {
+      "title": "Devices",
+      "description": "Share of users",
+      "users": "users"
+    },
+    "ages": {
+      "title": "Age groups",
+      "description": "Users by reported age"
+    },
+    "countries": {
+      "title": "Countries",
+      "description": "Top 10 by users",
+      "country": "Country",
+      "share": "Share of users",
+      "users": "Users",
+      "sessions": "Sessions",
+      "engagement": "Engagement"
+    }
+  },
+  "acquisition": {
+    "title": "Acquisition",
+    "description": "Channels, sources and the links you tag for campaigns.",
+    "channels": {
+      "title": "Channels",
+      "description": "Default channel grouping",
+      "channel": "Channel",
+      "trend": "Trend",
+      "trendLabel": "{{channel}} users over the period",
+      "users": "Users",
+      "conversion": "Conversion",
+      "revenue": "Revenue"
+    },
+    "share": {
+      "title": "Channel share",
+      "description": "Users by channel"
+    },
+    "sources": {
+      "title": "Source / medium",
+      "description": "Top 8 by sessions",
+      "sourceMedium": "Source / medium",
+      "sessions": "Sessions",
+      "conversions": "Conversions",
+      "bounce": "{{value}} bounce"
+    },
+    "utm": {
+      "title": "Campaign URL builder",
+      "description": "Tag a link so its visits show up under the right campaign.",
+      "url": "Destination URL",
+      "source": "Source",
+      "sourceHint": "Where the link is posted, e.g. newsletter",
+      "medium": "Medium",
+      "campaign": "Campaign",
+      "campaignHint": "Letters, numbers, - and _ only",
+      "term": "Term (optional)",
+      "preview": "Tagged URL",
+      "invalid": "Enter a full URL, including https://",
+      "save": "Save link",
+      "created": "Campaign link saved",
+      "recent": "Recent links",
+      "clicks": "{{value}} clicks"
+    }
+  },
+  "pages": {
+    "title": "Pages",
+    "description": "Which pages draw visitors in, hold their attention and lose them.",
+    "search": "Filter pages…",
+    "scrollHint": "Average share of the page visitors scrolled through.",
+    "spotlight": {
+      "mostViewed": "Most viewed",
+      "longest": "Longest engagement",
+      "leaky": "Highest exit rate"
+    },
+    "table": {
+      "title": "All pages",
+      "description": "{{count}} pages"
+    },
+    "columns": {
+      "page": "Page",
+      "views": "Views",
+      "users": "Users",
+      "time": "Avg. time",
+      "bounce": "Bounce",
+      "entrances": "Entrances",
+      "exits": "Exits",
+      "scroll": "Scroll depth"
+    }
+  },
+  "funnels": {
+    "title": "Funnels",
+    "description": "Pick the steps of a journey and see where people drop off.",
+    "entry": "Entry step",
+    "ofPrevious": "{{value}} of previous",
+    "overall": "Overall conversion",
+    "biggestDrop": "Biggest drop: {{value}} of people leave before “{{step}}”.",
+    "steps": {
+      "title": "Steps",
+      "description": "2 to 7 events, in order",
+      "step": "Step {{n}}",
+      "up": "Move up",
+      "down": "Move down",
+      "remove": "Remove step",
+      "add": "Add step",
+      "reset": "Reset"
+    },
+    "chart": {
+      "title": "Conversion",
+      "description": "Users reaching each step"
+    },
+    "table": {
+      "title": "Step details",
+      "step": "Step",
+      "users": "Users",
+      "dropOff": "Drop-off",
+      "time": "Median time",
+      "minutes": "{{value}} min"
+    }
+  },
+  "reports": {
+    "title": "Reports",
+    "description": "Saved reports and the schedules that email them.",
+    "count": "{{count}} scheduled",
+    "actions": "Report actions",
+    "addSchedule": "Add schedule",
+    "delete": "Delete report",
+    "deleteTitle": "Delete “{{name}}”?",
+    "deleteDescription": "Its schedule stops too. This can’t be undone.",
+    "saved": "Schedule saved",
+    "deleted": "Report deleted",
+    "views": {
+      "all": "All",
+      "scheduled": "Scheduled",
+      "manual": "Not scheduled"
+    },
+    "empty": {
+      "title": "No reports here",
+      "description": "Try another filter."
+    },
+    "types": {
+      "traffic": "Traffic",
+      "acquisition": "Acquisition",
+      "revenue": "Revenue",
+      "funnel": "Funnel",
+      "custom": "Custom"
+    },
+    "frequency": {
+      "daily": "Daily",
+      "weekly": "Weekly",
+      "monthly": "Monthly"
+    },
+    "format": {
+      "pdf": "PDF",
+      "csv": "CSV"
+    },
+    "schedule": {
+      "title": "Email schedule",
+      "frequency": "Send",
+      "recipients": "Recipients",
+      "recipientsHint": "Press Enter after each address",
+      "invalidEmail": "Not a valid email address",
+      "format": "Format",
+      "stop": "Stop sending",
+      "cancel": "Cancel",
+      "save": "Save schedule"
+    }
+  },
+  "retention": {
+    "title": "Retention",
+    "description": "How many people from each weekly signup cohort keep coming back.",
+    "segment": "Segment",
+    "cohorts": "Number of cohorts",
+    "weeks": "{{count}} weeks",
+    "week": "W{{n}}",
+    "segments": {
+      "all": "All users",
+      "organic": "Organic search",
+      "paid": "Paid ads",
+      "referral": "Referrals"
+    },
+    "kpis": {
+      "users": "Users in cohorts",
+      "usersHint": "Signed up in the last {{count}} weeks",
+      "week1": "Week 1 retention",
+      "week4": "Week 4 retention",
+      "last": "Week {{n}} retention"
+    },
+    "modes": {
+      "percent": "Percent",
+      "users": "Users"
+    },
+    "table": {
+      "title": "Cohort retention",
+      "description": "Share of each cohort active N weeks after signing up. Select a cohort to plot it.",
+      "caption": "Weekly cohorts by weeks since signup",
+      "cohort": "Cohort",
+      "users": "Users",
+      "average": "Weighted average"
+    },
+    "curve": {
+      "title": "Retention curve",
+      "description": "Average of all cohorts compared with the week of {{week}}.",
+      "average": "All cohorts",
+      "cohort": "Week of {{week}}"
+    }
+  },
+  "events": {
+    "title": "Events",
+    "description": "Every tracked event with its volume and trend. Open one to see its properties.",
+    "search": "Search events",
+    "category": "Event category",
+    "categories": {
+      "all": "All",
+      "engagement": "Engagement",
+      "conversion": "Conversion",
+      "system": "System"
+    },
+    "kpis": {
+      "total": "Total events",
+      "tracked": "Event types",
+      "conversions": "Conversion events"
+    },
+    "table": {
+      "event": "Event",
+      "category": "Category",
+      "count": "Count",
+      "users": "Users",
+      "perUser": "Per user",
+      "trend": "Last 14 days",
+      "trendLabel": "Daily trend of {{event}}",
+      "change": "Change"
+    },
+    "empty": {
+      "title": "No matching events",
+      "description": "Try another search or category."
+    },
+    "sheet": {
+      "daily": "Daily volume",
+      "properties": "Property breakdown",
+      "property": "Property"
+    }
+  },
+  "goals": {
+    "title": "Goals",
+    "description": "Conversion goals, how close you are to each target and the revenue they drive.",
+    "create": "New goal",
+    "edit": "Edit",
+    "delete": "Delete",
+    "actions": "Actions for {{name}}",
+    "deleteTitle": "Delete “{{name}}”?",
+    "deleteDescription": "Its history is kept, but it stops appearing in reports.",
+    "saved": "Goal saved",
+    "deleted": "Goal deleted",
+    "target": "Target {{value}}",
+    "trend": "Conversion rate trend of {{name}}",
+    "progress": "Progress of {{name}} towards its target",
+    "conversions": "Conversions",
+    "value": "Goal value",
+    "status": {
+      "onTrack": "On track",
+      "atRisk": "At risk",
+      "behind": "Behind"
+    },
+    "kpis": {
+      "conversions": "Total conversions",
+      "value": "Total goal value",
+      "onTrack": "Goals on track",
+      "onTrackValue": "{{done}} of {{total}}"
+    },
+    "empty": {
+      "title": "No goals yet",
+      "description": "Create a goal to track a conversion against a target."
+    },
+    "events": {
+      "signup": "Signed up",
+      "trial_start": "Trial started",
+      "demo_request": "Demo requested",
+      "add_to_cart": "Added to cart",
+      "purchase": "Purchase completed",
+      "subscribe": "Subscribed"
+    },
+    "form": {
+      "createTitle": "New goal",
+      "editTitle": "Edit goal",
+      "description": "A goal counts visitors who trigger an event and compares the rate with your target.",
+      "name": "Name",
+      "namePlaceholder": "e.g. Trial starts",
+      "event": "Conversion event",
+      "eventHint": "Visitors who trigger this event count as a conversion.",
+      "target": "Target rate",
+      "targetHint": "Share of visitors, 0.1–100%.",
+      "value": "Value per conversion",
+      "valueHint": "Used to estimate revenue.",
+      "cancel": "Cancel",
+      "save": "Save goal",
+      "errors": {
+        "name": "Use at least 2 characters",
+        "target": "Enter a rate between 0.1% and 100%",
+        "value": "Enter an amount between $0 and $100,000"
+      }
+    }
+  },
+  "experiments": {
+    "title": "Experiments",
+    "description": "A/B tests, their status and how the best variant performs against the control.",
+    "filter": "Filter by status",
+    "all": "All",
+    "variants_one": "{{count}} variant",
+    "variants_other": "{{count}} variants",
+    "status": {
+      "running": "Running",
+      "completed": "Completed",
+      "paused": "Paused",
+      "draft": "Draft"
+    },
+    "kpis": {
+      "running": "Running now",
+      "winners": "Significant winners",
+      "avgLift": "Average winning lift"
+    },
+    "table": {
+      "experiment": "Experiment",
+      "status": "Status",
+      "goal": "Goal",
+      "visitors": "Visitors",
+      "lift": "Lift",
+      "confidence": "Confidence",
+      "confidenceLabel": "Confidence for {{name}}"
+    },
+    "empty": {
+      "title": "No experiments here",
+      "description": "Choose another status to see more tests."
+    },
+    "verdict": {
+      "draft": "This experiment hasn’t started yet, so there are no results.",
+      "inconclusive": "{{variant}} is at {{lift}} with {{confidence}} confidence. Keep the test running until it reaches significance.",
+      "winner": "{{variant}} beats the control by {{lift}} with {{confidence}} confidence.",
+      "loser": "{{variant}} performs worse than the control ({{lift}}, {{confidence}} confidence). Keep the control."
+    },
+    "detail": {
+      "back": "All experiments",
+      "goal": "Goal: {{goal}}",
+      "ran": "Ran {{from}} – {{to}}",
+      "since": "Running since {{from}}",
+      "conversions": "Conversions",
+      "bestLift": "Best lift",
+      "threshold": "Significant at {{value}}%",
+      "variants": "Variants",
+      "variant": "Variant",
+      "rate": "Conv. rate",
+      "control": "Control",
+      "chart": {
+        "title": "Conversion rate over time",
+        "description": "Cumulative conversion rate per variant. Lines settle as more visitors arrive."
+      }
+    }
+  },
+  "geography": {
+    "title": "Geography",
+    "description": "Where your sessions come from and how each market converts.",
+    "kpis": {
+      "sessions": "Sessions",
+      "countries": "Countries",
+      "top": "Top country",
+      "conversion": "Avg. conversion rate"
+    },
+    "map": {
+      "title": "Sessions map",
+      "description": "Each tile is a country; darker tiles bring more sessions. Click one for details.",
+      "tile": "Open {{country}}",
+      "fewer": "Fewer",
+      "more": "More sessions",
+      "noData": "No data"
+    },
+    "regions": {
+      "title": "By region",
+      "description": "Share of sessions per continent",
+      "filter": "Region",
+      "all": "All",
+      "americas": "Americas",
+      "europe": "Europe",
+      "africa": "Africa",
+      "asia": "Asia",
+      "oceania": "Oceania"
+    },
+    "table": {
+      "title": "Countries",
+      "description": "Ranked by sessions in the selected period",
+      "country": "Country",
+      "share": "Share of sessions",
+      "sessions": "Sessions",
+      "users": "Users",
+      "conversion": "Conversion rate",
+      "change": "Change"
+    },
+    "channels": {
+      "organic": "Organic search",
+      "direct": "Direct",
+      "paid": "Paid search",
+      "referral": "Referral",
+      "social": "Social"
+    },
+    "sheet": {
+      "description": "{{region}} · sessions, channels and devices",
+      "daily": "Daily sessions",
+      "channels": "Channels",
+      "devices": "Devices"
+    },
+    "empty": {
+      "title": "No sessions here",
+      "description": "No country in this selection had sessions in the period."
+    }
+  },
+  "technology": {
+    "title": "Devices & technology",
+    "description": "What visitors browse with, and which setups convert best.",
+    "kpis": {
+      "mobile": "Mobile share",
+      "os": "Top operating system",
+      "browser": "Top browser",
+      "best": "Best-converting device"
+    },
+    "categories": {
+      "title": "Device category",
+      "description": "Sessions by device type"
+    },
+    "os": {
+      "title": "Operating systems",
+      "description": "Sessions by operating system"
+    },
+    "browsers": {
+      "title": "Browsers",
+      "description": "Sessions by browser"
+    },
+    "dimensions": {
+      "categories": "Device",
+      "os": "OS",
+      "browsers": "Browser",
+      "resolutions": "Resolution"
+    },
+    "segments": {
+      "title": "Conversion by segment",
+      "description": "Site average: {{average}}",
+      "dimension": "Breakdown",
+      "segment": "Segment",
+      "share": "Share of sessions",
+      "sessions": "Sessions",
+      "duration": "Avg. session",
+      "rate": "Conversion rate",
+      "vsAverage": "vs. average"
+    },
+    "empty": {
+      "title": "No sessions recorded",
+      "description": "There is no data for this breakdown in the period."
+    }
+  },
+  "alerts": {
+    "title": "Alerts",
+    "description": "Anomalies detected on your key metrics and the rules that watch them.",
+    "create": "New rule",
+    "updated": "Alert updated",
+    "kpis": {
+      "open": "Open alerts",
+      "critical": "Critical open",
+      "acknowledged": "Acknowledged",
+      "rules": "Active rules",
+      "rulesValue": "{{active}} of {{total}}"
+    },
+    "severity": {
+      "critical": "Critical",
+      "warning": "Warning",
+      "info": "Info"
+    },
+    "status": {
+      "open": "Open",
+      "acknowledged": "Acknowledged",
+      "muted": "Muted",
+      "all": "All"
+    },
+    "metrics": {
+      "sessions": "Sessions",
+      "conversionRate": "Conversion rate",
+      "bounceRate": "Bounce rate",
+      "revenue": "Revenue",
+      "pageLoad": "Page load time",
+      "signups": "Sign-ups"
+    },
+    "conditions": {
+      "drops": "drops by",
+      "rises": "rises by",
+      "changes": "changes by"
+    },
+    "windows": {
+      "1h": "1 hour",
+      "24h": "24 hours",
+      "7d": "7 days"
+    },
+    "notify": {
+      "email": "Email",
+      "slack": "Slack",
+      "inApp": "In-app"
+    },
+    "feed": {
+      "title": "Anomalies",
+      "description": "Metrics that moved outside their forecast range",
+      "filter": "Status",
+      "drop": "{{metric}} dropped {{change}}",
+      "rise": "{{metric}} rose {{change}}",
+      "versus": "{{value}} vs. {{expected}} expected",
+      "acknowledge": "Acknowledge",
+      "mute": "Mute",
+      "reopen": "Reopen",
+      "empty": {
+        "title": "All clear",
+        "description": "No alerts with this status."
+      }
+    },
+    "rules": {
+      "title": "Alert rules",
+      "description": "Compared with the forecast for each window",
+      "created": "Rule created",
+      "updated": "Rule updated",
+      "deleted": "Rule deleted",
+      "summary": "{{metric}} {{condition}} {{threshold}}% over {{window}}",
+      "triggered_one": "Triggered once in 30 days",
+      "triggered_other": "Triggered {{count}} times in 30 days",
+      "toggle": "Enable {{name}}",
+      "delete": "Delete {{name}}",
+      "deleteTitle": "Delete “{{name}}”?",
+      "deleteDescription": "Past alerts stay in the feed, but no new ones will be raised.",
+      "deleteConfirm": "Delete rule",
+      "empty": {
+        "title": "No rules yet",
+        "description": "Create a rule to get alerted when a metric moves."
+      }
+    },
+    "form": {
+      "title": "New alert rule",
+      "description": "Get notified when a metric deviates from its forecast by more than the threshold.",
+      "name": "Name",
+      "namePlaceholder": "e.g. Checkout conversion dip",
+      "metric": "Metric",
+      "condition": "Condition",
+      "window": "Time window",
+      "severity": "Severity",
+      "notify": "Notify via",
+      "threshold": "Threshold",
+      "thresholdHint": "Change vs. forecast, 1–500%.",
+      "cancel": "Cancel",
+      "save": "Create rule",
+      "errors": {
+        "name": "Use at least 3 characters",
+        "threshold": "Enter a threshold between 1% and 500%"
+      }
+    }
+  },
+  "shell": {
+    "categories": {
+      "alerts": "Alerts",
+      "goals": "Goals",
+      "reports": "Reports"
+    },
+    "notifications": {
+      "spike": {
+        "title": "Traffic spike: +240% in 15 min",
+        "body": "Most visitors come from news.ycombinator.com."
+      },
+      "bounce": {
+        "title": "Bounce rate above threshold",
+        "body": "/pricing reached 71% (alert set at 60%)."
+      },
+      "goal": {
+        "title": "Goal reached: 1,000 sign-ups",
+        "body": "Monthly target met 6 days early."
+      },
+      "experiment": {
+        "title": "Experiment is significant",
+        "body": "Checkout B converts 8.4% better (95% confidence)."
+      },
+      "report": {
+        "title": "Weekly report is ready",
+        "body": "Sessions +12%, conversion rate 3.1%."
+      },
+      "campaign": {
+        "title": "Campaign “Black Friday” ended",
+        "body": "18,420 sessions and $96k attributed revenue."
+      }
+    },
+    "create": {
+      "report": {
+        "label": "New report",
+        "description": "Build a custom report"
+      },
+      "goal": {
+        "label": "Add goal",
+        "description": "Track a conversion"
+      },
+      "funnel": {
+        "label": "Create funnel",
+        "description": "Find where visitors drop off"
+      },
+      "alert": {
+        "label": "New alert",
+        "description": "Get notified about changes"
+      }
+    },
+    "account": {
+      "reports": "My reports",
+      "alerts": "My alerts"
+    }
+  }
+}

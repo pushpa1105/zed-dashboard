@@ -1,0 +1,785 @@
+{
+  "workspace": {
+    "name": "RR. HH.",
+    "description": "Personas, selección, ausencias y nóminas",
+    "category": "Personas"
+  },
+  "nav": {
+    "overview": "Resumen",
+    "people": "Personas",
+    "directory": "Directorio",
+    "orgChart": "Organigrama",
+    "recruitment": "Selección",
+    "openRoles": "Vacantes",
+    "careersSite": "Web de empleo",
+    "referrals": "Referencias",
+    "timeOff": "Ausencias",
+    "payroll": "Nóminas",
+    "payRuns": "Ejecuciones de nómina",
+    "benefits": "Beneficios",
+    "performance": "Desempeño",
+    "settings": "Ajustes",
+    "help": "Manual de RR. HH.",
+    "onboarding": "Incorporación",
+    "time": "Tiempo",
+    "attendance": "Asistencia",
+    "learning": "Formación",
+    "training": "Cursos y asignaciones",
+    "overdueTraining": "Formación vencida",
+    "engagement": "Compromiso",
+    "documents": "Documentos",
+    "allDocuments": "Todos los documentos",
+    "awaitingSignature": "Pendientes de firma"
+  },
+  "title": "Selección y personas",
+  "description": "Actividad de selección, entrevistas y operaciones de personas.",
+  "careersSite": "Ver web de empleo",
+  "tabs": {
+    "overview": "Resumen",
+    "calendar": "Calendario",
+    "tasks": "Tareas",
+    "activity": "Actividad"
+  },
+  "report": {
+    "title": "Informe analítico",
+    "range": {
+      "label": "Periodo",
+      "7d": "Últimos 7 días",
+      "14d": "Últimos 14 días",
+      "30d": "Últimos 30 días",
+      "90d": "Últimos 90 días"
+    },
+    "comparedTo": "comparado con",
+    "compare": {
+      "previous": "Periodo anterior",
+      "lastYear": "Mismo periodo del año pasado"
+    },
+    "current": "Solicitudes",
+    "previous": "Comparación",
+    "stats": {
+      "newCandidates": "Nuevos candidatos",
+      "applications": "Solicitudes",
+      "totalCandidates": "Candidatos totales",
+      "employees": "Empleados"
+    },
+    "inRange": "en el periodo elegido",
+    "entirePeriod": "en todo el periodo"
+  },
+  "interviews": {
+    "title": "Próximas entrevistas",
+    "join": "Unirse con Google Meet",
+    "reschedule": "Reprogramar",
+    "cancel": "Cancelar entrevista",
+    "copy": "Copiar enlace",
+    "copied": "Enlace copiado",
+    "more": "Más acciones"
+  },
+  "openings": {
+    "title": "Solicitudes por revisar",
+    "columns": {
+      "name": "Nombre",
+      "published": "Publicada",
+      "candidates": "Candidatos"
+    },
+    "none": "Aún sin candidatos"
+  },
+  "headcount": {
+    "title": "Plantilla por departamento",
+    "employees": "Empleados"
+  },
+  "pipeline": {
+    "title": "Embudo de selección",
+    "description": "Candidatos en cada etapa este trimestre.",
+    "conversion": "{{value}} % avanza"
+  },
+  "onboarding": {
+    "title": "Incorporaciones",
+    "starts": "Empieza el {{date}}",
+    "started": "Empezó el {{date}}"
+  },
+  "activity": {
+    "title": "Actividad de selección"
+  },
+  "calendarTab": {
+    "title": "Calendario de entrevistas",
+    "description": "Los días con entrevistas aparecen resaltados."
+  },
+  "newJob": {
+    "button": "Nuevo empleo",
+    "title": "Publicar un empleo",
+    "description": "Se publica de inmediato en la web de empleo.",
+    "fields": {
+      "title": "Puesto",
+      "department": "Departamento",
+      "location": "Ubicación",
+      "type": "Tipo de contrato"
+    },
+    "placeholders": {
+      "title": "p. ej. Ingeniero/a frontend sénior",
+      "location": "p. ej. Remoto (UE) o Berlín"
+    },
+    "types": {
+      "fullTime": "Jornada completa",
+      "partTime": "Media jornada",
+      "contract": "Contrato temporal"
+    },
+    "submit": "Publicar empleo",
+    "cancel": "Cancelar",
+    "created": "Empleo publicado"
+  },
+  "error": {
+    "title": "No se pudo cargar esta sección",
+    "retry": "Reintentar"
+  },
+  "common": {
+    "back": "Volver",
+    "notFound": "No encontramos ese registro.",
+    "department": "Departamento",
+    "location": "Ubicación",
+    "status": "Estado",
+    "allDepartments": "Todos los departamentos",
+    "days": "{{count}} días",
+    "view": {
+      "cards": "Tarjetas",
+      "table": "Tabla"
+    },
+    "remind": "Enviar recordatorio",
+    "reminded": "Recordatorio enviado",
+    "previous": "Página anterior",
+    "next": "Página siguiente",
+    "pageOf": "Página {{page}} de {{total}}"
+  },
+  "status": {
+    "active": "Activo",
+    "onLeave": "De baja",
+    "onboarding": "Incorporándose"
+  },
+  "employment": {
+    "fullTime": "Jornada completa",
+    "partTime": "Media jornada",
+    "contract": "Temporal"
+  },
+  "leave": {
+    "vacation": "Vacaciones",
+    "sick": "Baja por enfermedad",
+    "parental": "Permiso parental",
+    "personal": "Día personal"
+  },
+  "directory": {
+    "title": "Directorio de personas",
+    "description": "Todo el equipo, por área y ubicación.",
+    "search": "Buscar por nombre, puesto o correo…",
+    "count": "{{count}} personas",
+    "columns": {
+      "name": "Nombre",
+      "department": "Departamento",
+      "location": "Ubicación",
+      "startDate": "Incorporación",
+      "status": "Estado",
+      "type": "Tipo"
+    },
+    "reportsTo": "Reporta a {{name}}"
+  },
+  "profile": {
+    "tabs": {
+      "overview": "Resumen",
+      "job": "Puesto",
+      "timeOff": "Ausencias",
+      "documents": "Documentos",
+      "performance": "Desempeño"
+    },
+    "message": "Mensaje",
+    "manager": "Responsable",
+    "reports": "Equipo directo",
+    "noReports": "Sin personas a cargo.",
+    "contact": "Contacto",
+    "email": "Correo",
+    "phone": "Teléfono",
+    "location": "Ubicación",
+    "started": "Incorporación",
+    "tenure": "Antigüedad",
+    "years": "{{count}} años",
+    "salary": "Salario anual",
+    "level": "Nivel",
+    "levelValue": "N{{level}}",
+    "employment": "Contrato",
+    "history": "Historial de puestos",
+    "present": "Actualidad",
+    "balances": "Saldos",
+    "used": "{{used}} de {{total}} días usados",
+    "requests": "Solicitudes",
+    "noRequests": "Sin ausencias registradas.",
+    "reviews": "Evaluaciones",
+    "rating": "Valoración",
+    "goals": "Objetivos"
+  },
+  "org": {
+    "title": "Organigrama",
+    "description": "Líneas de reporte de toda la empresa. Haz clic en una tarjeta para desplegar su equipo.",
+    "zoomIn": "Acercar",
+    "zoomOut": "Alejar",
+    "reset": "Restablecer vista",
+    "expandAll": "Desplegar todo",
+    "collapseAll": "Plegar todo",
+    "reports": "{{count}} a cargo",
+    "legend": "Departamentos"
+  },
+  "recruitment": {
+    "title": "Vacantes",
+    "description": "Todos los puestos abiertos y en qué punto están los candidatos.",
+    "applicants": "Candidatos",
+    "inInterview": "En entrevistas",
+    "published": "Publicada el {{date}}",
+    "status": {
+      "open": "Abierta",
+      "paused": "En pausa"
+    },
+    "viewPipeline": "Ver proceso",
+    "moved": "Candidato movido",
+    "back": "Todas las vacantes",
+    "stages": {
+      "applied": "Inscrito",
+      "screening": "Cribado",
+      "interview": "Entrevista",
+      "offer": "Oferta",
+      "hired": "Contratado"
+    },
+    "boardDescription": "{{department}} · {{location}}. Arrastra candidatos para avanzarlos en el proceso.",
+    "appliedOn": "Inscrito el {{date}}",
+    "timeToHire": "Tiempo medio de contratación",
+    "acceptance": "Aceptación de ofertas"
+  },
+  "timeOff": {
+    "title": "Ausencias",
+    "description": "Quién está fuera este mes y las solicitudes que esperan tu respuesta.",
+    "queue": "Pendientes de aprobación",
+    "queueDescription": "Aprueba o rechaza; se avisa a la persona.",
+    "approve": "Aprobar",
+    "decline": "Rechazar",
+    "decided": "Solicitud actualizada",
+    "noPending": "No tienes nada pendiente.",
+    "outToday": "Fuera hoy",
+    "previous": "Mes anterior",
+    "next": "Mes siguiente",
+    "today": "Hoy",
+    "status": {
+      "pending": "Pendiente",
+      "approved": "Aprobada",
+      "declined": "Rechazada"
+    }
+  },
+  "payroll": {
+    "title": "Nóminas",
+    "description": "Ejecuciones mensuales: revisa, aprueba y mira a dónde va el dinero.",
+    "next": "Próxima nómina",
+    "payDate": "Se paga el {{date}}",
+    "ytdGross": "Bruto acumulado del año",
+    "avgNet": "Neto medio por empleado",
+    "columns": {
+      "period": "Periodo",
+      "payDate": "Fecha de pago",
+      "employees": "Empleados",
+      "gross": "Bruto",
+      "taxes": "Impuestos",
+      "net": "Neto",
+      "status": "Estado"
+    },
+    "status": {
+      "draft": "Borrador",
+      "pendingApproval": "Requiere aprobación",
+      "paid": "Pagada"
+    },
+    "approve": "Aprobar nómina",
+    "approved": "Nómina aprobada",
+    "view": "Revisar"
+  },
+  "payRun": {
+    "title": "Nómina · {{period}}",
+    "description": "Se paga el {{date}} a {{count}} empleados.",
+    "back": "Todas las nóminas",
+    "byDepartment": "Bruto por departamento",
+    "components": {
+      "title": "Desglose de devengos",
+      "base": "Salario base",
+      "overtime": "Horas extra",
+      "bonus": "Bonus",
+      "allowances": "Complementos"
+    },
+    "gross": "Bruto",
+    "taxes": "Impuestos",
+    "deductions": "Deducciones",
+    "net": "Neto",
+    "lines": "Líneas por empleado",
+    "employee": "Empleado"
+  },
+  "performance": {
+    "title": "Desempeño",
+    "description": "Ciclos de evaluación, objetivos de empresa y reparto de valoraciones.",
+    "cycles": "Ciclos de evaluación",
+    "completion": "{{done}} de {{total}} evaluaciones",
+    "due": "Vence el {{date}}",
+    "cycleStatus": {
+      "inProgress": "En curso",
+      "scheduled": "Programado",
+      "closed": "Cerrado"
+    },
+    "goals": "Objetivos de empresa",
+    "goalStatus": {
+      "onTrack": "En plazo",
+      "atRisk": "En riesgo",
+      "offTrack": "Retrasado"
+    },
+    "distribution": "Reparto de valoraciones",
+    "distributionDescription": "Última valoración por persona (1–5)",
+    "people": "Personas",
+    "pending": "Evaluaciones sin empezar",
+    "pendingDescription": "Responsables que aún deben escribir la evaluación",
+    "reviewer": "Evaluador: {{name}}",
+    "remind": "Recordar",
+    "reminded": "Recordatorio enviado a {{name}}"
+  },
+  "settings": {
+    "title": "Ajustes de RR. HH.",
+    "description": "Políticas de ausencias, semana laboral y avisos.",
+    "policies": {
+      "title": "Política de ausencias",
+      "description": "Aplica a empleados a jornada completa.",
+      "vacation": "Días de vacaciones al año",
+      "sick": "Días de baja retribuidos",
+      "carryOver": "Permitir arrastre",
+      "carryOverHint": "Las vacaciones no usadas pasan al año siguiente (hasta 5 días)."
+    },
+    "week": {
+      "title": "Semana laboral",
+      "description": "Días que cuentan como laborables en las solicitudes."
+    },
+    "notifications": {
+      "title": "Avisos",
+      "description": "Quién se entera de qué.",
+      "approvals": "Avisar por correo de nuevas solicitudes",
+      "approvalsHint": "Resumen diario a las 9:00 hora local.",
+      "anniversaries": "Celebrar aniversarios",
+      "anniversariesHint": "Publicar en #general ese día.",
+      "onboarding": "Enviar listas de incorporación",
+      "onboardingHint": "Las nuevas personas reciben su lista una semana antes."
+    },
+    "weekdays": {
+      "mon": "Lun",
+      "tue": "Mar",
+      "wed": "Mié",
+      "thu": "Jue",
+      "fri": "Vie",
+      "sat": "Sáb",
+      "sun": "Dom"
+    },
+    "save": "Guardar cambios",
+    "saved": "Ajustes de RR. HH. guardados"
+  },
+  "attendance": {
+    "title": "Asistencia",
+    "description": "Quién ha fichado hoy, partes de horas semanales y horas extra por revisar.",
+    "stats": {
+      "in": "Trabajando ahora",
+      "break": "En pausa",
+      "logged": "Horas registradas",
+      "overtime": "Personas con horas extra"
+    },
+    "liveOnly": "En directo solo para la semana actual",
+    "timesheets": "Partes de horas",
+    "week": "Semana del {{from}} al {{to}}",
+    "previousWeek": "Semana anterior",
+    "nextWeek": "Semana siguiente",
+    "thisWeek": "Esta semana",
+    "filters": {
+      "all": "Todos",
+      "submitted": "Pendientes de aprobar",
+      "overtime": "Horas extra"
+    },
+    "approveAll": "Aprobar enviados ({{count}})",
+    "approve": "Aprobar",
+    "approveFor": "Aprobar el parte de {{name}}",
+    "approved": "Partes de horas aprobados",
+    "empty": "Ningún parte coincide con este filtro.",
+    "longDay": "Más de 10 horas en un día",
+    "overtimeHours": "+{{hours}} h",
+    "columns": {
+      "employee": "Empleado",
+      "total": "Total",
+      "status": "Estado",
+      "actions": "Acciones"
+    },
+    "clock": {
+      "in": "Fichado",
+      "break": "En pausa",
+      "out": "Salida fichada",
+      "absent": "Ausente"
+    },
+    "status": {
+      "draft": "Borrador",
+      "submitted": "Enviado",
+      "approved": "Aprobado"
+    }
+  },
+  "onboardingPage": {
+    "title": "Incorporación",
+    "description": "Listas de tareas para cada nueva incorporación, del contrato a su primer mes.",
+    "hires": "Nuevas incorporaciones",
+    "empty": "No hay nadie incorporándose ahora mismo.",
+    "stats": {
+      "active": "Incorporaciones en curso",
+      "upcoming": "Empiezan pronto",
+      "overdue": "Tareas vencidas",
+      "completion": "Progreso total"
+    },
+    "fields": {
+      "department": "Departamento",
+      "startDate": "Fecha de inicio",
+      "manager": "Responsable",
+      "buddy": "Compañero guía"
+    },
+    "phases": {
+      "beforeStart": "Antes del primer día",
+      "week1": "Primera semana",
+      "month1": "Primer mes"
+    },
+    "done": "{{done}} de {{total}} hechas",
+    "owners": {
+      "hr": "RR. HH.",
+      "it": "IT",
+      "manager": "Responsable",
+      "newHire": "Nueva incorporación"
+    },
+    "overdue": "Vencida"
+  },
+  "benefits": {
+    "title": "Beneficios",
+    "description": "Planes disponibles, su coste y quién está inscrito.",
+    "stats": {
+      "monthly": "Coste mensual para la empresa",
+      "perEmployee": "Coste por empleado",
+      "participation": "Tasa de inscripción",
+      "pending": "Inscripciones pendientes"
+    },
+    "costByCategory": "Coste por categoría",
+    "perMonth": "al mes",
+    "plans": "Planes de beneficios",
+    "enrolledOf": "{{enrolled}} de {{eligible}} inscritos",
+    "categories": {
+      "health": "Salud",
+      "dental": "Dental",
+      "vision": "Visión",
+      "retirement": "Jubilación",
+      "life": "Vida e invalidez",
+      "wellness": "Bienestar",
+      "other": "Otros"
+    },
+    "fields": {
+      "provider": "Proveedor",
+      "renewal": "Se renueva el",
+      "employerCost": "Coste empresa / mes",
+      "employeeCost": "Coste empleado / mes"
+    },
+    "coverage": "Qué cubre",
+    "members": "Empleados inscritos ({{count}})",
+    "enrollments": "Inscripción de empleados",
+    "enrollmentsHint": "Planes de cada empleado y lo que le cuestan a la empresa.",
+    "search": "Buscar empleados…",
+    "status": {
+      "all": "Todos",
+      "enrolled": "Inscrito",
+      "pending": "Pendiente",
+      "waived": "Renunciado"
+    },
+    "columns": {
+      "employee": "Empleado",
+      "department": "Departamento",
+      "plans": "Planes",
+      "cost": "Coste empresa",
+      "status": "Estado"
+    },
+    "noMatches": "Ningún empleado coincide con los filtros."
+  },
+  "candidate": {
+    "appliedFor": "Candidato a {{job}} · {{department}}",
+    "back": "Volver al proceso",
+    "resume": "Currículum",
+    "experience": "Experiencia",
+    "education": "Formación",
+    "skills": "Habilidades",
+    "scorecards": "Evaluaciones de entrevista",
+    "scorecardsHint": "Opiniones de todas las personas que han entrevistado al candidato.",
+    "noScorecards": "Todavía no hay entrevistas.",
+    "recommendation": {
+      "strongYes": "Sí, sin duda",
+      "yes": "Sí",
+      "no": "No",
+      "strongNo": "No, en absoluto"
+    },
+    "criteria": {
+      "technical": "Habilidades técnicas",
+      "communication": "Comunicación",
+      "problemSolving": "Resolución de problemas",
+      "cultureAdd": "Aporte cultural"
+    },
+    "moveTo": "Mover a la fase",
+    "advance": "Mover a {{stage}}",
+    "fields": {
+      "email": "Correo",
+      "phone": "Teléfono",
+      "location": "Ubicación",
+      "source": "Origen",
+      "applied": "Solicitud",
+      "salary": "Salario esperado"
+    }
+  },
+  "training": {
+    "title": "Formación",
+    "description": "Catálogo de cursos, asignaciones y formación obligatoria en toda la empresa.",
+    "stats": {
+      "courses": "Cursos en el catálogo",
+      "inProgress": "Asignaciones en curso",
+      "compliance": "Formación obligatoria completada",
+      "overdue": "Asignaciones vencidas"
+    },
+    "catalog": "Catálogo de cursos",
+    "categories": {
+      "compliance": "Cumplimiento",
+      "leadership": "Liderazgo",
+      "technical": "Técnico",
+      "product": "Producto",
+      "wellbeing": "Bienestar"
+    },
+    "formats": {
+      "online": "Curso en línea",
+      "workshop": "Taller",
+      "video": "Vídeo"
+    },
+    "hours": "{{count}} h",
+    "learners": "Participantes: {{count}}",
+    "required": "Obligatorio",
+    "optional": "Opcional",
+    "complianceTitle": "Cumplimiento por departamento",
+    "complianceHint": "Finalización de los cursos obligatorios.",
+    "overdueCount": "{{count}} vencidas",
+    "completion": "Finalización",
+    "completedOf": "{{completed}} de {{total}} completados",
+    "fields": {
+      "format": "Formato",
+      "duration": "Duración",
+      "rating": "Valoración",
+      "type": "Tipo"
+    },
+    "assignments": "Asignaciones",
+    "assignmentsHint": "{{count}} asignaciones, ordenadas por fecha límite.",
+    "search": "Buscar personas o cursos…",
+    "noMatches": "Ninguna asignación coincide con los filtros.",
+    "status": {
+      "all": "Todas",
+      "notStarted": "Sin empezar",
+      "inProgress": "En curso",
+      "overdue": "Vencida",
+      "completed": "Completada"
+    },
+    "columns": {
+      "employee": "Empleado",
+      "course": "Curso",
+      "department": "Departamento",
+      "due": "Fecha límite",
+      "progress": "Progreso",
+      "status": "Estado"
+    },
+    "assign": {
+      "button": "Asignar formación",
+      "title": "Asignar formación",
+      "description": "Inscribe a empleados en un curso y fija una fecha límite.",
+      "course": "Curso",
+      "coursePlaceholder": "Elige un curso",
+      "people": "Empleados",
+      "peoplePlaceholder": "Elige empleados",
+      "due": "Fecha límite",
+      "cancel": "Cancelar",
+      "submit": "Asignar"
+    },
+    "assigned": "Formación asignada"
+  },
+  "engagement": {
+    "title": "Encuestas de compromiso",
+    "description": "Encuestas de pulso y anuales, eNPS y comentarios anónimos.",
+    "stats": {
+      "enps": "eNPS",
+      "responseRate": "Tasa de respuesta",
+      "avgScore": "Puntuación media",
+      "comments": "Comentarios anónimos"
+    },
+    "enpsTrend": "Evolución del eNPS",
+    "enpsHint": "Últimos 12 meses. El reparto corresponde al último mes.",
+    "promoters": "Promotores",
+    "passives": "Pasivos",
+    "detractors": "Detractores",
+    "surveys": "Encuestas",
+    "surveysHint": "Encuestas programadas, abiertas y pasadas.",
+    "status": {
+      "scheduled": "Programada",
+      "active": "Abierta",
+      "closed": "Cerrada"
+    },
+    "responses": "{{count}} respuestas",
+    "reminded": "Recordatorio enviado a quienes no han respondido",
+    "heatTitle": "Puntuaciones por pregunta y departamento",
+    "heatHint": "Respuesta media de 1 (muy en desacuerdo) a 5 (muy de acuerdo).",
+    "question": "Pregunta",
+    "company": "Empresa",
+    "low": "Baja",
+    "high": "Alta",
+    "questions": {
+      "recommend": "Recomendaría esta empresa como un gran lugar para trabajar.",
+      "growth": "Veo un camino claro para crecer profesionalmente aquí.",
+      "manager": "Mi responsable me apoya y me da feedback útil.",
+      "recognition": "Se reconoce mi trabajo cuando lo hago bien.",
+      "workload": "Mi carga de trabajo es asumible.",
+      "mission": "Creo en lo que la empresa intenta conseguir.",
+      "tools": "Tengo las herramientas y los recursos para hacer bien mi trabajo.",
+      "belonging": "Siento que formo parte de mi equipo."
+    },
+    "topics": {
+      "recommend": "Recomendación",
+      "growth": "Crecimiento",
+      "manager": "Responsable",
+      "recognition": "Reconocimiento",
+      "workload": "Carga de trabajo",
+      "mission": "Misión",
+      "tools": "Herramientas",
+      "belonging": "Pertenencia"
+    },
+    "comments": "Comentarios anónimos",
+    "commentsHint": "De la última encuesta. Nunca se guardan nombres.",
+    "sentiment": {
+      "all": "Todos",
+      "positive": "Positivo",
+      "neutral": "Neutral",
+      "negative": "Negativo"
+    },
+    "noComments": "No hay comentarios con este sentimiento."
+  },
+  "documents": {
+    "title": "Documentos y políticas",
+    "description": "Políticas de empresa y documentos de empleados, y quién los ha firmado.",
+    "stats": {
+      "documents": "Documentos",
+      "signedRate": "Tasa de aceptación",
+      "pending": "Firmas pendientes",
+      "pastDue": "Fuera de plazo"
+    },
+    "library": "Biblioteca de documentos",
+    "libraryHint": "Abre un documento para ver quién lo ha firmado y su historial de versiones.",
+    "search": "Buscar documentos…",
+    "noMatches": "Ningún documento coincide con los filtros.",
+    "kinds": {
+      "all": "Todos",
+      "policy": "Política",
+      "employee": "Documento de empleado"
+    },
+    "status": {
+      "all": "Cualquier estado",
+      "pending": "Pendientes de firma",
+      "complete": "Firmados por todos"
+    },
+    "categories": {
+      "conduct": "Conducta",
+      "security": "Seguridad",
+      "privacy": "Privacidad",
+      "workplace": "Lugar de trabajo",
+      "safety": "Salud y seguridad",
+      "expenses": "Gastos",
+      "contract": "Contrato",
+      "nda": "Confidencialidad",
+      "equity": "Participaciones"
+    },
+    "columns": {
+      "document": "Documento",
+      "version": "Versión",
+      "due": "Firmar antes de",
+      "signed": "Firmado",
+      "actions": "Acciones"
+    },
+    "byDepartment": "Firmas por departamento",
+    "byDepartmentHint": "En todos los documentos que requieren aceptación.",
+    "chart": {
+      "signed": "Firmado",
+      "pending": "Pendiente"
+    },
+    "versionLabel": "Versión {{version}}",
+    "fields": {
+      "owner": "Responsable",
+      "updated": "Última actualización",
+      "due": "Firmar antes de",
+      "audience": "Destinatarios"
+    },
+    "signedOf": "{{signed}} de {{total}} firmados",
+    "tabs": {
+      "pending": "Pendientes ({{count}})",
+      "signed": "Firmados ({{count}})",
+      "history": "Historial"
+    },
+    "remindedOn": "Recordado el {{date}}",
+    "allSigned": "Todos han firmado este documento.",
+    "noneSigned": "Nadie ha firmado todavía.",
+    "reminded": "Recordatorio enviado a quienes no han firmado"
+  },
+  "shell": {
+    "categories": {
+      "requests": "Solicitudes",
+      "people": "Personas",
+      "payroll": "Nómina"
+    },
+    "notifications": {
+      "leave": {
+        "title": "Mia Rodriguez solicitó vacaciones",
+        "body": "22 dic – 2 ene · 7 días laborables de vacaciones."
+      },
+      "candidate": {
+        "title": "Nuevo candidato para Diseñador Senior",
+        "body": "Noah Wilson · 8 años de experiencia · recomendación."
+      },
+      "payroll": {
+        "title": "La nómina de noviembre cierra mañana",
+        "body": "Aprueba 214 nóminas antes de las 17:00."
+      },
+      "onboarding": {
+        "title": "3 incorporaciones empiezan el lunes",
+        "body": "Portátiles pedidos; 2 checklists de acogida sin completar."
+      },
+      "review": {
+        "title": "Las evaluaciones están al 68 %",
+        "body": "A 12 responsables les quedan evaluaciones por enviar."
+      },
+      "anniversary": {
+        "title": "2 aniversarios laborales esta semana",
+        "body": "Ethan Clark (5 años) y Grace Hall (10 años)."
+      }
+    },
+    "create": {
+      "employee": {
+        "label": "Añadir empleado",
+        "description": "Crea un perfil y contrato"
+      },
+      "job": {
+        "label": "Publicar oferta",
+        "description": "Abre un puesto nuevo"
+      },
+      "leave": {
+        "label": "Solicitar ausencia",
+        "description": "Vacaciones, baja o asuntos propios"
+      },
+      "payRun": {
+        "label": "Ejecutar nómina",
+        "description": "Inicia un nuevo pago"
+      }
+    },
+    "account": {
+      "timeOff": "Mis ausencias",
+      "documents": "Mis documentos",
+      "training": "Mi formación"
+    }
+  }
+}

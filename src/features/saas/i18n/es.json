@@ -1,0 +1,813 @@
+{
+  "workspace": {
+    "name": "SaaS",
+    "description": "Uso de API, planes, facturación y equipos",
+    "category": "Software"
+  },
+  "nav": {
+    "sections": {
+      "platform": "Plataforma",
+      "developers": "Desarrollo",
+      "account": "Cuenta"
+    },
+    "overview": "Resumen",
+    "usage": "Uso",
+    "devtools": "Herramientas",
+    "keys": "Claves API",
+    "webhooks": "Webhooks",
+    "logs": "Registros",
+    "edge": "Config. edge",
+    "docs": "Referencia de la API",
+    "billing": "Facturación",
+    "team": "Equipo",
+    "settings": "Ajustes",
+    "customers": "Clientes",
+    "flags": "Feature flags",
+    "audit": "Registro de auditoría",
+    "status": "Estado",
+    "support": "Soporte",
+    "supportAll": "Todos los tickets",
+    "supportOpen": "Abiertos",
+    "supportPending": "Esperando al cliente",
+    "integrations": "Integraciones",
+    "roles": "Roles y permisos"
+  },
+  "common": {
+    "error": "No se pudieron cargar los datos. Revisa tu conexión e inténtalo de nuevo.",
+    "cancel": "Cancelar"
+  },
+  "keys": {
+    "title": "Claves API",
+    "description": "Las claves secretas autentican las peticiones de tus servidores. Mantenlas fuera del código cliente.",
+    "new": "Crear clave",
+    "tipTitle": "Usa claves restringidas cuando puedas",
+    "tip": "Da a cada servicio su propia clave con solo los permisos que necesita. Así, revocar una clave nunca afecta a las demás.",
+    "col": {
+      "name": "Nombre",
+      "key": "Clave",
+      "scopes": "Permisos",
+      "lastUsed": "Último uso",
+      "created": "Creada",
+      "actions": "Acciones"
+    },
+    "by": "Creada por {{name}}",
+    "env": {
+      "live": "Producción",
+      "test": "Pruebas"
+    },
+    "revoked": "Revocada",
+    "never": "Nunca",
+    "revoke": "Revocar {{name}}",
+    "empty": "Aún no hay claves API",
+    "copy": "Copiar clave",
+    "created": {
+      "title": "Copia tu nueva clave secreta",
+      "description": "Es la única vez que se muestra la clave completa.",
+      "warningTitle": "Guárdala en un lugar seguro",
+      "warning": "Si la pierdes, revócala y crea otra. Solo guardamos un hash.",
+      "done": "Ya la he copiado"
+    },
+    "create": {
+      "title": "Crear clave API",
+      "description": "Ponle el nombre del servicio que la usará.",
+      "name": "Nombre",
+      "namePlaceholder": "p. ej. Sincronizador de pedidos",
+      "env": "Entorno",
+      "scopes": "Permisos",
+      "submit": "Crear clave"
+    },
+    "scopes": {
+      "read": "Lectura",
+      "write": "Escritura",
+      "payments": "Pagos",
+      "admin": "Administración"
+    },
+    "scopeHints": {
+      "read": "Listar y consultar recursos",
+      "write": "Crear, actualizar y eliminar recursos",
+      "payments": "Cobrar, reembolsar y ver datos de pago",
+      "admin": "Gestionar claves, webhooks y miembros"
+    },
+    "confirm": {
+      "title": "¿Revocar «{{name}}»?",
+      "description": "Las peticiones con esta clave fallarán de inmediato. No se puede deshacer.",
+      "submit": "Revocar clave"
+    },
+    "toast": {
+      "revoked": "Clave revocada"
+    }
+  },
+  "usage": {
+    "title": "Uso",
+    "description": "Volumen de peticiones frente a tu plan, por día y por endpoint.",
+    "ranges": {
+      "14d": "14 días",
+      "30d": "30 días"
+    },
+    "quota": "Peticiones del periodo",
+    "projection": "{{used}} % usado · {{projected}} % previsto a fin de mes",
+    "errors": "Errores",
+    "errorsHint": "{{rate}} % de las peticiones",
+    "latency": "Latencia p95",
+    "latencyHint": "En todos los endpoints",
+    "topEndpoint": "Endpoint con más tráfico",
+    "calls": "{{value}} llamadas",
+    "daily": "Peticiones por día",
+    "dailyHint": "Separadas en lectura, escritura y administración",
+    "kinds": {
+      "read": "Lectura",
+      "write": "Escritura",
+      "admin": "Administración"
+    },
+    "endpoints": "Endpoints",
+    "endpointsHint": "Ordenados por volumen",
+    "col": {
+      "endpoint": "Endpoint",
+      "calls": "Llamadas",
+      "errors": "Tasa de error",
+      "trend": "Tendencia"
+    }
+  },
+  "logs": {
+    "title": "Registros",
+    "description": "Cada petición que atendió tu API, de la más reciente a la más antigua. Haz clic en una fila para ver el detalle.",
+    "search": "Buscar mensajes, rutas o ID",
+    "levels": "Niveles",
+    "level": {
+      "error": "Error",
+      "warn": "Aviso",
+      "info": "Info",
+      "debug": "Depuración"
+    },
+    "matching_one": "{{count}} entrada coincide",
+    "matching_other": "{{count}} entradas coinciden",
+    "col": {
+      "time": "Hora",
+      "level": "Nivel",
+      "status": "Estado",
+      "method": "Método",
+      "path": "Ruta",
+      "duration": "Duración",
+      "message": "Mensaje"
+    },
+    "detail": {
+      "requestId": "ID de petición",
+      "region": "Región",
+      "path": "Ruta"
+    },
+    "copy": "Copiar ID de petición",
+    "empty": "Ninguna entrada coincide con estos filtros",
+    "loadMore": "Cargar entradas anteriores ({{shown}} de {{total}})"
+  },
+  "webhooks": {
+    "title": "Webhooks",
+    "description": "Endpoints a los que avisamos cuando ocurren eventos en tu cuenta.",
+    "detail": "Detalle del endpoint",
+    "test": "Enviar evento de prueba",
+    "url": "URL del endpoint",
+    "secret": "Secreto de firma",
+    "copySecret": "Copiar secreto de firma",
+    "recentFailures": "Entregas fallidas",
+    "events": "Eventos suscritos",
+    "deliveries": "Entregas recientes",
+    "noResponse": "Sin respuesta",
+    "attempt_one": "Intento {{count}}",
+    "attempt_other": "Intento {{count}}",
+    "toggle": "Activar endpoint",
+    "eventCount_one": "{{count}} evento",
+    "eventCount_other": "{{count}} eventos",
+    "success": "{{rate}} % de éxito",
+    "toast": {
+      "sent": "Evento de prueba enviado"
+    }
+  },
+  "billing": {
+    "title": "Facturación",
+    "description": "Tu plan, el uso frente a sus límites, el método de pago y las facturas.",
+    "current": "Plan {{plan}}",
+    "renews": "Se renueva el {{date}}",
+    "month": "mes",
+    "meters": {
+      "requests": "Peticiones API",
+      "seats": "Puestos",
+      "storage": "Almacenamiento"
+    },
+    "overSeats_one": "{{count}} puesto por encima del límite del plan. Se facturará a 12 $ al mes.",
+    "overSeats_other": "{{count}} puestos por encima del límite del plan. Se facturarán a 12 $ al mes cada uno.",
+    "paymentMethod": "Método de pago",
+    "update": "Actualizar",
+    "plans": "Planes",
+    "currentTag": "Plan actual",
+    "custom": "A medida",
+    "contact": "Contactar con ventas",
+    "upgrade": "Mejorar",
+    "downgrade": "Bajar de plan",
+    "invoices": "Facturas",
+    "col": {
+      "invoice": "Factura",
+      "date": "Fecha",
+      "status": "Estado",
+      "amount": "Importe"
+    },
+    "download": "Descargar PDF",
+    "status": {
+      "paid": "Pagada",
+      "open": "Pendiente",
+      "void": "Anulada"
+    },
+    "toast": {
+      "changed": "Plan actualizado"
+    }
+  },
+  "team": {
+    "title": "Equipo",
+    "description_one": "{{count}} persona tiene acceso a este espacio.",
+    "description_other": "{{count}} personas tienen acceso a este espacio.",
+    "inviteButton": "Invitar miembros",
+    "members": "Miembros",
+    "mfaWarning_one": "{{count}} miembro no ha activado la verificación en dos pasos.",
+    "mfaWarning_other": "{{count}} miembros no han activado la verificación en dos pasos.",
+    "mfaAll": "Todos usan verificación en dos pasos.",
+    "col": {
+      "member": "Miembro",
+      "role": "Rol",
+      "mfa": "Dos pasos",
+      "active": "Última actividad"
+    },
+    "remove": "Quitar",
+    "removeName": "Quitar a {{name}}",
+    "roles": {
+      "owner": "Propietario",
+      "admin": "Administrador",
+      "developer": "Desarrollador",
+      "billing": "Facturación",
+      "viewer": "Lector"
+    },
+    "roleHints": {
+      "owner": "Todo, incluido eliminar el espacio y transferir la propiedad.",
+      "admin": "Gestionar miembros, claves, webhooks y ajustes.",
+      "developer": "Crear claves y webhooks, leer registros y uso.",
+      "billing": "Cambiar el plan y el método de pago, descargar facturas.",
+      "viewer": "Acceso de solo lectura a paneles y registros."
+    },
+    "mfaOn": "Activada",
+    "mfaOff": "Desactivada",
+    "pending": "Invitaciones pendientes",
+    "pendingHint_one": "{{count}} invitación pendiente de aceptar",
+    "pendingHint_other": "{{count}} invitaciones pendientes de aceptar",
+    "noInvites": "No hay invitaciones pendientes.",
+    "revokeInvite": "Revocar invitación de {{email}}",
+    "rolesTitle": "Roles",
+    "invite": {
+      "title": "Invitar al espacio",
+      "description": "Recibirán un correo con un enlace que caduca en 7 días.",
+      "emails": "Correos electrónicos",
+      "invalid": "Introduce un correo válido",
+      "role": "Rol",
+      "submit_one": "Enviar {{count}} invitación",
+      "submit_other": "Enviar {{count}} invitaciones"
+    },
+    "confirm": {
+      "title": "¿Quitar a {{name}}?",
+      "description": "Pierde el acceso al instante. Las claves que creó siguen funcionando.",
+      "submit": "Quitar miembro"
+    },
+    "toast": {
+      "role": "Rol actualizado",
+      "removed": "Miembro eliminado",
+      "invited": "Invitaciones enviadas",
+      "inviteRevoked": "Invitación revocada"
+    }
+  },
+  "settings": {
+    "title": "Ajustes",
+    "description": "Datos del espacio, políticas de seguridad y notificaciones.",
+    "sections": {
+      "general": "General",
+      "security": "Seguridad",
+      "notifications": "Notificaciones",
+      "danger": "Zona de peligro"
+    },
+    "hints": {
+      "general": "Cómo se llama el espacio y dónde se guardan sus datos.",
+      "security": "Políticas que se aplican a todos los miembros.",
+      "notifications": "Correos enviados a los administradores.",
+      "danger": "Eliminar el espacio borra todas las claves, registros y datos. No se puede deshacer."
+    },
+    "name": "Nombre del espacio",
+    "slug": "URL del espacio",
+    "slugHint": "Minúsculas, números y guiones. Prueba «taken» para ver un error del servidor.",
+    "region": "Región de datos",
+    "regions": {
+      "iad1": "EE. UU. Este (Washington)",
+      "sfo1": "EE. UU. Oeste (San Francisco)",
+      "fra1": "UE (Fráncfort)",
+      "sin1": "Asia (Singapur)"
+    },
+    "timezone": "Zona horaria",
+    "requireMfa": "Exigir verificación en dos pasos",
+    "requireMfaHint": "A quien no la tenga se le pedirá configurarla al iniciar sesión.",
+    "session": "Cierre de sesión por inactividad",
+    "sessionHint": "Se cierra la sesión tras este tiempo sin actividad.",
+    "minutes": "min",
+    "allowlist": "Lista de IP permitidas",
+    "allowlistHint": "Solo estas direcciones pueden acceder al panel. Déjala vacía para permitir todas.",
+    "invalidIp": "Introduce una IPv4 o un rango CIDR",
+    "notify": {
+      "usageAlerts": "Alertas de uso",
+      "incidents": "Informes de incidencias",
+      "weeklyDigest": "Resumen semanal",
+      "productNews": "Novedades del producto"
+    },
+    "notifyHints": {
+      "usageAlerts": "Al 80 % y al 100 % de cualquier cuota.",
+      "incidents": "Cuando una caída afecta a este espacio.",
+      "weeklyDigest": "Resumen del lunes con peticiones, errores y gasto.",
+      "productNews": "Nuevas funciones, como mucho dos veces al mes."
+    },
+    "delete": "Eliminar espacio",
+    "deleteTitle": "¿Eliminar este espacio?",
+    "deleteDescription": "Escribe {{slug}} para confirmar. Todas las claves dejan de funcionar al instante.",
+    "deleteConfirmLabel": "URL del espacio",
+    "deleteDemo": "Eliminar está desactivado en la demo",
+    "unsaved": "Tienes cambios sin guardar",
+    "discard": "Descartar",
+    "save": "Guardar cambios",
+    "toast": {
+      "saved": "Ajustes guardados"
+    }
+  },
+  "overview": {
+    "title": "Uso de SaaS y API",
+    "description": "Información sobre tu plan actual y su uso",
+    "range": {
+      "label": "Rango de tiempo",
+      "6h": "6 horas",
+      "24h": "24 horas",
+      "7d": "7 días"
+    },
+    "stats": {
+      "projects": "Proyectos",
+      "requests": "Solicitudes",
+      "users": "Usuarios",
+      "storage": "Almacenamiento"
+    },
+    "apiCalls": {
+      "title": "Llamadas a la API en las últimas {{range}}",
+      "calls": "Llamadas a la API",
+      "p95": "Latencia p95",
+      "errorRate": "Tasa de error"
+    },
+    "pnl": {
+      "title": "PyG",
+      "description": "Crecimiento total del beneficio del {{value}} %",
+      "center": "Parte de los ingresos"
+    },
+    "plan": {
+      "title": "Plan actual",
+      "description": "Información y uso de tu plan actual",
+      "plan": "Plan {{name}}",
+      "perMonth": "{{price}}/mes",
+      "renews": "Se renueva el {{date}}",
+      "manage": "Gestionar plan"
+    },
+    "activity": {
+      "title": "Actividad",
+      "viewAll": "Ver toda la actividad"
+    },
+    "integrations": {
+      "title": "Integraciones",
+      "description": "Servicios conectados a este espacio de trabajo",
+      "toggle": "Activar o desactivar {{name}}",
+      "connected": "{{name}} conectado",
+      "disconnected": "{{name}} desconectado"
+    },
+    "error": {
+      "title": "No se pudieron cargar los datos de uso",
+      "description": "Revisa tu conexión e inténtalo de nuevo.",
+      "retry": "Reintentar"
+    },
+    "actions": {
+      "more": "Más opciones"
+    }
+  },
+  "customers": {
+    "title": "Clientes",
+    "description": "Todas las cuentas de la plataforma con su plan, ingresos, uso de licencias y salud.",
+    "search": "Buscar clientes…",
+    "allPlans": "Todos los planes",
+    "allRisks": "Cualquier riesgo",
+    "empty": "Ningún cliente coincide con estos filtros",
+    "emptyHint": "Borra la búsqueda o elige otro plan o nivel de riesgo.",
+    "stats": {
+      "mrr": "Ingresos recurrentes mensuales",
+      "accounts": "Cuentas",
+      "trials": "En prueba",
+      "atRisk": "Riesgo de abandono alto",
+      "atRiskHint": "{{amount}} de MRR en riesgo"
+    },
+    "col": {
+      "customer": "Cliente",
+      "plan": "Plan",
+      "status": "Estado",
+      "mrr": "MRR",
+      "seats": "Licencias",
+      "health": "Puntuación de salud",
+      "risk": "Riesgo de abandono"
+    },
+    "plans": {
+      "hobby": "Hobby",
+      "teams": "Teams",
+      "scale": "Scale",
+      "enterprise": "Enterprise"
+    },
+    "risk": {
+      "low": "Bajo",
+      "medium": "Medio",
+      "high": "Alto"
+    },
+    "status": {
+      "active": "Activo",
+      "trialing": "En prueba",
+      "past_due": "Pago vencido"
+    }
+  },
+  "customer": {
+    "back": "Todos los clientes",
+    "notFound": "Este cliente no existe o no se pudo cargar.",
+    "since": "Cliente desde",
+    "usage": "Solicitudes a la API",
+    "usageHint": "Solicitudes diarias de los últimos 30 días.",
+    "requests": "Solicitudes",
+    "invoices": "Facturas",
+    "noInvoices": "El plan gratuito no genera facturas",
+    "col": {
+      "number": "Número",
+      "date": "Fecha",
+      "status": "Estado",
+      "amount": "Importe"
+    },
+    "invoiceStatus": {
+      "paid": "Pagada",
+      "open": "Pendiente"
+    },
+    "profile": "Cuenta",
+    "contact": "Contacto de facturación",
+    "region": "Región de datos",
+    "actions": {
+      "title": "Acciones de administración",
+      "hint": "Los cambios se aplican al instante y quedan en el registro de auditoría.",
+      "plan": "Plan",
+      "apply": "Cambiar plan",
+      "trial": "Prueba",
+      "trialEnds": "La prueba termina el {{date}}.",
+      "noTrial": "No está en prueba. Al ampliarla, empieza hoy.",
+      "days_one": "{{count}} día",
+      "days_other": "{{count}} días",
+      "extend": "Ampliar"
+    },
+    "toast": {
+      "plan": "Plan cambiado",
+      "trial": "Prueba ampliada"
+    }
+  },
+  "flags": {
+    "title": "Feature flags",
+    "description": "Activa funciones por entorno y despliégalas de forma gradual en producción.",
+    "search": "Buscar flags…",
+    "empty": "Ningún flag coincide con tu búsqueda",
+    "updated": "{{name}} · actualizado {{when}}",
+    "everyone": "Todos",
+    "operators": {
+      "in": "en",
+      "endsWith": "termina en",
+      "gte": "≥"
+    },
+    "envs": {
+      "development": "Desarrollo",
+      "staging": "Staging",
+      "production": "Producción"
+    },
+    "rollout": "Despliegue en producción",
+    "rolloutFor": "Despliegue en producción de {{key}}",
+    "rolloutHint": "Porcentaje de usuarios que cumplen las reglas y reciben la función.",
+    "rolloutOff": "Activa el flag en producción para desplegarlo.",
+    "stats": {
+      "total": "Flags",
+      "live": "Activos en producción",
+      "partial": "Despliegues parciales"
+    },
+    "toast": {
+      "saved": "Flag actualizado"
+    }
+  },
+  "audit": {
+    "title": "Registro de auditoría",
+    "description": "Acciones relevantes para la seguridad en este espacio de trabajo, de la más reciente a la más antigua.",
+    "export": "Exportar CSV",
+    "search": "Buscar actor, acción, objetivo o IP…",
+    "categories": "Categorías",
+    "category": {
+      "all": "Todas",
+      "auth": "Inicio de sesión",
+      "api_keys": "Claves de API",
+      "team": "Equipo",
+      "billing": "Facturación",
+      "settings": "Ajustes",
+      "flags": "Flags"
+    },
+    "severity": {
+      "all": "Cualquier gravedad",
+      "info": "Info",
+      "warning": "Aviso",
+      "critical": "Crítico"
+    },
+    "col": {
+      "time": "Hora",
+      "actor": "Actor",
+      "action": "Acción",
+      "target": "Objetivo",
+      "ip": "Dirección IP",
+      "severity": "Gravedad"
+    },
+    "open": "Ver detalles de {{action}}",
+    "empty": "Ningún evento coincide con estos filtros",
+    "more": "Mostrar más ({{shown}} de {{total}})",
+    "detail": {
+      "id": "ID del evento"
+    }
+  },
+  "status": {
+    "title": "Estado",
+    "description": "Salud de cada componente de la plataforma, disponibilidad de 90 días e historial de incidentes.",
+    "declareButton": "Declarar incidente",
+    "degradedTitle_one": "{{count}} componente afectado",
+    "degradedTitle_other": "{{count}} componentes afectados",
+    "degradedHint": "Los clientes lo ven en la página de estado pública. Publica actualizaciones hasta resolver el incidente.",
+    "allGood": "Todos los sistemas operativos",
+    "uptime": "{{value}} % de disponibilidad",
+    "uptimeLabel": "Disponibilidad en los últimos {{days}} días: {{value}} %",
+    "downtime_one": "{{count}} minuto de caída",
+    "downtime_other": "{{count}} minutos de caída",
+    "noDowntime": "Sin caídas",
+    "daysAgo": "Hace {{days}} días",
+    "today": "Hoy",
+    "component": {
+      "operational": "Operativo",
+      "degraded": "Degradado",
+      "partial_outage": "Caída parcial",
+      "major_outage": "Caída grave"
+    },
+    "noIncidents": "No hay incidentes registrados",
+    "active": "Incidentes activos",
+    "past": "Incidentes anteriores",
+    "resolve": "Marcar como resuelto",
+    "duration_one": "{{count}} min",
+    "duration_other": "{{count}} min",
+    "impact": {
+      "minor": "Leve",
+      "major": "Grave",
+      "critical": "Crítico"
+    },
+    "step": {
+      "investigating": "Investigando",
+      "identified": "Identificado",
+      "monitoring": "Supervisando",
+      "resolved": "Resuelto"
+    },
+    "declare": {
+      "title": "Declarar un incidente",
+      "description": "Los componentes afectados cambian de estado al momento y se publica la primera actualización.",
+      "name": "Título",
+      "namePlaceholder": "p. ej. Aumento de errores en la API",
+      "impact": "Impacto",
+      "components": "Componentes afectados",
+      "message": "Primera actualización",
+      "messageHint": "Lo que verán los clientes. Indica qué está afectado y cuándo publicarás la siguiente.",
+      "submit": "Declarar incidente"
+    },
+    "toast": {
+      "declared": "Incidente declarado",
+      "resolved": "Incidente resuelto"
+    }
+  },
+  "integrations": {
+    "title": "Integraciones",
+    "description": "Conecta las herramientas que ya usa tu equipo y elige qué eventos reciben.",
+    "search": "Buscar integraciones",
+    "categories": "Categorías",
+    "state": "Conexión",
+    "states": {
+      "all": "Todas",
+      "connected": "Conectadas",
+      "available": "Sin conectar"
+    },
+    "category": {
+      "all": "Todas",
+      "communication": "Comunicación",
+      "developer": "Desarrollo",
+      "payments": "Pagos",
+      "analytics": "Analítica",
+      "crm": "CRM",
+      "storage": "Datos y almacenamiento"
+    },
+    "connected": "Conectada",
+    "installs": "{{value}} instalaciones",
+    "connect": "Conectar",
+    "connectName": "Conectar {{name}}",
+    "manage": "Gestionar",
+    "manageName": "Gestionar {{name}}",
+    "disconnect": "Desconectar",
+    "stats": {
+      "connected": "Conectadas",
+      "available": "Disponibles",
+      "synced": "Eventos sincronizados",
+      "syncedHint": "Últimos 30 días"
+    },
+    "empty": "Ninguna integración coincide",
+    "emptyHint": "Prueba con otra categoría u otra búsqueda.",
+    "sync": {
+      "realtime": "Tiempo real",
+      "hourly": "Cada hora",
+      "daily": "Diaria"
+    },
+    "sheet": {
+      "since": "Conectada desde",
+      "synced": "Eventos sincronizados",
+      "account": "Cuenta o espacio de trabajo",
+      "accountHint": "El espacio de trabajo, la organización o el ID de cuenta en el otro servicio.",
+      "events": "Eventos",
+      "allEvents": "Todos los eventos",
+      "sync": "Frecuencia de sincronización",
+      "save": "Guardar cambios"
+    },
+    "toast": {
+      "saved": "Integración guardada",
+      "disconnected": "Integración desconectada"
+    }
+  },
+  "roles": {
+    "title": "Roles y permisos",
+    "description": "Decide qué puede hacer cada rol. Los miembros reciben los permisos de su rol.",
+    "new": "Nuevo rol",
+    "list": "Roles",
+    "listHint": "El número indica los permisos concedidos.",
+    "distribution": "Miembros por rol",
+    "people": "Miembros",
+    "system": "Rol del sistema",
+    "members_one": "{{count}} miembro",
+    "members_other": "{{count}} miembros",
+    "duplicate": "Duplicar",
+    "granted_one": "{{count}} de {{total}} permisos",
+    "granted_other": "{{count}} de {{total}} permisos",
+    "updated": "actualizado {{time}}",
+    "reset": "Restablecer",
+    "save": "Guardar permisos",
+    "systemTitle": "La plataforma gestiona este rol",
+    "systemHint": "Duplícalo para crear un rol personalizado que puedas editar.",
+    "matrix": "Permisos de {{name}}",
+    "resource": "Recurso",
+    "permission": "{{action}} {{resource}}",
+    "actions": {
+      "read": "Ver",
+      "create": "Crear",
+      "update": "Editar",
+      "delete": "Eliminar"
+    },
+    "resources": {
+      "projects": "Proyectos",
+      "api_keys": "Claves de API",
+      "webhooks": "Webhooks",
+      "logs": "Registros",
+      "members": "Miembros",
+      "billing": "Facturación",
+      "settings": "Configuración"
+    },
+    "copyName": "{{name}} (copia)",
+    "form": {
+      "title": "Crear rol",
+      "description": "Empieza desde cero o copia los permisos de un rol existente.",
+      "name": "Nombre",
+      "summary": "Descripción",
+      "from": "Partir de",
+      "blank": "Sin permisos",
+      "submit": "Crear rol"
+    },
+    "toast": {
+      "created": "Rol creado",
+      "saved": "Permisos guardados"
+    }
+  },
+  "support": {
+    "title": "Bandeja de soporte",
+    "description": "Tickets de clientes ordenados por vencimiento del SLA. Responde, asigna y resuelve.",
+    "search": "Buscar tickets, clientes o IDs",
+    "stats": {
+      "active": "Tickets activos",
+      "overdue": "SLA incumplido",
+      "soon": "Vencen en menos de 1 hora",
+      "unassigned": "Sin asignar"
+    },
+    "status": {
+      "all": "Todos",
+      "open": "Abierto",
+      "pending": "Pendiente",
+      "resolved": "Resuelto"
+    },
+    "priority": {
+      "all": "Todas las prioridades",
+      "low": "Baja",
+      "normal": "Normal",
+      "high": "Alta",
+      "urgent": "Urgente"
+    },
+    "allAssignees": "Todos los agentes",
+    "unassigned": "Sin asignar",
+    "col": {
+      "ticket": "Ticket",
+      "customer": "Cliente",
+      "priority": "Prioridad",
+      "status": "Estado",
+      "sla": "SLA",
+      "assignee": "Asignado a",
+      "updated": "Última actualización"
+    },
+    "open": "Abrir ticket {{subject}}",
+    "empty": "No hay tickets aquí",
+    "emptyHint": "Quita los filtros para ver todos los tickets.",
+    "sla": {
+      "breached": "Incumplido hace {{time}}",
+      "left": "Quedan {{time}}"
+    },
+    "channel": {
+      "email": "Correo",
+      "chat": "Chat",
+      "api": "API"
+    },
+    "reply": "Respuesta",
+    "replyPlaceholder": "Escribe a {{name}}…",
+    "resolve": "Resolver",
+    "reopen": "Reabrir",
+    "send": "Enviar respuesta",
+    "toast": {
+      "replied": "Respuesta enviada",
+      "updated": "Ticket actualizado"
+    }
+  },
+  "shell": {
+    "categories": {
+      "billing": "Facturación",
+      "system": "Sistema",
+      "team": "Equipo"
+    },
+    "notifications": {
+      "incident": {
+        "title": "Tasa de errores de la API elevada",
+        "body": "Errores 5xx al 2,4 % en /v1/events. Investigando."
+      },
+      "upgrade": {
+        "title": "Acme Inc pasó al plan Business",
+        "body": "+1.200 $ de MRR · 40 licencias."
+      },
+      "failed": {
+        "title": "Pago fallido de Globex",
+        "body": "Tarjeta rechazada. Reintento programado en 3 días."
+      },
+      "invite": {
+        "title": "Zoe Patel se unió a tu equipo",
+        "body": "Invitada por ti como Desarrolladora."
+      },
+      "webhook": {
+        "title": "El endpoint del webhook está fallando",
+        "body": "https://hooks.example.com devolvió 503 durante 15 min."
+      },
+      "key": {
+        "title": "Una clave de API caduca en 7 días",
+        "body": "Clave «Production server». Rótala para evitar cortes."
+      }
+    },
+    "create": {
+      "key": {
+        "label": "Crear clave de API",
+        "description": "Para un servidor o integración"
+      },
+      "member": {
+        "label": "Invitar miembro",
+        "description": "Añade a alguien al equipo"
+      },
+      "webhook": {
+        "label": "Añadir webhook",
+        "description": "Envía eventos a tu endpoint"
+      },
+      "flag": {
+        "label": "Nuevo feature flag",
+        "description": "Lanza a un % de usuarios"
+      }
+    },
+    "account": {
+      "billing": "Facturación y plan",
+      "keys": "Claves de API",
+      "usage": "Uso"
+    }
+  }
+}

@@ -1,0 +1,779 @@
+{
+  "nav": "Páginas de inicio",
+  "title": "Páginas de inicio",
+  "description": "Tres plantillas de página de inicio",
+  "brand": "{{brand}}",
+  "switcher": {
+    "label": "Plantillas",
+    "saas": "SaaS",
+    "startup": "Editorial",
+    "product": "Minimal",
+    "app": "Abrir la app",
+    "agency": "Estudio",
+    "ai": "IA",
+    "dashboards": "Paneles"
+  },
+  "common": {
+    "signIn": "Iniciar sesión",
+    "getStarted": "Empezar",
+    "openApp": "Abrir la app",
+    "rights": "Todos los derechos reservados.",
+    "email": "Correo de trabajo",
+    "emailPlaceholder": "tu@empresa.com",
+    "invalidEmail": "Introduce un correo válido"
+  },
+  "saas": {
+    "meta": "Paneles de analítica en los que todo tu equipo confía",
+    "nav": {
+      "product": "Producto",
+      "customers": "Clientes",
+      "pricing": "Precios",
+      "faq": "Preguntas",
+      "templates": "Plantillas"
+    },
+    "hero": {
+      "eyebrow": "Nuevo: informes de retención por cohortes",
+      "title": "Todas las cifras sobre las que discute tu equipo, en un solo lugar.",
+      "subtitle": "{{brand}} se conecta a Postgres, Stripe y los eventos de tu producto, y crea los paneles que pide tu consejo. Actualizados cada cinco minutos y explicados en lenguaje claro.",
+      "secondary": "Reserva una demo de 20 min",
+      "note": "14 días de prueba · Sin tarjeta · SOC 2 Tipo II"
+    },
+    "preview": {
+      "url": "app.orbitly.io/overview",
+      "revenue": "Ingresos netos",
+      "customers": "Clientes activos",
+      "churn": "Bajas de clientes",
+      "trend": "Ingresos netos",
+      "trendHint": "Últimos 12 meses",
+      "thisYear": "Este año",
+      "lastYear": "Año pasado",
+      "channels": "Altas por canal",
+      "organic": "Orgánico",
+      "paid": "Pago",
+      "referral": "Referidos",
+      "partners": "Socios",
+      "weekly": "Altas semanales",
+      "vsLastMonth": "vs. mes anterior",
+      "signups": "Altas"
+    },
+    "logos": "Equipos de finanzas y operaciones de más de 1.200 empresas cierran su mes con {{brand}}",
+    "features": {
+      "eyebrow": "Producto",
+      "title": "Hecho para quien siempre oye «¿seguro que esta cifra está bien?»",
+      "subtitle": "Escribe SQL cuando quieras. Haz clic cuando no. En ambos casos la métrica se define una vez y se usa en todas partes.",
+      "metrics": {
+        "title": "Una definición por métrica",
+        "body": "Define MRR, usuarios activos o margen bruto una sola vez. Cada gráfico, exportación y alerta usa la misma fórmula, con historial de versiones."
+      },
+      "alerts": {
+        "title": "Alertas que se explican solas",
+        "body": "Si los ingresos caen un 8 % un martes, {{brand}} te dice qué segmento cambió y enlaza las filas que lo explican."
+      },
+      "sql": {
+        "title": "SQL o sin código, el mismo gráfico",
+        "body": "Los analistas escriben consultas; el resto filtra y pivota. Todos editan el mismo panel."
+      },
+      "access": {
+        "title": "Permisos por fila",
+        "body": "Cada responsable regional ve su región. Finanzas lo ve todo. Las reglas viven en un único lugar."
+      },
+      "share": {
+        "title": "Exportaciones listas para el consejo",
+        "body": "Resúmenes programados en PDF y Slack con tu marca, cada lunes a las 8:00."
+      },
+      "api": {
+        "title": "Integración y API",
+        "body": "Inserta cualquier panel en tu producto con embeds firmados y una API REST tipada."
+      }
+    },
+    "metrics": {
+      "uptime": "Disponibilidad en los últimos 12 meses",
+      "refresh": "Intervalo de actualización por defecto",
+      "queries": "Consultas respondidas el mes pasado",
+      "setup": "Tiempo medio hasta el primer panel"
+    },
+    "steps": {
+      "eyebrow": "Cómo funciona",
+      "title": "De la cadena de conexión a la presentación del consejo en una tarde",
+      "one": {
+        "title": "Conecta tus fuentes",
+        "body": "Conectores de solo lectura para Postgres, BigQuery, Snowflake, Stripe, HubSpot y 40 más."
+      },
+      "two": {
+        "title": "Elige una plantilla",
+        "body": "Métricas SaaS, comercio electrónico, marketing o finanzas. Todos los gráficos son editables."
+      },
+      "three": {
+        "title": "Comparte con quien corresponda",
+        "body": "Invita a tu equipo, define reglas por fila y programa el resumen del lunes."
+      }
+    },
+    "testimonials": {
+      "eyebrow": "Clientes",
+      "title": "Menos hojas de cálculo, reuniones más cortas",
+      "a": {
+        "quote": "Nuestro cierre de mes pasó de cuatro días a uno. El puente de ingresos era una hoja de cálculo que solo yo entendía.",
+        "name": "Marta Lindqvist",
+        "role": "VP de Finanzas, Fieldwork"
+      },
+      "b": {
+        "quote": "La alerta nos dijo que el pico de bajas venía de un proveedor de pagos en Brasil. Lo arreglamos antes de que nadie abriera un ticket.",
+        "name": "Daniel Okafor",
+        "role": "Responsable de Crecimiento, Parcelpoint"
+      },
+      "c": {
+        "quote": "Integramos los paneles de {{brand}} en nuestro portal de clientes en una semana. Las consultas de soporte sobre uso bajaron un tercio.",
+        "name": "Priya Raman",
+        "role": "CTO, Lumen Health"
+      }
+    },
+    "pricing": {
+      "eyebrow": "Precios",
+      "title": "Precio por espacio de trabajo, no por lector",
+      "subtitle": "Invita a todos los que necesiten ver las cifras. Solo pagas por los editores.",
+      "monthly": "Mensual",
+      "yearly": "Anual",
+      "save": "2 meses gratis",
+      "perMonth": "/ mes",
+      "billedYearly": "facturado anualmente",
+      "billedMonthly": "facturado mensualmente",
+      "popular": "La mayoría empieza aquí",
+      "cta": "Empezar prueba gratis",
+      "contact": "Hablar con ventas",
+      "starter": {
+        "name": "Starter",
+        "description": "Para fundadores que siguen lo básico.",
+        "f1": "3 editores, lectores ilimitados",
+        "f2": "5 fuentes de datos",
+        "f3": "Actualización cada hora",
+        "f4": "Resúmenes por correo"
+      },
+      "growth": {
+        "name": "Growth",
+        "description": "Para equipos que informan a un consejo.",
+        "f1": "15 editores, lectores ilimitados",
+        "f2": "Fuentes de datos ilimitadas",
+        "f3": "Actualización cada 5 minutos y alertas",
+        "f4": "Permisos por fila",
+        "f5": "Resúmenes en Slack y PDF"
+      },
+      "scale": {
+        "name": "Scale",
+        "description": "Para integraciones y datos regulados.",
+        "f1": "Editores ilimitados",
+        "f2": "Embeds firmados y API",
+        "f3": "SSO, SCIM y registro de auditoría",
+        "f4": "Región dedicada y soporte prioritario"
+      }
+    },
+    "faq": {
+      "title": "Preguntas que recibimos cada semana",
+      "q1": {
+        "q": "¿{{brand}} copia nuestros datos?",
+        "a": "No. Las consultas se ejecutan en tu almacén con un usuario de solo lectura. Guardamos en caché resultados agregados hasta 24 horas para que los paneles sean rápidos; puedes desactivarlo por fuente."
+      },
+      "q2": {
+        "q": "¿Quién cuenta como editor?",
+        "a": "Cualquiera que pueda crear o cambiar un gráfico, una métrica o un panel. Lectores, comentaristas y quienes reciben resúmenes son gratis."
+      },
+      "q3": {
+        "q": "¿Podemos empezar con hojas de cálculo?",
+        "a": "Sí. Sube un CSV o conecta Google Sheets y pasa a un almacén más adelante. Los paneles siguen funcionando al cambiar la fuente."
+      },
+      "q4": {
+        "q": "¿Qué pasa al terminar la prueba?",
+        "a": "Eliges un plan o el espacio pasa a solo lectura. No se borra nada durante 90 días."
+      },
+      "q5": {
+        "q": "¿Hay descuentos para ONG y educación?",
+        "a": "Growth tiene un 50 % de descuento para ONG registradas y centros acreditados. Escríbenos desde el dominio de tu organización."
+      }
+    },
+    "cta": {
+      "title": "Trae tu hoja de cálculo más caótica. La convertimos en un panel durante la demo.",
+      "secondary": "Ver precios"
+    },
+    "footer": {
+      "tagline": "Paneles de analítica para equipos de finanzas, operaciones y crecimiento.",
+      "product": "Producto",
+      "company": "Empresa",
+      "resources": "Recursos",
+      "legal": "Legal",
+      "links": {
+        "dashboards": "Paneles",
+        "alerts": "Alertas",
+        "embed": "Integración",
+        "pricing": "Precios",
+        "about": "Sobre nosotros",
+        "careers": "Empleo",
+        "blog": "Blog",
+        "contact": "Contacto",
+        "docs": "Documentación",
+        "changelog": "Novedades",
+        "status": "Estado",
+        "templates": "Plantillas",
+        "privacy": "Privacidad",
+        "terms": "Términos",
+        "security": "Seguridad",
+        "dpa": "DPA"
+      }
+    }
+  },
+  "startup": {
+    "meta": "{{brand}}: el sistema operativo de las cifras",
+    "nav": {
+      "work": "Casos",
+      "about": "Nosotros",
+      "journal": "Diario"
+    },
+    "hero": {
+      "kicker": "Semilla · Serie A · 2026",
+      "title1": "Métricas",
+      "title2": "sin tantas",
+      "title3": "reuniones.",
+      "body": "Creamos {{brand}} después de pasar tres años conciliando la misma cifra de ingresos en cuatro herramientas. Hoy 1.200 equipos lo usan para ponerse de acuerdo sobre lo que pasó el mes pasado y decidir qué hacer después.",
+      "cta": "Lee nuestra historia",
+      "scroll": "Desplázate"
+    },
+    "logos": "Con el apoyo de operadores de",
+    "cases": {
+      "title": "Casos seleccionados",
+      "subtitle": "Qué cambia cuando una empresa deja de discutir sobre sus cifras.",
+      "read": "Leer el caso",
+      "a": {
+        "client": "Fieldwork",
+        "sector": "Software de personal",
+        "title": "Cierre de mes de cuatro días a uno",
+        "metric": "-75%",
+        "metricLabel": "tiempo de cierre"
+      },
+      "b": {
+        "client": "Parcelpoint",
+        "sector": "Logística",
+        "title": "Un pico de bajas rastreado hasta un proveedor de pagos en 40 minutos",
+        "metric": "310 k$",
+        "metricLabel": "ARR salvado"
+      },
+      "c": {
+        "client": "Lumen Health",
+        "sector": "Salud",
+        "title": "Paneles de uso integrados en un portal de pacientes",
+        "metric": "-33%",
+        "metricLabel": "tickets de soporte"
+      }
+    },
+    "manifesto": {
+      "label": "En qué creemos",
+      "title": "Una métrica es una promesa. Si dos personas obtienen dos respuestas distintas, alguien la rompió.",
+      "p1": "La mayoría de herramientas de analítica optimizan para hacer gráficos. Nosotros optimizamos para hacer un gráfico en el que todos crean.",
+      "p2": "Eso significa hacer bien lo aburrido: definiciones versionadas, linaje navegable, permisos que siguen a los datos y alertas que explican el porqué."
+    },
+    "stats": {
+      "teams": "equipos",
+      "countries": "países",
+      "employees": "personas",
+      "raised": "levantados"
+    },
+    "team": {
+      "title": "El equipo",
+      "subtitle": "Un equipo pequeño entre Lisboa, Toronto y en remoto.",
+      "investorsTitle": "Inversores y business angels",
+      "a": {
+        "name": "Inês Duarte",
+        "role": "Cofundadora, CEO"
+      },
+      "b": {
+        "name": "Tomás Reyes",
+        "role": "Cofundador, CTO"
+      },
+      "c": {
+        "name": "Aiko Tanaka",
+        "role": "Responsable de Diseño"
+      },
+      "d": {
+        "name": "Samuel Adeyemi",
+        "role": "Responsable de Datos"
+      }
+    },
+    "newsletter": {
+      "title": "The Ledger",
+      "subtitle": "Un correo al mes sobre métricas, herramientas financieras y lo que hemos lanzado. Sin trucos de crecimiento.",
+      "submit": "Suscribirme",
+      "success": "Ya estás en la lista. El primer número llega el próximo lunes.",
+      "privacy": "Date de baja con un clic. Nunca compartimos tu dirección."
+    },
+    "footer": {
+      "address": "Rua da Boavista 82, Lisboa",
+      "careers": "Estamos contratando: 4 vacantes"
+    }
+  },
+  "product": {
+    "meta": "{{brand}} Pocket: las cifras de tu empresa en tu móvil",
+    "badge": "Beta privada · iOS y Android",
+    "title": "Las cifras de tu empresa, antes del primer café.",
+    "subtitle": "{{brand}} Pocket te envía un resumen matutino de 60 segundos: qué cambió durante la noche, por qué y si debe importarte.",
+    "waitlist": {
+      "submit": "Unirme a la lista",
+      "submitting": "Uniéndote…",
+      "count": "2.418 personas delante de ti. Damos acceso a 200 por semana.",
+      "successTitle": "Ya estás en la fila.",
+      "successBody": "Escribiremos a {{email}} cuando tu invitación esté lista. Normalmente en menos de tres semanas.",
+      "again": "Usar otro correo"
+    },
+    "brief": {
+      "time": "7:02",
+      "title": "Resumen matutino",
+      "date": "Martes, 24 nov",
+      "line1": "Ingresos",
+      "line1Value": "+4,2%",
+      "line1Note": "Planes anuales en Alemania",
+      "line2": "Altas",
+      "line2Value": "-11%",
+      "line2Note": "Búsqueda de pago pausada a las 2:00",
+      "line3": "Bajas",
+      "line3Value": "estable",
+      "line3Note": "Nada que hacer"
+    },
+    "features": {
+      "title": "Qué hace",
+      "brief": {
+        "title": "Un resumen, no un panel",
+        "body": "De tres a cinco líneas al día, ordenadas por cuánto cambiaron y cuánto te importan."
+      },
+      "why": {
+        "title": "El porqué, en un toque",
+        "body": "Cada línea abre el segmento que cambió y los eventos que lo explican."
+      },
+      "quiet": {
+        "title": "Silencioso por defecto",
+        "body": "Sin notificaciones salvo que una cifra cruce el umbral que definas. Fines de semana libres salvo que algo se rompa."
+      },
+      "offline": {
+        "title": "Funciona en el tren",
+        "body": "Los resúmenes se guardan en el dispositivo y se cifran en reposo."
+      }
+    },
+    "compare": {
+      "title": "Cómo se compara",
+      "feature": "Función",
+      "us": "Pocket",
+      "bi": "App de BI",
+      "sheets": "Hoja de cálculo",
+      "rows": {
+        "brief": "Resumen diario ordenado",
+        "why": "Explica los cambios",
+        "mobile": "Diseñado para móvil",
+        "alerts": "Alertas por umbral",
+        "setup": "Configuración en menos de 5 minutos"
+      },
+      "partial": "Parcial",
+      "yes": "Sí",
+      "no": "No"
+    },
+    "changelog": {
+      "title": "Lanzado recientemente",
+      "all": "Todas las novedades",
+      "a": {
+        "date": "18 nov",
+        "title": "Modo fin de semana",
+        "body": "Los resúmenes se pausan sábado y domingo salvo alerta crítica."
+      },
+      "b": {
+        "date": "04 nov",
+        "title": "Complicación para Apple Watch",
+        "body": "Tu métrica principal en la muñeca, actualizada cada hora."
+      },
+      "c": {
+        "date": "21 oct",
+        "title": "Resúmenes compartidos",
+        "body": "Reenvía cualquier resumen a un compañero con el contexto incluido."
+      }
+    },
+    "testimonial": {
+      "quote": "Antes abría cuatro pestañas antes de la reunión diaria. Ahora leo el resumen en el ascensor y entro sabiendo qué preguntar.",
+      "name": "Hannah Morgan",
+      "role": "COO, Brightline"
+    },
+    "footer": {
+      "made": "Hecho por el equipo de {{brand}}",
+      "privacy": "Privacidad",
+      "terms": "Términos",
+      "press": "Kit de prensa"
+    }
+  },
+  "templates": {
+    "eyebrow": "Plantillas de paneles",
+    "title": "{{count}} paneles completos, cada uno con su propia estructura",
+    "subtitle": "No son capturas de una sola página: cada plantilla es un producto funcional con su menú, páginas, datos y estructura. Ábrelas en vivo sin registrarte.",
+    "viewAll": "Ver la galería",
+    "livePreview": "Vista en vivo",
+    "details": "Detalles",
+    "pages_one": "{{count}} página",
+    "pages_other": "{{count}} páginas",
+    "layout": "Estructura",
+    "category": "Categoría",
+    "heroCta": "Prueba la demo en vivo",
+    "previewOf": "Vista previa de {{name}}",
+    "layouts": {
+      "sidebar": "Barra lateral",
+      "sidebar-dark": "Barra lateral oscura",
+      "inset": "Inserto",
+      "floating": "Flotante",
+      "rail": "Riel de iconos",
+      "dual": "Doble barra lateral",
+      "topnav": "Menú superior",
+      "topnav-tabs": "Menú superior + pestañas",
+      "boxed": "Encuadrado"
+    },
+    "layoutHints": {
+      "sidebar": "Barra lateral plegable con secciones anidadas e insignias. El clásico de siempre.",
+      "sidebar-dark": "La estructura clásica sobre una navegación oscura de alto contraste.",
+      "inset": "El contenido flota como una tarjeta redondeada junto a la barra.",
+      "floating": "Una barra lateral separada en tarjeta que deja libre el lienzo.",
+      "rail": "Una barra fina de iconos; las subpáginas se abren como menús flotantes.",
+      "dual": "Un riel de secciones más un panel con las páginas de la elegida.",
+      "topnav": "Menú horizontal con desplegables y megamenús; sin barra lateral.",
+      "topnav-tabs": "Barra superior con una fila de pestañas subrayadas, estilo GitHub.",
+      "boxed": "La app vive en un marco centrado con su menú dentro. Sensación de escritorio."
+    },
+    "gallery": {
+      "metaTitle": "Plantillas de paneles",
+      "title": "Elige el panel que encaja y hazlo tuyo",
+      "subtitle": "{{count}} espacios de trabajo de retail, ventas, finanzas, operaciones, personas y educación. Filtra por sector o por cómo se organiza la página.",
+      "search": "Buscar plantillas",
+      "allCategories": "Todos los sectores",
+      "allLayouts": "Cualquier estructura",
+      "results_one": "{{count}} plantilla",
+      "results_other": "{{count}} plantillas",
+      "reset": "Quitar filtros",
+      "empty": "Ninguna plantilla coincide con esos filtros",
+      "emptyHint": "Prueba otro sector o estructura, o borra la búsqueda.",
+      "previous": "Anterior",
+      "next": "Siguiente",
+      "pagesLabel": "Páginas",
+      "structure": "Estructura de la página",
+      "noSignup": "Se abre con una cuenta demo. No hay que rellenar nada.",
+      "backHome": "Volver al producto"
+    },
+    "store": {
+      "buy": "Comprar · ${{price}}",
+      "bundleTitle": "Los {{count}} paneles en un solo paquete",
+      "bundleBody": "Todos los paneles más las apps, las vitrinas de componentes, las plantillas de páginas y las landing pages. Un pago, una licencia.",
+      "bundleCta": "Comprar el paquete · ${{price}}",
+      "save": "Ahorra ${{amount}}"
+    }
+  },
+  "agency": {
+    "meta": "Kiln — estudio de diseño e ingeniería de producto",
+    "brand": "Kiln",
+    "nav": {
+      "work": "Trabajos",
+      "services": "Servicios",
+      "process": "Proceso",
+      "contact": "Contacto",
+      "cta": "Empezar un proyecto"
+    },
+    "hero": {
+      "availability": "Aceptamos dos proyectos nuevos para febrero de 2027",
+      "title": "Diseñamos y construimos el software que los equipos abren cada mañana.",
+      "subtitle": "Un estudio de doce personas en Lisboa. Llevamos herramientas internas, paneles y productos B2B de la pizarra a producción, y nos quedamos hasta que se usan.",
+      "stats": {
+        "years": {
+          "value": "9 años",
+          "label": "lanzando producto"
+        },
+        "products": {
+          "value": "64",
+          "label": "productos lanzados"
+        },
+        "retention": {
+          "value": "81%",
+          "label": "clientes que repiten"
+        }
+      }
+    },
+    "work": {
+      "title": "Trabajos seleccionados",
+      "note": "2023 — 2026",
+      "items": {
+        "ledger": {
+          "client": "Northwind Ledger",
+          "category": "Fintech · Web app",
+          "summary": "Cierre mensual para 400 contables, rediseñado en torno a una cola de revisión.",
+          "metric": "−62%",
+          "metricLabel": "tiempo de cierre"
+        },
+        "harbor": {
+          "client": "Harbor Freight Co.",
+          "category": "Logística · Panel",
+          "summary": "Planificación de muelles en vivo en 31 almacenes.",
+          "metric": "3,4×",
+          "metricLabel": "capacidad de muelle"
+        },
+        "mosaic": {
+          "client": "Mosaic Learning",
+          "category": "Educación · Plataforma",
+          "summary": "Creador de cursos y evaluación para 2.000 colegios.",
+          "metric": "+38%",
+          "metricLabel": "cursos completados"
+        },
+        "tandem": {
+          "client": "Tandem HR",
+          "category": "RR. HH. · Sistema de diseño",
+          "summary": "Una librería de componentes para cuatro productos y dos marcas.",
+          "metric": "11 sem",
+          "metricLabel": "hasta la primera versión"
+        }
+      }
+    },
+    "services": {
+      "title": "Qué hacemos",
+      "subtitle": "Equipos pequeños y sénior, un producto cada vez. Sin traspasos entre agencias.",
+      "items": {
+        "product": {
+          "title": "Estrategia de producto",
+          "body": "Entrevistas, mapas de flujo y una primera versión acotada que se puede lanzar de verdad.",
+          "deliverables": "Investigación · Hoja de ruta · Precios"
+        },
+        "design": {
+          "title": "Diseño de interfaz",
+          "body": "Interfaces densas y tranquilas para quien trabaja en ellas todo el día. Prototipadas y probadas.",
+          "deliverables": "UX · UI · Sistemas de diseño"
+        },
+        "engineering": {
+          "title": "Ingeniería",
+          "body": "Front-ends React tipados y APIs aburridas y fiables. Tu equipo es dueño del código desde el primer día.",
+          "deliverables": "React · TypeScript · Node"
+        },
+        "growth": {
+          "title": "Lanzamiento e iteración",
+          "body": "Analítica, onboarding y la segunda y tercera versión, donde se ganan la mayoría de productos.",
+          "deliverables": "Onboarding · Analítica · Iteración"
+        }
+      }
+    },
+    "process": {
+      "title": "Cuatro fases, un equipo y ninguna sorpresa en la semana diez.",
+      "items": {
+        "discover": {
+          "weeks": "Semanas 1–2",
+          "title": "Descubrir",
+          "body": "Nos sentamos con quien lo va a usar y anotamos qué le frena."
+        },
+        "shape": {
+          "weeks": "Semanas 3–4",
+          "title": "Dar forma",
+          "body": "Prototipo navegable, probado con usuarios reales, y alcance cerrado para la versión uno."
+        },
+        "build": {
+          "weeks": "Semanas 5–12",
+          "title": "Construir",
+          "body": "Demos semanales en staging. Puedes parar o cambiar de rumbo en cualquiera."
+        },
+        "launch": {
+          "weeks": "Semana 13 +",
+          "title": "Lanzar",
+          "body": "Despliegue, formación y un mes de correcciones incluido. Después, medimos."
+        }
+      }
+    },
+    "quote": {
+      "text": "Kiln entregó en once semanas lo que nuestro proveedor anterior estimó en nueve meses, y el equipo de operaciones dejó de exportar a hojas de cálculo la semana del lanzamiento.",
+      "author": "Priya Raman",
+      "role": "VP de Operaciones, Harbor Freight Co."
+    },
+    "contact": {
+      "title": "Cuéntanos qué estás construyendo",
+      "subtitle": "Respondemos a cada mensaje en dos días laborables, con un consejo honesto aunque no seamos el estudio adecuado.",
+      "address": "Rua da Boavista 82, Lisboa",
+      "name": "Tu nombre",
+      "nameError": "Escribe tu nombre",
+      "budget": "Presupuesto",
+      "budgets": {
+        "small": "< 50 k€",
+        "medium": "50 k€ – 150 k€",
+        "large": "> 150 k€"
+      },
+      "message": "Detalles del proyecto",
+      "messagePlaceholder": "¿Para quién es, qué hacen hoy y para cuándo lo necesitas?",
+      "messageError": "Un par de frases nos ayudan a responder bien",
+      "submit": "Enviar mensaje",
+      "sent": "Mensaje enviado",
+      "sentHint": "Te responderemos en dos días laborables."
+    },
+    "footer": "Diseñado y construido en Lisboa."
+  },
+  "ai": {
+    "meta": "{{brand}} Analyst — pregunta a tus datos en lenguaje natural",
+    "nav": {
+      "features": "Funciones",
+      "useCases": "Casos de uso",
+      "pricing": "Precios",
+      "faq": "Preguntas"
+    },
+    "hero": {
+      "eyebrow": "{{brand}} Analyst · ya disponible para todos",
+      "title": "Hazle una pregunta a tus números. Recibe una respuesta que puedes comprobar.",
+      "subtitle": "Analyst lee tu almacén de datos, usa tus definiciones de métricas aprobadas y muestra el SQL detrás de cada respuesta. Sin paneles nuevos que mantener."
+    },
+    "demo": {
+      "sources": "Fuente:",
+      "prompts": {
+        "churn": {
+          "chip": "¿Por qué subió la baja?",
+          "question": "¿Por qué subió la tasa de baja en octubre?",
+          "answer": "La tasa de baja subió al 4,6% en octubre, desde el 3,4%. El 71% de las cancelaciones extra eran planes anuales cobrados a través de un proveedor de pagos que empezó a rechazar renovaciones el 9 de octubre. Sin ellas, la tasa fue del 3,3%.",
+          "source": "metrics.churn_rate v12",
+          "series": "% de baja"
+        },
+        "regions": {
+          "chip": "Mejores regiones del trimestre",
+          "question": "¿Qué regiones generaron más ingresos nuevos este trimestre?",
+          "answer": "DACH lidera con 412 k€ de ingresos nuevos (35% del total), seguida de los países nórdicos. Iberia es la única región por debajo del objetivo, al 61% del plan.",
+          "source": "metrics.new_revenue v8",
+          "series": "Ingresos nuevos (k€)"
+        },
+        "forecast": {
+          "chip": "¿Llegaremos al objetivo?",
+          "question": "¿Vamos bien para el objetivo de altas del cuarto trimestre?",
+          "answer": "Sí, si se mantienen las tres últimas semanas: las altas semanales apuntan al 97% del objetivo en la semana 49. El rango previsto es del 91 al 102%.",
+          "source": "forecast.signups semanal",
+          "series": "Altas vs objetivo %"
+        }
+      }
+    },
+    "features": {
+      "title": "Pensado para respuestas que puedes repetir en un consejo",
+      "items": {
+        "citations": {
+          "title": "Cada respuesta cita su métrica",
+          "body": "Analyst solo usa definiciones aprobadas por tu equipo de datos y enlaza cada cifra con la definición y versión de origen."
+        },
+        "sql": {
+          "title": "SQL legible",
+          "body": "Abre la consulta de cualquier respuesta, edítala y guárdala como métrica nueva."
+        },
+        "guardrails": {
+          "title": "Permisos por fila",
+          "body": "Cada persona solo obtiene respuestas de los datos que ya puede ver."
+        },
+        "metrics": {
+          "title": "Capa de métricas compartida",
+          "body": "Una sola definición de ingresos en el chat, los paneles y las exportaciones."
+        },
+        "workflows": {
+          "title": "Preguntas programadas",
+          "body": "Pregunta una vez y recibe la respuesta en Slack cada lunes a las 8:00."
+        },
+        "speed": {
+          "title": "Respuestas en segundos, no tickets",
+          "body": "La respuesta media tarda 6 segundos en un almacén de 2 TB, así que nadie hace cola esperando al equipo de datos."
+        }
+      }
+    },
+    "useCases": {
+      "title": "Una pregunta de cada equipo",
+      "ask": "Preguntan",
+      "get": "Reciben",
+      "items": {
+        "finance": {
+          "tab": "Finanzas",
+          "question": "¿Qué movió el margen bruto entre septiembre y octubre?",
+          "who": "Controller, empresa SaaS de 300 personas",
+          "answer": "Un puente: +1,2 pts por precios, −0,8 pts por costes de nube y −0,3 pts por reembolsos, con las tres cuentas más grandes detrás de cada línea."
+        },
+        "sales": {
+          "tab": "Ventas",
+          "question": "¿Qué oportunidades de más de 50 k€ llevan 14 días sin actividad?",
+          "who": "Responsable de ventas, EMEA",
+          "answer": "Siete oportunidades por valor de 612 k€, ordenadas por fecha de cierre, con el responsable y el último contacto de cada una."
+        },
+        "product": {
+          "tab": "Producto",
+          "question": "¿Cambió el nuevo onboarding la retención de la primera semana?",
+          "who": "Responsable de producto, crecimiento",
+          "answer": "La retención de la primera semana es del 41% con el flujo nuevo frente al 34% del antiguo, sobre 2.940 altas; la diferencia se mantiene en móvil y escritorio."
+        },
+        "support": {
+          "tab": "Soporte",
+          "question": "¿Qué funciones generan más tickets por usuario activo?",
+          "who": "Responsable de soporte",
+          "answer": "Exportaciones y configuración de SSO, con 3,1 y 2,4 tickets por cada 100 usuarios activos, ambas al alza desde la versión de octubre."
+        }
+      }
+    },
+    "integrations": {
+      "title": "Se conecta en solo lectura a las herramientas donde ya viven tus números",
+      "kinds": {
+        "warehouse": "Almacén",
+        "billing": "Facturación",
+        "crm": "CRM",
+        "support": "Soporte",
+        "delivery": "Entrega"
+      }
+    },
+    "pricing": {
+      "title": "Precio por puesto, con margen para preguntar",
+      "subtitle": "Todos los planes incluyen la capa de métricas, la vista SQL y el envío a Slack.",
+      "yearly": "Facturación anual (ahorra un 20%)",
+      "perSeat": "/ puesto / mes",
+      "custom": "A medida",
+      "plans": {
+        "team": {
+          "name": "Equipo",
+          "for": "Para un equipo que empieza",
+          "questions": "500 preguntas por puesto / mes",
+          "cta": "Prueba gratis",
+          "features": {
+            "a": "Hasta 3 fuentes de datos",
+            "b": "Capa de métricas compartida",
+            "c": "Envío a Slack"
+          }
+        },
+        "business": {
+          "name": "Empresa",
+          "for": "Para empresas con equipo de datos",
+          "questions": "2.000 preguntas por puesto / mes",
+          "cta": "Prueba gratis",
+          "features": {
+            "a": "Fuentes de datos ilimitadas",
+            "b": "Permisos por fila",
+            "c": "Preguntas programadas"
+          }
+        },
+        "enterprise": {
+          "name": "Corporativo",
+          "for": "Para equipos grandes y regulados",
+          "questions": "Preguntas ilimitadas",
+          "cta": "Hablar con ventas",
+          "features": {
+            "a": "SSO, SCIM y registro de auditoría",
+            "b": "Despliegue privado del modelo",
+            "c": "Ingeniero de soporte dedicado"
+          }
+        }
+      }
+    },
+    "faq": {
+      "title": "Preguntas",
+      "items": {
+        "q1": {
+          "q": "¿Analyst se entrena con nuestros datos?",
+          "a": "No. Tus datos y preguntas nunca se usan para entrenar modelos. Las consultas son de solo lectura y los resultados se guardan 30 días salvo que lo cambies."
+        },
+        "q2": {
+          "q": "¿Y si responde mal?",
+          "a": "Cada respuesta muestra la definición de la métrica y el SQL usados, así que cualquiera puede comprobarla. Marca una respuesta como incorrecta y tu equipo de datos la verá en una cola de revisión."
+        },
+        "q3": {
+          "q": "¿Necesitamos antes una capa semántica?",
+          "a": "No. Analyst puede partir de tus modelos dbt actuales o de unas pocas métricas escritas a mano, y sugiere definiciones según llegan preguntas."
+        },
+        "q4": {
+          "q": "¿Qué idiomas admite?",
+          "a": "Preguntas en inglés, español, alemán, francés y portugués. La respuesta llega en el idioma de la pregunta."
+        }
+      }
+    }
+  }
+}

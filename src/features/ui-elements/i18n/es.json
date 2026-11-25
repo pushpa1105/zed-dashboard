@@ -1,0 +1,615 @@
+{
+  "nav": "Elementos",
+  "chartToggle": {
+    "chart": "Gráfico",
+    "table": "Tabla"
+  },
+  "pages": {
+    "dataDisplay": {
+      "title": "Visualización de datos",
+      "description": "Tarjetas, etiquetas, listas, líneas de tiempo y tableros para presentar registros."
+    },
+    "charts": {
+      "title": "Gráficos",
+      "description": "Todos los gráficos del kit, cada uno con una vista de tabla accesible."
+    },
+    "feedback": {
+      "title": "Retroalimentación",
+      "description": "Notificaciones, alertas, progreso, carga y estados vacíos."
+    },
+    "navigation": {
+      "title": "Navegación",
+      "description": "Pestañas, migas de pan, paginación, menús y primitivas de diseño."
+    },
+    "trees": {
+      "title": "Árboles",
+      "description": "Vistas de árbol, árboles de archivos, tablas jerárquicas y organigramas."
+    },
+    "timelines": {
+      "title": "Líneas de tiempo",
+      "description": "Historiales, hojas de ruta, registros de cambios y seguimiento."
+    },
+    "menus": {
+      "title": "Menús",
+      "description": "Menús anidados, megamenús, desplegables y patrones de navegación."
+    },
+    "widgets": {
+      "title": "Widgets",
+      "description": "Widgets de panel listos para colocar en cualquier tarjeta."
+    },
+    "layouts": {
+      "title": "Diseños",
+      "description": "Todas las estructuras de página que pueden usar los paneles. Aplica una a todos."
+    }
+  },
+  "sections": {
+    "statCards": {
+      "title": "Tarjetas de métricas",
+      "description": "Variantes por defecto, mosaico, acento y mínima con tendencias y minigráficos."
+    },
+    "statStrip": {
+      "title": "Franja de métricas",
+      "description": "Varias métricas en una fila dividida."
+    },
+    "meters": {
+      "title": "Lista de medidores",
+      "description": "Uso frente a límites."
+    },
+    "tags": {
+      "title": "Etiquetas",
+      "description": "Suaves, sólidas y con borde en cada tono; removibles y con punto."
+    },
+    "status": {
+      "title": "Insignias de estado",
+      "description": "El estado es un punto más un texto, nunca solo color."
+    },
+    "avatars": {
+      "title": "Avatares",
+      "description": "Iniciales, presencia, grupos con desbordamiento y celdas de usuario."
+    },
+    "profile": {
+      "title": "Tarjeta de perfil",
+      "description": "Resumen de persona con métricas y acciones."
+    },
+    "product": {
+      "title": "Tarjeta de producto",
+      "description": "Compuesta con etiquetas, valoración y precio."
+    },
+    "pricing": {
+      "title": "Tarjetas de precios",
+      "description": "Planes con una opción destacada."
+    },
+    "features": {
+      "title": "Tarjetas de funciones",
+      "description": "Mosaicos con icono, título y descripción."
+    },
+    "timeline": {
+      "title": "Línea de tiempo",
+      "description": "Eventos ordenados con marcadores."
+    },
+    "activity": {
+      "title": "Actividad",
+      "description": "Quién hizo qué y cuándo."
+    },
+    "list": {
+      "title": "Tarjeta de lista",
+      "description": "Filas con imagen, metadatos y acciones."
+    },
+    "descriptionList": {
+      "title": "Lista descriptiva",
+      "description": "Pares de término y detalle para fichas."
+    },
+    "keyValue": {
+      "title": "Cuadrícula clave-valor",
+      "description": "Resumen compacto de metadatos."
+    },
+    "tree": {
+      "title": "Vista de árbol",
+      "description": "Jerarquía navegable con teclado y selección."
+    },
+    "kanban": {
+      "title": "Tablero Kanban",
+      "description": "Arrastra tarjetas dentro y entre columnas."
+    },
+    "files": {
+      "title": "Archivos",
+      "description": "Adjuntos con tipo, tamaño y progreso de carga."
+    },
+    "code": {
+      "title": "Bloque de código",
+      "description": "Fragmento copiable con números de línea y resaltado."
+    },
+    "misc": {
+      "title": "Contadores y atajos",
+      "description": "Contador animado, cuenta atrás, valoraciones y atajos."
+    },
+    "area": {
+      "title": "Gráfico de área",
+      "description": "Tendencia en el tiempo con relleno degradado."
+    },
+    "areaStacked": {
+      "title": "Área apilada",
+      "description": "Composición de un total en el tiempo."
+    },
+    "line": {
+      "title": "Gráfico de líneas",
+      "description": "Real frente a previsión con un objetivo."
+    },
+    "barGrouped": {
+      "title": "Barras agrupadas",
+      "description": "Compara series lado a lado."
+    },
+    "barStacked": {
+      "title": "Barras apiladas",
+      "description": "Totales y sus partes."
+    },
+    "barHorizontal": {
+      "title": "Barras horizontales",
+      "description": "Clasificaciones con etiquetas largas."
+    },
+    "barHighlight": {
+      "title": "Barra destacada",
+      "description": "Destaca el periodo actual."
+    },
+    "donut": {
+      "title": "Anillo",
+      "description": "Parte del todo con leyenda."
+    },
+    "donutHalf": {
+      "title": "Medio anillo",
+      "description": "Proporción compacta de un total."
+    },
+    "radial": {
+      "title": "Anillos radiales",
+      "description": "Algunas tasas de avance de un vistazo."
+    },
+    "radar": {
+      "title": "Radar",
+      "description": "Perfiles en varias dimensiones."
+    },
+    "sparklines": {
+      "title": "Minigráficos",
+      "description": "Tendencias diminutas dentro de una tabla."
+    },
+    "gauge": {
+      "title": "Indicadores",
+      "description": "Indicadores segmentados y de arco para una tasa."
+    },
+    "rings": {
+      "title": "Anillos de progreso",
+      "description": "Progreso circular compacto."
+    },
+    "heatmap": {
+      "title": "Mapa de calor",
+      "description": "Actividad por día y hora."
+    },
+    "toastTypes": {
+      "title": "Tipos de notificación",
+      "description": "Todas las variantes de notify()."
+    },
+    "toastAdvanced": {
+      "title": "Notificaciones avanzadas",
+      "description": "Carga, promesa, deshacer, acciones y contenido personalizado."
+    },
+    "toastPositions": {
+      "title": "Posiciones",
+      "description": "Muestra una notificación en cualquier esquina."
+    },
+    "callouts": {
+      "title": "Avisos",
+      "description": "Mensajes en línea de cuatro tipos y dos estilos."
+    },
+    "banners": {
+      "title": "Banners",
+      "description": "Anuncios descartables a nivel de página."
+    },
+    "progress": {
+      "title": "Progreso",
+      "description": "Barras, anillos, pasos y progreso segmentado."
+    },
+    "loading": {
+      "title": "Carga",
+      "description": "Indicadores y esqueletos de carga."
+    },
+    "empty": {
+      "title": "Estados vacíos",
+      "description": "Qué mostrar cuando aún no hay nada."
+    },
+    "error": {
+      "title": "Estado de error",
+      "description": "Un widget fallido con reintento."
+    },
+    "tabs": {
+      "title": "Pestañas",
+      "description": "Subrayadas, píldoras, segmentadas y verticales."
+    },
+    "pageTabs": {
+      "title": "Pestañas de página",
+      "description": "Secciones con contadores y acciones."
+    },
+    "subNav": {
+      "title": "Subnavegación",
+      "description": "Enlaces entre páginas hermanas."
+    },
+    "breadcrumbs": {
+      "title": "Migas de pan",
+      "description": "Las rutas largas se agrupan en un menú."
+    },
+    "pagination": {
+      "title": "Paginación",
+      "description": "Páginas numeradas con elipsis y tamaño de página."
+    },
+    "stepper": {
+      "title": "Pasos",
+      "description": "Horizontal y vertical, con clic para volver."
+    },
+    "menubar": {
+      "title": "Barra de menús",
+      "description": "Menús de escritorio con submenús y casillas."
+    },
+    "navigationMenu": {
+      "title": "Menú de navegación",
+      "description": "Megamenú para cabeceras."
+    },
+    "accordion": {
+      "title": "Acordeón",
+      "description": "Secciones desplegables."
+    },
+    "collapsible": {
+      "title": "Plegable",
+      "description": "Mostrar y ocultar contenido extra."
+    },
+    "carousel": {
+      "title": "Carrusel",
+      "description": "Diapositivas deslizables."
+    },
+    "resizable": {
+      "title": "Paneles redimensionables",
+      "description": "Arrastra los separadores para redimensionar."
+    },
+    "scrollArea": {
+      "title": "Área de desplazamiento",
+      "description": "Barras de desplazamiento con estilo."
+    },
+    "toggles": {
+      "title": "Grupos de botones",
+      "description": "Grupos de selección simple y múltiple."
+    },
+    "treeLines": {
+      "title": "Líneas guía",
+      "description": "Niveles sangrados unidos por líneas; las flechas navegan y → expande."
+    },
+    "treeCheckable": {
+      "title": "Casillas de tres estados",
+      "description": "Los padres muestran selección parcial; marcar un padre marca todas las hojas."
+    },
+    "treeLazy": {
+      "title": "Carga diferida",
+      "description": "Los hijos se cargan al expandir por primera vez, con un indicador mientras llegan."
+    },
+    "treeSearch": {
+      "title": "Búsqueda y resaltado",
+      "description": "El filtro conserva los ancestros y los expande para que se vean las coincidencias."
+    },
+    "treeReorder": {
+      "title": "Reordenar hermanos",
+      "description": "Pasa el cursor sobre una fila para subirla o bajarla en su nivel."
+    },
+    "fileTree": {
+      "title": "Árbol de archivos",
+      "description": "Las carpetas se abren y cierran; los archivos llevan icono y color según su tipo."
+    },
+    "treeTable": {
+      "title": "Tabla jerárquica",
+      "description": "Filas anidadas con columnas: presupuestos, cuentas, listas de materiales."
+    },
+    "orgChart": {
+      "title": "Organigrama",
+      "description": "Jerarquía descendente con conectores; pliega los equipos de cualquier responsable."
+    },
+    "treeInputs": {
+      "title": "Campos jerárquicos",
+      "description": "Los selectores jerárquicos están junto a los componentes de formulario."
+    },
+    "tlVertical": {
+      "title": "Vertical con tarjetas",
+      "description": "Iconos sobre una línea, cada evento en su propia tarjeta."
+    },
+    "tlAlternating": {
+      "title": "Alterna",
+      "description": "Línea central con eventos a ambos lados; una columna en móvil."
+    },
+    "tlHorizontal": {
+      "title": "Hitos horizontales",
+      "description": "Se desplaza en horizontal; los tramos completados se rellenan."
+    },
+    "tlRoadmap": {
+      "title": "Hoja de ruta",
+      "description": "Iniciativas como barras a lo largo de trimestres, agrupadas por carriles."
+    },
+    "tlChangelog": {
+      "title": "Registro de cambios",
+      "description": "Versiones con entradas etiquetadas."
+    },
+    "tlMedia": {
+      "title": "Actividad con adjuntos",
+      "description": "Comentarios, archivos e imágenes en línea."
+    },
+    "tlTracking": {
+      "title": "Seguimiento de pedido",
+      "description": "Línea de progreso rellena hasta el paso actual."
+    },
+    "tlTrackingVertical": {
+      "title": "Historial del envío",
+      "description": "Los mismos pasos apilados, con horas y lugares."
+    },
+    "tlHistory": {
+      "title": "Registro de auditoría",
+      "description": "Compacto y agrupado por día."
+    },
+    "menuNested": {
+      "title": "Menú anidado",
+      "description": "Tres niveles, insignias, iconos, grupos plegables y entradas deshabilitadas."
+    },
+    "menuMega": {
+      "title": "Megamenú",
+      "description": "Navegación web con columnas de enlaces y un bloque destacado."
+    },
+    "menuDropdowns": {
+      "title": "Menús desplegables",
+      "description": "Submenús, casillas y opciones, atajos, elementos deshabilitados y destructivos."
+    },
+    "menuContext": {
+      "title": "Menú contextual",
+      "description": "Haz clic derecho en el área para abrirlo."
+    },
+    "menuMenubar": {
+      "title": "Barra de menús",
+      "description": "Menús al estilo de una aplicación de escritorio."
+    },
+    "menuSegmented": {
+      "title": "Navegación segmentada y por pestañas",
+      "description": "Cambia de vista dentro de una página."
+    },
+    "menuPills": {
+      "title": "Navegación en píldoras",
+      "description": "Páginas hermanas como píldoras o enlaces subrayados, con contadores."
+    },
+    "menuBreadcrumbs": {
+      "title": "Migas de pan",
+      "description": "Las rutas largas pliegan su parte central en un menú."
+    },
+    "menuSidebarMini": {
+      "title": "Barra lateral en un marco",
+      "description": "Un marco de aplicación estático con el menú anidado como barra lateral."
+    },
+    "menuStepper": {
+      "title": "Navegación por pasos",
+      "description": "Los pasos completados se pueden pulsar."
+    },
+    "menuPagination": {
+      "title": "Paginación",
+      "description": "Numerada, compacta y «cargar más»."
+    },
+    "wKpiTarget": {
+      "title": "KPI frente a objetivo",
+      "description": "Un valor, su objetivo y la diferencia."
+    },
+    "wGoals": {
+      "title": "Objetivos",
+      "description": "Anillos de progreso por objetivo."
+    },
+    "wComparison": {
+      "title": "Comparación de periodos",
+      "description": "Este periodo frente al anterior."
+    },
+    "wLeaderboard": {
+      "title": "Clasificación",
+      "description": "Personas ordenadas con barras relativas."
+    },
+    "wHeatCalendar": {
+      "title": "Calendario de actividad",
+      "description": "Actividad diaria en seis meses."
+    },
+    "wMiniCalendar": {
+      "title": "Minicalendario",
+      "description": "Vista mensual con eventos y la agenda del día."
+    },
+    "wStatus": {
+      "title": "Estado del sistema",
+      "description": "Salud de los servicios y disponibilidad de 30 días."
+    },
+    "wNotifications": {
+      "title": "Notificaciones",
+      "description": "Marcas de no leído y acciones en línea."
+    },
+    "wTodo": {
+      "title": "Lista de tareas",
+      "description": "Añade, marca y cuenta."
+    },
+    "wTeam": {
+      "title": "Equipo conectado",
+      "description": "Presencia y actividad actual."
+    },
+    "wFiles": {
+      "title": "Archivos recientes",
+      "description": "Icono de tipo, propietario y tamaño."
+    },
+    "wQuickActions": {
+      "title": "Acciones rápidas",
+      "description": "Accesos directos."
+    },
+    "wPayments": {
+      "title": "Próximos pagos",
+      "description": "Qué vence y cuándo."
+    },
+    "wBalance": {
+      "title": "Tarjeta de saldo",
+      "description": "Saldo en forma de tarjeta con ingresos y gastos."
+    },
+    "wFunnel": {
+      "title": "Minienbudo",
+      "description": "Volumen por etapa y conversión entre pasos."
+    },
+    "wNps": {
+      "title": "NPS",
+      "description": "Puntuación con promotores, pasivos y detractores."
+    },
+    "wRatings": {
+      "title": "Valoraciones",
+      "description": "Media y distribución."
+    },
+    "wSocial": {
+      "title": "Audiencia social",
+      "description": "Seguidores y crecimiento por canal."
+    },
+    "wStorage": {
+      "title": "Almacenamiento",
+      "description": "Uso por tipo de archivo."
+    },
+    "wCountdown": {
+      "title": "Cuenta atrás",
+      "description": "Tiempo restante y transcurrido."
+    },
+    "wTestimonial": {
+      "title": "Testimonio",
+      "description": "Cita, valoración y autoría."
+    },
+    "wProfiles": {
+      "title": "Tarjetas de perfil",
+      "description": "Con portada, horizontal y compacta."
+    },
+    "wAnnouncement": {
+      "title": "Anuncio",
+      "description": "Novedad descartable con una acción."
+    },
+    "wLocations": {
+      "title": "Principales ubicaciones",
+      "description": "Porcentaje de tráfico por país."
+    },
+    "wDevices": {
+      "title": "Dispositivos",
+      "description": "Sesiones por tipo de dispositivo."
+    },
+    "tabsVertical": {
+      "title": "Pestañas verticales",
+      "description": "Un menú lateral de ajustes que cambia de panel."
+    }
+  },
+  "demo": {
+    "showChart": "Mostrar gráfico",
+    "showTable": "Mostrar tabla",
+    "choosePlan": "Elegir plan",
+    "currentPlan": "Plan actual",
+    "mostPopular": "Más popular",
+    "perMonth": "/mes",
+    "addToCart": "Añadir al carrito",
+    "message": "Mensaje",
+    "follow": "Seguir",
+    "retry": "Reintentar",
+    "createProject": "Crear proyecto",
+    "importData": "Importar datos",
+    "clearFilters": "Limpiar filtros",
+    "learnMore": "Más información",
+    "restoreBanners": "Restaurar banners",
+    "restoreCallouts": "Restaurar avisos",
+    "reload": "Simular recarga",
+    "dismissAll": "Cerrar todas",
+    "selected": "Seleccionado",
+    "nothing": "Nada seleccionado",
+    "back": "Atrás",
+    "next": "Siguiente",
+    "showMore": "Mostrar 3 más",
+    "showLess": "Mostrar menos",
+    "increment": "Sumar 1.250"
+  },
+  "toasts": {
+    "message": "Mensaje",
+    "success": "Éxito",
+    "error": "Error",
+    "info": "Información",
+    "warning": "Advertencia",
+    "loading": "Carga → listo",
+    "promise": "Promesa",
+    "promiseFail": "Promesa (falla)",
+    "undo": "Deshacer",
+    "action": "Acción + cancelar",
+    "important": "Persistente",
+    "custom": "Personalizada",
+    "samples": {
+      "message": "Borrador guardado en tu espacio",
+      "success": "Factura INV-2041 marcada como pagada",
+      "successDesc": "Se notificó al cliente por correo.",
+      "error": "No se pudo procesar el pago",
+      "errorDesc": "La tarjeta fue rechazada. Prueba otro método.",
+      "info": "Hay una nueva versión disponible",
+      "warning": "Has usado el 90 % de tu cuota de API",
+      "loading": "Exportando 12.480 filas…",
+      "loaded": "Exportación lista: orders.csv",
+      "promiseLoading": "Sincronizando con Stripe…",
+      "promiseSuccess": "248 transacciones sincronizadas",
+      "promiseError": "Error de sincronización: tiempo agotado",
+      "deleted": "Proyecto “Atlas” movido a la papelera",
+      "restored": "Proyecto restaurado",
+      "invite": "Hannah Morgan te invitó a “Q4 roadmap”",
+      "accept": "Aceptar",
+      "decline": "Rechazar",
+      "accepted": "Invitación aceptada",
+      "important": "Tu sesión caduca en 5 minutos",
+      "stay": "Mantener sesión",
+      "customTitle": "Leo Park solicitó acceso",
+      "customBody": "al espacio de Finanzas",
+      "approve": "Aprobar",
+      "deny": "Denegar",
+      "position": "Mostrada en {{position}}"
+    }
+  },
+  "treesUi": {
+    "search": "Filtrar departamentos…",
+    "selected": "Seleccionado",
+    "none": "nada",
+    "checked": "{{count}} hojas marcadas",
+    "openForms": "Abrir la página de selectores",
+    "orderNote": "El árbol mantiene el orden; envíalo a tu API al cambiar."
+  },
+  "treeTable": {
+    "account": "Cuenta",
+    "budget": "Presupuesto",
+    "actual": "Real",
+    "variance": "Desviación",
+    "expandAll": "Expandir todo",
+    "collapseAll": "Contraer todo"
+  },
+  "layoutsUi": {
+    "current": "Activo en todos los paneles",
+    "apply": "Aplicar a todos los paneles",
+    "reset": "Volver al diseño propio de cada panel",
+    "open": "Abrir {{name}}",
+    "noExample": "Ningún panel lo usa por defecto",
+    "autoTitle": "Automático (recomendado)",
+    "autoHint": "Cada panel conserva el diseño con el que se creó.",
+    "usedBy": "Predeterminado en"
+  },
+  "widgetUi": {
+    "toTarget": "para el objetivo",
+    "reached": "Objetivo alcanzado",
+    "thisPeriod": "Este periodo",
+    "lastPeriod": "Periodo anterior",
+    "remaining": "pendientes",
+    "addTask": "Añade una tarea y pulsa Intro",
+    "online": "conectados",
+    "nothing": "Nada programado",
+    "reviews": "reseñas",
+    "dueSoon": "Vence en los próximos 30 días",
+    "of": "de",
+    "elapsed": "transcurrido",
+    "dismiss": "Descartar"
+  },
+  "menusUi": {
+    "selected": "Seleccionado",
+    "paginationCompact": "Página {{page}} de {{total}}",
+    "loadMore": "Cargar más",
+    "loaded": "Mostrando {{count}} de {{total}}",
+    "rightClick": "Haz clic derecho en cualquier punto de esta área"
+  }
+}

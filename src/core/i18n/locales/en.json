@@ -1,0 +1,129 @@
+{
+  "actions": {
+    "cancel": "Cancel",
+    "save": "Save",
+    "saveChanges": "Save changes",
+    "create": "Create",
+    "delete": "Delete",
+    "edit": "Edit",
+    "back": "Back",
+    "search": "Search",
+    "loading": "Loading…"
+  },
+  "shell": {
+    "account": "Account",
+    "signOut": "Sign out",
+    "toggleSidebar": "Toggle sidebar",
+    "language": "Language",
+    "commandMenu": "Search or jump to…",
+    "commandEmpty": "No results.",
+    "commandPages": "Pages",
+    "commandActions": "Actions",
+    "commandTheme": "Theme",
+    "notifications": "Notifications",
+    "noNotifications": "You're all caught up",
+    "more": "More",
+    "appDescription": "Apps, components and settings",
+    "openMenu": "Open menu",
+    "switchWorkspace": "Switch dashboard",
+    "browseTemplates": "Browse all templates",
+    "markAllRead": "Mark all as read",
+    "noNotificationsHint": "New activity will show up here.",
+    "notificationsAll": "All",
+    "notificationsUnread": "Unread",
+    "newCount_one": "{{count}} new",
+    "newCount_other": "{{count}} new",
+    "markRead": "Mark as read",
+    "today": "Today",
+    "earlier": "Earlier",
+    "viewAll": "View all",
+    "notificationSettings": "Settings",
+    "create": "Create",
+    "createIn": "Create in {{workspace}}",
+    "sample": {
+      "categories": {
+        "activity": "Activity",
+        "system": "System"
+      },
+      "mention": {
+        "title": "Hannah Morgan mentioned you",
+        "body": "“Can you review the Q4 roadmap before Friday?”"
+      },
+      "payment": {
+        "title": "Payment received",
+        "body": "Invoice INV-2041 was paid in full ($4,250.00)."
+      },
+      "report": {
+        "title": "Your weekly report is ready",
+        "body": "Traffic is up 12% compared with last week."
+      },
+      "security": {
+        "title": "New sign-in from Chrome on Windows",
+        "body": "If this wasn't you, change your password now."
+      },
+      "release": {
+        "title": "What's new: saved views",
+        "body": "Save filters on any table and share them with your team."
+      }
+    }
+  },
+  "pager": {
+    "previous": "Previous page",
+    "next": "Next page",
+    "status": "Page {{page}} of {{totalPages}}"
+  },
+  "theme": {
+    "customize": "Customize theme",
+    "description": "Changes are saved on this device and applied instantly.",
+    "mode": "Mode",
+    "light": "Light",
+    "dark": "Dark",
+    "system": "System",
+    "color": "Color",
+    "customColor": "Custom color",
+    "radius": "Radius",
+    "font": "Font",
+    "scale": "Scale",
+    "reset": "Reset",
+    "copyCss": "Copy CSS",
+    "copied": "Theme CSS copied to the clipboard",
+    "copyFailed": "Couldn't access the clipboard",
+    "layout": "Layout",
+    "tab": "Theme"
+  },
+  "errors": {
+    "notFound": "Page not found",
+    "notFoundDescription": "The page you are looking for doesn't exist or has been moved.",
+    "forbidden": "You don't have access to this page",
+    "goHome": "Go home",
+    "somethingWrong": "Something went wrong",
+    "somethingWrongDescription": "An unexpected error occurred. Try refreshing the page.",
+    "refresh": "Refresh"
+  },
+  "validation": {
+    "required": "Required",
+    "email": "Enter a valid email",
+    "passwordMin": "Password must be at least 5 characters",
+    "tooLong": "This is too long"
+  },
+  "navGroups": {
+    "general": "General",
+    "dashboards": "Dashboards",
+    "apps": "Apps",
+    "components": "Components",
+    "pages": "Pages",
+    "account": "Account"
+  },
+  "brand": {
+    "title": "Brand",
+    "name": "Product name",
+    "logo": "Logo",
+    "logoDark": "Logo on dark backgrounds",
+    "mark": "Icon (square)",
+    "upload": "Upload",
+    "remove": "Remove image",
+    "hint": "SVG, PNG, WebP or JPEG up to 500 KB. Without a logo, the icon and name are shown. To ship a brand to everyone, set it in src/core/brand/config.ts.",
+    "tooLarge": "Pick an image under 500 KB",
+    "reset": "Reset brand"
+  }
+}

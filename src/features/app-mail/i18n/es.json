@@ -1,0 +1,77 @@
+{
+  "nav": "Correo",
+  "title": "Correo",
+  "description": "Tu bandeja de entrada",
+  "folders": {
+    "inbox": "Recibidos",
+    "starred": "Destacados",
+    "sent": "Enviados",
+    "drafts": "Borradores",
+    "archive": "Archivo",
+    "spam": "Spam",
+    "trash": "Papelera"
+  },
+  "mailboxes": {
+    "label": "Buzones",
+    "labels": "Etiquetas"
+  },
+  "list": {
+    "search": "Buscar correo",
+    "selectAll": "Seleccionar todo",
+    "select": "Seleccionar \"{{subject}}\"",
+    "selected": "{{count}} seleccionados",
+    "to": "Para:",
+    "attachment": "Con adjuntos",
+    "emptyTitle": "No hay nada aquí",
+    "emptyHint": "No hay mensajes en esta vista."
+  },
+  "actions": {
+    "archive": "Archivar",
+    "delete": "Eliminar",
+    "deleteForever": "Eliminar definitivamente",
+    "markRead": "Marcar como leído",
+    "markUnread": "Marcar como no leído",
+    "star": "Destacar",
+    "unstar": "Quitar destacado",
+    "refresh": "Actualizar"
+  },
+  "reader": {
+    "back": "Volver a la lista",
+    "reply": "Responder",
+    "replyTo": "Responder a {{name}}",
+    "forward": "Reenviar",
+    "to": "Para",
+    "wrote": "El {{date}}, {{name}} escribió:",
+    "attachments": "{{count}} adjuntos",
+    "download": "Descargar",
+    "downloadDemo": "Las descargas están desactivadas en la demo.",
+    "emptyTitle": "Ningún mensaje seleccionado",
+    "emptyHint": "Elige un mensaje para leerlo aquí."
+  },
+  "compose": {
+    "open": "Redactar",
+    "title": "Nuevo mensaje",
+    "description": "Los destinatarios se añaden como etiquetas: escribe una dirección y pulsa Intro.",
+    "to": "Para",
+    "cc": "CC",
+    "addCc": "Añadir CC",
+    "toPlaceholder": "nombre@empresa.com",
+    "subject": "Asunto",
+    "body": "Mensaje",
+    "bodyPlaceholder": "Escribe tu mensaje…",
+    "attach": "Adjuntar archivos",
+    "removeFile": "Quitar {{name}}",
+    "send": "Enviar",
+    "saveDraft": "Guardar borrador",
+    "discard": "Descartar",
+    "invalidEmail": "Introduce un correo válido",
+    "needRecipient": "Añade al menos un destinatario"
+  },
+  "toast": {
+    "sent": "Mensaje enviado",
+    "draftSaved": "Borrador guardado",
+    "archived": "{{count}} conversación archivada",
+    "deleted": "{{count}} conversación movida a la papelera",
+    "undo": "Deshacer"
+  }
+}

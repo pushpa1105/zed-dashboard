@@ -1,0 +1,932 @@
+{
+  "workspace": {
+    "name": "Comercio electrónico",
+    "description": "Pedidos, productos, clientes e ingresos",
+    "category": "Retail"
+  },
+  "nav": {
+    "sections": {
+      "store": "Tienda",
+      "catalog": "Catálogo",
+      "customers": "Clientes",
+      "marketing": "Marketing",
+      "configuration": "Configuración"
+    },
+    "overview": "Resumen",
+    "orders": "Pedidos",
+    "allOrders": "Todos los pedidos",
+    "pending": "Pendientes",
+    "returns": "Devoluciones",
+    "catalog": "Catálogo",
+    "products": "Productos",
+    "categories": "Categorías",
+    "inventory": "Stock bajo",
+    "customers": "Clientes",
+    "reviews": "Reseñas",
+    "discounts": "Descuentos",
+    "giftCards": "Tarjetas regalo",
+    "storefront": "Ver tienda",
+    "transactions": "Transacciones",
+    "settings": "Ajustes de la tienda",
+    "abandonedCarts": "Carritos abandonados",
+    "salesReports": "Informes de ventas"
+  },
+  "common": {
+    "error": "No se pudieron cargar los datos. Revisa tu conexión e inténtalo de nuevo.",
+    "cancel": "Cancelar",
+    "notePlaceholder": "Deja una nota para tu equipo…",
+    "addNote": "Añadir nota",
+    "previous": "Página anterior",
+    "next": "Página siguiente",
+    "pageOf": "Página {{page}} de {{total}}"
+  },
+  "status": {
+    "pending": "Pendiente",
+    "processing": "En preparación",
+    "shipped": "Enviado",
+    "delivered": "Entregado",
+    "cancelled": "Cancelado",
+    "refunded": "Reembolsado"
+  },
+  "payment": {
+    "paid": "Pagado",
+    "pending": "Pago pendiente",
+    "refunded": "Reembolsado",
+    "partially_refunded": "Reembolso parcial"
+  },
+  "channel": {
+    "online": "Tienda online",
+    "pos": "Punto de venta",
+    "marketplace": "Marketplace",
+    "social": "Tienda social"
+  },
+  "stock": {
+    "out": "Agotado",
+    "count_one": "{{count}} en stock",
+    "count_other": "{{count}} en stock"
+  },
+  "productStatus": {
+    "active": "Activo",
+    "draft": "Borrador",
+    "archived": "Archivado"
+  },
+  "segments": {
+    "vip": "VIP",
+    "repeat": "Recurrente",
+    "new": "Nuevo",
+    "at_risk": "En riesgo"
+  },
+  "orders": {
+    "title": "Pedidos",
+    "description": "Todos los pedidos de la tienda online, el TPV y los marketplaces.",
+    "export": "Exportar CSV",
+    "select": "Seleccionar pedido",
+    "col": {
+      "order": "Pedido",
+      "date": "Fecha",
+      "customer": "Cliente",
+      "channel": "Canal",
+      "payment": "Pago",
+      "fulfilment": "Envío",
+      "items": "Artículos",
+      "total": "Total"
+    },
+    "tabs": {
+      "all": "Todos",
+      "pending": "Pendientes",
+      "processing": "En preparación",
+      "shipped": "Enviados",
+      "delivered": "Entregados",
+      "cancelled": "Cancelados",
+      "refunded": "Reembolsados"
+    },
+    "search": "Buscar pedidos, nombres o correos",
+    "reset": "Restablecer",
+    "columns": "Columnas",
+    "empty": {
+      "title": "Ningún pedido coincide",
+      "description": "Prueba otra pestaña o borra los filtros."
+    },
+    "bulk": {
+      "selected_one": "{{count}} pedido seleccionado",
+      "selected_other": "{{count}} pedidos seleccionados",
+      "clear": "Quitar",
+      "process": "Marcar en preparación",
+      "ship": "Marcar enviados",
+      "cancel": "Cancelar pedidos"
+    },
+    "toast": {
+      "updated": "Pedidos actualizados"
+    }
+  },
+  "order": {
+    "back": "Todos los pedidos",
+    "notFound": "Pedido no encontrado",
+    "loading": "Cargando pedido…",
+    "title": "Pedido {{number}}",
+    "placed": "Realizado el {{date}} · {{channel}}",
+    "refund": "Reembolsar",
+    "markShipped": "Marcar como enviado",
+    "markDelivered": "Marcar como entregado",
+    "items_one": "{{count}} artículo",
+    "items_other": "{{count}} artículos",
+    "subtotal": "Subtotal",
+    "discount": "Descuento",
+    "shipping": "Envío",
+    "free": "Gratis",
+    "tax": "Impuestos",
+    "total": "Total",
+    "refunded": "Reembolsado",
+    "net": "Pago neto",
+    "fulfilment": "Envío",
+    "carrier": "Enviado con {{carrier}}",
+    "notShipped": "Aún no enviado",
+    "tracking": "Seguimiento",
+    "copy": "Copiar número de seguimiento",
+    "awaiting": "El número de seguimiento aparece cuando el paquete se entrega al transportista.",
+    "timeline": "Historial",
+    "timelineHint": "Eventos del pedido y notas del equipo",
+    "customer": "Cliente",
+    "lifetimeOrders": "Pedidos",
+    "lifetimeSpend": "Gasto total",
+    "phone": "Teléfono",
+    "segment": "Segmento",
+    "viewCustomer": "Ver cliente",
+    "shippingAddress": "Dirección de envío",
+    "payment": "Pago",
+    "charged": "Cobrado {{amount}}",
+    "toast": {
+      "refunded": "Reembolso emitido",
+      "noted": "Nota añadida"
+    }
+  },
+  "refund": {
+    "title": "Emitir un reembolso",
+    "description": "Aún se pueden reembolsar hasta {{amount}} al método de pago original.",
+    "amount": "Importe",
+    "reason": "Motivo",
+    "reasons": {
+      "damaged": "Llegó dañado",
+      "wrongItem": "Artículo equivocado",
+      "notAsDescribed": "No coincide con la descripción",
+      "changedMind": "El cliente cambió de opinión",
+      "other": "Otro"
+    },
+    "restock": "Reponer stock",
+    "restockHint": "Devuelve las unidades reembolsadas al inventario disponible.",
+    "submit": "Reembolsar"
+  },
+  "products": {
+    "title": "Productos",
+    "description_one": "{{count}} producto en el catálogo",
+    "description_other": "{{count}} productos en el catálogo",
+    "add": "Añadir producto",
+    "addHint": "La creación de productos está desactivada en la demo",
+    "categories": "Categorías",
+    "allCategories": "Todos los productos",
+    "stock": "Inventario",
+    "stockFilter": {
+      "all": "Cualquier stock",
+      "in": "En stock",
+      "low": "Stock bajo",
+      "out": "Agotado"
+    },
+    "search": "Buscar productos, SKU o proveedores",
+    "sortLabel": "Ordenar productos",
+    "sort": {
+      "bestselling": "Más vendidos",
+      "newest": "Actualizados recientemente",
+      "priceAsc": "Precio: de menor a mayor",
+      "priceDesc": "Precio: de mayor a menor",
+      "stockAsc": "Stock: menor primero"
+    },
+    "grid": "Vista de cuadrícula",
+    "list": "Vista de lista",
+    "showing_one": "{{count}} producto",
+    "showing_other": "{{count}} productos",
+    "empty": {
+      "title": "No se encontraron productos",
+      "description": "Nada coincide con estos filtros.",
+      "reset": "Borrar filtros"
+    },
+    "sale": "Oferta",
+    "col": {
+      "product": "Producto",
+      "status": "Estado",
+      "inventory": "Inventario",
+      "category": "Categoría",
+      "updated": "Actualizado",
+      "price": "Precio"
+    },
+    "variants_one": "{{count}} variante",
+    "variants_other": "{{count}} variantes"
+  },
+  "editor": {
+    "loading": "Cargando producto…",
+    "back": "Volver a productos",
+    "notFound": "Producto no encontrado",
+    "general": "General",
+    "name": "Título",
+    "descriptionLabel": "Descripción",
+    "media": "Imágenes",
+    "mediaHint": "Hasta 8 imágenes de 5 MB. La primera es la portada.",
+    "dropTitle": "Suelta imágenes aquí o explora",
+    "dropHint": "PNG, JPG o WebP",
+    "pricing": "Precios",
+    "price": "Precio",
+    "compareAt": "Precio anterior",
+    "cost": "Coste por unidad",
+    "margin": "Margen",
+    "profit": "Beneficio por unidad",
+    "variants": "Variantes",
+    "variantsHint": "Tallas u opciones, cada una con su SKU, precio y stock.",
+    "addVariant": "Añadir variante",
+    "variant": "Opción",
+    "sku": "SKU",
+    "stock": "Stock",
+    "remove": "Eliminar variante",
+    "seo": "Ficha en buscadores",
+    "seoHint": "Cómo aparece este producto en los resultados de búsqueda.",
+    "handle": "Identificador de URL",
+    "handleHint": "Minúsculas, números y guiones.",
+    "seoTitle": "Título de página",
+    "seoDescription": "Meta descripción",
+    "status": "Estado",
+    "statusHint": {
+      "active": "Visible en todos los canales de venta.",
+      "draft": "Oculto hasta que lo publiques.",
+      "archived": "Oculto y excluido de los informes."
+    },
+    "organization": "Organización",
+    "category": "Categoría",
+    "vendor": "Proveedor",
+    "tags": "Etiquetas",
+    "performance": "Rendimiento",
+    "sold": "Unidades vendidas",
+    "rating": "Valoración",
+    "unsaved_one": "{{count}} cambio sin guardar",
+    "unsaved_other": "{{count}} cambios sin guardar",
+    "discard": "Descartar",
+    "save": "Guardar",
+    "toast": {
+      "saved": "Producto guardado"
+    }
+  },
+  "categories": {
+    "title": "Categorías",
+    "description": "Organiza el catálogo en colecciones. El orden aquí es el orden en la tienda.",
+    "products_one": "{{count}} producto",
+    "products_other": "{{count}} productos",
+    "visible": "Mostrar {{name}} en la tienda",
+    "moveUp": "Subir {{name}}",
+    "moveDown": "Bajar {{name}}",
+    "stats": {
+      "collections": "Colecciones principales",
+      "subcategories": "Subcategorías",
+      "hidden": "Ocultas en la tienda"
+    },
+    "tree": "Árbol de categorías",
+    "treeHint": "Usa las flechas para reordenar dentro de un nivel."
+  },
+  "customers": {
+    "title": "Clientes",
+    "description": "Todas las personas que te han comprado, agrupadas por comportamiento.",
+    "since": "Cliente desde {{date}}",
+    "loading": "Cargando cliente",
+    "subscribed": "Suscrito al correo",
+    "notSubscribed": "No suscrito",
+    "col": {
+      "customer": "Cliente",
+      "segment": "Segmento",
+      "location": "Ubicación",
+      "orders": "Pedidos",
+      "spent": "Gastado",
+      "lastOrder": "Último pedido"
+    },
+    "aov": "Pedido medio",
+    "recentOrders": "Pedidos recientes",
+    "stats": {
+      "total": "Clientes",
+      "vipHint": "Gasto total superior a 1.800 $",
+      "riskHint": "Sin pedidos en 120 días",
+      "ltv": "Valor medio del cliente",
+      "ltvHint": "En la vista actual",
+      "totalHint": "En todos los segmentos"
+    },
+    "segments": "Segmentos",
+    "all": "Todos",
+    "search": "Buscar nombre, correo o ciudad",
+    "empty": "Ningún cliente coincide con la búsqueda",
+    "truncated": "Mostrando los {{shown}} más recientes de {{total}} clientes"
+  },
+  "reviews": {
+    "title": "Reseñas",
+    "description": "Aprueba las reseñas antes de que aparezcan en las fichas de producto.",
+    "summary": "Resumen de valoraciones",
+    "basedOn_one": "Basado en {{count}} reseña publicada",
+    "basedOn_other": "Basado en {{count}} reseñas publicadas",
+    "tabs": {
+      "pending": "Por revisar",
+      "approved": "Publicadas",
+      "rejected": "Rechazadas",
+      "all": "Todas"
+    },
+    "empty": {
+      "title": "Cola vacía",
+      "description": "Las nuevas reseñas aparecerán aquí."
+    },
+    "verified": "Compra verificada",
+    "on": "Reseña de",
+    "reject": "Rechazar",
+    "approve": "Aprobar",
+    "undo": "Deshacer",
+    "toast": {
+      "approved": "Reseña de {{author}} publicada",
+      "rejected": "Reseña de {{author}} rechazada"
+    }
+  },
+  "discounts": {
+    "title": "Descuentos",
+    "description": "Códigos y ofertas automáticas, con el uso frente a sus límites.",
+    "new": "Crear descuento",
+    "copy": "Copiar código",
+    "off": "de descuento",
+    "appliesTo": "Se aplica a",
+    "minSpend": "Gasto mínimo",
+    "used": "Canjes",
+    "noEnd": "sin fecha de fin",
+    "end": "Finalizar ya",
+    "status": {
+      "active": "Activo",
+      "scheduled": "Programado",
+      "expired": "Caducado"
+    },
+    "groups": {
+      "active": "Activos",
+      "scheduled": "Programados",
+      "expired": "Caducados"
+    },
+    "type": {
+      "percentage": "Porcentaje",
+      "fixed": "Importe fijo",
+      "free_shipping": "Envío gratis"
+    },
+    "create": {
+      "title": "Crear código de descuento",
+      "description": "Los clientes introducen el código al pagar.",
+      "code": "Código",
+      "generate": "Generar",
+      "type": "Tipo",
+      "percent": "Porcentaje de descuento",
+      "amount": "Importe de descuento",
+      "minSpend": "Gasto mínimo",
+      "limit": "Límite de usos",
+      "limitHint": "Déjalo vacío para ilimitado",
+      "appliesTo": "Se aplica a",
+      "appliesToPlaceholder": "p. ej. Abrigos",
+      "submit": "Crear código"
+    },
+    "toast": {
+      "created": "Descuento creado",
+      "updated": "Descuento finalizado"
+    }
+  },
+  "giftCards": {
+    "title": "Tarjetas regalo",
+    "description": "Tarjetas emitidas, su saldo pendiente y dónde se han usado.",
+    "new": "Emitir tarjeta regalo",
+    "never": "Nunca",
+    "search": "Buscar código, nombre o correo",
+    "stats": {
+      "outstanding": "Saldo pendiente",
+      "issued": "Total emitido",
+      "redeemed": "Total canjeado",
+      "active": "Tarjetas activas"
+    },
+    "chart": {
+      "title": "Emitido frente a canjeado",
+      "description": "Valor de tarjetas por mes, últimos 12 meses",
+      "issued": "Emitido",
+      "redeemed": "Canjeado"
+    },
+    "mix": "Tarjetas por estado",
+    "mixHint": "Todas las tarjetas emitidas",
+    "tabs": {
+      "all": "Todas",
+      "active": "Activas",
+      "redeemed": "Canjeadas",
+      "expired": "Caducadas",
+      "disabled": "Desactivadas"
+    },
+    "status": {
+      "active": "Activa",
+      "redeemed": "Canjeada",
+      "expired": "Caducada",
+      "disabled": "Desactivada"
+    },
+    "col": {
+      "code": "Código",
+      "recipient": "Destinatario",
+      "balance": "Saldo",
+      "status": "Estado",
+      "issued": "Emitida",
+      "expires": "Caduca"
+    },
+    "source": {
+      "purchase": "Comprada por un cliente",
+      "staff": "Emitida por el equipo"
+    },
+    "empty": {
+      "title": "No se encontraron tarjetas regalo",
+      "description": "Prueba con otro estado u otra búsqueda."
+    },
+    "sheet": {
+      "title": "Tarjeta regalo",
+      "description": "Saldo, destinatario e historial de canjes.",
+      "copy": "Copiar código",
+      "of": "de {{value}} de valor inicial",
+      "email": "Correo",
+      "source": "Origen",
+      "note": "Mensaje",
+      "history": "Historial de canjes",
+      "noHistory": "Esta tarjeta aún no se ha usado.",
+      "disable": "Desactivar tarjeta",
+      "enable": "Reactivar tarjeta"
+    },
+    "issue": {
+      "title": "Emitir una tarjeta regalo",
+      "description": "El destinatario recibe el código por correo y puede usarlo al pagar.",
+      "name": "Nombre del destinatario",
+      "email": "Correo del destinatario",
+      "value": "Importe",
+      "valueRange": "Introduce un importe entre 5 US$ y 2000 US$",
+      "expiry": "Caduca a los",
+      "expiryOptions": {
+        "6": "6 meses",
+        "12": "12 meses",
+        "24": "24 meses",
+        "never": "Nunca"
+      },
+      "note": "Mensaje",
+      "noteHint": "Opcional. Se incluye en el correo al destinatario.",
+      "submit": "Emitir tarjeta"
+    },
+    "toast": {
+      "issued": "Tarjeta regalo emitida",
+      "updated": "Tarjeta regalo actualizada"
+    }
+  },
+  "carts": {
+    "title": "Carritos abandonados",
+    "description": "Compras que se empezaron pero no se completaron, y cuántas se recuperaron.",
+    "sendAll_one": "Enviar correo a {{count}} carrito",
+    "sendAll_other": "Enviar correo a {{count}} carritos",
+    "send": "Enviar correo",
+    "items_one": "{{count}} artículo",
+    "items_other": "{{count}} artículos",
+    "confirm": {
+      "title": "¿Enviar correos de recuperación?",
+      "description_one": "{{count}} cliente sin contactar recibirá un recordatorio con un enlace a su carrito.",
+      "description_other": "{{count}} clientes sin contactar recibirán un recordatorio con un enlace a su carrito.",
+      "submit": "Enviar correos"
+    },
+    "stats": {
+      "abandonedValue": "Valor en carritos",
+      "recoveredValue": "Ingresos recuperados",
+      "recoveryRate": "Tasa de recuperación",
+      "pendingEmails": "Sin contactar"
+    },
+    "chart": {
+      "title": "Tasa de recuperación",
+      "description": "Porcentaje de carritos abandonados recuperados por semana",
+      "rate": "Tasa de recuperación",
+      "goal": "Objetivo"
+    },
+    "funnel": {
+      "title": "Embudo de recuperación",
+      "description": "Últimas ocho semanas",
+      "all": "Abandonados",
+      "sent": "Con correo",
+      "recovered": "Recuperados"
+    },
+    "tabs": {
+      "all": "Todos",
+      "not_sent": "Sin contactar",
+      "sent": "Correo enviado",
+      "recovered": "Recuperados"
+    },
+    "recovery": {
+      "not_sent": "Sin contactar",
+      "sent": "Correo enviado",
+      "recovered": "Recuperado"
+    },
+    "col": {
+      "customer": "Cliente",
+      "items": "Artículos",
+      "value": "Valor del carrito",
+      "lastSeen": "Última visita",
+      "recovery": "Recuperación",
+      "action": "Acción"
+    },
+    "step": {
+      "cart": "Carrito",
+      "shipping": "Datos de envío",
+      "payment": "Pago"
+    },
+    "sheet": {
+      "step": "Abandonado en",
+      "emailSent": "Correo enviado",
+      "recovered": "Recuperado",
+      "viewCustomer": "Ver perfil del cliente"
+    },
+    "empty": {
+      "title": "No hay carritos aquí",
+      "description": "Los carritos abandonados en este estado aparecerán aquí."
+    },
+    "toast": {
+      "sent": "Correo de recuperación enviado"
+    }
+  },
+  "reports": {
+    "title": "Informes de ventas",
+    "description": "Ingresos por canal, categoría y producto en el periodo que elijas.",
+    "export": "Exportar CSV",
+    "period": "Periodo",
+    "channel": "Canal",
+    "vsPrevious": "frente al periodo anterior",
+    "periods": {
+      "7d": "Últimos 7 días",
+      "30d": "Últimos 30 días",
+      "60d": "Últimos 60 días"
+    },
+    "summary": {
+      "revenue": "Ingresos netos",
+      "orders": "Pedidos",
+      "units": "Unidades vendidas",
+      "aov": "Valor medio del pedido"
+    },
+    "trend": {
+      "title": "Ingresos en el tiempo",
+      "description": "Ingresos netos diarios por canal de venta"
+    },
+    "channels": {
+      "title": "Ventas por canal",
+      "description": "Reparto de los ingresos netos"
+    },
+    "categories": {
+      "title": "Ventas por categoría",
+      "description": "Ingresos de producto por categoría principal"
+    },
+    "products": {
+      "title": "Productos más vendidos",
+      "description_one": "Top 10 de {{count}} producto vendido",
+      "description_other": "Top 10 de {{count}} productos vendidos"
+    },
+    "col": {
+      "product": "Producto",
+      "category": "Categoría",
+      "units": "Unidades",
+      "orders": "Pedidos",
+      "revenue": "Ingresos",
+      "share": "Cuota"
+    },
+    "units_one": "{{count}} unidad",
+    "units_other": "{{count}} unidades",
+    "empty": {
+      "title": "No hay ventas en este periodo",
+      "description": "Elige un periodo más largo u otro canal."
+    }
+  },
+  "overview": {
+    "title": "Rendimiento de la tienda",
+    "description": "Ventas, logística y clientes en todos los canales.",
+    "year": "Año",
+    "kpis": {
+      "revenue": "Ingresos",
+      "costs": "Costes",
+      "profit": "Beneficio",
+      "shipments": "Envíos",
+      "hint": "respecto al mes pasado"
+    },
+    "orderRate": {
+      "title": "Pedidos anuales",
+      "description": "Pedidos por mes frente al año anterior",
+      "thisYear": "Este año",
+      "lastYear": "Año pasado"
+    },
+    "carrying": {
+      "title": "Costes de almacenamiento",
+      "description": "Almacén y mantenimiento de inventario",
+      "hint": "respecto al mes pasado",
+      "value": "Coste"
+    },
+    "performance": {
+      "title": "Rendimiento",
+      "description": "Pedidos por estado de pago esta semana",
+      "target": "Objetivo",
+      "paid": "Pagado",
+      "pending": "Pendiente"
+    },
+    "channels": {
+      "title": "Ventas por canal",
+      "center": "Ventas netas"
+    },
+    "orders": {
+      "title": "Pedidos recientes",
+      "description": "Últimos pedidos de todos los canales",
+      "order": "Pedido",
+      "customer": "Cliente",
+      "product": "Producto",
+      "date": "Fecha",
+      "amount": "Importe",
+      "status": "Estado",
+      "quantity": "Cant. {{count}}",
+      "viewAll": "Ver todos los pedidos"
+    },
+    "status": {
+      "paid": "Pagado",
+      "pending": "Pendiente",
+      "shipped": "Enviado",
+      "refunded": "Reembolsado"
+    },
+    "products": {
+      "title": "Productos más vendidos",
+      "description": "Ordenados por ingresos",
+      "product": "Producto",
+      "sold": "Vendidos",
+      "revenue": "Ingresos",
+      "stock": "Stock",
+      "trend": "Tendencia",
+      "lowStock": "Bajo"
+    },
+    "ratings": {
+      "title": "Mejores clientes",
+      "description": "Valoración media y gasto",
+      "orders": "{{count}} pedidos"
+    },
+    "summary": {
+      "title": "Requiere atención"
+    },
+    "error": {
+      "title": "No se pudieron cargar los datos de la tienda",
+      "description": "Revisa tu conexión e inténtalo de nuevo.",
+      "retry": "Reintentar"
+    },
+    "actions": {
+      "more": "Más opciones"
+    }
+  },
+  "customer": {
+    "back": "Todos los clientes",
+    "notFound": "Cliente no encontrado",
+    "email": "Enviar correo",
+    "ltv": "Valor de vida",
+    "spend": "Gasto a lo largo del tiempo",
+    "spendHint": "Valor de pedidos por mes, últimos 12 meses",
+    "history": "Historial de pedidos",
+    "historyHint_one": "{{count}} pedido",
+    "historyHint_other": "{{count}} pedidos",
+    "noOrders": "Todavía no hay pedidos",
+    "contact": "Contacto",
+    "addresses": "Direcciones",
+    "address": {
+      "home": "Casa",
+      "work": "Trabajo",
+      "default": "Predeterminada"
+    },
+    "notes": "Notas",
+    "notesHint": "Solo visibles para tu equipo",
+    "noNotes": "Todavía no hay notas."
+  },
+  "transactions": {
+    "title": "Transacciones",
+    "description": "Todos los cobros y reembolsos, con comisiones de procesamiento y pagos a tu banco.",
+    "volume": "Volumen de pagos",
+    "volumeHint": "Pagos liquidados en los últimos 30 días",
+    "summary": {
+      "gross": "Ventas brutas",
+      "refunds": "Reembolsos",
+      "fees": "Comisiones",
+      "net": "Neto"
+    },
+    "type": {
+      "charge": "Cobro",
+      "refund": "Reembolso"
+    },
+    "method": {
+      "card": "Tarjeta",
+      "apple_pay": "Apple Pay",
+      "paypal": "PayPal",
+      "in_person": "En persona"
+    },
+    "status": {
+      "succeeded": "Completado",
+      "pending": "Pendiente",
+      "failed": "Fallido"
+    },
+    "col": {
+      "date": "Fecha",
+      "transaction": "Transacción",
+      "method": "Método",
+      "status": "Estado",
+      "amount": "Importe",
+      "fee": "Comisión",
+      "net": "Neto"
+    },
+    "empty": {
+      "title": "Ninguna transacción coincide",
+      "description": "Prueba a quitar algún filtro de estado o método."
+    }
+  },
+  "payouts": {
+    "title": "Liquidaciones",
+    "schedule_one": "Liquidaciones {{interval}} con {{count}} día de retención",
+    "schedule_other": "Liquidaciones {{interval}} con {{count}} días de retención",
+    "interval": {
+      "daily": "diarias",
+      "weekly": "semanales",
+      "monthly": "mensuales"
+    },
+    "next": "Próxima liquidación · {{date}}",
+    "pending": "En camino a tu banco",
+    "recent": "Liquidaciones recientes",
+    "payments_one": "{{count}} cobro",
+    "payments_other": "{{count}} cobros",
+    "status": {
+      "paid": "Pagada",
+      "in_transit": "En tránsito",
+      "scheduled": "Programada"
+    }
+  },
+  "returns": {
+    "title": "Devoluciones",
+    "description": "Revisa las solicitudes de devolución y luego apruébalas y reembólsalas.",
+    "stats": {
+      "requested": "Pendientes de revisión",
+      "approved": "Pendientes de reembolso",
+      "all": "Devoluciones totales",
+      "refunded": "Reembolsado"
+    },
+    "tabs": {
+      "all": "Todas",
+      "requested": "Solicitadas",
+      "approved": "Aprobadas",
+      "rejected": "Rechazadas",
+      "refunded": "Reembolsadas"
+    },
+    "status": {
+      "requested": "Solicitada",
+      "approved": "Aprobada",
+      "rejected": "Rechazada",
+      "refunded": "Reembolsada"
+    },
+    "approve": "Aprobar",
+    "reject": "Rechazar",
+    "refund": "Reembolsar",
+    "confirm": {
+      "title": "¿Reembolsar {{number}}?",
+      "description": "Se devolverán {{amount}} al método de pago original y se descontarán del pedido {{order}}."
+    },
+    "empty": {
+      "title": "No hay nada aquí",
+      "description": "Las solicitudes de devolución en este estado aparecerán aquí."
+    },
+    "reasons": "Motivos de devolución",
+    "reasonsHint": "Todas las solicitudes de devolución",
+    "toast": {
+      "updated": "Devolución actualizada"
+    }
+  },
+  "settings": {
+    "title": "Ajustes de la tienda",
+    "description": "Datos de la tienda, envíos, impuestos y notificaciones.",
+    "tabs": {
+      "general": "General",
+      "shipping": "Envíos",
+      "taxes": "Impuestos",
+      "notifications": "Notificaciones"
+    },
+    "hints": {
+      "general": "Cómo aparece tu tienda ante los clientes y en las facturas.",
+      "shipping": "A dónde envías y cuánto pagan los clientes al finalizar la compra.",
+      "taxes": "Impuestos sobre las ventas cobrados al finalizar la compra.",
+      "notifications": "Correos enviados a los clientes y a tu equipo."
+    },
+    "discard": "Descartar",
+    "save": "Guardar cambios",
+    "toast": {
+      "saved": "Ajustes guardados"
+    },
+    "general": {
+      "storeName": "Nombre de la tienda",
+      "contactEmail": "Correo de contacto",
+      "contactEmailHint": "Los clientes responden a esta dirección.",
+      "phone": "Teléfono",
+      "currency": "Moneda de la tienda",
+      "timezone": "Zona horaria",
+      "weightUnit": "Unidad de peso",
+      "kg": "Kilogramos",
+      "lb": "Libras",
+      "orderPrefix": "Prefijo del número de pedido",
+      "orderPrefixHint": "Se muestra antes de cada número de pedido."
+    },
+    "shipping": {
+      "zone": "Zona {{index}}",
+      "zoneName": "Nombre de la zona",
+      "removeZone": "Eliminar zona",
+      "countries": "Países",
+      "countriesHint": "Pulsa Intro después de cada país.",
+      "rateName": "Nombre de la tarifa",
+      "price": "Precio",
+      "freeOver": "Gratis a partir de",
+      "never": "Nunca",
+      "removeRate": "Eliminar tarifa",
+      "addRate": "Añadir tarifa",
+      "addZone": "Añadir zona de envío",
+      "standard": "Estándar"
+    },
+    "taxes": {
+      "pricesIncludeTax": "Precios con impuestos incluidos",
+      "pricesIncludeTaxHint": "Los precios del catálogo ya incluyen el impuesto sobre las ventas.",
+      "chargeOnShipping": "Cobrar impuestos sobre el envío",
+      "chargeOnShippingHint": "Aplica también la tasa regional a los gastos de envío.",
+      "rates": "Tasas regionales",
+      "region": "Región",
+      "rate": "Tasa",
+      "remove": "Eliminar tasa",
+      "add": "Añadir región"
+    },
+    "notifications": {
+      "staffEmail": "Correo del equipo",
+      "staffEmailHint": "Recibe avisos de nuevos pedidos y de stock.",
+      "orderConfirmation": "Confirmación de pedido",
+      "orderConfirmationHint": "Envía un recibo a los clientes cuando hacen un pedido.",
+      "shippingUpdates": "Actualizaciones de envío",
+      "shippingUpdatesHint": "Avisa a los clientes cuando su pedido se envía y se entrega.",
+      "abandonedCart": "Recordatorio de carrito abandonado",
+      "abandonedCartHint": "Recuerda a los clientes los artículos que dejaron en el carrito tras 4 horas.",
+      "lowStock": "Avisos de stock bajo",
+      "lowStockHint": "Avisa al equipo cuando una variante baja del umbral.",
+      "dailySummary": "Resumen diario",
+      "dailySummaryHint": "Envía al equipo un resumen de ventas cada mañana.",
+      "threshold": "Umbral de stock bajo",
+      "thresholdHint": "Avisar cuando el stock baje de estas unidades.",
+      "units": "unidades"
+    }
+  },
+  "shell": {
+    "categories": {
+      "orders": "Pedidos",
+      "stock": "Stock",
+      "customers": "Clientes"
+    },
+    "notifications": {
+      "order": {
+        "title": "Nuevo pedido #10482",
+        "body": "Olivia Martin · 3 artículos · 248,00 $, pagado con Visa."
+      },
+      "lowStock": {
+        "title": "Stock bajo: Aero Runner 2",
+        "body": "Solo quedan 4 en la talla 42. Repón antes de la oferta del fin de semana."
+      },
+      "review": {
+        "title": "Jackson Lee dejó una reseña de 2 estrellas",
+        "body": "«Llegó tarde y la caja estaba dañada.» Responde para mantener la valoración."
+      },
+      "return": {
+        "title": "Devolución solicitada para #10433",
+        "body": "Motivo: talla incorrecta. Reembolso de 89,00 $ pendiente de aprobación."
+      },
+      "carts": {
+        "title": "12 carritos abandonados hoy",
+        "body": "1.920 $ en ingresos potenciales. Envía un correo de recuperación."
+      },
+      "payout": {
+        "title": "Transferencia de 12.480 $ enviada",
+        "body": "Debería llegar a tu cuenta en 1–2 días hábiles."
+      }
+    },
+    "create": {
+      "product": {
+        "label": "Añadir producto",
+        "description": "Publica un artículo nuevo en el catálogo"
+      },
+      "order": {
+        "label": "Crear pedido",
+        "description": "Registra un pedido telefónico o en tienda"
+      },
+      "discount": {
+        "label": "Nuevo descuento",
+        "description": "Códigos, ofertas automáticas y 2x1"
+      },
+      "giftCard": {
+        "label": "Emitir tarjeta regalo",
+        "description": "Envía saldo de tienda a un cliente"
+      }
+    },
+    "account": {
+      "store": "Ajustes de la tienda",
+      "payouts": "Transferencias"
+    }
+  }
+}

@@ -1,0 +1,425 @@
+{
+  "nav": "Data tables",
+  "title": "Data tables",
+  "description": "Server-driven, client-side and grid tables built on one reusable kit.",
+  "tabs": {
+    "label": "Table examples",
+    "server": "Server-side",
+    "client": "Client-side · 10k rows",
+    "grid": "AG Grid",
+    "spreadsheet": "Spreadsheet",
+    "tree": "Tree",
+    "masterDetail": "Master–detail",
+    "infinite": "Infinite scroll",
+    "views": "Views",
+    "reorder": "Reorder",
+    "financial": "Financial"
+  },
+  "server": {
+    "title": "Orders",
+    "description": "5,000 orders filtered, sorted and paginated by the API. The table state lives in the URL."
+  },
+  "client": {
+    "title": "Transactions",
+    "description": "10,000 rows in the browser: virtualized, groupable and editable in place.",
+    "summary": "{{rows}} rows · {{amount}} total",
+    "groupBy": "Group by",
+    "groupNone": "No grouping",
+    "expandAll": "Expand all",
+    "collapseAll": "Collapse all",
+    "edited": "Saved"
+  },
+  "grid": {
+    "title": "Inventory",
+    "description": "AG Grid Community with floating filters, pinning, selection and pagination, themed with the app tokens.",
+    "selected": "{{count}} selected",
+    "lowStock": "Low stock"
+  },
+  "columns": {
+    "number": "Order",
+    "customer": "Customer",
+    "status": "Status",
+    "channel": "Channel",
+    "country": "Country",
+    "items": "Items",
+    "total": "Total",
+    "paid": "Payment",
+    "createdAt": "Created",
+    "assignee": "Assignee",
+    "email": "Email",
+    "reference": "Reference",
+    "amount": "Amount",
+    "quantity": "Qty",
+    "date": "Date",
+    "notes": "Notes",
+    "actions": "Actions",
+    "product": "Product",
+    "sku": "SKU",
+    "category": "Category",
+    "stock": "Stock",
+    "price": "Price",
+    "rating": "Rating",
+    "updated": "Updated"
+  },
+  "status": {
+    "pending": "Pending",
+    "processing": "Processing",
+    "shipped": "Shipped",
+    "delivered": "Delivered",
+    "cancelled": "Cancelled",
+    "refunded": "Refunded"
+  },
+  "channel": {
+    "web": "Web",
+    "mobile": "Mobile app",
+    "marketplace": "Marketplace",
+    "retail": "Retail"
+  },
+  "paid": {
+    "yes": "Paid",
+    "no": "Unpaid"
+  },
+  "unassigned": "Unassigned",
+  "toolbar": {
+    "search": "Search orders, customers…",
+    "searchRows": "Search all columns…",
+    "reset": "Reset",
+    "columns": "Columns",
+    "export": "Export CSV",
+    "dateRange": "Created",
+    "total": "Total",
+    "refreshing": "Updating…"
+  },
+  "header": {
+    "asc": "Sort ascending",
+    "desc": "Sort descending",
+    "clearSort": "Clear sort",
+    "pinStart": "Pin to left",
+    "pinEnd": "Pin to right",
+    "unpin": "Unpin",
+    "hide": "Hide column",
+    "group": "Group by this column",
+    "ungroup": "Remove grouping"
+  },
+  "pagination": {
+    "rowsPerPage": "Rows per page",
+    "range": "{{from}}–{{to}} of {{total}}",
+    "selected": "{{selected}} of {{total}} selected",
+    "first": "First page",
+    "previous": "Previous page",
+    "next": "Next page",
+    "last": "Last page"
+  },
+  "filterBuilder": {
+    "trigger": "Filters",
+    "where": "Where",
+    "and": "and",
+    "or": "or",
+    "addRule": "Add filter",
+    "addGroup": "Add group",
+    "clear": "Clear all",
+    "empty": "No filters applied. Add one to narrow the results.",
+    "value": "Value",
+    "min": "Min",
+    "max": "Max",
+    "choose": "Choose…"
+  },
+  "views": {
+    "trigger": "Views",
+    "empty": "No saved views yet.",
+    "namePlaceholder": "View name",
+    "save": "Save",
+    "remove": "Delete view",
+    "saved": "View “{{name}}” saved"
+  },
+  "density": {
+    "compact": "Compact",
+    "default": "Default",
+    "comfortable": "Comfortable"
+  },
+  "range": {
+    "min": "Min",
+    "max": "Max",
+    "apply": "Apply",
+    "clear": "Clear"
+  },
+  "presets": {
+    "d7": "Last 7 days",
+    "d30": "Last 30 days",
+    "d90": "Last 90 days",
+    "d365": "Last 12 months"
+  },
+  "chips": {
+    "search": "Search: {{value}}",
+    "status": "Status: {{value}}",
+    "channel": "Channel: {{value}}",
+    "date": "Created: {{value}}",
+    "total": "Total: {{value}}",
+    "filters": "Advanced filters: {{count}}"
+  },
+  "actions": {
+    "menu": "Order actions",
+    "view": "View details",
+    "copyId": "Copy order number",
+    "copied": "Order number copied",
+    "markShipped": "Mark as shipped",
+    "markDelivered": "Mark as delivered",
+    "delete": "Delete order"
+  },
+  "bulk": {
+    "selected": "{{count}} selected",
+    "clear": "Clear selection",
+    "markShipped": "Mark shipped",
+    "export": "Export",
+    "delete": "Delete",
+    "confirmTitle": "Delete {{count}} orders?",
+    "confirmDescription": "The selected orders are removed permanently. This can't be undone.",
+    "confirm": "Delete orders",
+    "cancel": "Cancel"
+  },
+  "toast": {
+    "updated": "Orders updated",
+    "deleted": "Orders deleted",
+    "exported": "Exported {{count}} rows"
+  },
+  "detail": {
+    "customer": "Customer",
+    "summary": "Summary",
+    "created": "Created",
+    "assignee": "Assignee",
+    "payment": "Payment",
+    "close": "Close"
+  },
+  "empty": {
+    "title": "No orders match",
+    "description": "Try a different search or remove a filter."
+  },
+  "error": {
+    "title": "Could not load orders",
+    "retry": "Try again"
+  },
+  "select": "Select row",
+  "expand": "Toggle row",
+  "commands": {
+    "spreadsheet": "Open the editable spreadsheet",
+    "financial": "Open the financial statement table"
+  },
+  "spreadsheet": {
+    "title": "Spreadsheet",
+    "description": "An editable 2027 budget: keyboard navigation, ranges, copy and paste, formulas and undo.",
+    "reset": "Reset data",
+    "addRow": "Add row",
+    "undo": "Undo",
+    "redo": "Redo",
+    "total": "Total",
+    "selection": "{{count}} cells",
+    "selectionSum": "{{count}} cells · Sum {{sum}}",
+    "cols": {
+      "item": "Item",
+      "category": "Category",
+      "owner": "Owner",
+      "due": "Due",
+      "qty": "Qty",
+      "unitCost": "Unit cost",
+      "total": "Total (qty × cost)",
+      "approved": "Approved"
+    },
+    "stats": {
+      "lines": "Line items",
+      "planned": "Planned spend",
+      "approved": "Approved",
+      "share": "Approved share"
+    },
+    "keys": {
+      "edit": "edit",
+      "next": "next cell",
+      "extend": "extend selection",
+      "copyPaste": "copy and paste",
+      "undoRedo": "undo and redo",
+      "clear": "clear",
+      "toggle": "toggle checkbox"
+    }
+  },
+  "tree": {
+    "title": "Tree table",
+    "description": "Cost centers as a hierarchy, with budgets and actuals rolled up to every parent.",
+    "expandAll": "Expand all",
+    "collapseAll": "Collapse all",
+    "toggle": "Expand or collapse {{name}}",
+    "total": "Company total",
+    "note": "Parent rows sum their children. Burn above 100% means the cost center is over budget.",
+    "cols": {
+      "name": "Cost center",
+      "owner": "Owner",
+      "headcount": "Headcount",
+      "budget": "Budget",
+      "actual": "Actual",
+      "variance": "Variance",
+      "burn": "Budget used"
+    }
+  },
+  "masterDetail": {
+    "title": "Master–detail",
+    "description": "Click an account to open its invoices and contacts in a nested panel.",
+    "invoices": "Invoices",
+    "contacts": "Contacts",
+    "outstanding": "{{amount}} outstanding",
+    "contactsCount_one": "{{count}} contact",
+    "contactsCount_other": "{{count}} contacts",
+    "email": "Email {{name}}",
+    "openCount_one": "{{count}} open",
+    "openCount_other": "{{count}} open",
+    "overdueCount_one": "{{count}} overdue",
+    "overdueCount_other": "{{count}} overdue",
+    "invoiceStatus": {
+      "paid": "Paid",
+      "open": "Open",
+      "overdue": "Overdue"
+    },
+    "cols": {
+      "account": "Account",
+      "plan": "Plan",
+      "seats": "Seats",
+      "mrr": "MRR",
+      "health": "Health",
+      "renewal": "Renewal",
+      "openInvoices": "Invoices",
+      "invoice": "Invoice",
+      "issued": "Issued",
+      "due": "Due",
+      "status": "Status",
+      "amount": "Amount"
+    }
+  },
+  "infinite": {
+    "title": "Infinite scroll",
+    "description": "An audit log of 2,000 events loaded 50 at a time from the API as you scroll.",
+    "search": "Search actor, resource or action",
+    "all": "All",
+    "empty": "No events match your filters",
+    "error": "Could not load the activity log",
+    "loaded": "{{count}} of {{total}} events loaded",
+    "loading": "Loading more…",
+    "loadMore": "Load more",
+    "end": "You've reached the end",
+    "cols": {
+      "time": "Time",
+      "actor": "Actor",
+      "action": "Action",
+      "resource": "Resource",
+      "ip": "IP address",
+      "severity": "Severity"
+    },
+    "actions": {
+      "created": "Created",
+      "updated": "Updated",
+      "deleted": "Deleted",
+      "exported": "Exported",
+      "signed_in": "Signed in",
+      "invited": "Invited"
+    },
+    "severity": {
+      "info": "Info",
+      "warning": "Warning",
+      "critical": "Critical"
+    }
+  },
+  "viewsPage": {
+    "title": "Views",
+    "description": "The same tasks as a table, cards, a list or a board. Appearance settings are saved for you.",
+    "search": "Search tasks",
+    "switcher": "View",
+    "modes": {
+      "table": "Table",
+      "cards": "Cards",
+      "list": "List",
+      "board": "Board"
+    },
+    "settings": {
+      "trigger": "Customize",
+      "title": "Display settings",
+      "density": "Row height",
+      "striped": "Striped rows",
+      "bordered": "Cell borders",
+      "stickyHeader": "Sticky header",
+      "columns": "Visible fields",
+      "reset": "Reset to defaults"
+    },
+    "cols": {
+      "key": "Key",
+      "title": "Title",
+      "project": "Project",
+      "status": "Status",
+      "priority": "Priority",
+      "assignee": "Assignee",
+      "due": "Due",
+      "progress": "Progress"
+    },
+    "status": {
+      "backlog": "Backlog",
+      "todo": "To do",
+      "in_progress": "In progress",
+      "review": "In review",
+      "done": "Done"
+    },
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High",
+      "urgent": "Urgent"
+    }
+  },
+  "reorder": {
+    "title": "Reorder",
+    "description": "Rank a backlog by dragging rows, and rearrange columns by dragging headers or applying presets.",
+    "backlog": "Feature request ranking",
+    "backlogHint": "Drag the handle, or focus it and use Space and the arrow keys.",
+    "reset": "Reset order",
+    "move": "Move \"{{title}}\"",
+    "changes": "Unsaved changes",
+    "changesHint": "The new top five, ready to save.",
+    "moved": "Moved from #{{from}} to #{{to}}",
+    "noChanges": "Drag a row to change the ranking.",
+    "save": "Save ranking",
+    "saved": "Ranking saved",
+    "columnsTitle": "Column order and widths",
+    "columnsHint": "Drag a header to move it, drag its edge to resize, or pick a preset.",
+    "presets": {
+      "planning": "Planning",
+      "triage": "Triage",
+      "compact": "Compact"
+    },
+    "cols": {
+      "request": "Request",
+      "segment": "Segment",
+      "effort": "Effort",
+      "votes": "Votes",
+      "estimate": "Points"
+    }
+  },
+  "financial": {
+    "title": "Financial statement",
+    "description": "A 2026 profit and loss with quarter groups, subtotals, budget variance and a sticky first column.",
+    "units": "Units",
+    "thousands": "Thousands",
+    "exact": "Exact",
+    "export": "Export CSV",
+    "margin": "Operating margin",
+    "note": "Costs are negative and shown in parentheses. Variance compares the full-year actual with budget.",
+    "cols": {
+      "line": "Line item",
+      "fy": "Full year",
+      "actual": "Actual",
+      "budget": "Budget",
+      "variance": "vs budget"
+    },
+    "rows": {
+      "revenue": "Revenue",
+      "totalRevenue": "Total revenue",
+      "cogs": "Cost of revenue",
+      "grossProfit": "Gross profit",
+      "opex": "Operating expenses",
+      "operatingIncome": "Operating income"
+    }
+  }
+}

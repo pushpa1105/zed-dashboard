@@ -1,0 +1,112 @@
+{
+  "nav": "Archivos",
+  "title": "Archivos",
+  "description": "Unidad compartida",
+  "sidebar": {
+    "all": "Todos los archivos",
+    "recent": "Recientes",
+    "starred": "Destacados",
+    "folders": "Carpetas",
+    "storage": "Almacenamiento",
+    "usedOf": "{{used}} de {{quota}}",
+    "types": {
+      "documents": "Documentos",
+      "images": "Imágenes",
+      "media": "Vídeo y audio",
+      "other": "Otros"
+    }
+  },
+  "toolbar": {
+    "newFolder": "Nueva carpeta",
+    "upload": "Subir",
+    "search": "Buscar en todos los archivos",
+    "sort": "Ordenar por",
+    "view": "Vista",
+    "grid": "Cuadrícula",
+    "list": "Lista",
+    "results": "Resultados de \"{{q}}\""
+  },
+  "sort": {
+    "name": "Nombre",
+    "updated": "Última modificación",
+    "size": "Tamaño",
+    "type": "Tipo"
+  },
+  "columns": {
+    "name": "Nombre",
+    "owner": "Propietario",
+    "modified": "Modificado",
+    "size": "Tamaño",
+    "actions": "Acciones"
+  },
+  "item": {
+    "folderMeta": "{{count}} elementos · {{size}}",
+    "items": "{{count}} elementos",
+    "select": "Seleccionar {{name}}",
+    "selectAll": "Seleccionar todo",
+    "starred": "Destacado"
+  },
+  "actions": {
+    "open": "Abrir",
+    "preview": "Vista previa",
+    "rename": "Cambiar nombre",
+    "star": "Añadir a destacados",
+    "unstar": "Quitar de destacados",
+    "delete": "Eliminar",
+    "download": "Descargar",
+    "more": "Más acciones para {{name}}"
+  },
+  "bulk": {
+    "selected": "{{count}} seleccionados",
+    "star": "Destacar",
+    "clear": "Limpiar selección"
+  },
+  "preview": {
+    "type": "Tipo",
+    "opened": "Última apertura",
+    "downloadDemo": "Las descargas están desactivadas en la demo."
+  },
+  "types": {
+    "folder": "Carpeta",
+    "image": "Imagen",
+    "pdf": "Documento PDF",
+    "doc": "Documento",
+    "sheet": "Hoja de cálculo",
+    "slides": "Presentación",
+    "video": "Vídeo",
+    "audio": "Audio",
+    "archive": "Archivo comprimido",
+    "code": "Código fuente"
+  },
+  "newFolder": {
+    "title": "Nueva carpeta",
+    "description": "La carpeta se crea dentro de la carpeta que estás viendo.",
+    "name": "Nombre de la carpeta",
+    "placeholder": "p. ej. Contratos 2026",
+    "create": "Crear carpeta",
+    "cancel": "Cancelar"
+  },
+  "upload": {
+    "title": "Subir archivos",
+    "description": "Los archivos se añaden a la carpeta actual. Hasta 10 archivos de 50 MB.",
+    "drop": "Suelta los archivos aquí o explora",
+    "hint": "Cualquier tipo de archivo",
+    "done": "Listo"
+  },
+  "confirm": {
+    "title": "¿Eliminar {{count}} elementos?",
+    "description": "Las carpetas se eliminan con todo su contenido. No se puede deshacer."
+  },
+  "empty": {
+    "folder": "Esta carpeta está vacía",
+    "folderHint": "Sube archivos o crea una carpeta para empezar.",
+    "noResults": "Ningún archivo coincide con la búsqueda",
+    "noStarred": "Aún no hay nada destacado"
+  },
+  "toast": {
+    "folderCreated": "Carpeta creada",
+    "deleted": "Eliminado",
+    "renamed": "Renombrado a {{name}}",
+    "uploaded": "{{count}} archivos subidos"
+  }
+}

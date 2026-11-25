@@ -1,0 +1,113 @@
+{
+  "nav": "Facturas",
+  "title": "Facturas",
+  "description": "Factura a clientes, controla los cobros y reclama las facturas vencidas.",
+  "commands": {
+    "create": "Crear una factura"
+  },
+  "tiles": {
+    "sent": "Pendientes",
+    "overdue": "Vencidas",
+    "paid": "Cobradas",
+    "draft": "Borradores",
+    "count": "{{count}} facturas"
+  },
+  "status": {
+    "all": "Todas",
+    "draft": "Borrador",
+    "sent": "Enviada",
+    "paid": "Cobrada",
+    "overdue": "Vencida"
+  },
+  "list": {
+    "new": "Nueva factura",
+    "search": "Buscar número o cliente",
+    "daysLate": "{{count}} días de retraso",
+    "dueToday": "Vence hoy",
+    "dueIn": "Vence en {{count}} días",
+    "emptyTitle": "No hay facturas aquí",
+    "emptyHint": "Prueba otro estado u otra búsqueda."
+  },
+  "columns": {
+    "number": "Factura",
+    "customer": "Cliente",
+    "issued": "Emitida",
+    "due": "Vencimiento",
+    "status": "Estado",
+    "amount": "Importe"
+  },
+  "editor": {
+    "title": "Nueva factura",
+    "description": "Descripción",
+    "billTo": "Facturar a",
+    "billToHint": "Cliente, fechas y condiciones de pago.",
+    "customer": "Cliente",
+    "customerPlaceholder": "Buscar clientes",
+    "issueDate": "Fecha de emisión",
+    "dueDate": "Fecha de vencimiento",
+    "terms": "Condiciones de pago",
+    "net": "{{days}} días",
+    "items": "Conceptos",
+    "itemsHint": "Productos y servicios de esta factura.",
+    "descriptionPlaceholder": "p. ej. Plan Growth, anual",
+    "quantity": "Cant.",
+    "unitPrice": "Precio unitario",
+    "lineTotal": "Importe",
+    "addLine": "Añadir línea",
+    "removeLine": "Quitar línea {{index}}",
+    "notes": "Notas",
+    "defaultNotes": "Pago por transferencia bancaria antes del vencimiento. Gracias por su confianza.",
+    "summary": "Resumen",
+    "number": "Se numerará como {{number}}",
+    "noCustomer": "Elige un cliente para ver su dirección de facturación.",
+    "discount": "Descuento",
+    "taxRate": "Impuesto",
+    "saveAndSend": "Guardar y enviar",
+    "saveDraft": "Guardar borrador",
+    "cancel": "Cancelar",
+    "subtitle": "Los totales se actualizan al escribir. Guárdala como borrador o envíala ya."
+  },
+  "totals": {
+    "subtotal": "Subtotal",
+    "discount": "Descuento",
+    "tax": "Impuesto ({{rate}} %)",
+    "total": "Total",
+    "totalDue": "Total a pagar"
+  },
+  "document": {
+    "invoice": "Factura",
+    "billTo": "Facturar a",
+    "issued": "Emitida",
+    "due": "Vence",
+    "paid": "Cobrada",
+    "qty": "Cant.",
+    "taxId": "NIF",
+    "payment": "Datos de pago",
+    "bankTransfer": "Transferencia bancaria a",
+    "reference": "Referencia:"
+  },
+  "detail": {
+    "back": "Todas las facturas",
+    "loading": "Factura",
+    "status": "Estado",
+    "dueOn": "Vence el {{date}}",
+    "paidOn": "Cobrada el {{date}}",
+    "send": "Enviar al cliente",
+    "markPaid": "Marcar como cobrada",
+    "download": "Descargar",
+    "print": "Imprimir",
+    "activity": "Actividad",
+    "notFound": "Factura no encontrada",
+    "notFoundHint": "Puede que se haya eliminado o que el enlace sea incorrecto.",
+    "events": {
+      "created": "Factura creada",
+      "sent": "Enviada a {{email}}",
+      "paid": "Cobro de {{amount}} recibido"
+    }
+  },
+  "toast": {
+    "sent": "{{number}} enviada",
+    "draft": "{{number}} guardada como borrador",
+    "paid": "{{number}} marcada como cobrada"
+  }
+}

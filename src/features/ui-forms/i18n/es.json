@@ -1,0 +1,953 @@
+{
+  "nav": "Formularios",
+  "tabs": {
+    "forms": "Formularios y campos",
+    "selects": "Selectores y autocompletado",
+    "overlays": "Diálogos y superposiciones",
+    "layouts": "Diseños de formulario",
+    "auth": "Acceso",
+    "inputs": "Más campos"
+  },
+  "commands": {
+    "selects": "Abrir demos de selectores",
+    "overlays": "Abrir demos de diálogos",
+    "layouts": "Abrir ejemplos de diseño de formularios",
+    "auth": "Abrir formularios de acceso y seguridad",
+    "inputs": "Abrir demos de campos avanzados"
+  },
+  "forms": {
+    "title": "Formularios y campos",
+    "description": "Formularios validados, un asistente por pasos y todos los campos del kit."
+  },
+  "validation": {
+    "companyName": "Usa al menos 2 caracteres",
+    "website": "Introduce un dominio como acme.com",
+    "teams": "Elige al menos un equipo",
+    "password": "Mínimo 8 caracteres, con al menos un número",
+    "workspace": "Pon nombre al espacio (3+ caracteres)",
+    "slug": "Solo minúsculas, números y guiones",
+    "code": "Introduce el código de 6 dígitos"
+  },
+  "company": {
+    "title": "Perfil de empresa",
+    "description": "Un formulario real: esquema zod, react-hook-form, búsquedas asíncronas y barra de guardado fija.",
+    "sections": {
+      "company": "Empresa",
+      "companyHint": "Cómo ven tu organización tu equipo y tus clientes.",
+      "contact": "Contacto y ubicación",
+      "contactHint": "Se usa en facturas y ajustes regionales.",
+      "team": "Equipo y acceso",
+      "teamHint": "Quién trabaja aquí y quién administra la cuenta.",
+      "branding": "Marca y complementos",
+      "brandingHint": "Color de acento para informes y complementos opcionales.",
+      "notifications": "Notificaciones",
+      "notificationsHint": "Elige qué llega a la bandeja del administrador."
+    },
+    "logo": "Subir logotipo",
+    "removeLogo": "Quitar",
+    "logoHint": "SVG, PNG o JPG. Cuadrado, mínimo 256 px.",
+    "name": "Nombre de la empresa",
+    "website": "Sitio web",
+    "industry": "Sector",
+    "industryPlaceholder": "Busca o añade un sector",
+    "founded": "Fundación",
+    "size": "Tamaño de la empresa",
+    "sizeHint": "{{range}} personas",
+    "sizes": {
+      "1-10": "Startup",
+      "11-50": "Pequeña",
+      "51-200": "Mediana",
+      "201+": "Grande"
+    },
+    "about": "Descripción",
+    "aboutHint": "Se muestra en tu perfil público. Texto plano.",
+    "country": "País",
+    "countryPlaceholder": "Empieza a escribir un país",
+    "phone": "Teléfono",
+    "budget": "Presupuesto anual de software",
+    "budgetHint": "Nos ayuda a sugerir el plan adecuado.",
+    "teams": "Equipos",
+    "teamsPlaceholder": "Selecciona equipos",
+    "keywords": "Palabras clave",
+    "keywordsHint": "Pulsa Intro o coma para añadir. Hasta 8.",
+    "adminEmail": "Correo del administrador",
+    "password": "Contraseña del administrador",
+    "brandColor": "Color de marca",
+    "addonsLabel": "Complementos",
+    "addons": {
+      "sso": "Inicio de sesión único",
+      "ssoHint": "SAML y aprovisionamiento SCIM para tu proveedor de identidad.",
+      "ai": "Resúmenes con IA",
+      "aiHint": "Resúmenes semanales de cada panel.",
+      "priority": "Soporte prioritario",
+      "priorityHint": "Respuesta en una hora y un ingeniero asignado."
+    },
+    "digest": "Resumen semanal",
+    "digestHint": "Un correo los lunes con las cifras de la semana.",
+    "security": "Alertas de seguridad",
+    "securityHint": "Nuevos accesos, cambios de rol y uso de claves API.",
+    "unsaved_one": "{{count}} cambio sin guardar",
+    "unsaved_other": "{{count}} cambios sin guardar",
+    "discard": "Descartar",
+    "save": "Guardar perfil",
+    "saved": "Perfil de empresa guardado",
+    "hint": "Edita un campo para ver la barra de guardado. Llama a la empresa “taken” para ver un error del servidor."
+  },
+  "wizard": {
+    "title": "Asistente de alta",
+    "description": "Cuatro pasos, cada uno validado antes de avanzar. Los pasos completados se pueden pulsar.",
+    "steps": {
+      "workspace": "Espacio",
+      "workspaceHint": "Nombre y URL",
+      "use": "Uso",
+      "useHint": "Qué vas a medir",
+      "team": "Equipo",
+      "teamHint": "Invitaciones y facturación",
+      "verify": "Verificar",
+      "verifyHint": "Confirma tu correo"
+    },
+    "workspaceName": "Nombre del espacio",
+    "slug": "URL",
+    "slugHint": "app.acme.io/tu-slug",
+    "uses": {
+      "analytics": "Analítica de producto",
+      "analyticsHint": "Embudos, retención e ingresos",
+      "ops": "Operaciones",
+      "opsHint": "Pedidos, envíos, inventario",
+      "crm": "Ventas y CRM",
+      "crmHint": "Embudo y cuentas"
+    },
+    "invites": "Invita a tu equipo",
+    "invitesHint": "Pega una lista de correos; se separan por comas y saltos de línea.",
+    "invalidEmail": "“{{email}}” no es un correo válido",
+    "billing": "Facturación",
+    "monthly": "Mensual",
+    "yearly": "Anual · ahorra un 20 %",
+    "codeSent": "Enviamos un código de 6 dígitos a tu correo (aquí vale cualquiera).",
+    "code": "Código de verificación",
+    "back": "Atrás",
+    "next": "Continuar",
+    "finish": "Crear espacio",
+    "stepOf": "Paso {{n}} de {{total}}",
+    "created": "Espacio creado",
+    "doneTitle": "{{name}} está listo",
+    "doneText": "Las invitaciones van de camino. Puedes cambiar todo esto en ajustes.",
+    "restart": "Empezar de nuevo"
+  },
+  "gallery": {
+    "title": "Campos",
+    "description": "Cada campo independiente con su valor en vivo.",
+    "dates": "Fechas y horas",
+    "datesText": "Rango con atajos, fecha y hora, y selector de 12 horas.",
+    "range": "Periodo del informe",
+    "dateTime": "Publicar el",
+    "time": "Reunión diaria",
+    "numbers": "Números",
+    "numbersText": "Botones de paso, formato de porcentaje y rango doble. Flechas para avanzar, Mayús ×10.",
+    "quantity": "Licencias",
+    "discount": "Descuento",
+    "priceRange": "Rango de precio",
+    "min": "Mín.",
+    "max": "Máx.",
+    "choice": "Controles de elección",
+    "choiceText": "Control segmentado, grupo de casillas con estado intermedio y valoraciones.",
+    "view": "Vista",
+    "grid": "Cuadrícula",
+    "list": "Lista",
+    "rows": "Filas",
+    "allPermissions": "Todos los permisos",
+    "rating": "Valoración",
+    "text": "Texto",
+    "textText": "Búsqueda con atajo “/”, edición en línea y @menciones.",
+    "search": "Buscar",
+    "searchPlaceholder": "Buscar facturas…",
+    "inlineEdit": "Edición en línea",
+    "titleRequired": "El título no puede estar vacío",
+    "renamed": "Nombre cambiado",
+    "mentions": "Comentario",
+    "mentionsPlaceholder": "Escribe @ para mencionar a alguien",
+    "security": "Credenciales",
+    "securityText": "Fortaleza de contraseña con reglas y código de un solo uso.",
+    "password": "Nueva contraseña",
+    "otp": "Código de un solo uso",
+    "otpDone": "Código {{code}} introducido",
+    "color": "Color",
+    "colorText": "Muestras, selector nativo y campo hexadecimal validado.",
+    "upload": "Subida de archivos",
+    "uploadText": "Arrastrar y soltar, validación de tipo y tamaño, vistas previas y progreso por archivo.",
+    "dropTitle": "Suelta aquí recibos o imágenes"
+  },
+  "states": {
+    "title": "Estados y validación",
+    "description": "Mensajes en línea y cómo se ve cada control deshabilitado, de solo lectura o inválido.",
+    "inlineTitle": "Validación en línea",
+    "inlineText": "Comprobación de disponibilidad con retardo y formato mientras escribes.",
+    "username": "Nombre de usuario",
+    "usernameShort": "Al menos 3 caracteres",
+    "usernameTaken": "@{{name}} ya está en uso",
+    "usernameFree": "Disponible",
+    "usernameHint": "Prueba uno en uso: {{names}}",
+    "email": "Correo de trabajo",
+    "emailError": "No parece una dirección de correo completa",
+    "emailOk": "Correcto",
+    "disabledTitle": "Deshabilitado y solo lectura",
+    "disabledText": "Los campos deshabilitados no reciben foco; los de solo lectura se pueden copiar.",
+    "text": "Texto",
+    "readOnly": "ID de organización",
+    "select": "Equipos",
+    "date": "Fecha de inicio",
+    "number": "Uso",
+    "rating": "Puntuación",
+    "checkbox": "Casilla",
+    "switch": "Interruptor",
+    "errorTitle": "Estados de error",
+    "errorText": "Todos los controles comparten el estilo inválido y la posición del mensaje.",
+    "website": "Sitio web",
+    "teams": "Equipos",
+    "seats": "Licencias",
+    "seatsError": "Se necesita al menos una licencia",
+    "notes": "Notas",
+    "notesError": "Añade algo más de detalle"
+  },
+  "selects": {
+    "title": "Selectores y autocompletado",
+    "description": "Desde un selector simple hasta búsquedas en servidor, jerarquías y listas dobles.",
+    "multi": "Selección múltiple",
+    "multiText": "Grupos, descripciones, seleccionar todo, opciones deshabilitadas y desborde “+N”.",
+    "capped": "Con límite y creable",
+    "cappedText": "Hasta 3 valores; escribe un nombre que no exista para crearlo.",
+    "combobox": "Combobox",
+    "comboboxText": "Un valor con búsqueda, iconos, grupos y borrado.",
+    "creatable": "Selector creable",
+    "creatableText": "Elige una etiqueta o crea una nueva al momento.",
+    "labelPlaceholder": "Elige o crea una etiqueta",
+    "asyncUser": "Autocompletado asíncrono",
+    "asyncUserText": "Busca entre 200 personas en la API simulada. Con retardo, cancelable y usable con teclado.",
+    "userPlaceholder": "Busca por nombre, correo o equipo",
+    "asyncMulti": "Selección múltiple asíncrona",
+    "asyncMultiText": "Elige varios países. Escribe “error” para ver el estado de fallo.",
+    "countryPlaceholder": "Añade países",
+    "typeToSearch": "Escribe para buscar",
+    "noMatches": "Sin resultados",
+    "loadError": "No se pudieron cargar los resultados. Inténtalo de nuevo.",
+    "tree": "Selector en árbol",
+    "treeText": "Casillas jerárquicas; los padres muestran selección parcial.",
+    "treeInline": "Árbol en línea",
+    "treeInlineText": "El mismo árbol en la página, para filtros y editores de permisos.",
+    "cascader": "Selector en cascada",
+    "cascaderText": "Región → país → ciudad, una columna por nivel.",
+    "tags": "Campo de etiquetas",
+    "tagsText": "Correos como etiquetas: validados, sin duplicados y admite pegar.",
+    "transfer": "Lista de transferencia",
+    "transferText": "Mueve permisos entre “disponibles” y “concedidos”.",
+    "available": "Disponibles",
+    "granted": "Concedidos",
+    "basic": "Selectores básicos",
+    "basicText": "Para listas cortas y fijas: selector Radix y el elemento nativo.",
+    "radixSelect": "Plan",
+    "plans": "Planes",
+    "native": "Región (nativo)"
+  },
+  "overlays": {
+    "title": "Diálogos y superposiciones",
+    "description": "Diálogos, paneles, cajones, popovers, menús y tooltips con contenido real."
+  },
+  "dialogs": {
+    "title": "Diálogos",
+    "description": "Básico, con formulario, desplazable, pantalla completa, por pasos y anidado.",
+    "basic": "Básico",
+    "basicTitle": "Tu exportación está lista",
+    "basicText": "Te enviamos un enlace de descarga. Caduca en 24 horas.",
+    "gotIt": "Entendido",
+    "form": "Invitar",
+    "formTitle": "Invita a un compañero",
+    "formText": "Recibirá un correo con un enlace para unirse.",
+    "email": "Correo",
+    "role": "Rol",
+    "member": "Miembro",
+    "admin": "Administrador",
+    "teams": "Equipos",
+    "cancel": "Cancelar",
+    "sendInvite": "Enviar invitación",
+    "invited": "Invitación enviada a {{email}}",
+    "typed": "Eliminar proyecto",
+    "typedTitle": "¿Eliminar este proyecto?",
+    "typedText": "Se eliminarán los paneles, las claves API y 14 meses de historial. No se puede deshacer.",
+    "typeToConfirm": "Escribe el nombre del proyecto para confirmar:",
+    "deleteForever": "Eliminar para siempre",
+    "deleted": "{{name}} eliminado",
+    "restored": "Restaurado",
+    "undo": "Deshacer",
+    "scroll": "Contenido largo",
+    "scrollTitle": "Condiciones de tratamiento de datos",
+    "scrollText": "Cabecera y pie quedan fijos mientras el cuerpo se desplaza.",
+    "terms": {
+      "0": "Alcance del tratamiento",
+      "1": "Subencargados",
+      "2": "Medidas de seguridad",
+      "3": "Conservación de datos"
+    },
+    "termsBody": "Tratamos los datos del cliente solo para prestar el servicio, siguiendo instrucciones documentadas. El acceso se limita al personal que lo necesita, se registra y se revisa cada trimestre. Los datos se cifran en tránsito y en reposo.",
+    "decline": "Rechazar",
+    "accept": "Aceptar",
+    "fullscreen": "Pantalla completa",
+    "fullscreenTitle": "Editar notas de versión",
+    "fullscreenText": "Editor a pantalla completa con panel de ajustes.",
+    "publish": "Publicar en el registro de cambios",
+    "publishHint": "Visible para todos los clientes",
+    "notify": "Avisar por correo",
+    "notifyHint": "2318 suscriptores",
+    "done": "Hecho",
+    "multiStep": "Por pasos",
+    "importTitle": "Importar contactos",
+    "importText": "Sube un CSV, asigna columnas y revisa.",
+    "stepSource": "Origen",
+    "stepMap": "Asignar campos",
+    "stepReview": "Revisar",
+    "stepBody": {
+      "0": "contacts-2026.csv · 1204 filas detectadas",
+      "1": "“E-mail” → correo · “Company” → organización · “Phone” → teléfono",
+      "2": "1198 nuevos · 6 duplicados se fusionarán"
+    },
+    "startImport": "Iniciar importación",
+    "importing": "Importando 1204 contactos…",
+    "imported": "Importación terminada",
+    "importFailed": "La importación falló",
+    "nested": "Anidado",
+    "nestedTitle": "Ajustes del espacio",
+    "nestedText": "Un diálogo puede abrir otro encima; el foco vuelve correctamente.",
+    "openAnother": "Abrir otro diálogo",
+    "innerTitle": "Segundo nivel",
+    "innerText": "Pulsa Esc para cerrar solo este.",
+    "close": "Cerrar",
+    "destructiveTitle": "Confirmaciones destructivas",
+    "destructiveText": "Un diálogo de alerta y una confirmación escrita seguida de un aviso con deshacer.",
+    "alert": "Revocar clave API",
+    "alertTitle": "¿Revocar esta clave API?",
+    "alertText": "Las integraciones que la usan dejarán de funcionar al instante.",
+    "revoke": "Revocar",
+    "revoked": "Clave API revocada"
+  },
+  "panels": {
+    "sheets": "Paneles laterales",
+    "sheetsText": "Un panel de filtros desde cada borde.",
+    "sides": {
+      "top": "Arriba",
+      "right": "Derecha",
+      "bottom": "Abajo",
+      "left": "Izquierda"
+    },
+    "sheetTitle": "Filtros",
+    "sheetText": "Acota la lista de transacciones.",
+    "dateRange": "Rango de fechas",
+    "amount": "Importe",
+    "onlyMine": "Solo los míos",
+    "onlyMineHint": "Creados por mí o asignados",
+    "apply": "Aplicar filtros",
+    "applied": "Filtros aplicados",
+    "reset": "Restablecer",
+    "drawers": "Cajones",
+    "drawersText": "Cajones inferiores que se cierran arrastrando y con puntos de anclaje.",
+    "drawer": "Cajón de comentarios",
+    "drawerTitle": "Enviar comentarios",
+    "drawerText": "¿Qué podría mejorar en esta página?",
+    "feedbackPlaceholder": "Tus comentarios…",
+    "send": "Enviar",
+    "thanks": "Gracias por tus comentarios",
+    "snapDrawer": "Puntos de anclaje",
+    "snapTitle": "Ruta de reparto",
+    "snapText": "Arrastra hacia arriba para ampliar y hacia abajo para reducir.",
+    "stop": "Parada {{n}}",
+    "popovers": "Popovers y tarjetas flotantes",
+    "popoversText": "Un formulario en un popover y una vista previa de perfil al pasar el ratón.",
+    "popoverForm": "Crear recordatorio",
+    "reminderTitle": "Recordatorio",
+    "reminderText": "Te avisaremos en la app y por correo.",
+    "what": "Qué",
+    "when": "Cuándo",
+    "reminderDefault": "Revisar previsión del T4",
+    "save": "Guardar recordatorio",
+    "reminderSet": "Recordatorio creado",
+    "hoverRole": "Diseñadora de producto · Equipo de diseño",
+    "tasks": "Tareas",
+    "projects": "Proyectos",
+    "rating": "Valoración",
+    "tooltips": "Tooltips",
+    "tooltipsText": "Cuatro posiciones, texto enriquecido y el motivo de un botón deshabilitado.",
+    "tooltipOn": "Tooltip: {{side}}",
+    "info": "Más información",
+    "richTooltip": "Los ingresos se reconocen cuando se paga la factura, no cuando se envía.",
+    "disabledAction": "Exportar",
+    "disabledReason": "Selecciona al menos una fila para exportar"
+  },
+  "menus": {
+    "dropdowns": "Menús desplegables",
+    "dropdownsText": "Atajos, submenús, casillas, opciones únicas y acciones de fila.",
+    "account": "Cuenta",
+    "myAccount": "Mi cuenta",
+    "profile": "Perfil",
+    "billing": "Facturación",
+    "shortcuts": "Atajos de teclado",
+    "invite": "Invitar usuarios",
+    "byEmail": "Correo",
+    "byLink": "Enlace de invitación",
+    "more": "Más…",
+    "api": "API (solo administradores)",
+    "logout": "Cerrar sesión",
+    "view": "Ver",
+    "columns": "Columnas",
+    "cols": {
+      "status": "Estado",
+      "owner": "Responsable",
+      "updated": "Última actualización"
+    },
+    "density": "Densidad",
+    "compact": "Compacta",
+    "comfortable": "Cómoda",
+    "rowActions": "Acciones de fila",
+    "edit": "Editar",
+    "editing": "Editando…",
+    "duplicate": "Duplicar",
+    "archive": "Archivar",
+    "delete": "Eliminar",
+    "trashed": "Movido a la papelera",
+    "context": "Menú contextual",
+    "contextText": "Haz clic derecho (o mantén pulsado) en el área.",
+    "rightClick": "Haz clic derecho aquí",
+    "open": "Abrir",
+    "rename": "Renombrar",
+    "share": "Compartir",
+    "copyLink": "Copiar enlace",
+    "starred": "Destacado",
+    "sortBy": "Ordenar por",
+    "sortName": "Nombre",
+    "sortDate": "Fecha de modificación",
+    "command": "Paleta de comandos",
+    "commandText": "La lista de ⌘K, integrada en la página.",
+    "commandPlaceholder": "Escribe un comando o busca…",
+    "suggestions": "Sugerencias",
+    "newDoc": "Nuevo documento",
+    "newProject": "Nuevo proyecto",
+    "favorites": "Favoritos",
+    "settings": "Ajustes",
+    "ran": "Ejecutado “{{label}}”",
+    "menubar": "Barra de menús",
+    "menubarText": "Menú de aplicación de escritorio con submenús y opciones.",
+    "file": "Archivo",
+    "export": "Exportar",
+    "print": "Imprimir…",
+    "undo": "Deshacer",
+    "redo": "Rehacer",
+    "ruler": "Mostrar regla"
+  },
+  "layouts": {
+    "title": "Diseños de formulario",
+    "description": "Un mismo formulario de cuenta en ocho diseños, más pago, encuesta y formulario largo.",
+    "jump": "Ir a un ejemplo",
+    "saved": "Cuenta guardada",
+    "savedFor": "Los cambios de {{name}} ya están activos.",
+    "searchTimezone": "Buscar zona horaria",
+    "bioPlaceholder": "Diseñadora de producto en Lisboa. Tipografía, mapas y buen café.",
+    "cancel": "Cancelar",
+    "reset": "Restablecer",
+    "save": "Guardar cambios",
+    "invite": "Invitar",
+    "openModal": "Editar cuenta en un diálogo",
+    "modalTitle": "Editar cuenta",
+    "modalDescription": "Actualiza lo básico. Tu equipo ve estos datos en las menciones.",
+    "openDrawer": "Editar cuenta en un panel",
+    "drawerTitle": "Datos de la cuenta",
+    "drawerDescription": "Todo sobre este miembro, en un panel desplazable.",
+    "settingsNav": "Secciones de ajustes",
+    "fields": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "email": "Correo electrónico",
+      "role": "Rol",
+      "timezone": "Zona horaria",
+      "bio": "Biografía",
+      "newsletter": "Novedades del producto"
+    },
+    "hints": {
+      "email": "Se usa para iniciar sesión y para avisos.",
+      "timezone": "Los informes y recordatorios siguen esta zona.",
+      "bio": "Se muestra en tu perfil. Máximo 160 caracteres.",
+      "newsletter": "Un correo al mes con las novedades."
+    },
+    "roles": {
+      "owner": "Propietario",
+      "admin": "Administrador",
+      "editor": "Editor",
+      "viewer": "Lector"
+    },
+    "sections": {
+      "profile": "Perfil",
+      "profileHint": "Cómo te ven en el espacio de trabajo.",
+      "access": "Acceso",
+      "accessHint": "Correo de acceso y nivel de permisos."
+    },
+    "settingsTabs": {
+      "profile": "Perfil",
+      "regional": "Región y rol",
+      "notifications": "Notificaciones",
+      "advanced": "Avanzado"
+    },
+    "settingsHints": {
+      "profile": "Tu nombre y una breve biografía.",
+      "regional": "Zona horaria y permisos del espacio.",
+      "notifications": "Dónde y con qué frecuencia te avisamos.",
+      "advanced": "Tokens de API y exportación de datos."
+    },
+    "demos": {
+      "stacked": {
+        "title": "Apilado",
+        "description": "Una columna con etiquetas arriba. Ideal para formularios cortos."
+      },
+      "grid": {
+        "title": "Rejilla de dos columnas",
+        "description": "Campos cortos relacionados en fila; los largos, a todo el ancho."
+      },
+      "horizontal": {
+        "title": "Horizontal",
+        "description": "Etiquetas y ayudas en una columna izquierda, como en ajustes."
+      },
+      "inline": {
+        "title": "En línea",
+        "description": "Una sola fila para acciones rápidas como invitar a alguien."
+      },
+      "cards": {
+        "title": "Secciones en tarjetas",
+        "description": "Cada grupo en su tarjeta para separar temas."
+      },
+      "settings": {
+        "title": "Ajustes con submenú",
+        "description": "Un menú lateral cambia de grupo; una opción está deshabilitada."
+      },
+      "modal": {
+        "title": "Modal",
+        "description": "Edita sin salir de la página; se cierra al guardar."
+      },
+      "drawer": {
+        "title": "Panel lateral",
+        "description": "Un panel con contenido desplazable y acciones fijas."
+      },
+      "checkout": {
+        "title": "Pago",
+        "description": "Dirección, envío, campos de tarjeta con formato y resumen en vivo."
+      },
+      "survey": {
+        "title": "Encuesta",
+        "description": "Escala NPS, estrellas, matriz de opciones, selección múltiple y comentarios."
+      },
+      "long": {
+        "title": "Formulario largo con progreso",
+        "description": "Un índice fijo que muestra lo completado y dónde estás."
+      }
+    }
+  },
+  "checkout": {
+    "cardInvalid": "Revisa el número de tarjeta",
+    "expiryInvalid": "Usa una fecha futura en formato MM/AA",
+    "cvcInvalid": "3 o 4 dígitos",
+    "paid": "Pago recibido",
+    "paidDescription": "Te enviamos el recibo por correo.",
+    "contact": "Contacto",
+    "email": "Correo para el recibo",
+    "shippingAddress": "Dirección de envío",
+    "fullName": "Nombre completo",
+    "address": "Dirección",
+    "city": "Ciudad",
+    "postcode": "Código postal",
+    "country": "País",
+    "delivery": "Entrega",
+    "standard": "Estándar",
+    "standardEta": "4–6 días hábiles",
+    "express": "Exprés",
+    "expressEta": "2 días hábiles",
+    "overnight": "Urgente",
+    "overnightEta": "Siguiente día hábil",
+    "free": "Gratis",
+    "payment": "Pago",
+    "secure": "Cifrado",
+    "cardNumber": "Número de tarjeta",
+    "expiry": "Caducidad",
+    "cvc": "Código de seguridad",
+    "billingSame": "La dirección de facturación es la misma que la de envío",
+    "testCard": "Demo: usa 4242 4242 4242 4242 con cualquier fecha futura.",
+    "summary": "Resumen del pedido",
+    "subtotal": "Subtotal",
+    "shippingCost": "Envío",
+    "tax": "Impuestos estimados",
+    "total": "Total",
+    "pay": "Pagar {{amount}}"
+  },
+  "survey": {
+    "matrixRequired": "Valora todas las filas",
+    "thanks": "Gracias por tu opinión",
+    "nps": "¿Qué probabilidad hay de que nos recomiendes a un colega?",
+    "npsLow": "Poco probable",
+    "npsHigh": "Muy probable",
+    "satisfaction": "Satisfacción general",
+    "matrix": "¿Cómo valorarías…?",
+    "scale": {
+      "1": "Mala",
+      "2": "Regular",
+      "3": "Buena",
+      "4": "Muy buena",
+      "5": "Excelente"
+    },
+    "rows": {
+      "speed": "Velocidad",
+      "reliability": "Fiabilidad",
+      "docs": "Documentación",
+      "support": "Soporte"
+    },
+    "features": "¿Qué funciones usas cada semana?",
+    "featuresHint": "Marca todas las que apliquen.",
+    "featureOptions": {
+      "dashboards": "Paneles",
+      "alerts": "Alertas",
+      "exports": "Exportaciones programadas",
+      "api": "API",
+      "sso": "Inicio de sesión único"
+    },
+    "selectAll": "Seleccionar todo",
+    "comment": "¿Algo más?",
+    "commentPlaceholder": "¿Qué deberíamos construir ahora?",
+    "submit": "Enviar opinión"
+  },
+  "longForm": {
+    "consentRequired": "Confirma que los datos son correctos",
+    "submitted": "Solicitud enviada",
+    "fields": {
+      "firstName": "Nombre",
+      "lastName": "Apellido",
+      "birthDate": "Fecha de nacimiento",
+      "email": "Correo electrónico",
+      "phone": "Teléfono",
+      "street": "Dirección",
+      "city": "Ciudad",
+      "company": "Empresa actual",
+      "jobTitle": "Puesto",
+      "startDate": "Fecha de inicio"
+    },
+    "sections": {
+      "personal": "Datos personales",
+      "contact": "Contacto",
+      "address": "Dirección",
+      "employment": "Empleo",
+      "documents": "Documentos",
+      "review": "Revisar y enviar"
+    },
+    "hints": {
+      "personal": "Tal como aparecen en tu documento.",
+      "contact": "Solo los usamos para esta solicitud.",
+      "address": "Dónde vives actualmente.",
+      "employment": "Tu puesto actual o el más reciente.",
+      "documents": "Opcional: CV, referencias o certificados.",
+      "review": "Revisa todo antes de enviar."
+    },
+    "progress": "Progreso",
+    "index": "Secciones del formulario",
+    "dropTitle": "Suelta documentos aquí",
+    "dropHint": "PDF o imágenes, hasta 3 archivos",
+    "consent": "Confirmo que la información es correcta y completa.",
+    "submit": "Enviar solicitud"
+  },
+  "auth": {
+    "title": "Formularios de acceso",
+    "description": "Pantallas de acceso, recuperación y seguridad como componentes reutilizables, conectadas a una API simulada.",
+    "toasts": {
+      "signedIn": "Sesión iniciada",
+      "signedUp": "Cuenta creada",
+      "reset": "Contraseña actualizada",
+      "verified": "Código verificado",
+      "twoFactor": "La verificación en dos pasos está activa",
+      "unlocked": "Hola de nuevo"
+    },
+    "sso": "SSO",
+    "passkey": "Llave de acceso",
+    "orEmail": "o con correo",
+    "email": "Correo electrónico",
+    "workEmail": "Correo de trabajo",
+    "password": "Contraseña",
+    "newPassword": "Nueva contraseña",
+    "confirmPassword": "Confirmar contraseña",
+    "name": "Nombre completo",
+    "forgotLink": "¿Olvidaste la contraseña?",
+    "passwordRule": "Al menos 8 caracteres",
+    "termsRequired": "Acepta los términos para continuar",
+    "passwordsMismatch": "Las contraseñas no coinciden",
+    "signIn": {
+      "title": "Inicia sesión en Northwind",
+      "description": "Hola de nuevo. Sigue donde lo dejaste.",
+      "noAccount": "¿Eres nuevo?",
+      "create": "Crear una cuenta",
+      "remember": "Mantener la sesión iniciada",
+      "submit": "Iniciar sesión"
+    },
+    "signUp": {
+      "title": "Crea tu espacio de trabajo",
+      "description": "Gratis durante 14 días. Sin tarjeta.",
+      "terms": "Acepto los Términos del servicio y la Política de privacidad.",
+      "submit": "Crear cuenta"
+    },
+    "forgot": {
+      "title": "Restablece tu contraseña",
+      "description": "Escribe tu correo y te enviaremos un enlace.",
+      "submit": "Enviar enlace",
+      "sentTitle": "Revisa tu bandeja de entrada",
+      "sentDescription": "Enviamos un enlace a {{email}}. Caduca en 30 minutos.",
+      "tryAnother": "Usar otro correo"
+    },
+    "reset": {
+      "title": "Elige una contraseña nueva",
+      "description": "Que sea distinta de las que usas en otros sitios.",
+      "submit": "Actualizar contraseña"
+    },
+    "otp": {
+      "title": "Introduce el código",
+      "description": "Enviamos un código de 6 dígitos a {{phone}}.",
+      "submit": "Verificar",
+      "resendIn": "Reenviar código en {{seconds}} s",
+      "resend": "Reenviar código",
+      "hint": "Demo: el código es 123456."
+    },
+    "twoFactor": {
+      "title": "Activa la verificación en dos pasos",
+      "description": "Escanea el código con una app de autenticación e introduce el código de 6 dígitos.",
+      "manual": "¿No puedes escanearlo? Introduce esta clave:",
+      "verify": "Verificar y continuar",
+      "codesTitle": "Guarda tus códigos de respaldo",
+      "codesDescription": "Cada código sirve una vez si pierdes acceso a tu app.",
+      "copy": "Copiar",
+      "copied": "Códigos copiados",
+      "download": "Descargar",
+      "finish": "Ya los guardé"
+    },
+    "lock": {
+      "title": "Hola de nuevo, {{name}}",
+      "description": "Tu sesión se bloqueó tras 15 minutos de inactividad.",
+      "lockedAt": "Bloqueada a las {{time}}",
+      "unlock": "Desbloquear",
+      "hint": "Contraseña demo: password"
+    },
+    "stages": {
+      "signIn": {
+        "label": "Iniciar sesión",
+        "hint": "SSO y llave de acceso, recordar sesión, enlace de recuperación."
+      },
+      "signUp": {
+        "label": "Registro",
+        "hint": "Medidor de seguridad de la contraseña y aceptación de términos."
+      },
+      "forgot": {
+        "label": "Contraseña olvidada",
+        "hint": "Solicita un enlace y muestra la confirmación."
+      },
+      "reset": {
+        "label": "Restablecer contraseña",
+        "hint": "Contraseña nueva con confirmación."
+      },
+      "otp": {
+        "label": "Código de un solo uso",
+        "hint": "Se envía al completarse; cuenta atrás para reenviar."
+      },
+      "twoFactor": {
+        "label": "Configurar 2FA",
+        "hint": "Código QR, clave manual y códigos de respaldo."
+      },
+      "lock": {
+        "label": "Pantalla de bloqueo",
+        "hint": "Vuelve a introducir la contraseña para continuar."
+      }
+    }
+  },
+  "inputs": {
+    "title": "Más campos",
+    "description": "Tamaños, etiquetas flotantes, máscaras, validación en vivo, texto enriquecido, firmas, árboles, deslizadores y subidas.",
+    "demos": {
+      "sizes": {
+        "title": "Tamaños",
+        "description": "Controles pequeños, normales y grandes alineados en la misma línea."
+      },
+      "floating": {
+        "title": "Etiquetas flotantes",
+        "description": "Variantes con borde y rellena; la etiqueta se aparta al escribir."
+      },
+      "validation": {
+        "title": "Validación en vivo",
+        "description": "Comprobaciones con retardo, icono y mensaje, y botón de borrar."
+      },
+      "masks": {
+        "title": "Máscaras",
+        "description": "Tarjeta, IBAN, teléfono, fecha y hora con formato al escribir."
+      },
+      "rich": {
+        "title": "Editor de texto enriquecido",
+        "description": "Títulos, listas, enlaces y formato sin dependencias extra."
+      },
+      "signature": {
+        "title": "Firma",
+        "description": "Dibuja con ratón, lápiz o dedo; deshacer y borrar."
+      },
+      "tree": {
+        "title": "Selector en árbol",
+        "description": "Simple, múltiple con búsqueda, ramas con carga diferida y árbol en línea."
+      },
+      "chips": {
+        "title": "Chips y etiquetas",
+        "description": "Chips seleccionables en tres estilos y etiquetas libres."
+      },
+      "sliders": {
+        "title": "Deslizadores",
+        "description": "Marcas, paradas con etiqueta, burbujas de valor, rangos y verticales."
+      },
+      "toggles": {
+        "title": "Interruptores",
+        "description": "Tamaños y posiciones, grupos de botones, control segmentado e iconos."
+      },
+      "uploads": {
+        "title": "Subida de archivos",
+        "description": "Avatar, botón de adjuntar, galería y zona de arrastrar y soltar."
+      }
+    },
+    "sizes": {
+      "sm": "Pequeño",
+      "default": "Normal",
+      "lg": "Grande",
+      "input": "Buscar miembros",
+      "select": "Frecuencia",
+      "tree": "Equipo",
+      "button": "Aplicar"
+    },
+    "freq": {
+      "daily": "Diaria",
+      "weekly": "Semanal",
+      "monthly": "Mensual"
+    },
+    "floating": {
+      "fullName": "Nombre completo",
+      "email": "Correo electrónico",
+      "company": "Empresa",
+      "website": "Sitio web",
+      "websiteError": "Añade un dominio, p. ej. northwind.io"
+    },
+    "masks": {
+      "card": "Número de tarjeta",
+      "iban": "IBAN",
+      "phone": "Teléfono (EE. UU.)",
+      "date": "Fecha",
+      "time": "Hora",
+      "raw": "Guardado"
+    },
+    "validation": {
+      "username": "Nombre de usuario",
+      "usernameOk": "Ese nombre está disponible",
+      "usernameTaken": "Ocupado, o usa caracteres distintos de a–z, 0–9 y _",
+      "website": "Sitio web",
+      "urlOk": "Correcto",
+      "urlBad": "Escribe una URL completa que empiece por https://",
+      "coupon": "Código de descuento",
+      "couponOk": "Código aplicado: descuento añadido",
+      "couponBad": "Ese código no es válido. Prueba TEAM25.",
+      "search": "Búsqueda (grande, con borrar)"
+    },
+    "rich": {
+      "placeholder": "Escribe notas de versión, un brief o un comentario…",
+      "bold": "Negrita",
+      "italic": "Cursiva",
+      "underline": "Subrayado",
+      "strike": "Tachado",
+      "heading": "Título",
+      "paragraph": "Párrafo",
+      "quote": "Cita",
+      "bullet": "Lista con viñetas",
+      "ordered": "Lista numerada",
+      "link": "Añadir enlace",
+      "unlink": "Quitar enlace",
+      "undo": "Deshacer",
+      "redo": "Rehacer",
+      "linkPrompt": "URL del enlace",
+      "words": "{{count}} palabras"
+    },
+    "signature": {
+      "placeholder": "Firma aquí",
+      "clear": "Borrar",
+      "undo": "Deshacer",
+      "signed": "Firma guardada como imagen.",
+      "unsigned": "Aún sin firmar."
+    },
+    "tree": {
+      "single": "Simple (cualquier nivel)",
+      "multi": "Múltiple con búsqueda",
+      "async": "Carpetas con carga diferida",
+      "inline": "Árbol en línea con búsqueda",
+      "filter": "Filtrar…",
+      "pickFolder": "Elige una carpeta"
+    },
+    "chips": {
+      "soft": "Suave (múltiple)",
+      "solid": "Sólido (única)",
+      "outline": "Con borde, pequeño",
+      "tags": "Etiquetas libres",
+      "tagsPlaceholder": "Escribe una etiqueta y pulsa Intro",
+      "options": {
+        "remote": "Remoto",
+        "hybrid": "Híbrido",
+        "onsite": "Presencial",
+        "fullTime": "Jornada completa",
+        "contract": "Contrato",
+        "senior": "Sénior"
+      }
+    },
+    "sliders": {
+      "marks": "Ajuste a marcas",
+      "range": "Rango de precio con burbujas",
+      "stepped": "Nivel de experiencia",
+      "min": "Mínimo",
+      "max": "Máximo",
+      "volume": "Volumen",
+      "band": "Banda",
+      "levels": {
+        "1": "Becario",
+        "2": "Júnior",
+        "3": "Intermedio",
+        "4": "Sénior",
+        "5": "Líder"
+      }
+    },
+    "toggles": {
+      "small": "Interruptor pequeño",
+      "default": "Interruptor normal",
+      "labelLeft": "Etiqueta a la izquierda",
+      "disabled": "Deshabilitado (activo)",
+      "rowLabel": "Resumen semanal",
+      "rowDescription": "Un resumen de la actividad cada lunes a las 9:00.",
+      "group": "Formato (múltiple)",
+      "align": "Alineación (única)",
+      "segmented": "Segmentado",
+      "light": "Claro",
+      "dark": "Oscuro",
+      "system": "Sistema",
+      "favorite": "Favorito",
+      "save": "Guardar",
+      "like": "Me gusta"
+    },
+    "uploads": {
+      "avatar": "Avatar",
+      "upload": "Subir",
+      "remove": "Quitar",
+      "avatarHint": "PNG o JPG, de al menos 256 px.",
+      "button": "Botón de adjuntar",
+      "attach": "Adjuntar archivos",
+      "none": "Sin archivos adjuntos",
+      "gallery": "Galería de imágenes",
+      "addImage": "Añadir imagen",
+      "cover": "Portada",
+      "dropzone": "Arrastrar y soltar",
+      "dropTitle": "Suelta archivos para subirlos",
+      "dropHint": "Imágenes o PDF, hasta 5 MB cada uno"
+    }
+  }
+}

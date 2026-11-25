@@ -1,0 +1,652 @@
+{
+  "workspace": {
+    "name": "Academy",
+    "description": "Courses, lessons, students and schedules",
+    "category": "Education"
+  },
+  "nav": {
+    "sections": {
+      "main": "Academy"
+    },
+    "home": "Home",
+    "courses": "Courses",
+    "catalog": "Catalog",
+    "catalogHint": "Every course, with filters by level and topic",
+    "myLearning": "My learning",
+    "myLearningHint": "Courses you are enrolled in",
+    "dataHint": "SQL, Python and metrics engineering",
+    "designHint": "Dashboards, data viz and design systems",
+    "engineeringHint": "React performance, Postgres and security",
+    "paths": "Learning paths",
+    "pathsHint": "Curated sequences toward a role",
+    "schedule": "Schedule",
+    "teaching": "Teaching",
+    "students": "Students",
+    "instructors": "Instructors",
+    "certificates": "Certificates",
+    "community": "Community",
+    "discussions": "Discussions",
+    "assignments": "Assignments",
+    "live": "Live",
+    "scheduleHint": "This week’s classes, workshops and exams",
+    "liveSessions": "Live sessions",
+    "liveSessionsHint": "Upcoming live classes you can join",
+    "recordings": "Recordings",
+    "recordingsHint": "Past sessions and their replays",
+    "reports": "Reports"
+  },
+  "error": {
+    "title": "Couldn’t load this page",
+    "description": "The academy data didn’t arrive. Check your connection and try again.",
+    "retry": "Retry"
+  },
+  "levels": {
+    "beginner": "Beginner",
+    "intermediate": "Intermediate",
+    "advanced": "Advanced"
+  },
+  "categories": {
+    "data": "Data & SQL",
+    "design": "Design",
+    "engineering": "Engineering",
+    "product": "Product",
+    "leadership": "Leadership"
+  },
+  "kinds": {
+    "live": "Live class",
+    "office-hours": "Office hours",
+    "workshop": "Workshop",
+    "exam": "Exam"
+  },
+  "lessonTypes": {
+    "video": "Video",
+    "reading": "Reading",
+    "quiz": "Quiz",
+    "lab": "Lab"
+  },
+  "card": {
+    "free": "Free",
+    "continue": "Continue",
+    "completed": "Completed"
+  },
+  "home": {
+    "title": "Learning",
+    "description": "Pick up where you left off.",
+    "hello": "Good to see you, {{name}}",
+    "headline": "{{minutes}} minutes to your weekly goal. One lesson gets you most of the way.",
+    "streak": "day streak",
+    "level": "Level {{level}}",
+    "weeklyGoal": "Weekly goal",
+    "nextLive": "Next live session · {{when}}",
+    "continue": "Continue learning",
+    "allCourses": "All my courses",
+    "upNext": "Up next: {{lesson}}",
+    "left": "{{time}} left",
+    "resume": "Resume",
+    "activity": {
+      "title": "Learning activity",
+      "description": "Minutes per day over the last 12 weeks",
+      "thisWeek": "Now"
+    },
+    "upcoming": {
+      "title": "Upcoming sessions",
+      "description": "Live classes you signed up for"
+    },
+    "achievements": "Achievements",
+    "recommended": "Recommended for you"
+  },
+  "catalog": {
+    "title": "Course catalog",
+    "description": "Short, practical courses taught by people who do the work.",
+    "search": "Search courses, topics or instructors…",
+    "filters": "Filters",
+    "myLearning": "Only my courses",
+    "level": "Level",
+    "topic": "Topic",
+    "price": "Price",
+    "prices": {
+      "any": "Any",
+      "free": "Free",
+      "paid": "Paid"
+    },
+    "sort": "Sort by",
+    "sorts": {
+      "popular": "Most popular",
+      "rating": "Highest rated",
+      "newest": "Recently updated",
+      "shortest": "Shortest first"
+    },
+    "results": "{{count}} courses",
+    "empty": {
+      "title": "No courses match",
+      "description": "Remove a filter or search for something broader.",
+      "reset": "Clear filters"
+    }
+  },
+  "course": {
+    "ratings": "({{count}} ratings)",
+    "students": "{{value}} learners",
+    "outcomes": "What you will learn",
+    "curriculum": "Curriculum",
+    "curriculumMeta": "{{modules}} modules · {{lessons}} lessons · {{time}}",
+    "preview": "Preview",
+    "done": "Completed",
+    "locked": "Locked until you enrol",
+    "instructor": "Your instructor",
+    "reviews": "Reviews",
+    "requirements": "Before you start",
+    "yourProgress": "Your progress",
+    "enrol": "Enrol now",
+    "enrolled": "You’re enrolled. Enjoy the course!",
+    "start": "Start the course",
+    "continue": "Continue learning",
+    "includes": {
+      "video": "{{time}} of lessons and labs",
+      "qa": "Q&A with the instructor",
+      "lifetime": "Lifetime access and updates",
+      "certificate": "Certificate of completion"
+    },
+    "quiz": "Take the course quiz",
+    "edit": "Edit curriculum"
+  },
+  "lesson": {
+    "progress": "{{done}} of {{total}} done",
+    "previous": "Previous",
+    "next": "Next lesson",
+    "markComplete": "Mark as complete",
+    "completed": "Completed",
+    "completedToast": "Lesson marked as complete",
+    "download": "Download",
+    "tabs": {
+      "transcript": "Transcript",
+      "notes": "Notes",
+      "qa": "Q&A",
+      "resources": "Resources"
+    },
+    "player": {
+      "play": "Play",
+      "pause": "Pause",
+      "seek": "Seek",
+      "volume": "Volume",
+      "speed": "Playback speed",
+      "captions": "Captions",
+      "fullscreen": "Full screen"
+    },
+    "notes": {
+      "placeholder": "Write a note at {{time}}…",
+      "add": "Save note at {{time}}",
+      "saved": "Note saved",
+      "empty": "No notes yet. Notes are pinned to the moment in the lesson."
+    },
+    "qa": {
+      "placeholder": "Ask a question about this lesson (at least 10 characters)",
+      "ask": "Ask",
+      "posted": "Question posted",
+      "answers_one": "{{count}} answer",
+      "answers_other": "{{count}} answers"
+    }
+  },
+  "schedule": {
+    "title": "Schedule",
+    "description": "Live classes, workshops, office hours and exams this week.",
+    "prev": "Previous week",
+    "next": "Next week",
+    "today": "This week",
+    "legend": "Session types",
+    "agenda": "Agenda",
+    "attendees": "{{count}} attending"
+  },
+  "students": {
+    "title": "Students",
+    "description": "Progress and grades across the courses you teach.",
+    "search": "Search students…",
+    "course": "Course",
+    "allCourses": "All courses",
+    "status": {
+      "all": "All students",
+      "on-track": "On track",
+      "at-risk": "At risk",
+      "completed": "Completed"
+    },
+    "table": {
+      "title": "Enrolments",
+      "count": "{{count}} students"
+    },
+    "columns": {
+      "student": "Student",
+      "course": "Course",
+      "progress": "Progress",
+      "grade": "Grade",
+      "lastActive": "Last active",
+      "status": "Status"
+    },
+    "daysAgo_one": "{{count}} day ago",
+    "daysAgo_other": "{{count}} days ago",
+    "grades": {
+      "title": "Grade distribution",
+      "description": "Current average per student",
+      "students": "Students"
+    },
+    "nudge": {
+      "title": "Needs a nudge",
+      "description": "{{count}} students are inactive or below 62%",
+      "action": "Email a check-in",
+      "sent": "Check-in sent to {{count}} students"
+    }
+  },
+  "certificates": {
+    "title": "Certificates",
+    "description": "Proof of the courses you finished. Share the credential ID with anyone.",
+    "badge": "Certificate of completion",
+    "issued": "Issued",
+    "hours": "Hours",
+    "grade": "Grade",
+    "credential": "Credential ID",
+    "view": "View certificate",
+    "download": "Download PDF",
+    "preview": "Certificate preview",
+    "print": "Print",
+    "close": "Close",
+    "sheet": {
+      "heading": "Certificate of completion",
+      "completed": "has successfully completed",
+      "instructor": "Instructor"
+    }
+  },
+  "instructors": {
+    "title": "Instructors",
+    "description": "Practitioners who teach what they do every day.",
+    "featured": "Most followed",
+    "teaches": "Teaches",
+    "learners": "{{value}} learners",
+    "courses_one": "{{count}} course",
+    "courses_other": "{{count}} courses"
+  },
+  "assignments": {
+    "title": "Assignments",
+    "description": "Due dates, submissions and grading across the courses you teach.",
+    "stats": {
+      "open": "Open assignments",
+      "toGrade": "Submissions to grade",
+      "average": "Average score"
+    },
+    "table": {
+      "title": "All assignments",
+      "count_one": "{{count}} assignment",
+      "count_other": "{{count}} assignments",
+      "filter": "Filter by status"
+    },
+    "status": {
+      "all": "All",
+      "open": "Open",
+      "grading": "Needs grading",
+      "closed": "Closed"
+    },
+    "columns": {
+      "assignment": "Assignment",
+      "due": "Due",
+      "submissions": "Submissions",
+      "graded": "Graded",
+      "average": "Avg. score",
+      "status": "Status"
+    },
+    "empty": {
+      "title": "No assignments here",
+      "description": "Nothing matches this status. Try another filter."
+    }
+  },
+  "grading": {
+    "back": "All assignments",
+    "brief": "Brief",
+    "meta": "Due {{date}} · {{points}} points",
+    "stats": {
+      "submitted": "Submitted",
+      "graded": "Graded",
+      "average": "Average score",
+      "late": "Late"
+    },
+    "submissions": "Submissions",
+    "columns": {
+      "student": "Student",
+      "submitted": "Submitted",
+      "score": "Score"
+    },
+    "submitted": "Submitted {{when}}",
+    "late": "Late",
+    "pending": "Not graded",
+    "download": "Download attachment",
+    "saved": "Grade saved",
+    "empty": {
+      "title": "No submissions yet",
+      "description": "Submissions appear here as students hand in their work."
+    },
+    "panel": {
+      "title": "Grade submission",
+      "score": "Score",
+      "range": "Between 0 and {{points}} points",
+      "feedback": "Feedback",
+      "feedbackPlaceholder": "What worked well, and what to improve next time…",
+      "save": "Save grade",
+      "saveNext": "Save and next"
+    }
+  },
+  "quiz": {
+    "title": "Course quiz",
+    "answered": "{{done}} of {{total}} answered",
+    "timeLeft": "Time left",
+    "navigator": "Questions",
+    "goTo": "Go to question {{number}}",
+    "question": "Question {{current}} of {{total}}",
+    "previous": "Previous",
+    "next": "Next",
+    "submit": "Submit answers",
+    "unanswered_one": "{{count}} question unanswered",
+    "unanswered_other": "{{count}} questions unanswered",
+    "intro": {
+      "title": "Check what you have learned",
+      "rules": "Answer every question before the timer runs out. You can move between questions and change answers until you submit; when time is up, your answers are submitted automatically.",
+      "questions": "Questions",
+      "time": "Time limit",
+      "pass": "Pass mark",
+      "best": "Best score",
+      "attempts_one": "{{count}} attempt",
+      "attempts_other": "{{count}} attempts",
+      "start": "Start quiz"
+    },
+    "result": {
+      "passed": "Passed",
+      "failed": "Not passed yet",
+      "summary": "{{correct}} of {{total}} correct. The pass mark is {{pass}}%.",
+      "retake": "Retake quiz",
+      "backToCourse": "Back to course",
+      "review": "Review your answers",
+      "correct": "Correct",
+      "incorrect": "Incorrect",
+      "skipped": "Not answered",
+      "yourAnswer": "Your answer",
+      "correctAnswer": "Correct answer"
+    }
+  },
+  "discussions": {
+    "title": "Discussions",
+    "description": "Questions and answers from every course you take or teach.",
+    "search": "Search discussions…",
+    "course": "Course",
+    "filterLabel": "Filter threads",
+    "filters": {
+      "all": "All threads",
+      "unanswered": "Unanswered",
+      "mine": "My threads"
+    },
+    "votes_one": "vote",
+    "votes_other": "votes",
+    "answered": "Answered",
+    "you": "You",
+    "active": "active {{when}}",
+    "replies_one": "{{count}} reply",
+    "replies_other": "{{count}} replies",
+    "empty": {
+      "title": "No threads found",
+      "description": "Try another filter or a broader search."
+    },
+    "thread": {
+      "back": "All discussions",
+      "asked": "Asked {{when}}",
+      "accepted": "Instructor answer",
+      "instructor": "Instructor",
+      "noReplies": "No replies yet. Be the first to help.",
+      "yourReply": "Your reply",
+      "placeholder": "Share an answer or a follow-up question (at least 10 characters)",
+      "post": "Post reply",
+      "posted": "Reply posted"
+    }
+  },
+  "student": {
+    "back": "All students",
+    "message": "Send email",
+    "courses": "Enrolled courses",
+    "active": "Active {{when}}",
+    "grade": "Grade {{grade}}",
+    "grades": {
+      "title": "Assignments and grades",
+      "empty": "No submissions yet."
+    },
+    "stats": {
+      "courses": "Courses",
+      "grade": "Average grade",
+      "streak": "Current streak",
+      "time": "Time learning"
+    },
+    "days_one": "{{count}} day",
+    "days_other": "{{count}} days",
+    "longest_one": "Longest: {{count}} day",
+    "longest_other": "Longest: {{count}} days",
+    "about": "Profile",
+    "email": "Email",
+    "joined": "Joined",
+    "noCertificates": "No certificates earned yet."
+  },
+  "builder": {
+    "title": "Course builder",
+    "description": "Organize sections and lessons, then publish when the course is ready.",
+    "viewCourse": "View course",
+    "published": "Published",
+    "draft": "Draft",
+    "saved": "Lesson saved",
+    "publishChanged": "Course visibility updated",
+    "overview": "Overview",
+    "stats": {
+      "sections": "Sections",
+      "lessons": "Lessons",
+      "duration": "Total length",
+      "previews": "Free previews",
+      "saved": "Last saved"
+    },
+    "mix": "Content mix",
+    "mixHint": "Minutes per lesson format",
+    "newSection": "New section",
+    "addSection": "Add section",
+    "addLesson": "Add lesson",
+    "empty": {
+      "title": "No sections yet",
+      "description": "Add a section to start building the curriculum."
+    },
+    "emptySection": "No lessons in this section yet.",
+    "drag": "Drag to reorder “{{title}}”",
+    "editLesson": "Edit lesson",
+    "deleteLesson": "Delete lesson",
+    "renameSection": "Rename section",
+    "titleRequired": "Give the section a title",
+    "sectionMeta_one": "{{count}} lesson · {{time}}",
+    "sectionMeta_other": "{{count}} lessons · {{time}}",
+    "moveUp": "Move section up",
+    "moveDown": "Move section down",
+    "deleteSection": "Delete section",
+    "deleteSectionTitle": "Delete “{{title}}”?",
+    "deleteSectionDescription_one": "Its {{count}} lesson will be removed from the curriculum.",
+    "deleteSectionDescription_other": "Its {{count}} lessons will be removed from the curriculum.",
+    "form": {
+      "addTitle": "Add lesson",
+      "editTitle": "Edit lesson",
+      "description": "Learners see the title, format and length in the curriculum.",
+      "title": "Title",
+      "type": "Format",
+      "section": "Section",
+      "duration": "Length",
+      "minutes": "min",
+      "summary": "Summary",
+      "preview": "Free preview",
+      "previewHint": "Visitors can watch this lesson before enrolling.",
+      "errors": {
+        "title": "Use at least 3 characters",
+        "duration": "Between 1 and 180 minutes"
+      }
+    }
+  },
+  "live": {
+    "title": "Live sessions",
+    "description": "Live classes with your instructors: reserve a spot, join, or watch the replay.",
+    "schedule": "Schedule session",
+    "scheduled": "Session scheduled",
+    "registrationChanged": "Registration updated",
+    "join": "Join now",
+    "full": "Full",
+    "cancel": "Cancel spot",
+    "reserve": "Reserve spot",
+    "watch": "Watch",
+    "noRecordingShort": "No replay",
+    "noRecording": "This session was not recorded.",
+    "views": "{{value}} replay views",
+    "agenda": "Agenda",
+    "attendees_one": "{{count}} attendee",
+    "attendees_other": "{{count}} attendees",
+    "now": "Live now: {{title}}",
+    "stats": {
+      "upcoming": "Upcoming sessions",
+      "going": "Spots reserved",
+      "attendance": "Average attendance",
+      "views": "Replay views"
+    },
+    "table": {
+      "title": "Sessions",
+      "count_one": "{{count}} session",
+      "count_other": "{{count}} sessions",
+      "filter": "Filter sessions"
+    },
+    "filters": {
+      "upcoming": "Upcoming",
+      "past": "Past",
+      "going": "Going"
+    },
+    "columns": {
+      "session": "Session",
+      "date": "Date",
+      "time": "Time",
+      "host": "Host",
+      "seats": "Seats",
+      "attendance": "Attendance",
+      "action": "Action"
+    },
+    "empty": {
+      "title": "No sessions here",
+      "description": "Try another filter or schedule a new session."
+    },
+    "chart": {
+      "title": "Attendance",
+      "description": "Registered vs attended, last 8 sessions",
+      "registered": "Registered",
+      "attended": "Attended"
+    },
+    "form": {
+      "title": "Schedule a live session",
+      "description": "Enrolled learners are notified and can reserve a spot.",
+      "name": "Title",
+      "namePlaceholder": "Office hours: window functions",
+      "course": "Course",
+      "startsAt": "Starts",
+      "duration": "Duration",
+      "capacity": "Capacity",
+      "capacityHint": "Maximum number of learners in the room.",
+      "errors": {
+        "title": "Use at least 3 characters",
+        "past": "Pick a time in the future",
+        "capacity": "Between 5 and 500 learners"
+      }
+    }
+  },
+  "reports": {
+    "title": "Reports",
+    "description": "Enrolments, completions and revenue across your courses.",
+    "range": "Period",
+    "ranges": {
+      "30d": "30 days",
+      "90d": "90 days",
+      "12m": "12 months"
+    },
+    "export": "Export CSV",
+    "vsPrevious": "vs previous period",
+    "metrics": {
+      "enrolments": "Enrolments",
+      "completions": "Completions",
+      "completionRate": "Completion rate",
+      "revenue": "Revenue"
+    },
+    "trend": {
+      "title": "Enrolments and completions",
+      "description": "New learners and finished courses"
+    },
+    "revenue": {
+      "title": "Revenue",
+      "description": "Course sales, net of refunds"
+    },
+    "leaderboard": {
+      "title": "Course leaderboard",
+      "description": "How each course performed in this period",
+      "rankBy": "Rank courses by",
+      "rankings": {
+        "enrolments": "Enrolments",
+        "completion": "Completion",
+        "revenue": "Revenue"
+      },
+      "course": "Course",
+      "rating": "Rating"
+    },
+    "dropoff": {
+      "title": "Drop-off by lesson",
+      "description": "Share of enrolled learners who reach each lesson",
+      "steepest": "Biggest drop at “{{title}}” (−{{points}} pts)",
+      "learners": "Learners"
+    }
+  },
+  "shell": {
+    "categories": {
+      "courses": "Courses",
+      "students": "Students",
+      "discussions": "Discussions"
+    },
+    "notifications": {
+      "submissions": {
+        "title": "8 new submissions to grade",
+        "body": "Essay 3 · UX Writing Fundamentals is due for feedback."
+      },
+      "question": {
+        "title": "Ava Thompson asked a question",
+        "body": "“In lesson 4, why do we normalise the data before training?”"
+      },
+      "live": {
+        "title": "Live class starts in 30 minutes",
+        "body": "Design Systems 101 · 64 students registered."
+      },
+      "enrolled": {
+        "title": "32 new enrolments this week",
+        "body": "Intro to Data Science is your most popular course."
+      },
+      "certificates": {
+        "title": "14 certificates issued",
+        "body": "Students completed React for Beginners."
+      },
+      "review": {
+        "title": "Course rating dropped to 4.2",
+        "body": "Two recent reviews mention outdated videos in module 2."
+      }
+    },
+    "create": {
+      "course": {
+        "label": "New course",
+        "description": "Outline modules and lessons"
+      },
+      "assignment": {
+        "label": "Create assignment",
+        "description": "Homework with a due date"
+      },
+      "live": {
+        "label": "Schedule live class",
+        "description": "Stream to enrolled students"
+      }
+    },
+    "account": {
+      "teaching": "My courses",
+      "schedule": "My schedule"
+    }
+  }
+}

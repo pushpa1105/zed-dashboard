@@ -1,0 +1,813 @@
+{
+  "workspace": {
+    "name": "SaaS",
+    "description": "API usage, plans, billing and teams",
+    "category": "Software"
+  },
+  "nav": {
+    "sections": {
+      "platform": "Platform",
+      "developers": "Developers",
+      "account": "Account"
+    },
+    "overview": "Overview",
+    "usage": "Usage",
+    "devtools": "Developer tools",
+    "keys": "API keys",
+    "webhooks": "Webhooks",
+    "logs": "Logs",
+    "edge": "Edge config",
+    "docs": "API reference",
+    "billing": "Billing",
+    "team": "Team",
+    "settings": "Settings",
+    "customers": "Customers",
+    "flags": "Feature flags",
+    "audit": "Audit log",
+    "status": "Status",
+    "support": "Support",
+    "supportAll": "All tickets",
+    "supportOpen": "Open",
+    "supportPending": "Awaiting customer",
+    "integrations": "Integrations",
+    "roles": "Roles & permissions"
+  },
+  "common": {
+    "error": "Couldn't load this data. Check your connection and try again.",
+    "cancel": "Cancel"
+  },
+  "keys": {
+    "title": "API keys",
+    "description": "Secret keys authenticate requests from your servers. Keep them out of client code.",
+    "new": "Create key",
+    "tipTitle": "Use restricted keys where you can",
+    "tip": "Give each service its own key with only the scopes it needs. Revoking one key then never takes down the others.",
+    "col": {
+      "name": "Name",
+      "key": "Key",
+      "scopes": "Scopes",
+      "lastUsed": "Last used",
+      "created": "Created",
+      "actions": "Actions"
+    },
+    "by": "Created by {{name}}",
+    "env": {
+      "live": "Live",
+      "test": "Test"
+    },
+    "revoked": "Revoked",
+    "never": "Never",
+    "revoke": "Revoke {{name}}",
+    "empty": "No API keys yet",
+    "copy": "Copy key",
+    "created": {
+      "title": "Copy your new secret key",
+      "description": "This is the only time the full key is shown.",
+      "warningTitle": "Store it somewhere safe",
+      "warning": "If you lose it, revoke the key and create a new one. We only keep a hash.",
+      "done": "I've copied it"
+    },
+    "create": {
+      "title": "Create API key",
+      "description": "Name the key after the service that will use it.",
+      "name": "Name",
+      "namePlaceholder": "e.g. Order sync worker",
+      "env": "Environment",
+      "scopes": "Scopes",
+      "submit": "Create key"
+    },
+    "scopes": {
+      "read": "Read",
+      "write": "Write",
+      "payments": "Payments",
+      "admin": "Admin"
+    },
+    "scopeHints": {
+      "read": "List and fetch resources",
+      "write": "Create, update and delete resources",
+      "payments": "Charge, refund and read payment details",
+      "admin": "Manage keys, webhooks and members"
+    },
+    "confirm": {
+      "title": "Revoke \"{{name}}\"?",
+      "description": "Requests using this key start failing immediately. This cannot be undone.",
+      "submit": "Revoke key"
+    },
+    "toast": {
+      "revoked": "Key revoked"
+    }
+  },
+  "usage": {
+    "title": "Usage",
+    "description": "Request volume against your plan, by day and by endpoint.",
+    "ranges": {
+      "14d": "14 days",
+      "30d": "30 days"
+    },
+    "quota": "Requests this period",
+    "projection": "{{used}}% used · {{projected}}% projected by month end",
+    "errors": "Errors",
+    "errorsHint": "{{rate}}% of requests",
+    "latency": "p95 latency",
+    "latencyHint": "Across all endpoints",
+    "topEndpoint": "Busiest endpoint",
+    "calls": "{{value}} calls",
+    "daily": "Requests per day",
+    "dailyHint": "Split by read, write and admin operations",
+    "kinds": {
+      "read": "Read",
+      "write": "Write",
+      "admin": "Admin"
+    },
+    "endpoints": "Endpoints",
+    "endpointsHint": "Sorted by call volume",
+    "col": {
+      "endpoint": "Endpoint",
+      "calls": "Calls",
+      "errors": "Error rate",
+      "trend": "Trend"
+    }
+  },
+  "logs": {
+    "title": "Logs",
+    "description": "Every request your API served, newest first. Click a row for the full payload.",
+    "search": "Search messages, paths or request IDs",
+    "levels": "Log levels",
+    "level": {
+      "error": "Error",
+      "warn": "Warning",
+      "info": "Info",
+      "debug": "Debug"
+    },
+    "matching_one": "{{count}} matching entry",
+    "matching_other": "{{count}} matching entries",
+    "col": {
+      "time": "Time",
+      "level": "Level",
+      "status": "Status",
+      "method": "Method",
+      "path": "Path",
+      "duration": "Duration",
+      "message": "Message"
+    },
+    "detail": {
+      "requestId": "Request ID",
+      "region": "Region",
+      "path": "Path"
+    },
+    "copy": "Copy request ID",
+    "empty": "No log entries match these filters",
+    "loadMore": "Load older entries ({{shown}} of {{total}})"
+  },
+  "webhooks": {
+    "title": "Webhooks",
+    "description": "Endpoints we notify when events happen in your account.",
+    "detail": "Endpoint details",
+    "test": "Send test event",
+    "url": "Endpoint URL",
+    "secret": "Signing secret",
+    "copySecret": "Copy signing secret",
+    "recentFailures": "Failed deliveries",
+    "events": "Subscribed events",
+    "deliveries": "Recent deliveries",
+    "noResponse": "No response",
+    "attempt_one": "Attempt {{count}}",
+    "attempt_other": "Attempt {{count}}",
+    "toggle": "Enable endpoint",
+    "eventCount_one": "{{count}} event",
+    "eventCount_other": "{{count}} events",
+    "success": "{{rate}}% success",
+    "toast": {
+      "sent": "Test event sent"
+    }
+  },
+  "billing": {
+    "title": "Billing",
+    "description": "Your plan, usage against its limits, payment method and invoices.",
+    "current": "{{plan}} plan",
+    "renews": "Renews on {{date}}",
+    "month": "mo",
+    "meters": {
+      "requests": "API requests",
+      "seats": "Seats",
+      "storage": "Storage"
+    },
+    "overSeats_one": "{{count}} seat over your plan's limit. It will be billed at $12 / month.",
+    "overSeats_other": "{{count}} seats over your plan's limit. They will be billed at $12 / month each.",
+    "paymentMethod": "Payment method",
+    "update": "Update",
+    "plans": "Plans",
+    "currentTag": "Current plan",
+    "custom": "Custom",
+    "contact": "Contact sales",
+    "upgrade": "Upgrade",
+    "downgrade": "Downgrade",
+    "invoices": "Invoices",
+    "col": {
+      "invoice": "Invoice",
+      "date": "Date",
+      "status": "Status",
+      "amount": "Amount"
+    },
+    "download": "Download PDF",
+    "status": {
+      "paid": "Paid",
+      "open": "Open",
+      "void": "Void"
+    },
+    "toast": {
+      "changed": "Plan updated"
+    }
+  },
+  "team": {
+    "title": "Team",
+    "description_one": "{{count}} person has access to this workspace.",
+    "description_other": "{{count}} people have access to this workspace.",
+    "inviteButton": "Invite members",
+    "members": "Members",
+    "mfaWarning_one": "{{count}} member has not turned on two-factor authentication.",
+    "mfaWarning_other": "{{count}} members have not turned on two-factor authentication.",
+    "mfaAll": "Everyone uses two-factor authentication.",
+    "col": {
+      "member": "Member",
+      "role": "Role",
+      "mfa": "Two-factor",
+      "active": "Last active"
+    },
+    "remove": "Remove",
+    "removeName": "Remove {{name}}",
+    "roles": {
+      "owner": "Owner",
+      "admin": "Admin",
+      "developer": "Developer",
+      "billing": "Billing",
+      "viewer": "Viewer"
+    },
+    "roleHints": {
+      "owner": "Everything, including deleting the workspace and transferring ownership.",
+      "admin": "Manage members, keys, webhooks and settings.",
+      "developer": "Create keys and webhooks, read logs and usage.",
+      "billing": "Change the plan and payment method, download invoices.",
+      "viewer": "Read-only access to dashboards and logs."
+    },
+    "mfaOn": "Enabled",
+    "mfaOff": "Off",
+    "pending": "Pending invitations",
+    "pendingHint_one": "{{count}} invitation waiting to be accepted",
+    "pendingHint_other": "{{count}} invitations waiting to be accepted",
+    "noInvites": "No pending invitations.",
+    "revokeInvite": "Revoke invitation for {{email}}",
+    "rolesTitle": "Roles",
+    "invite": {
+      "title": "Invite to workspace",
+      "description": "They get an email with a link that expires in 7 days.",
+      "emails": "Email addresses",
+      "invalid": "Enter a valid email address",
+      "role": "Role",
+      "submit_one": "Send {{count}} invitation",
+      "submit_other": "Send {{count}} invitations"
+    },
+    "confirm": {
+      "title": "Remove {{name}}?",
+      "description": "They lose access right away. Keys they created keep working.",
+      "submit": "Remove member"
+    },
+    "toast": {
+      "role": "Role updated",
+      "removed": "Member removed",
+      "invited": "Invitations sent",
+      "inviteRevoked": "Invitation revoked"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "description": "Workspace details, security policies and notifications.",
+    "sections": {
+      "general": "General",
+      "security": "Security",
+      "notifications": "Notifications",
+      "danger": "Danger zone"
+    },
+    "hints": {
+      "general": "How the workspace is named and where its data lives.",
+      "security": "Policies that apply to every member.",
+      "notifications": "Emails sent to workspace admins.",
+      "danger": "Deleting the workspace removes all keys, logs and data. There is no undo."
+    },
+    "name": "Workspace name",
+    "slug": "Workspace URL",
+    "slugHint": "Lowercase letters, numbers and dashes. Try \"taken\" to see a server error.",
+    "region": "Data region",
+    "regions": {
+      "iad1": "US East (Washington)",
+      "sfo1": "US West (San Francisco)",
+      "fra1": "EU (Frankfurt)",
+      "sin1": "Asia (Singapore)"
+    },
+    "timezone": "Time zone",
+    "requireMfa": "Require two-factor authentication",
+    "requireMfaHint": "Members without it are asked to set it up on next sign-in.",
+    "session": "Session timeout",
+    "sessionHint": "Members are signed out after this much inactivity.",
+    "minutes": "min",
+    "allowlist": "IP allowlist",
+    "allowlistHint": "Only these addresses can reach the dashboard. Leave empty to allow all.",
+    "invalidIp": "Enter an IPv4 address or CIDR range",
+    "notify": {
+      "usageAlerts": "Usage alerts",
+      "incidents": "Incident reports",
+      "weeklyDigest": "Weekly digest",
+      "productNews": "Product news"
+    },
+    "notifyHints": {
+      "usageAlerts": "At 80% and 100% of any quota.",
+      "incidents": "When an outage affects this workspace.",
+      "weeklyDigest": "Monday summary of requests, errors and spend.",
+      "productNews": "New features, at most twice a month."
+    },
+    "delete": "Delete workspace",
+    "deleteTitle": "Delete this workspace?",
+    "deleteDescription": "Type {{slug}} to confirm. Every key stops working immediately.",
+    "deleteConfirmLabel": "Workspace URL",
+    "deleteDemo": "Deleting is disabled in the demo",
+    "unsaved": "You have unsaved changes",
+    "discard": "Discard",
+    "save": "Save changes",
+    "toast": {
+      "saved": "Settings saved"
+    }
+  },
+  "overview": {
+    "title": "SaaS & API usage",
+    "description": "Information about your current plan and usage",
+    "range": {
+      "label": "Time range",
+      "6h": "6 hours",
+      "24h": "24 hours",
+      "7d": "7 days"
+    },
+    "stats": {
+      "projects": "Projects",
+      "requests": "Requests",
+      "users": "Users",
+      "storage": "Storage"
+    },
+    "apiCalls": {
+      "title": "API calls in the last {{range}}",
+      "calls": "API calls",
+      "p95": "p95 latency",
+      "errorRate": "Error rate"
+    },
+    "pnl": {
+      "title": "P&L",
+      "description": "Total profit growth of {{value}}%",
+      "center": "Share of revenue"
+    },
+    "plan": {
+      "title": "Current plan",
+      "description": "Information and usage of your current plan",
+      "plan": "{{name}} plan",
+      "perMonth": "{{price}}/mo",
+      "renews": "Renews {{date}}",
+      "manage": "Manage plan"
+    },
+    "activity": {
+      "title": "Activity",
+      "viewAll": "View all activity"
+    },
+    "integrations": {
+      "title": "Integrations",
+      "description": "Connected services for this workspace",
+      "toggle": "Toggle {{name}}",
+      "connected": "{{name}} connected",
+      "disconnected": "{{name}} disconnected"
+    },
+    "error": {
+      "title": "Couldn't load usage data",
+      "description": "Check your connection and try again.",
+      "retry": "Try again"
+    },
+    "actions": {
+      "more": "More options"
+    }
+  },
+  "customers": {
+    "title": "Customers",
+    "description": "Every tenant on the platform with plan, revenue, seat usage and account health.",
+    "search": "Search customers…",
+    "allPlans": "All plans",
+    "allRisks": "Any risk",
+    "empty": "No customers match these filters",
+    "emptyHint": "Clear the search or pick another plan or risk level.",
+    "stats": {
+      "mrr": "Monthly recurring revenue",
+      "accounts": "Accounts",
+      "trials": "In trial",
+      "atRisk": "High churn risk",
+      "atRiskHint": "{{amount}} MRR at risk"
+    },
+    "col": {
+      "customer": "Customer",
+      "plan": "Plan",
+      "status": "Status",
+      "mrr": "MRR",
+      "seats": "Seats",
+      "health": "Health score",
+      "risk": "Churn risk"
+    },
+    "plans": {
+      "hobby": "Hobby",
+      "teams": "Teams",
+      "scale": "Scale",
+      "enterprise": "Enterprise"
+    },
+    "risk": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "status": {
+      "active": "Active",
+      "trialing": "Trialing",
+      "past_due": "Past due"
+    }
+  },
+  "customer": {
+    "back": "All customers",
+    "notFound": "This customer doesn't exist or couldn't be loaded.",
+    "since": "Customer since",
+    "usage": "API requests",
+    "usageHint": "Daily requests over the last 30 days.",
+    "requests": "Requests",
+    "invoices": "Invoices",
+    "noInvoices": "No invoices on the free plan",
+    "col": {
+      "number": "Number",
+      "date": "Date",
+      "status": "Status",
+      "amount": "Amount"
+    },
+    "invoiceStatus": {
+      "paid": "Paid",
+      "open": "Open"
+    },
+    "profile": "Account",
+    "contact": "Billing contact",
+    "region": "Data region",
+    "actions": {
+      "title": "Admin actions",
+      "hint": "Changes apply immediately and are recorded in the audit log.",
+      "plan": "Plan",
+      "apply": "Change plan",
+      "trial": "Trial",
+      "trialEnds": "Trial ends {{date}}.",
+      "noTrial": "Not in a trial. Extending starts one today.",
+      "days_one": "{{count}} day",
+      "days_other": "{{count}} days",
+      "extend": "Extend"
+    },
+    "toast": {
+      "plan": "Plan changed",
+      "trial": "Trial extended"
+    }
+  },
+  "flags": {
+    "title": "Feature flags",
+    "description": "Turn features on per environment and roll them out gradually in production.",
+    "search": "Search flags…",
+    "empty": "No flags match your search",
+    "updated": "{{name}} · updated {{when}}",
+    "everyone": "Everyone",
+    "operators": {
+      "in": "in",
+      "endsWith": "ends with",
+      "gte": "≥"
+    },
+    "envs": {
+      "development": "Development",
+      "staging": "Staging",
+      "production": "Production"
+    },
+    "rollout": "Production rollout",
+    "rolloutFor": "Production rollout for {{key}}",
+    "rolloutHint": "Share of matching users who get the feature.",
+    "rolloutOff": "Turn the flag on in production to roll it out.",
+    "stats": {
+      "total": "Flags",
+      "live": "On in production",
+      "partial": "Partial rollouts"
+    },
+    "toast": {
+      "saved": "Flag updated"
+    }
+  },
+  "audit": {
+    "title": "Audit log",
+    "description": "Security-relevant actions taken in this workspace, newest first.",
+    "export": "Export CSV",
+    "search": "Search actor, action, target or IP…",
+    "categories": "Categories",
+    "category": {
+      "all": "All",
+      "auth": "Sign-in",
+      "api_keys": "API keys",
+      "team": "Team",
+      "billing": "Billing",
+      "settings": "Settings",
+      "flags": "Flags"
+    },
+    "severity": {
+      "all": "Any severity",
+      "info": "Info",
+      "warning": "Warning",
+      "critical": "Critical"
+    },
+    "col": {
+      "time": "Time",
+      "actor": "Actor",
+      "action": "Action",
+      "target": "Target",
+      "ip": "IP address",
+      "severity": "Severity"
+    },
+    "open": "Show details for {{action}}",
+    "empty": "No events match these filters",
+    "more": "Show more ({{shown}} of {{total}})",
+    "detail": {
+      "id": "Event ID"
+    }
+  },
+  "status": {
+    "title": "Status",
+    "description": "Health of every platform component, uptime over 90 days and incident history.",
+    "declareButton": "Declare incident",
+    "degradedTitle_one": "{{count}} component is affected",
+    "degradedTitle_other": "{{count}} components are affected",
+    "degradedHint": "Customers see this on the public status page. Post updates until the incident is resolved.",
+    "allGood": "All systems operational",
+    "uptime": "{{value}}% uptime",
+    "uptimeLabel": "Uptime over the last {{days}} days: {{value}}%",
+    "downtime_one": "{{count}} minute of downtime",
+    "downtime_other": "{{count}} minutes of downtime",
+    "noDowntime": "No downtime",
+    "daysAgo": "{{days}} days ago",
+    "today": "Today",
+    "component": {
+      "operational": "Operational",
+      "degraded": "Degraded",
+      "partial_outage": "Partial outage",
+      "major_outage": "Major outage"
+    },
+    "noIncidents": "No incidents reported",
+    "active": "Active incidents",
+    "past": "Past incidents",
+    "resolve": "Mark resolved",
+    "duration_one": "{{count}} min",
+    "duration_other": "{{count}} min",
+    "impact": {
+      "minor": "Minor",
+      "major": "Major",
+      "critical": "Critical"
+    },
+    "step": {
+      "investigating": "Investigating",
+      "identified": "Identified",
+      "monitoring": "Monitoring",
+      "resolved": "Resolved"
+    },
+    "declare": {
+      "title": "Declare an incident",
+      "description": "Affected components change status right away and the first update is published.",
+      "name": "Title",
+      "namePlaceholder": "e.g. Elevated API error rates",
+      "impact": "Impact",
+      "components": "Affected components",
+      "message": "First update",
+      "messageHint": "What customers see. Say what is affected and when you will post again.",
+      "submit": "Declare incident"
+    },
+    "toast": {
+      "declared": "Incident declared",
+      "resolved": "Incident resolved"
+    }
+  },
+  "integrations": {
+    "title": "Integrations",
+    "description": "Connect the tools your team already uses and choose which events they receive.",
+    "search": "Search integrations",
+    "categories": "Categories",
+    "state": "Connection",
+    "states": {
+      "all": "All",
+      "connected": "Connected",
+      "available": "Not connected"
+    },
+    "category": {
+      "all": "All",
+      "communication": "Communication",
+      "developer": "Developer tools",
+      "payments": "Payments",
+      "analytics": "Analytics",
+      "crm": "CRM",
+      "storage": "Data & storage"
+    },
+    "connected": "Connected",
+    "installs": "{{value}} installs",
+    "connect": "Connect",
+    "connectName": "Connect {{name}}",
+    "manage": "Manage",
+    "manageName": "Manage {{name}}",
+    "disconnect": "Disconnect",
+    "stats": {
+      "connected": "Connected",
+      "available": "Available",
+      "synced": "Events synced",
+      "syncedHint": "Last 30 days"
+    },
+    "empty": "No integrations match",
+    "emptyHint": "Try another category or search term.",
+    "sync": {
+      "realtime": "Real time",
+      "hourly": "Hourly",
+      "daily": "Daily"
+    },
+    "sheet": {
+      "since": "Connected since",
+      "synced": "Events synced",
+      "account": "Account or workspace",
+      "accountHint": "The workspace, organization or account ID on the other side.",
+      "events": "Events",
+      "allEvents": "All events",
+      "sync": "Sync frequency",
+      "save": "Save changes"
+    },
+    "toast": {
+      "saved": "Integration saved",
+      "disconnected": "Integration disconnected"
+    }
+  },
+  "roles": {
+    "title": "Roles & permissions",
+    "description": "Decide what each role can do. Members get the permissions of their role.",
+    "new": "New role",
+    "list": "Roles",
+    "listHint": "The number shows granted permissions.",
+    "distribution": "Members by role",
+    "people": "Members",
+    "system": "System role",
+    "members_one": "{{count}} member",
+    "members_other": "{{count}} members",
+    "duplicate": "Duplicate",
+    "granted_one": "{{count}} of {{total}} permissions",
+    "granted_other": "{{count}} of {{total}} permissions",
+    "updated": "updated {{time}}",
+    "reset": "Reset",
+    "save": "Save permissions",
+    "systemTitle": "This role is managed by the platform",
+    "systemHint": "Duplicate it to create a custom role you can edit.",
+    "matrix": "Permissions for {{name}}",
+    "resource": "Resource",
+    "permission": "{{action}} {{resource}}",
+    "actions": {
+      "read": "Read",
+      "create": "Create",
+      "update": "Update",
+      "delete": "Delete"
+    },
+    "resources": {
+      "projects": "Projects",
+      "api_keys": "API keys",
+      "webhooks": "Webhooks",
+      "logs": "Logs",
+      "members": "Members",
+      "billing": "Billing",
+      "settings": "Settings"
+    },
+    "copyName": "{{name}} (copy)",
+    "form": {
+      "title": "Create role",
+      "description": "Start from scratch or copy the permissions of an existing role.",
+      "name": "Name",
+      "summary": "Description",
+      "from": "Start from",
+      "blank": "No permissions",
+      "submit": "Create role"
+    },
+    "toast": {
+      "created": "Role created",
+      "saved": "Permissions saved"
+    }
+  },
+  "support": {
+    "title": "Support inbox",
+    "description": "Customer tickets ordered by SLA deadline. Reply, assign and resolve.",
+    "search": "Search tickets, customers or IDs",
+    "stats": {
+      "active": "Active tickets",
+      "overdue": "SLA breached",
+      "soon": "Due within 1 hour",
+      "unassigned": "Unassigned"
+    },
+    "status": {
+      "all": "All",
+      "open": "Open",
+      "pending": "Pending",
+      "resolved": "Resolved"
+    },
+    "priority": {
+      "all": "All priorities",
+      "low": "Low",
+      "normal": "Normal",
+      "high": "High",
+      "urgent": "Urgent"
+    },
+    "allAssignees": "All assignees",
+    "unassigned": "Unassigned",
+    "col": {
+      "ticket": "Ticket",
+      "customer": "Customer",
+      "priority": "Priority",
+      "status": "Status",
+      "sla": "SLA",
+      "assignee": "Assignee",
+      "updated": "Last update"
+    },
+    "open": "Open ticket {{subject}}",
+    "empty": "No tickets here",
+    "emptyHint": "Clear the filters to see every ticket.",
+    "sla": {
+      "breached": "Breached {{time}} ago",
+      "left": "{{time}} left"
+    },
+    "channel": {
+      "email": "Email",
+      "chat": "Chat",
+      "api": "API"
+    },
+    "reply": "Reply",
+    "replyPlaceholder": "Write to {{name}}…",
+    "resolve": "Resolve",
+    "reopen": "Reopen",
+    "send": "Send reply",
+    "toast": {
+      "replied": "Reply sent",
+      "updated": "Ticket updated"
+    }
+  },
+  "shell": {
+    "categories": {
+      "billing": "Billing",
+      "system": "System",
+      "team": "Team"
+    },
+    "notifications": {
+      "incident": {
+        "title": "Elevated API error rate",
+        "body": "5xx errors at 2.4% on /v1/events. Investigating."
+      },
+      "upgrade": {
+        "title": "Acme Inc upgraded to Business",
+        "body": "+$1,200 MRR · 40 seats."
+      },
+      "failed": {
+        "title": "Payment failed for Globex",
+        "body": "Card declined. Retry scheduled in 3 days."
+      },
+      "invite": {
+        "title": "Zoe Patel joined your team",
+        "body": "Invited by you as Developer."
+      },
+      "webhook": {
+        "title": "Webhook endpoint is failing",
+        "body": "https://hooks.example.com returned 503 for 15 min."
+      },
+      "key": {
+        "title": "API key expires in 7 days",
+        "body": "“Production server” key. Rotate it to avoid downtime."
+      }
+    },
+    "create": {
+      "key": {
+        "label": "Create API key",
+        "description": "For a server or integration"
+      },
+      "member": {
+        "label": "Invite member",
+        "description": "Add someone to the team"
+      },
+      "webhook": {
+        "label": "Add webhook",
+        "description": "Send events to your endpoint"
+      },
+      "flag": {
+        "label": "New feature flag",
+        "description": "Roll out to a % of users"
+      }
+    },
+    "account": {
+      "billing": "Billing & plan",
+      "keys": "API keys",
+      "usage": "Usage"
+    }
+  }
+}

@@ -1,0 +1,615 @@
+{
+  "nav": "Elements",
+  "chartToggle": {
+    "chart": "Chart",
+    "table": "Table"
+  },
+  "pages": {
+    "dataDisplay": {
+      "title": "Data display",
+      "description": "Cards, tags, lists, timelines and boards for presenting records."
+    },
+    "charts": {
+      "title": "Charts",
+      "description": "Every chart in the kit, each with an accessible table view."
+    },
+    "feedback": {
+      "title": "Feedback",
+      "description": "Toasts, alerts, progress, loading and empty states."
+    },
+    "navigation": {
+      "title": "Navigation",
+      "description": "Tabs, breadcrumbs, pagination, menus and layout primitives."
+    },
+    "trees": {
+      "title": "Trees",
+      "description": "Tree views, file trees, tree tables and org charts."
+    },
+    "timelines": {
+      "title": "Timelines",
+      "description": "Histories, roadmaps, changelogs and tracking."
+    },
+    "menus": {
+      "title": "Menus",
+      "description": "Nested menus, mega menus, dropdowns and navigation patterns."
+    },
+    "widgets": {
+      "title": "Widgets",
+      "description": "Ready-made dashboard widgets you can drop into any card."
+    },
+    "layouts": {
+      "title": "Layouts",
+      "description": "Every page structure the dashboards can use. Apply one to all of them."
+    }
+  },
+  "sections": {
+    "statCards": {
+      "title": "Stat cards",
+      "description": "Default, tile, accent and minimal variants with trends and sparklines."
+    },
+    "statStrip": {
+      "title": "Stat strip",
+      "description": "Several KPIs in one divided row."
+    },
+    "meters": {
+      "title": "Meter list",
+      "description": "Usage against limits."
+    },
+    "tags": {
+      "title": "Tags",
+      "description": "Soft, solid and outline in every tone; removable and with dots."
+    },
+    "status": {
+      "title": "Status badges",
+      "description": "Status is a dot plus a label, never color alone."
+    },
+    "avatars": {
+      "title": "Avatars",
+      "description": "Initials, presence, stacks with overflow and user cells."
+    },
+    "profile": {
+      "title": "Profile card",
+      "description": "Person summary with stats and actions."
+    },
+    "product": {
+      "title": "Product card",
+      "description": "Composed from tags, rating and price."
+    },
+    "pricing": {
+      "title": "Pricing cards",
+      "description": "Plans with a highlighted option."
+    },
+    "features": {
+      "title": "Feature cards",
+      "description": "Icon, title and description tiles."
+    },
+    "timeline": {
+      "title": "Timeline",
+      "description": "Ordered events with markers."
+    },
+    "activity": {
+      "title": "Activity feed",
+      "description": "Who did what, and when."
+    },
+    "list": {
+      "title": "List card",
+      "description": "Rows with media, meta and actions."
+    },
+    "descriptionList": {
+      "title": "Description list",
+      "description": "Term and detail pairs for record pages."
+    },
+    "keyValue": {
+      "title": "Key-value grid",
+      "description": "Compact metadata summary."
+    },
+    "tree": {
+      "title": "Tree view",
+      "description": "Keyboard-navigable hierarchy with selection."
+    },
+    "kanban": {
+      "title": "Kanban board",
+      "description": "Drag cards within and between columns."
+    },
+    "files": {
+      "title": "Files",
+      "description": "Attachments with type, size and upload progress."
+    },
+    "code": {
+      "title": "Code block",
+      "description": "Copyable snippet with line numbers and highlights."
+    },
+    "misc": {
+      "title": "Counters & shortcuts",
+      "description": "Number ticker, countdown, ratings and keyboard combos."
+    },
+    "area": {
+      "title": "Area chart",
+      "description": "Trend over time with a gradient fill."
+    },
+    "areaStacked": {
+      "title": "Stacked area",
+      "description": "Composition of a total over time."
+    },
+    "line": {
+      "title": "Line chart",
+      "description": "Actual vs. forecast against a target."
+    },
+    "barGrouped": {
+      "title": "Grouped bars",
+      "description": "Compare series side by side."
+    },
+    "barStacked": {
+      "title": "Stacked bars",
+      "description": "Totals and their parts."
+    },
+    "barHorizontal": {
+      "title": "Horizontal bars",
+      "description": "Rankings with long labels."
+    },
+    "barHighlight": {
+      "title": "Highlighted bar",
+      "description": "Emphasize the current period."
+    },
+    "donut": {
+      "title": "Donut",
+      "description": "Part-to-whole with a legend."
+    },
+    "donutHalf": {
+      "title": "Half donut",
+      "description": "Compact share of a total."
+    },
+    "radial": {
+      "title": "Radial rings",
+      "description": "A few completion rates at a glance."
+    },
+    "radar": {
+      "title": "Radar",
+      "description": "Profiles across several dimensions."
+    },
+    "sparklines": {
+      "title": "Sparklines",
+      "description": "Word-sized trends inside a table."
+    },
+    "gauge": {
+      "title": "Gauges",
+      "description": "Segmented and arc gauges for a single rate."
+    },
+    "rings": {
+      "title": "Progress rings",
+      "description": "Compact circular progress."
+    },
+    "heatmap": {
+      "title": "Heatmap",
+      "description": "Activity by weekday and hour."
+    },
+    "toastTypes": {
+      "title": "Toast types",
+      "description": "Every notify() variant."
+    },
+    "toastAdvanced": {
+      "title": "Advanced toasts",
+      "description": "Loading, promise, undo, actions and custom content."
+    },
+    "toastPositions": {
+      "title": "Positions",
+      "description": "Show a toast in any corner."
+    },
+    "callouts": {
+      "title": "Callouts",
+      "description": "Inline messages in four kinds and two appearances."
+    },
+    "banners": {
+      "title": "Banners",
+      "description": "Dismissible page-level announcements."
+    },
+    "progress": {
+      "title": "Progress",
+      "description": "Bars, rings, steps and segmented progress."
+    },
+    "loading": {
+      "title": "Loading",
+      "description": "Spinners and skeleton patterns."
+    },
+    "empty": {
+      "title": "Empty states",
+      "description": "What to show when there is nothing yet."
+    },
+    "error": {
+      "title": "Error state",
+      "description": "A failed widget with retry."
+    },
+    "tabs": {
+      "title": "Tabs",
+      "description": "Underline, pills, segmented and vertical."
+    },
+    "pageTabs": {
+      "title": "Page tabs",
+      "description": "Sections with counts and an action slot."
+    },
+    "subNav": {
+      "title": "Sub navigation",
+      "description": "Links between sibling pages."
+    },
+    "breadcrumbs": {
+      "title": "Breadcrumbs",
+      "description": "Long trails collapse into a menu."
+    },
+    "pagination": {
+      "title": "Pagination",
+      "description": "Numbered pages with ellipses and page size."
+    },
+    "stepper": {
+      "title": "Stepper",
+      "description": "Horizontal and vertical, clickable to go back."
+    },
+    "menubar": {
+      "title": "Menubar",
+      "description": "Desktop-style menus with submenus and checks."
+    },
+    "navigationMenu": {
+      "title": "Navigation menu",
+      "description": "Mega-menu for site headers."
+    },
+    "accordion": {
+      "title": "Accordion",
+      "description": "Expandable sections."
+    },
+    "collapsible": {
+      "title": "Collapsible",
+      "description": "Show and hide extra content."
+    },
+    "carousel": {
+      "title": "Carousel",
+      "description": "Swipeable slides."
+    },
+    "resizable": {
+      "title": "Resizable panels",
+      "description": "Drag the handles to resize."
+    },
+    "scrollArea": {
+      "title": "Scroll area",
+      "description": "Styled scrollbars in a fixed box."
+    },
+    "toggles": {
+      "title": "Toggle & button groups",
+      "description": "Single and multiple selection groups."
+    },
+    "treeLines": {
+      "title": "Guide lines",
+      "description": "Indented levels joined by guide lines; arrow keys move, → expands."
+    },
+    "treeCheckable": {
+      "title": "Tri-state checkboxes",
+      "description": "Parents show partial selection; checking a parent checks every leaf."
+    },
+    "treeLazy": {
+      "title": "Lazy loading",
+      "description": "Children load on first expand, with a spinner while they arrive."
+    },
+    "treeSearch": {
+      "title": "Search and highlight",
+      "description": "Filtering keeps ancestors and expands them so matches stay visible."
+    },
+    "treeReorder": {
+      "title": "Reorder siblings",
+      "description": "Hover a row to move it up or down within its level."
+    },
+    "fileTree": {
+      "title": "File tree",
+      "description": "Folders open and close; files get an icon and color by type."
+    },
+    "treeTable": {
+      "title": "Tree table",
+      "description": "Nested rows with columns: budgets, accounts, bills of materials."
+    },
+    "orgChart": {
+      "title": "Org chart",
+      "description": "Top-down hierarchy with connectors; fold any manager’s reports."
+    },
+    "treeInputs": {
+      "title": "Tree inputs",
+      "description": "Hierarchical pickers live with the form components."
+    },
+    "tlVertical": {
+      "title": "Vertical with cards",
+      "description": "Icon bubbles on a line, each event in its own card."
+    },
+    "tlAlternating": {
+      "title": "Alternating",
+      "description": "A center line with events on both sides; single column on mobile."
+    },
+    "tlHorizontal": {
+      "title": "Horizontal milestones",
+      "description": "Scrolls sideways; done segments fill in."
+    },
+    "tlRoadmap": {
+      "title": "Roadmap",
+      "description": "Initiatives as bars across quarters, grouped in lanes."
+    },
+    "tlChangelog": {
+      "title": "Changelog",
+      "description": "Releases with tagged entries."
+    },
+    "tlMedia": {
+      "title": "Activity with attachments",
+      "description": "Comments, files and images inline."
+    },
+    "tlTracking": {
+      "title": "Order tracking",
+      "description": "Progress line filled up to the current step."
+    },
+    "tlTrackingVertical": {
+      "title": "Shipment history",
+      "description": "The same steps stacked, with times and places."
+    },
+    "tlHistory": {
+      "title": "Audit trail",
+      "description": "Dense, grouped by day."
+    },
+    "menuNested": {
+      "title": "Nested menu",
+      "description": "Three levels, badges, icons, foldable groups and disabled entries."
+    },
+    "menuMega": {
+      "title": "Mega menu",
+      "description": "Website navigation with columns of rich links and a featured block."
+    },
+    "menuDropdowns": {
+      "title": "Dropdown menus",
+      "description": "Sub-menus, checkbox and radio items, shortcuts, disabled and destructive items."
+    },
+    "menuContext": {
+      "title": "Context menu",
+      "description": "Right-click the area to open it."
+    },
+    "menuMenubar": {
+      "title": "Menubar",
+      "description": "Desktop-app style menus."
+    },
+    "menuSegmented": {
+      "title": "Segmented and tab navs",
+      "description": "Switch views inside a page."
+    },
+    "menuPills": {
+      "title": "Pill navigation",
+      "description": "Sibling pages as pills or underlined links, with counts."
+    },
+    "menuBreadcrumbs": {
+      "title": "Breadcrumbs",
+      "description": "Long trails fold their middle into a menu."
+    },
+    "menuSidebarMini": {
+      "title": "Sidebar in a frame",
+      "description": "A static app frame with the nested menu as its sidebar."
+    },
+    "menuStepper": {
+      "title": "Stepper navigation",
+      "description": "Completed steps are clickable."
+    },
+    "menuPagination": {
+      "title": "Pagination",
+      "description": "Numbered, compact and load-more."
+    },
+    "wKpiTarget": {
+      "title": "KPI vs target",
+      "description": "A value, its target and the gap."
+    },
+    "wGoals": {
+      "title": "Goals",
+      "description": "Progress rings per goal."
+    },
+    "wComparison": {
+      "title": "Period comparison",
+      "description": "This period against the last."
+    },
+    "wLeaderboard": {
+      "title": "Leaderboard",
+      "description": "Ranked people with relative bars."
+    },
+    "wHeatCalendar": {
+      "title": "Activity calendar",
+      "description": "Daily activity over six months."
+    },
+    "wMiniCalendar": {
+      "title": "Mini calendar",
+      "description": "Month view with events and the day’s agenda."
+    },
+    "wStatus": {
+      "title": "System status",
+      "description": "Service health and 30-day uptime."
+    },
+    "wNotifications": {
+      "title": "Notifications",
+      "description": "Unread markers and inline actions."
+    },
+    "wTodo": {
+      "title": "Todo list",
+      "description": "Add, check off and count."
+    },
+    "wTeam": {
+      "title": "Team online",
+      "description": "Presence and current activity."
+    },
+    "wFiles": {
+      "title": "Recent files",
+      "description": "Type icon, owner and size."
+    },
+    "wQuickActions": {
+      "title": "Quick actions",
+      "description": "Shortcut tiles."
+    },
+    "wPayments": {
+      "title": "Upcoming payments",
+      "description": "What is due and when."
+    },
+    "wBalance": {
+      "title": "Balance card",
+      "description": "Card-style balance with income and spending."
+    },
+    "wFunnel": {
+      "title": "Mini funnel",
+      "description": "Stage counts and step conversion."
+    },
+    "wNps": {
+      "title": "NPS",
+      "description": "Score with promoters, passives and detractors."
+    },
+    "wRatings": {
+      "title": "Ratings",
+      "description": "Average and distribution."
+    },
+    "wSocial": {
+      "title": "Social audience",
+      "description": "Followers and growth per channel."
+    },
+    "wStorage": {
+      "title": "Storage",
+      "description": "Usage split by file type."
+    },
+    "wCountdown": {
+      "title": "Milestone countdown",
+      "description": "Time left and time elapsed."
+    },
+    "wTestimonial": {
+      "title": "Testimonial",
+      "description": "Quote, rating and attribution."
+    },
+    "wProfiles": {
+      "title": "Profile cards",
+      "description": "Cover, horizontal and compact."
+    },
+    "wAnnouncement": {
+      "title": "Announcement",
+      "description": "Dismissible news with an action."
+    },
+    "wLocations": {
+      "title": "Top locations",
+      "description": "Share of traffic by country."
+    },
+    "wDevices": {
+      "title": "Devices",
+      "description": "Sessions by device type."
+    },
+    "tabsVertical": {
+      "title": "Vertical tabs",
+      "description": "A settings-style side menu that switches panels."
+    }
+  },
+  "demo": {
+    "showChart": "Show chart",
+    "showTable": "Show table",
+    "choosePlan": "Choose plan",
+    "currentPlan": "Current plan",
+    "mostPopular": "Most popular",
+    "perMonth": "/month",
+    "addToCart": "Add to cart",
+    "message": "Message",
+    "follow": "Follow",
+    "retry": "Retry",
+    "createProject": "Create project",
+    "importData": "Import data",
+    "clearFilters": "Clear filters",
+    "learnMore": "Learn more",
+    "restoreBanners": "Restore banners",
+    "restoreCallouts": "Restore callouts",
+    "reload": "Simulate reload",
+    "dismissAll": "Dismiss all",
+    "selected": "Selected",
+    "nothing": "Nothing selected",
+    "back": "Back",
+    "next": "Next",
+    "showMore": "Show 3 more",
+    "showLess": "Show less",
+    "increment": "Add 1,250"
+  },
+  "toasts": {
+    "message": "Message",
+    "success": "Success",
+    "error": "Error",
+    "info": "Info",
+    "warning": "Warning",
+    "loading": "Loading → done",
+    "promise": "Promise",
+    "promiseFail": "Promise (fails)",
+    "undo": "Undo",
+    "action": "Action + cancel",
+    "important": "Persistent",
+    "custom": "Custom",
+    "samples": {
+      "message": "Draft saved to your workspace",
+      "success": "Invoice INV-2041 marked as paid",
+      "successDesc": "The customer was notified by email.",
+      "error": "Payment could not be processed",
+      "errorDesc": "The card was declined. Try another method.",
+      "info": "A new version is available",
+      "warning": "You have used 90% of your API quota",
+      "loading": "Exporting 12,480 rows…",
+      "loaded": "Export ready: orders.csv",
+      "promiseLoading": "Syncing with Stripe…",
+      "promiseSuccess": "Synced 248 transactions",
+      "promiseError": "Sync failed: connection timed out",
+      "deleted": "Project “Atlas” moved to trash",
+      "restored": "Project restored",
+      "invite": "Hannah Morgan invited you to “Q4 roadmap”",
+      "accept": "Accept",
+      "decline": "Decline",
+      "accepted": "Invitation accepted",
+      "important": "Your session expires in 5 minutes",
+      "stay": "Stay signed in",
+      "customTitle": "Leo Park requested access",
+      "customBody": "to the Finance workspace",
+      "approve": "Approve",
+      "deny": "Deny",
+      "position": "Shown at {{position}}"
+    }
+  },
+  "treesUi": {
+    "search": "Filter departments…",
+    "selected": "Selected",
+    "none": "nothing",
+    "checked": "{{count}} leaves checked",
+    "openForms": "Open the selects page",
+    "orderNote": "Order is kept by the tree; send it to your API on change."
+  },
+  "treeTable": {
+    "account": "Account",
+    "budget": "Budget",
+    "actual": "Actual",
+    "variance": "Variance",
+    "expandAll": "Expand all",
+    "collapseAll": "Collapse all"
+  },
+  "layoutsUi": {
+    "current": "Active for all dashboards",
+    "apply": "Apply to all dashboards",
+    "reset": "Back to each dashboard’s own",
+    "open": "Open {{name}}",
+    "noExample": "No dashboard uses this by default",
+    "autoTitle": "Auto (recommended)",
+    "autoHint": "Every dashboard keeps the layout it was designed with.",
+    "usedBy": "Default for"
+  },
+  "widgetUi": {
+    "toTarget": "to target",
+    "reached": "Target reached",
+    "thisPeriod": "This period",
+    "lastPeriod": "Last period",
+    "remaining": "remaining",
+    "addTask": "Add a task and press Enter",
+    "online": "online",
+    "nothing": "Nothing scheduled",
+    "reviews": "reviews",
+    "dueSoon": "Due in the next 30 days",
+    "of": "of",
+    "elapsed": "elapsed",
+    "dismiss": "Dismiss"
+  },
+  "menusUi": {
+    "selected": "Selected",
+    "paginationCompact": "Page {{page}} of {{total}}",
+    "loadMore": "Load more",
+    "loaded": "Showing {{count}} of {{total}}",
+    "rightClick": "Right-click anywhere in this area"
+  }
+}

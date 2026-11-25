@@ -1,0 +1,798 @@
+{
+  "workspace": {
+    "name": "Inventory",
+    "description": "Stock, warehouses, transfers and suppliers",
+    "category": "Supply chain"
+  },
+  "common": {
+    "errorTitle": "Couldn't load this view",
+    "errorDescription": "Check your connection and try again.",
+    "retry": "Try again"
+  },
+  "nav": {
+    "sections": {
+      "main": "Main",
+      "stock": "Stock",
+      "movements": "Movements",
+      "network": "Network",
+      "purchasing": "Purchasing"
+    },
+    "overview": "Overview",
+    "items": "Items",
+    "counts": "Stock counts",
+    "transfers": "Transfers",
+    "receiving": "Receiving",
+    "returns": "Returns",
+    "warehouses": "Warehouses",
+    "allWarehouses": "All warehouses",
+    "wh": {
+      "RNO": "Reno DC",
+      "DFW": "Dallas",
+      "EWR": "Newark",
+      "RTM": "Rotterdam"
+    },
+    "suppliers": "Suppliers",
+    "labels": "Barcode label standards",
+    "movementLedger": "Stock movements",
+    "purchaseOrders": "Purchase orders",
+    "reorder": "Reorder planner",
+    "batches": "Batches & expiry",
+    "allBatches": "All batches",
+    "expiringSoon": "Expiring in 30 days",
+    "expired": "Expired",
+    "valuation": "Stock valuation",
+    "bins": "Bin locations"
+  },
+  "status": {
+    "ok": "In stock",
+    "low": "Low stock",
+    "out": "Out of stock"
+  },
+  "overview": {
+    "title": "Inventory overview",
+    "description": "Stock across 4 warehouses, updated with every movement.",
+    "refresh": "Refresh",
+    "kpis": {
+      "value": "Stock value",
+      "vsMonth": "vs 4 weeks ago",
+      "units": "Units on hand",
+      "skus_one": "{{count}} active SKU",
+      "skus_other": "{{count}} active SKUs",
+      "low": "Below reorder point",
+      "lowHint": "Still available, reorder soon",
+      "out": "Out of stock",
+      "turns": "{{turns}}× inventory turns"
+    },
+    "flow": {
+      "title": "Inbound vs outbound",
+      "description": "Units per week, last 12 weeks.",
+      "inbound": "Inbound",
+      "outbound": "Outbound"
+    },
+    "capacity": {
+      "title": "Warehouse capacity",
+      "description": "Pallet positions in use.",
+      "link": "Open warehouses",
+      "pallets": "{{used}} / {{capacity}} · {{pct}}%"
+    },
+    "reorder": {
+      "title": "Reorder suggestions",
+      "description": "Quantities bring each SKU back above its reorder point.",
+      "item": "Item",
+      "available": "Available",
+      "quantity": "Order qty",
+      "supplier": "Supplier",
+      "cost": "Est. cost",
+      "lead_one": "{{count}}-day lead time",
+      "lead_other": "{{count}}-day lead time",
+      "link": "Open the reorder planner",
+      "create": "Create PO"
+    },
+    "alerts": {
+      "title": "Stock alerts",
+      "description": "SKUs at or below their reorder point.",
+      "link": "See all low-stock items",
+      "left": "{{available}} of {{point}}"
+    },
+    "footnote": "Valued at standard cost. Total {{value}}."
+  },
+  "items": {
+    "title": "Items",
+    "description_one": "{{count}} SKU · {{value}} on hand",
+    "description_other": "{{count}} SKUs · {{value}} on hand",
+    "loading": "Loading stock…",
+    "warehouse": "Warehouse",
+    "allWarehouses": "All warehouses",
+    "search": "Search SKU, item or supplier",
+    "reset": "Reset",
+    "columnsButton": "Columns",
+    "density": {
+      "compact": "Compact",
+      "default": "Default",
+      "comfortable": "Comfortable"
+    },
+    "export": "Export",
+    "exported_one": "Exported {{count}} row",
+    "exported_other": "Exported {{count}} rows",
+    "statusLabel": {
+      "ok": "In stock",
+      "low": "Low stock",
+      "out": "Out of stock"
+    },
+    "empty": {
+      "title": "No items found",
+      "description": "Try a different search or clear the filters."
+    },
+    "bulk": {
+      "selected_one": "{{count}} item selected",
+      "selected_other": "{{count}} items selected",
+      "clear": "Clear selection",
+      "adjust": "Adjust stock"
+    },
+    "adjust": {
+      "done_one": "Stock adjusted for {{count}} item",
+      "done_other": "Stock adjusted for {{count}} items",
+      "title": "Adjust stock",
+      "description_one": "Applies to {{count}} item.",
+      "description_other": "Applies to each of the {{count}} selected items.",
+      "direction": "Change",
+      "remove": "Remove",
+      "add": "Add",
+      "quantity": "Quantity",
+      "warehouse": "Warehouse",
+      "reason": "Reason",
+      "reasons": {
+        "damaged": "Damaged in handling",
+        "found": "Found during putaway",
+        "shrinkage": "Shrinkage",
+        "qa": "Moved to QA hold",
+        "correction": "Data correction"
+      },
+      "cancel": "Cancel",
+      "apply": "Apply adjustment",
+      "failed": "Couldn't adjust stock"
+    },
+    "columns": {
+      "select": "Select",
+      "sku": "SKU",
+      "name": "Item",
+      "category": "Category",
+      "onHand": "On hand",
+      "reserved": "Reserved",
+      "available": "Available",
+      "reorderPoint": "Reorder point",
+      "status": "Status",
+      "location": "Location",
+      "unitCost": "Unit cost",
+      "value": "Value",
+      "lastMovement": "Last movement"
+    }
+  },
+  "item": {
+    "back": "All items",
+    "adjust": "Adjust stock",
+    "adjusted": "Stock adjusted for {{sku}}",
+    "discontinued": "Discontinued",
+    "kpis": {
+      "onHand": "On hand",
+      "available": "Available",
+      "reserved_one": "{{count}} reserved",
+      "reserved_other": "{{count}} reserved",
+      "reorderPoint": "Reorder point",
+      "reorderQty": "Reorder qty {{qty}}",
+      "value": "Stock value",
+      "unitCost": "{{cost}} per unit"
+    },
+    "locations": {
+      "title": "Stock by location",
+      "description": "Solid = available, light = reserved for open orders.",
+      "reserved_one": "{{count}} reserved",
+      "reserved_other": "{{count}} reserved"
+    },
+    "ledger": {
+      "title": "Movement ledger",
+      "description": "Latest 25 movements across all locations.",
+      "type": "Movement",
+      "when": "When",
+      "warehouse": "Site",
+      "reference": "Reference",
+      "user": "By",
+      "quantity": "Qty",
+      "types": {
+        "receipt": "Receipt",
+        "shipment": "Shipment",
+        "transfer-in": "Transfer in",
+        "transfer-out": "Transfer out",
+        "adjustment": "Adjustment",
+        "count": "Cycle count"
+      }
+    },
+    "suppliers": {
+      "title": "Suppliers",
+      "preferred": "Preferred supplier",
+      "meta": "{{days}}-day lead time · {{rate}}% on time"
+    },
+    "reorder": {
+      "title": "Reorder rules",
+      "description": "When available stock drops to the reorder point, order the reorder quantity.",
+      "point": "Reorder point",
+      "quantity": "Reorder quantity",
+      "supplier": "Preferred supplier",
+      "auto": "Automatic reorder",
+      "autoHint": "Create a draft PO when stock crosses the reorder point.",
+      "discard": "Discard",
+      "save": "Save rules",
+      "saved": "Reorder rules saved"
+    }
+  },
+  "warehouses": {
+    "title": "Warehouses",
+    "description": "Capacity and layout for every site. Pick a site to inspect its bins.",
+    "zone": "Zone {{code}} · {{name}}",
+    "aisle": "Aisle {{code}}",
+    "pallets": "Pallets",
+    "skus": "SKUs",
+    "value": "Value",
+    "layout": {
+      "title": "{{code}} layout",
+      "description": "Zones, aisles and bins with average fill.",
+      "zone": "Zone"
+    },
+    "bins": {
+      "description": "Each square is a bin, shaded by fill. Click one to select it.",
+      "ok": "Room left",
+      "tight": "Over 80%",
+      "full": "Full",
+      "label": "Bin {{code}} · {{pct}}% full"
+    }
+  },
+  "transfers": {
+    "title": "Transfers",
+    "description": "{{units}} units are moving between warehouses right now.",
+    "new": "New transfer",
+    "late": "Late · due {{date}}",
+    "eta": "ETA {{date}}",
+    "more_one": "+{{count}} more line",
+    "more_other": "+{{count}} more lines",
+    "moved": "{{id}} moved to {{status}}",
+    "advance": {
+      "requested": "Start picking",
+      "picking": "Ship",
+      "in-transit": "Receive"
+    },
+    "status": {
+      "requested": "Requested",
+      "picking": "Picking",
+      "in-transit": "In transit",
+      "received": "Received"
+    },
+    "emptyColumn": "Nothing here.",
+    "create": {
+      "title": "New transfer",
+      "description": "Move stock from one warehouse to another. Stock leaves the source when the transfer ships.",
+      "from": "From",
+      "to": "To",
+      "carrier": "Carrier",
+      "lines": "Items",
+      "addLine": "Add item",
+      "item": "Choose an item",
+      "search": "Search items",
+      "quantity": "Quantity",
+      "removeLine": "Remove item",
+      "cancel": "Cancel",
+      "submit": "Create transfer",
+      "created": "Transfer {{id}} created",
+      "failed": "Couldn't create the transfer",
+      "errors": {
+        "quantity": "At least 1",
+        "sameWarehouse": "Pick a different destination"
+      }
+    },
+    "units_one": "{{count}} unit",
+    "units_other": "{{count}} units"
+  },
+  "receiving": {
+    "title": "Receiving",
+    "description": "Check inbound purchase orders against what arrived at the dock.",
+    "inbound": "Inbound orders",
+    "summary": "{{lines}} lines · {{units}} units · due {{date}}",
+    "expectedAt": "Arriving at {{warehouse}} on {{date}}",
+    "progress": "Received",
+    "scan": {
+      "placeholder": "Scan or type a SKU, then Enter",
+      "label": "Scan SKU",
+      "add": "Add",
+      "unknown": "{{code}} is not on this order"
+    },
+    "columns": {
+      "item": "Item",
+      "expected": "Expected",
+      "received": "Received",
+      "state": "Status"
+    },
+    "state": {
+      "over_one": "{{count}} over",
+      "over_other": "{{count}} over",
+      "done": "Complete",
+      "short_one": "{{count}} short",
+      "short_other": "{{count}} short"
+    },
+    "fillExpected": "Receive all as expected",
+    "post": "Post receipt",
+    "posted": "{{po}} posted · {{status}}",
+    "status": {
+      "open": "Open",
+      "partial": "Partial",
+      "complete": "Complete"
+    }
+  },
+  "counts": {
+    "title": "Stock counts",
+    "description": "Cycle count one zone at a time; differences post as adjustments.",
+    "warehouse": "Warehouse",
+    "zone": "Zone",
+    "zoneOption": "Zone {{zone}}",
+    "kpis": {
+      "counted": "Lines counted",
+      "scheduled": "Scheduled {{date}}",
+      "variances": "Lines with variance",
+      "outside": "Outside tolerance",
+      "tolerance": "More than {{pct}}% off",
+      "impact": "Value impact"
+    },
+    "sheet": {
+      "title": "Count sheet · {{warehouse}} zone {{zone}}",
+      "description": "Enter what is physically in each bin. Leave blank to skip."
+    },
+    "reset": "Clear counts",
+    "submit": "Post count",
+    "posted_one": "{{count}} bin adjusted",
+    "posted_other": "{{count}} bins adjusted",
+    "columns": {
+      "bin": "Bin",
+      "item": "Item",
+      "system": "System qty",
+      "counted": "Counted",
+      "variance": "Variance"
+    },
+    "match": "Match",
+    "recount": "Recount",
+    "empty": "No stock in this zone."
+  },
+  "suppliers": {
+    "title": "Suppliers",
+    "description": "Lead times, reliability and spend for every supplier.",
+    "lead": {
+      "title": "Current lead time",
+      "description": "Average days from PO to receipt.",
+      "days": "Lead time"
+    },
+    "trend": {
+      "title": "Lead time trend · {{name}}",
+      "description": "Actual vs quoted, last 6 months. Pick a supplier below.",
+      "actual": "Actual",
+      "quoted": "Quoted"
+    },
+    "list": {
+      "title": "All suppliers",
+      "description": "Click a row to chart its lead-time trend."
+    },
+    "columns": {
+      "supplier": "Supplier",
+      "lead": "Lead time",
+      "trend": "Trend",
+      "onTime": "On time",
+      "fill": "Fill rate",
+      "skus": "SKUs",
+      "openPOs": "Open POs",
+      "spend": "Spend YTD"
+    },
+    "days_one": "{{count}} day",
+    "days_other": "{{count}} days"
+  },
+  "purchaseOrders": {
+    "title": "Purchase orders",
+    "description": "Orders placed with suppliers, from draft to fully received.",
+    "new": "New purchase order",
+    "send": "Send",
+    "sent": "Purchase order sent to the supplier",
+    "all": "All",
+    "statusFilter": "Filter by status",
+    "search": "Search PO or supplier",
+    "late": "Late",
+    "status": {
+      "draft": "Draft",
+      "sent": "Sent",
+      "partial": "Partially received",
+      "received": "Received"
+    },
+    "kpis": {
+      "open": "Open order value",
+      "openHint_one": "{{count}} order awaiting delivery",
+      "openHint_other": "{{count}} orders awaiting delivery",
+      "drafts": "Drafts",
+      "draftsHint": "Not yet sent to suppliers",
+      "overdue": "Overdue",
+      "overdueHint": "Past the expected date",
+      "onTime": "On-time delivery",
+      "onTimeHint": "Of received orders"
+    },
+    "columns": {
+      "id": "PO",
+      "supplier": "Supplier",
+      "warehouse": "Ship to",
+      "created": "Created",
+      "expected": "Expected",
+      "progress": "Received",
+      "total": "Total",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "lines_one": "{{count}} line",
+    "lines_other": "{{count}} lines",
+    "empty": {
+      "title": "No purchase orders",
+      "description": "Nothing matches these filters. Create a purchase order to get started."
+    },
+    "create": {
+      "title": "New purchase order",
+      "description": "Order stock from one supplier. Save it as a draft or send it right away.",
+      "supplier": "Supplier",
+      "warehouse": "Ship to",
+      "expected": "Expected delivery",
+      "lines": "Line items",
+      "addLine": "Add line",
+      "item": "Choose an item",
+      "search": "Search items",
+      "quantity": "Quantity",
+      "unitCost": "Unit cost",
+      "removeLine": "Remove line",
+      "total": "Order total",
+      "cancel": "Cancel",
+      "draft": "Save draft",
+      "submit": "Create and send",
+      "created": "{{id}} created",
+      "failed": "Couldn't create the purchase order",
+      "errors": {
+        "quantity": "At least 1",
+        "cost": "Enter a price",
+        "duplicate": "Already on this order"
+      }
+    }
+  },
+  "movements": {
+    "title": "Stock movements",
+    "description": "Every receipt, sale, transfer and adjustment across all warehouses.",
+    "type": "Type",
+    "allTypes": "All types",
+    "warehouse": "Warehouse",
+    "allWarehouses": "All warehouses",
+    "dates": "Date",
+    "clear": "Clear",
+    "presets": {
+      "week": "Last 7 days",
+      "month": "Last 30 days",
+      "quarter": "Last 90 days"
+    },
+    "export": "Export",
+    "exported_one": "Exported {{count}} movement",
+    "exported_other": "Exported {{count}} movements",
+    "kpis": {
+      "count": "Movements",
+      "inbound": "Units in",
+      "outbound": "Units out",
+      "net": "Net change"
+    },
+    "trend": {
+      "title": "Movement trend",
+      "description": "Units moved per week, by movement type.",
+      "receipts": "Receipts",
+      "sales": "Sales",
+      "transfers": "Transfers",
+      "adjustments": "Adjustments & counts"
+    },
+    "table": "Movement ledger",
+    "item": "Item",
+    "empty": {
+      "title": "No movements",
+      "description": "No stock moved for these filters."
+    }
+  },
+  "reorder": {
+    "title": "Reorder planner",
+    "description": "Items at or below their reorder point, with quantities sized from daily usage and supplier lead time.",
+    "horizon": "Cover after delivery",
+    "horizonOption": "{{count}} days",
+    "formula": "Suggested quantity = daily usage × (lead time + cover) − available − on order, and at least the reorder quantity.",
+    "kpis": {
+      "items": "Items to reorder",
+      "stockouts": "Stock out before delivery",
+      "stockoutsHint": "Days left shorter than lead time",
+      "cost": "Suggested spend",
+      "suppliers_one": "Across {{count}} supplier",
+      "suppliers_other": "Across {{count}} suppliers"
+    },
+    "columns": {
+      "select": "Select",
+      "item": "Item",
+      "available": "Available",
+      "onOrder": "On order",
+      "usage": "Daily usage",
+      "cover": "Days left",
+      "lead": "Lead time",
+      "suggested": "Suggested qty",
+      "cost": "Est. cost"
+    },
+    "perDay": "{{value}}/day",
+    "days_one": "{{count}} day",
+    "days_other": "{{count}} days",
+    "selected_one": "{{count}} item selected",
+    "selected_other": "{{count}} items selected",
+    "clear": "Clear selection",
+    "createPO": "Create PO from selection",
+    "created_one": "{{count}} draft purchase order created",
+    "created_other": "{{count}} draft purchase orders created",
+    "empty": {
+      "title": "Nothing to reorder",
+      "description": "Every item is above its reorder point."
+    }
+  },
+  "supplier": {
+    "back": "All suppliers",
+    "newPO": "New purchase order",
+    "profile": "Profile",
+    "contact": "Contact",
+    "email": "Email",
+    "phone": "Phone",
+    "country": "Country",
+    "terms": "Payment terms",
+    "kpis": {
+      "lead": "Quoted lead time",
+      "onTime": "On-time delivery",
+      "fill": "Fill rate",
+      "spend": "Spend YTD",
+      "openPOs_one": "{{count}} open PO",
+      "openPOs_other": "{{count}} open POs"
+    },
+    "lead": {
+      "title": "Lead time",
+      "description": "Actual vs quoted days, last 6 months.",
+      "actual": "Actual",
+      "quoted": "Quoted"
+    },
+    "onTime": {
+      "title": "On-time delivery",
+      "description": "Share of orders received by the expected date.",
+      "rate": "On time"
+    },
+    "items": {
+      "title": "Supplied items",
+      "description_one": "{{count}} item, as preferred or alternate source.",
+      "description_other": "{{count}} items, as preferred or alternate source.",
+      "preferred": "Preferred",
+      "alternate": "Alternate"
+    },
+    "orders": {
+      "title": "Recent purchase orders",
+      "link": "All purchase orders"
+    }
+  },
+  "batches": {
+    "title": "Batches & expiry",
+    "description": "Lot-tracked stock by batch, with received and expiry dates. Quarantine a batch to stop it being picked.",
+    "windowFilter": "Expiry window",
+    "search": "Search batch, SKU or supplier…",
+    "table": "Batches",
+    "windows": {
+      "30": "≤ 30 days",
+      "60": "≤ 60 days",
+      "90": "≤ 90 days",
+      "all": "All",
+      "expired": "Expired"
+    },
+    "kpis": {
+      "lots": "Batches tracked",
+      "units": "{{units}} units on hand",
+      "expired": "Expired value",
+      "soon": "Expiring in 30 days",
+      "quarantined": "Quarantined",
+      "lotsHint_one": "{{count}} batch",
+      "lotsHint_other": "{{count}} batches"
+    },
+    "outlook": {
+      "title": "Expiry outlook",
+      "description": "Stock value already expired and expiring in each of the next six months.",
+      "value": "Value",
+      "expired": "Expired",
+      "bucket": "{{from}}–{{to}} d"
+    },
+    "risk": {
+      "title": "Value at risk",
+      "description": "Expired or expiring within 90 days, against each site’s lot-tracked value."
+    },
+    "columns": {
+      "batch": "Batch",
+      "item": "Item",
+      "location": "Location",
+      "quantity": "Quantity",
+      "value": "Value",
+      "received": "Received",
+      "expires": "Expires",
+      "daysLeft": "Days to expiry",
+      "status": "Status",
+      "actions": "Actions"
+    },
+    "expiry": {
+      "ago_one": "Expired {{count}} day ago",
+      "ago_other": "Expired {{count}} days ago",
+      "left_one": "{{count}} day left",
+      "left_other": "{{count}} days left"
+    },
+    "status": {
+      "released": "Released",
+      "quarantined": "Quarantined"
+    },
+    "quarantine": {
+      "action": "Quarantine",
+      "title": "Quarantine batch {{id}}?",
+      "description": "{{quantity}} × {{name}} will be blocked from picking until QA releases it.",
+      "confirm": "Quarantine batch",
+      "cancel": "Cancel",
+      "done": "Batch quarantined"
+    },
+    "empty": {
+      "title": "No batches in this window",
+      "description": "Try a wider expiry window or clear the search."
+    }
+  },
+  "bins": {
+    "title": "Bin locations",
+    "description": "Aisles, racks and bins of one site, shaded by fill. Click a bin to see what is in it.",
+    "warehouse": "Warehouse",
+    "zoneSummary_one": "{{count}} bin · {{pct}}% average fill",
+    "zoneSummary_other": "{{count}} bins · {{pct}}% average fill",
+    "kpis": {
+      "bins": "Bins",
+      "fill": "Average fill",
+      "tight": "Over 80% full",
+      "empty": "Empty bins"
+    },
+    "sheet": {
+      "title": "Bin {{code}}",
+      "description": "Stock slotted in this bin at {{warehouse}}.",
+      "fill": "Fill",
+      "units": "Units",
+      "value": "Value",
+      "stock": "{{onHand}} on hand · {{reserved}} reserved",
+      "move": "Move",
+      "empty": {
+        "title": "This bin is empty",
+        "description": "Move stock here from another bin."
+      }
+    },
+    "move": {
+      "to": "To bin",
+      "quantity": "Quantity",
+      "submit": "Move stock",
+      "done": "Stock moved"
+    }
+  },
+  "valuation": {
+    "title": "Stock valuation",
+    "description": "What inventory is worth by site and category, how that changes, and what is not selling.",
+    "method": "Costing method",
+    "methods": {
+      "fifo": "FIFO",
+      "average": "Average cost"
+    },
+    "kpis": {
+      "value": "Inventory value",
+      "vsQuarter": "vs 3 months ago",
+      "units": "Units on hand",
+      "skus_one": "{{count}} SKU in stock",
+      "skus_other": "{{count}} SKUs in stock",
+      "slow": "Slow-moving value",
+      "dead": "Dead stock value",
+      "items_one": "{{count}} item",
+      "items_other": "{{count}} items"
+    },
+    "trend": {
+      "title": "Valuation trend",
+      "description": "Month-end inventory value over the last year ({{method}}).",
+      "value": "Value"
+    },
+    "categories": {
+      "title": "By category",
+      "description": "Share of inventory value per category.",
+      "total": "Total"
+    },
+    "warehouses": {
+      "title": "By warehouse",
+      "description": "Inventory value per site, split by category."
+    },
+    "slow": {
+      "title": "Slow-moving & dead stock",
+      "description": "Dead: no sale in 45 days or discontinued. Slow: more than 365 days of cover at current usage.",
+      "export": "Export CSV",
+      "exported_one": "Exported {{count}} row",
+      "exported_other": "Exported {{count}} rows",
+      "never": "No sales",
+      "daysAgo_one": "{{count}} day ago",
+      "daysAgo_other": "{{count}} days ago",
+      "days_one": "{{count}} day",
+      "days_other": "{{count}} days",
+      "columns": {
+        "item": "Item",
+        "category": "Category",
+        "onHand": "On hand",
+        "value": "Value",
+        "lastSale": "Last sale",
+        "cover": "Cover",
+        "class": "Class"
+      },
+      "classes": {
+        "slow": "Slow",
+        "dead": "Dead"
+      },
+      "empty": {
+        "title": "Everything is moving",
+        "description": "No slow-moving or dead stock right now."
+      }
+    }
+  },
+  "shell": {
+    "categories": {
+      "stock": "Stock",
+      "receiving": "Receiving",
+      "counts": "Counts"
+    },
+    "notifications": {
+      "reorder": {
+        "title": "9 items below reorder point",
+        "body": "Including SKU-1042 Steel bracket (12 left, min 50)."
+      },
+      "arrived": {
+        "title": "PO-5521 arrived at dock 3",
+        "body": "48 pallets from Acme Metals ready to receive."
+      },
+      "variance": {
+        "title": "Cycle count variance in Zone B",
+        "body": "6 bins differ from system stock by more than 5%."
+      },
+      "expiry": {
+        "title": "Batch LOT-2209 expires in 10 days",
+        "body": "320 units in Warehouse North."
+      },
+      "transfer": {
+        "title": "Transfer TR-118 completed",
+        "body": "North → South · 1,200 units received."
+      },
+      "valuation": {
+        "title": "Month-end valuation ready",
+        "body": "Total stock value $2.41M (+3.2%)."
+      }
+    },
+    "create": {
+      "item": {
+        "label": "Add item",
+        "description": "A new SKU in the catalog"
+      },
+      "po": {
+        "label": "Purchase order",
+        "description": "Reorder from a supplier"
+      },
+      "transfer": {
+        "label": "Stock transfer",
+        "description": "Move stock between warehouses"
+      },
+      "count": {
+        "label": "Start count",
+        "description": "Cycle or full stock count"
+      }
+    },
+    "account": {
+      "counts": "My counts",
+      "warehouses": "My warehouses"
+    }
+  }
+}

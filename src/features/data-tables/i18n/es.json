@@ -1,0 +1,425 @@
+{
+  "nav": "Tablas de datos",
+  "title": "Tablas de datos",
+  "description": "Tablas en servidor, en cliente y de cuadrícula construidas con un mismo kit reutilizable.",
+  "tabs": {
+    "label": "Ejemplos de tablas",
+    "server": "En servidor",
+    "client": "En cliente · 10k filas",
+    "grid": "AG Grid",
+    "spreadsheet": "Hoja de cálculo",
+    "tree": "Árbol",
+    "masterDetail": "Maestro–detalle",
+    "infinite": "Scroll infinito",
+    "views": "Vistas",
+    "reorder": "Reordenar",
+    "financial": "Financiera"
+  },
+  "server": {
+    "title": "Pedidos",
+    "description": "5.000 pedidos filtrados, ordenados y paginados por la API. El estado de la tabla vive en la URL."
+  },
+  "client": {
+    "title": "Transacciones",
+    "description": "10.000 filas en el navegador: virtualizadas, agrupables y editables en línea.",
+    "summary": "{{rows}} filas · {{amount}} en total",
+    "groupBy": "Agrupar por",
+    "groupNone": "Sin agrupar",
+    "expandAll": "Expandir todo",
+    "collapseAll": "Contraer todo",
+    "edited": "Guardado"
+  },
+  "grid": {
+    "title": "Inventario",
+    "description": "AG Grid Community con filtros flotantes, columnas fijas, selección y paginación, con los tokens de la app.",
+    "selected": "{{count}} seleccionados",
+    "lowStock": "Stock bajo"
+  },
+  "columns": {
+    "number": "Pedido",
+    "customer": "Cliente",
+    "status": "Estado",
+    "channel": "Canal",
+    "country": "País",
+    "items": "Artículos",
+    "total": "Total",
+    "paid": "Pago",
+    "createdAt": "Creado",
+    "assignee": "Responsable",
+    "email": "Correo",
+    "reference": "Referencia",
+    "amount": "Importe",
+    "quantity": "Cant.",
+    "date": "Fecha",
+    "notes": "Notas",
+    "actions": "Acciones",
+    "product": "Producto",
+    "sku": "SKU",
+    "category": "Categoría",
+    "stock": "Stock",
+    "price": "Precio",
+    "rating": "Valoración",
+    "updated": "Actualizado"
+  },
+  "status": {
+    "pending": "Pendiente",
+    "processing": "En proceso",
+    "shipped": "Enviado",
+    "delivered": "Entregado",
+    "cancelled": "Cancelado",
+    "refunded": "Reembolsado"
+  },
+  "channel": {
+    "web": "Web",
+    "mobile": "App móvil",
+    "marketplace": "Marketplace",
+    "retail": "Tienda física"
+  },
+  "paid": {
+    "yes": "Pagado",
+    "no": "Sin pagar"
+  },
+  "unassigned": "Sin asignar",
+  "toolbar": {
+    "search": "Buscar pedidos, clientes…",
+    "searchRows": "Buscar en todas las columnas…",
+    "reset": "Restablecer",
+    "columns": "Columnas",
+    "export": "Exportar CSV",
+    "dateRange": "Creado",
+    "total": "Total",
+    "refreshing": "Actualizando…"
+  },
+  "header": {
+    "asc": "Orden ascendente",
+    "desc": "Orden descendente",
+    "clearSort": "Quitar orden",
+    "pinStart": "Fijar a la izquierda",
+    "pinEnd": "Fijar a la derecha",
+    "unpin": "Soltar",
+    "hide": "Ocultar columna",
+    "group": "Agrupar por esta columna",
+    "ungroup": "Quitar agrupación"
+  },
+  "pagination": {
+    "rowsPerPage": "Filas por página",
+    "range": "{{from}}–{{to}} de {{total}}",
+    "selected": "{{selected}} de {{total}} seleccionados",
+    "first": "Primera página",
+    "previous": "Página anterior",
+    "next": "Página siguiente",
+    "last": "Última página"
+  },
+  "filterBuilder": {
+    "trigger": "Filtros",
+    "where": "Donde",
+    "and": "y",
+    "or": "o",
+    "addRule": "Añadir filtro",
+    "addGroup": "Añadir grupo",
+    "clear": "Quitar todo",
+    "empty": "No hay filtros. Añade uno para acotar los resultados.",
+    "value": "Valor",
+    "min": "Mín.",
+    "max": "Máx.",
+    "choose": "Elegir…"
+  },
+  "views": {
+    "trigger": "Vistas",
+    "empty": "Aún no hay vistas guardadas.",
+    "namePlaceholder": "Nombre de la vista",
+    "save": "Guardar",
+    "remove": "Eliminar vista",
+    "saved": "Vista «{{name}}» guardada"
+  },
+  "density": {
+    "compact": "Compacta",
+    "default": "Normal",
+    "comfortable": "Amplia"
+  },
+  "range": {
+    "min": "Mín.",
+    "max": "Máx.",
+    "apply": "Aplicar",
+    "clear": "Quitar"
+  },
+  "presets": {
+    "d7": "Últimos 7 días",
+    "d30": "Últimos 30 días",
+    "d90": "Últimos 90 días",
+    "d365": "Últimos 12 meses"
+  },
+  "chips": {
+    "search": "Búsqueda: {{value}}",
+    "status": "Estado: {{value}}",
+    "channel": "Canal: {{value}}",
+    "date": "Creado: {{value}}",
+    "total": "Total: {{value}}",
+    "filters": "Filtros avanzados: {{count}}"
+  },
+  "actions": {
+    "menu": "Acciones del pedido",
+    "view": "Ver detalles",
+    "copyId": "Copiar número de pedido",
+    "copied": "Número de pedido copiado",
+    "markShipped": "Marcar como enviado",
+    "markDelivered": "Marcar como entregado",
+    "delete": "Eliminar pedido"
+  },
+  "bulk": {
+    "selected": "{{count}} seleccionados",
+    "clear": "Quitar selección",
+    "markShipped": "Marcar enviados",
+    "export": "Exportar",
+    "delete": "Eliminar",
+    "confirmTitle": "¿Eliminar {{count}} pedidos?",
+    "confirmDescription": "Los pedidos seleccionados se eliminan de forma permanente. No se puede deshacer.",
+    "confirm": "Eliminar pedidos",
+    "cancel": "Cancelar"
+  },
+  "toast": {
+    "updated": "Pedidos actualizados",
+    "deleted": "Pedidos eliminados",
+    "exported": "{{count}} filas exportadas"
+  },
+  "detail": {
+    "customer": "Cliente",
+    "summary": "Resumen",
+    "created": "Creado",
+    "assignee": "Responsable",
+    "payment": "Pago",
+    "close": "Cerrar"
+  },
+  "empty": {
+    "title": "Ningún pedido coincide",
+    "description": "Prueba otra búsqueda o quita algún filtro."
+  },
+  "error": {
+    "title": "No se pudieron cargar los pedidos",
+    "retry": "Reintentar"
+  },
+  "select": "Seleccionar fila",
+  "expand": "Mostrar u ocultar fila",
+  "commands": {
+    "spreadsheet": "Abrir la hoja de cálculo editable",
+    "financial": "Abrir la tabla de estados financieros"
+  },
+  "spreadsheet": {
+    "title": "Hoja de cálculo",
+    "description": "Un presupuesto 2027 editable: navegación con teclado, rangos, copiar y pegar, fórmulas y deshacer.",
+    "reset": "Restablecer datos",
+    "addRow": "Añadir fila",
+    "undo": "Deshacer",
+    "redo": "Rehacer",
+    "total": "Total",
+    "selection": "{{count}} celdas",
+    "selectionSum": "{{count}} celdas · Suma {{sum}}",
+    "cols": {
+      "item": "Concepto",
+      "category": "Categoría",
+      "owner": "Responsable",
+      "due": "Fecha",
+      "qty": "Cant.",
+      "unitCost": "Coste unitario",
+      "total": "Total (cant. × coste)",
+      "approved": "Aprobado"
+    },
+    "stats": {
+      "lines": "Partidas",
+      "planned": "Gasto previsto",
+      "approved": "Aprobado",
+      "share": "Porcentaje aprobado"
+    },
+    "keys": {
+      "edit": "editar",
+      "next": "siguiente celda",
+      "extend": "ampliar selección",
+      "copyPaste": "copiar y pegar",
+      "undoRedo": "deshacer y rehacer",
+      "clear": "borrar",
+      "toggle": "marcar casilla"
+    }
+  },
+  "tree": {
+    "title": "Tabla en árbol",
+    "description": "Centros de coste en jerarquía, con presupuesto y real sumados en cada nivel.",
+    "expandAll": "Expandir todo",
+    "collapseAll": "Contraer todo",
+    "toggle": "Expandir o contraer {{name}}",
+    "total": "Total de la empresa",
+    "note": "Las filas padre suman a sus hijas. Un consumo superior al 100 % indica que se supera el presupuesto.",
+    "cols": {
+      "name": "Centro de coste",
+      "owner": "Responsable",
+      "headcount": "Plantilla",
+      "budget": "Presupuesto",
+      "actual": "Real",
+      "variance": "Desviación",
+      "burn": "Presupuesto usado"
+    }
+  },
+  "masterDetail": {
+    "title": "Maestro–detalle",
+    "description": "Haz clic en una cuenta para ver sus facturas y contactos en un panel anidado.",
+    "invoices": "Facturas",
+    "contacts": "Contactos",
+    "outstanding": "{{amount}} pendientes",
+    "contactsCount_one": "{{count}} contacto",
+    "contactsCount_other": "{{count}} contactos",
+    "email": "Escribir a {{name}}",
+    "openCount_one": "{{count}} abierta",
+    "openCount_other": "{{count}} abiertas",
+    "overdueCount_one": "{{count}} vencida",
+    "overdueCount_other": "{{count}} vencidas",
+    "invoiceStatus": {
+      "paid": "Pagada",
+      "open": "Abierta",
+      "overdue": "Vencida"
+    },
+    "cols": {
+      "account": "Cuenta",
+      "plan": "Plan",
+      "seats": "Puestos",
+      "mrr": "MRR",
+      "health": "Salud",
+      "renewal": "Renovación",
+      "openInvoices": "Facturas",
+      "invoice": "Factura",
+      "issued": "Emitida",
+      "due": "Vence",
+      "status": "Estado",
+      "amount": "Importe"
+    }
+  },
+  "infinite": {
+    "title": "Scroll infinito",
+    "description": "Un registro de 2.000 eventos que se cargan de 50 en 50 desde la API al desplazarte.",
+    "search": "Buscar usuario, recurso o acción",
+    "all": "Todos",
+    "empty": "Ningún evento coincide con los filtros",
+    "error": "No se pudo cargar el registro de actividad",
+    "loaded": "{{count}} de {{total}} eventos cargados",
+    "loading": "Cargando más…",
+    "loadMore": "Cargar más",
+    "end": "Has llegado al final",
+    "cols": {
+      "time": "Hora",
+      "actor": "Usuario",
+      "action": "Acción",
+      "resource": "Recurso",
+      "ip": "Dirección IP",
+      "severity": "Gravedad"
+    },
+    "actions": {
+      "created": "Creó",
+      "updated": "Actualizó",
+      "deleted": "Eliminó",
+      "exported": "Exportó",
+      "signed_in": "Inició sesión",
+      "invited": "Invitó"
+    },
+    "severity": {
+      "info": "Info",
+      "warning": "Aviso",
+      "critical": "Crítico"
+    }
+  },
+  "viewsPage": {
+    "title": "Vistas",
+    "description": "Las mismas tareas como tabla, tarjetas, lista o tablero. Tus ajustes de visualización se guardan.",
+    "search": "Buscar tareas",
+    "switcher": "Vista",
+    "modes": {
+      "table": "Tabla",
+      "cards": "Tarjetas",
+      "list": "Lista",
+      "board": "Tablero"
+    },
+    "settings": {
+      "trigger": "Personalizar",
+      "title": "Ajustes de visualización",
+      "density": "Altura de fila",
+      "striped": "Filas alternas",
+      "bordered": "Bordes de celda",
+      "stickyHeader": "Cabecera fija",
+      "columns": "Campos visibles",
+      "reset": "Restablecer"
+    },
+    "cols": {
+      "key": "Clave",
+      "title": "Título",
+      "project": "Proyecto",
+      "status": "Estado",
+      "priority": "Prioridad",
+      "assignee": "Asignada a",
+      "due": "Fecha",
+      "progress": "Progreso"
+    },
+    "status": {
+      "backlog": "Pendiente",
+      "todo": "Por hacer",
+      "in_progress": "En curso",
+      "review": "En revisión",
+      "done": "Hecha"
+    },
+    "priority": {
+      "low": "Baja",
+      "medium": "Media",
+      "high": "Alta",
+      "urgent": "Urgente"
+    }
+  },
+  "reorder": {
+    "title": "Reordenar",
+    "description": "Prioriza un backlog arrastrando filas y reorganiza columnas arrastrando cabeceras o con ajustes predefinidos.",
+    "backlog": "Ranking de peticiones",
+    "backlogHint": "Arrastra el asa, o enfócala y usa Espacio y las flechas.",
+    "reset": "Restablecer orden",
+    "move": "Mover «{{title}}»",
+    "changes": "Cambios sin guardar",
+    "changesHint": "El nuevo top cinco, listo para guardar.",
+    "moved": "Movida del n.º {{from}} al n.º {{to}}",
+    "noChanges": "Arrastra una fila para cambiar el ranking.",
+    "save": "Guardar ranking",
+    "saved": "Ranking guardado",
+    "columnsTitle": "Orden y ancho de columnas",
+    "columnsHint": "Arrastra una cabecera para moverla, su borde para redimensionarla, o elige un ajuste.",
+    "presets": {
+      "planning": "Planificación",
+      "triage": "Triaje",
+      "compact": "Compacto"
+    },
+    "cols": {
+      "request": "Petición",
+      "segment": "Segmento",
+      "effort": "Esfuerzo",
+      "votes": "Votos",
+      "estimate": "Puntos"
+    }
+  },
+  "financial": {
+    "title": "Estado financiero",
+    "description": "Cuenta de resultados 2026 con trimestres, subtotales, desviación frente a presupuesto y primera columna fija.",
+    "units": "Unidades",
+    "thousands": "Miles",
+    "exact": "Exacto",
+    "export": "Exportar CSV",
+    "margin": "Margen operativo",
+    "note": "Los costes son negativos y se muestran entre paréntesis. La desviación compara el real anual con el presupuesto.",
+    "cols": {
+      "line": "Partida",
+      "fy": "Año completo",
+      "actual": "Real",
+      "budget": "Presupuesto",
+      "variance": "vs presupuesto"
+    },
+    "rows": {
+      "revenue": "Ingresos",
+      "totalRevenue": "Ingresos totales",
+      "cogs": "Coste de ventas",
+      "grossProfit": "Margen bruto",
+      "opex": "Gastos operativos",
+      "operatingIncome": "Resultado operativo"
+    }
+  }
+}

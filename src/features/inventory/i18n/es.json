@@ -1,0 +1,798 @@
+{
+  "workspace": {
+    "name": "Inventario",
+    "description": "Stock, almacenes, traslados y proveedores",
+    "category": "Cadena de suministro"
+  },
+  "common": {
+    "errorTitle": "No se pudo cargar esta vista",
+    "errorDescription": "Revisa tu conexión e inténtalo de nuevo.",
+    "retry": "Reintentar"
+  },
+  "nav": {
+    "sections": {
+      "main": "Principal",
+      "stock": "Stock",
+      "movements": "Movimientos",
+      "network": "Red",
+      "purchasing": "Compras"
+    },
+    "overview": "Resumen",
+    "items": "Artículos",
+    "counts": "Recuentos",
+    "transfers": "Traslados",
+    "receiving": "Recepción",
+    "returns": "Devoluciones",
+    "warehouses": "Almacenes",
+    "allWarehouses": "Todos los almacenes",
+    "wh": {
+      "RNO": "Reno",
+      "DFW": "Dallas",
+      "EWR": "Newark",
+      "RTM": "Róterdam"
+    },
+    "suppliers": "Proveedores",
+    "labels": "Estándares de etiquetas",
+    "movementLedger": "Movimientos de stock",
+    "purchaseOrders": "Órdenes de compra",
+    "reorder": "Planificador de reposición",
+    "batches": "Lotes y caducidad",
+    "allBatches": "Todos los lotes",
+    "expiringSoon": "Caducan en 30 días",
+    "expired": "Caducados",
+    "valuation": "Valoración de stock",
+    "bins": "Ubicaciones"
+  },
+  "status": {
+    "ok": "En stock",
+    "low": "Stock bajo",
+    "out": "Sin stock"
+  },
+  "overview": {
+    "title": "Resumen de inventario",
+    "description": "Stock en 4 almacenes, actualizado con cada movimiento.",
+    "refresh": "Actualizar",
+    "kpis": {
+      "value": "Valor del stock",
+      "vsMonth": "vs hace 4 semanas",
+      "units": "Unidades en stock",
+      "skus_one": "{{count}} SKU activo",
+      "skus_other": "{{count}} SKU activos",
+      "low": "Bajo punto de pedido",
+      "lowHint": "Aún disponible, pide pronto",
+      "out": "Sin stock",
+      "turns": "{{turns}}× rotación"
+    },
+    "flow": {
+      "title": "Entradas vs salidas",
+      "description": "Unidades por semana, últimas 12 semanas.",
+      "inbound": "Entradas",
+      "outbound": "Salidas"
+    },
+    "capacity": {
+      "title": "Capacidad de almacenes",
+      "description": "Posiciones de palé ocupadas.",
+      "link": "Abrir almacenes",
+      "pallets": "{{used}} / {{capacity}} · {{pct}}%"
+    },
+    "reorder": {
+      "title": "Sugerencias de reposición",
+      "description": "Cantidades para volver a superar el punto de pedido.",
+      "item": "Artículo",
+      "available": "Disponible",
+      "quantity": "Cant. a pedir",
+      "supplier": "Proveedor",
+      "cost": "Coste est.",
+      "lead_one": "{{count}} día de plazo",
+      "lead_other": "{{count}} días de plazo",
+      "link": "Abrir el planificador de reposición",
+      "create": "Crear pedido"
+    },
+    "alerts": {
+      "title": "Alertas de stock",
+      "description": "SKU en o por debajo del punto de pedido.",
+      "link": "Ver artículos con stock bajo",
+      "left": "{{available}} de {{point}}"
+    },
+    "footnote": "Valorado a coste estándar. Total {{value}}."
+  },
+  "items": {
+    "title": "Artículos",
+    "description_one": "{{count}} SKU · {{value}} en stock",
+    "description_other": "{{count}} SKU · {{value}} en stock",
+    "loading": "Cargando stock…",
+    "warehouse": "Almacén",
+    "allWarehouses": "Todos los almacenes",
+    "search": "Buscar SKU, artículo o proveedor",
+    "reset": "Restablecer",
+    "columnsButton": "Columnas",
+    "density": {
+      "compact": "Compacta",
+      "default": "Normal",
+      "comfortable": "Amplia"
+    },
+    "export": "Exportar",
+    "exported_one": "{{count}} fila exportada",
+    "exported_other": "{{count}} filas exportadas",
+    "statusLabel": {
+      "ok": "En stock",
+      "low": "Stock bajo",
+      "out": "Sin stock"
+    },
+    "empty": {
+      "title": "No hay artículos",
+      "description": "Prueba otra búsqueda o quita los filtros."
+    },
+    "bulk": {
+      "selected_one": "{{count}} artículo seleccionado",
+      "selected_other": "{{count}} artículos seleccionados",
+      "clear": "Quitar selección",
+      "adjust": "Ajustar stock"
+    },
+    "adjust": {
+      "done_one": "Stock ajustado en {{count}} artículo",
+      "done_other": "Stock ajustado en {{count}} artículos",
+      "title": "Ajustar stock",
+      "description_one": "Se aplica a {{count}} artículo.",
+      "description_other": "Se aplica a cada uno de los {{count}} artículos seleccionados.",
+      "direction": "Cambio",
+      "remove": "Restar",
+      "add": "Sumar",
+      "quantity": "Cantidad",
+      "warehouse": "Almacén",
+      "reason": "Motivo",
+      "reasons": {
+        "damaged": "Dañado en manipulación",
+        "found": "Encontrado al ubicar",
+        "shrinkage": "Merma",
+        "qa": "Retenido en calidad",
+        "correction": "Corrección de datos"
+      },
+      "cancel": "Cancelar",
+      "apply": "Aplicar ajuste",
+      "failed": "No se pudo ajustar el stock"
+    },
+    "columns": {
+      "select": "Seleccionar",
+      "sku": "SKU",
+      "name": "Artículo",
+      "category": "Categoría",
+      "onHand": "En stock",
+      "reserved": "Reservado",
+      "available": "Disponible",
+      "reorderPoint": "Punto de pedido",
+      "status": "Estado",
+      "location": "Ubicación",
+      "unitCost": "Coste unitario",
+      "value": "Valor",
+      "lastMovement": "Último movimiento"
+    }
+  },
+  "item": {
+    "back": "Todos los artículos",
+    "adjust": "Ajustar stock",
+    "adjusted": "Stock ajustado para {{sku}}",
+    "discontinued": "Descatalogado",
+    "kpis": {
+      "onHand": "En stock",
+      "available": "Disponible",
+      "reserved_one": "{{count}} reservado",
+      "reserved_other": "{{count}} reservados",
+      "reorderPoint": "Punto de pedido",
+      "reorderQty": "Lote de pedido {{qty}}",
+      "value": "Valor del stock",
+      "unitCost": "{{cost}} por unidad"
+    },
+    "locations": {
+      "title": "Stock por ubicación",
+      "description": "Sólido = disponible, claro = reservado para pedidos abiertos.",
+      "reserved_one": "{{count}} reservado",
+      "reserved_other": "{{count}} reservados"
+    },
+    "ledger": {
+      "title": "Libro de movimientos",
+      "description": "Últimos 25 movimientos en todas las ubicaciones.",
+      "type": "Movimiento",
+      "when": "Cuándo",
+      "warehouse": "Sitio",
+      "reference": "Referencia",
+      "user": "Por",
+      "quantity": "Cant.",
+      "types": {
+        "receipt": "Recepción",
+        "shipment": "Envío",
+        "transfer-in": "Traslado entrante",
+        "transfer-out": "Traslado saliente",
+        "adjustment": "Ajuste",
+        "count": "Recuento"
+      }
+    },
+    "suppliers": {
+      "title": "Proveedores",
+      "preferred": "Proveedor preferente",
+      "meta": "{{days}} días de plazo · {{rate}}% a tiempo"
+    },
+    "reorder": {
+      "title": "Reglas de reposición",
+      "description": "Cuando el disponible llega al punto de pedido, se pide el lote de pedido.",
+      "point": "Punto de pedido",
+      "quantity": "Lote de pedido",
+      "supplier": "Proveedor preferente",
+      "auto": "Reposición automática",
+      "autoHint": "Crear un pedido borrador al cruzar el punto de pedido.",
+      "discard": "Descartar",
+      "save": "Guardar reglas",
+      "saved": "Reglas de reposición guardadas"
+    }
+  },
+  "warehouses": {
+    "title": "Almacenes",
+    "description": "Capacidad y distribución de cada sitio. Elige uno para ver sus ubicaciones.",
+    "zone": "Zona {{code}} · {{name}}",
+    "aisle": "Pasillo {{code}}",
+    "pallets": "Palés",
+    "skus": "SKU",
+    "value": "Valor",
+    "layout": {
+      "title": "Distribución de {{code}}",
+      "description": "Zonas, pasillos y ubicaciones con ocupación media.",
+      "zone": "Zona"
+    },
+    "bins": {
+      "description": "Cada cuadro es una ubicación, sombreada según ocupación. Haz clic para seleccionarla.",
+      "ok": "Con hueco",
+      "tight": "Más del 80%",
+      "full": "Llena",
+      "label": "Ubicación {{code}} · {{pct}}% llena"
+    }
+  },
+  "transfers": {
+    "title": "Traslados",
+    "description": "{{units}} unidades se mueven ahora mismo entre almacenes.",
+    "new": "Nuevo traslado",
+    "late": "Con retraso · {{date}}",
+    "eta": "Llega {{date}}",
+    "more_one": "+{{count}} línea más",
+    "more_other": "+{{count}} líneas más",
+    "moved": "{{id}} pasó a {{status}}",
+    "advance": {
+      "requested": "Preparar",
+      "picking": "Enviar",
+      "in-transit": "Recibir"
+    },
+    "status": {
+      "requested": "Solicitado",
+      "picking": "En preparación",
+      "in-transit": "En tránsito",
+      "received": "Recibido"
+    },
+    "emptyColumn": "No hay nada aquí.",
+    "create": {
+      "title": "Nuevo traslado",
+      "description": "Mueve stock entre almacenes. El stock sale del origen cuando se envía.",
+      "from": "Origen",
+      "to": "Destino",
+      "carrier": "Transportista",
+      "lines": "Artículos",
+      "addLine": "Añadir artículo",
+      "item": "Elige un artículo",
+      "search": "Buscar artículos",
+      "quantity": "Cantidad",
+      "removeLine": "Quitar artículo",
+      "cancel": "Cancelar",
+      "submit": "Crear traslado",
+      "created": "Traslado {{id}} creado",
+      "failed": "No se pudo crear el traslado",
+      "errors": {
+        "quantity": "Al menos 1",
+        "sameWarehouse": "Elige otro destino"
+      }
+    },
+    "units_one": "{{count}} ud.",
+    "units_other": "{{count}} uds."
+  },
+  "receiving": {
+    "title": "Recepción",
+    "description": "Compara los pedidos entrantes con lo que llegó al muelle.",
+    "inbound": "Pedidos entrantes",
+    "summary": "{{lines}} líneas · {{units}} uds. · llega {{date}}",
+    "expectedAt": "Llega a {{warehouse}} el {{date}}",
+    "progress": "Recibido",
+    "scan": {
+      "placeholder": "Escanea o escribe un SKU y pulsa Intro",
+      "label": "Escanear SKU",
+      "add": "Añadir",
+      "unknown": "{{code}} no está en este pedido"
+    },
+    "columns": {
+      "item": "Artículo",
+      "expected": "Esperado",
+      "received": "Recibido",
+      "state": "Estado"
+    },
+    "state": {
+      "over_one": "{{count}} de más",
+      "over_other": "{{count}} de más",
+      "done": "Completo",
+      "short_one": "Falta {{count}}",
+      "short_other": "Faltan {{count}}"
+    },
+    "fillExpected": "Recibir todo lo esperado",
+    "post": "Registrar recepción",
+    "posted": "{{po}} registrado · {{status}}",
+    "status": {
+      "open": "Abierto",
+      "partial": "Parcial",
+      "complete": "Completo"
+    }
+  },
+  "counts": {
+    "title": "Recuentos",
+    "description": "Cuenta una zona cada vez; las diferencias se registran como ajustes.",
+    "warehouse": "Almacén",
+    "zone": "Zona",
+    "zoneOption": "Zona {{zone}}",
+    "kpis": {
+      "counted": "Líneas contadas",
+      "scheduled": "Programado {{date}}",
+      "variances": "Líneas con diferencia",
+      "outside": "Fuera de tolerancia",
+      "tolerance": "Más de un {{pct}}% de diferencia",
+      "impact": "Impacto en valor"
+    },
+    "sheet": {
+      "title": "Hoja de recuento · {{warehouse}} zona {{zone}}",
+      "description": "Indica lo que hay físicamente en cada ubicación. Deja en blanco para omitir."
+    },
+    "reset": "Borrar recuento",
+    "submit": "Registrar recuento",
+    "posted_one": "{{count}} ubicación ajustada",
+    "posted_other": "{{count}} ubicaciones ajustadas",
+    "columns": {
+      "bin": "Ubicación",
+      "item": "Artículo",
+      "system": "Cant. sistema",
+      "counted": "Contado",
+      "variance": "Diferencia"
+    },
+    "match": "Coincide",
+    "recount": "Volver a contar",
+    "empty": "No hay stock en esta zona."
+  },
+  "suppliers": {
+    "title": "Proveedores",
+    "description": "Plazos, fiabilidad y gasto de cada proveedor.",
+    "lead": {
+      "title": "Plazo de entrega actual",
+      "description": "Días medios desde el pedido a la recepción.",
+      "days": "Plazo"
+    },
+    "trend": {
+      "title": "Evolución del plazo · {{name}}",
+      "description": "Real frente a ofertado, últimos 6 meses. Elige un proveedor abajo.",
+      "actual": "Real",
+      "quoted": "Ofertado"
+    },
+    "list": {
+      "title": "Todos los proveedores",
+      "description": "Haz clic en una fila para ver la evolución de su plazo."
+    },
+    "columns": {
+      "supplier": "Proveedor",
+      "lead": "Plazo",
+      "trend": "Tendencia",
+      "onTime": "A tiempo",
+      "fill": "Nivel de servicio",
+      "skus": "SKU",
+      "openPOs": "Pedidos abiertos",
+      "spend": "Gasto anual"
+    },
+    "days_one": "{{count}} día",
+    "days_other": "{{count}} días"
+  },
+  "purchaseOrders": {
+    "title": "Órdenes de compra",
+    "description": "Pedidos a proveedores, desde el borrador hasta la recepción completa.",
+    "new": "Nueva orden de compra",
+    "send": "Enviar",
+    "sent": "Orden de compra enviada al proveedor",
+    "all": "Todas",
+    "statusFilter": "Filtrar por estado",
+    "search": "Buscar OC o proveedor",
+    "late": "Atrasada",
+    "status": {
+      "draft": "Borrador",
+      "sent": "Enviada",
+      "partial": "Recibida parcialmente",
+      "received": "Recibida"
+    },
+    "kpis": {
+      "open": "Valor de pedidos abiertos",
+      "openHint_one": "{{count}} pedido pendiente de entrega",
+      "openHint_other": "{{count}} pedidos pendientes de entrega",
+      "drafts": "Borradores",
+      "draftsHint": "Aún no enviados a proveedores",
+      "overdue": "Vencidas",
+      "overdueHint": "Pasada la fecha prevista",
+      "onTime": "Entrega puntual",
+      "onTimeHint": "De los pedidos recibidos"
+    },
+    "columns": {
+      "id": "OC",
+      "supplier": "Proveedor",
+      "warehouse": "Destino",
+      "created": "Creada",
+      "expected": "Prevista",
+      "progress": "Recibido",
+      "total": "Total",
+      "status": "Estado",
+      "actions": "Acciones"
+    },
+    "lines_one": "{{count}} línea",
+    "lines_other": "{{count}} líneas",
+    "empty": {
+      "title": "No hay órdenes de compra",
+      "description": "Nada coincide con estos filtros. Crea una orden de compra para empezar."
+    },
+    "create": {
+      "title": "Nueva orden de compra",
+      "description": "Pide stock a un proveedor. Guárdala como borrador o envíala ahora.",
+      "supplier": "Proveedor",
+      "warehouse": "Destino",
+      "expected": "Entrega prevista",
+      "lines": "Líneas",
+      "addLine": "Añadir línea",
+      "item": "Elige un artículo",
+      "search": "Buscar artículos",
+      "quantity": "Cantidad",
+      "unitCost": "Coste unitario",
+      "removeLine": "Quitar línea",
+      "total": "Total del pedido",
+      "cancel": "Cancelar",
+      "draft": "Guardar borrador",
+      "submit": "Crear y enviar",
+      "created": "{{id}} creada",
+      "failed": "No se pudo crear la orden de compra",
+      "errors": {
+        "quantity": "Mínimo 1",
+        "cost": "Introduce un precio",
+        "duplicate": "Ya está en este pedido"
+      }
+    }
+  },
+  "movements": {
+    "title": "Movimientos de stock",
+    "description": "Cada recepción, venta, traslado y ajuste en todos los almacenes.",
+    "type": "Tipo",
+    "allTypes": "Todos los tipos",
+    "warehouse": "Almacén",
+    "allWarehouses": "Todos los almacenes",
+    "dates": "Fecha",
+    "clear": "Borrar",
+    "presets": {
+      "week": "Últimos 7 días",
+      "month": "Últimos 30 días",
+      "quarter": "Últimos 90 días"
+    },
+    "export": "Exportar",
+    "exported_one": "{{count}} movimiento exportado",
+    "exported_other": "{{count}} movimientos exportados",
+    "kpis": {
+      "count": "Movimientos",
+      "inbound": "Unidades de entrada",
+      "outbound": "Unidades de salida",
+      "net": "Variación neta"
+    },
+    "trend": {
+      "title": "Tendencia de movimientos",
+      "description": "Unidades movidas por semana, por tipo de movimiento.",
+      "receipts": "Recepciones",
+      "sales": "Ventas",
+      "transfers": "Traslados",
+      "adjustments": "Ajustes y recuentos"
+    },
+    "table": "Libro de movimientos",
+    "item": "Artículo",
+    "empty": {
+      "title": "Sin movimientos",
+      "description": "No hubo movimientos de stock con estos filtros."
+    }
+  },
+  "reorder": {
+    "title": "Planificador de reposición",
+    "description": "Artículos en o por debajo de su punto de pedido, con cantidades calculadas según el consumo diario y el plazo del proveedor.",
+    "horizon": "Cobertura tras la entrega",
+    "horizonOption": "{{count}} días",
+    "formula": "Cantidad sugerida = consumo diario × (plazo + cobertura) − disponible − en pedido, y como mínimo la cantidad de pedido.",
+    "kpis": {
+      "items": "Artículos a reponer",
+      "stockouts": "Rotura antes de la entrega",
+      "stockoutsHint": "Días restantes menores que el plazo",
+      "cost": "Gasto sugerido",
+      "suppliers_one": "De {{count}} proveedor",
+      "suppliers_other": "De {{count}} proveedores"
+    },
+    "columns": {
+      "select": "Seleccionar",
+      "item": "Artículo",
+      "available": "Disponible",
+      "onOrder": "En pedido",
+      "usage": "Consumo diario",
+      "cover": "Días restantes",
+      "lead": "Plazo",
+      "suggested": "Cant. sugerida",
+      "cost": "Coste est."
+    },
+    "perDay": "{{value}}/día",
+    "days_one": "{{count}} día",
+    "days_other": "{{count}} días",
+    "selected_one": "{{count}} artículo seleccionado",
+    "selected_other": "{{count}} artículos seleccionados",
+    "clear": "Quitar selección",
+    "createPO": "Crear OC con la selección",
+    "created_one": "{{count}} orden de compra creada como borrador",
+    "created_other": "{{count}} órdenes de compra creadas como borrador",
+    "empty": {
+      "title": "Nada que reponer",
+      "description": "Todos los artículos están por encima de su punto de pedido."
+    }
+  },
+  "supplier": {
+    "back": "Todos los proveedores",
+    "newPO": "Nueva orden de compra",
+    "profile": "Perfil",
+    "contact": "Contacto",
+    "email": "Correo",
+    "phone": "Teléfono",
+    "country": "País",
+    "terms": "Condiciones de pago",
+    "kpis": {
+      "lead": "Plazo ofertado",
+      "onTime": "Entrega puntual",
+      "fill": "Tasa de servicio",
+      "spend": "Gasto del año",
+      "openPOs_one": "{{count}} OC abierta",
+      "openPOs_other": "{{count}} OC abiertas"
+    },
+    "lead": {
+      "title": "Plazo de entrega",
+      "description": "Días reales frente a ofertados, últimos 6 meses.",
+      "actual": "Real",
+      "quoted": "Ofertado"
+    },
+    "onTime": {
+      "title": "Entrega puntual",
+      "description": "Porcentaje de pedidos recibidos en la fecha prevista.",
+      "rate": "Puntual"
+    },
+    "items": {
+      "title": "Artículos suministrados",
+      "description_one": "{{count}} artículo, como proveedor preferente o alternativo.",
+      "description_other": "{{count}} artículos, como proveedor preferente o alternativo.",
+      "preferred": "Preferente",
+      "alternate": "Alternativo"
+    },
+    "orders": {
+      "title": "Órdenes de compra recientes",
+      "link": "Todas las órdenes de compra"
+    }
+  },
+  "batches": {
+    "title": "Lotes y caducidad",
+    "description": "Stock con trazabilidad por lote, con fechas de recepción y caducidad. Pon un lote en cuarentena para que no se prepare.",
+    "windowFilter": "Ventana de caducidad",
+    "search": "Buscar lote, SKU o proveedor…",
+    "table": "Lotes",
+    "windows": {
+      "30": "≤ 30 días",
+      "60": "≤ 60 días",
+      "90": "≤ 90 días",
+      "all": "Todos",
+      "expired": "Caducados"
+    },
+    "kpis": {
+      "lots": "Lotes con trazabilidad",
+      "units": "{{units}} unidades en stock",
+      "expired": "Valor caducado",
+      "soon": "Caducan en 30 días",
+      "quarantined": "En cuarentena",
+      "lotsHint_one": "{{count}} lote",
+      "lotsHint_other": "{{count}} lotes"
+    },
+    "outlook": {
+      "title": "Previsión de caducidad",
+      "description": "Valor del stock ya caducado y del que caduca en cada uno de los próximos seis meses.",
+      "value": "Valor",
+      "expired": "Caducado",
+      "bucket": "{{from}}–{{to}} d"
+    },
+    "risk": {
+      "title": "Valor en riesgo",
+      "description": "Caducado o con caducidad en 90 días, frente al valor con lote de cada almacén."
+    },
+    "columns": {
+      "batch": "Lote",
+      "item": "Artículo",
+      "location": "Ubicación",
+      "quantity": "Cantidad",
+      "value": "Valor",
+      "received": "Recibido",
+      "expires": "Caduca",
+      "daysLeft": "Días para caducar",
+      "status": "Estado",
+      "actions": "Acciones"
+    },
+    "expiry": {
+      "ago_one": "Caducó hace {{count}} día",
+      "ago_other": "Caducó hace {{count}} días",
+      "left_one": "Queda {{count}} día",
+      "left_other": "Quedan {{count}} días"
+    },
+    "status": {
+      "released": "Liberado",
+      "quarantined": "En cuarentena"
+    },
+    "quarantine": {
+      "action": "Cuarentena",
+      "title": "¿Poner en cuarentena el lote {{id}}?",
+      "description": "{{quantity}} × {{name}} quedará bloqueado para preparación hasta que Calidad lo libere.",
+      "confirm": "Poner en cuarentena",
+      "cancel": "Cancelar",
+      "done": "Lote en cuarentena"
+    },
+    "empty": {
+      "title": "No hay lotes en esta ventana",
+      "description": "Prueba una ventana más amplia o borra la búsqueda."
+    }
+  },
+  "bins": {
+    "title": "Ubicaciones",
+    "description": "Pasillos, estanterías y huecos de un almacén, sombreados por ocupación. Haz clic en un hueco para ver su contenido.",
+    "warehouse": "Almacén",
+    "zoneSummary_one": "{{count}} hueco · {{pct}} % de ocupación media",
+    "zoneSummary_other": "{{count}} huecos · {{pct}} % de ocupación media",
+    "kpis": {
+      "bins": "Huecos",
+      "fill": "Ocupación media",
+      "tight": "Por encima del 80 %",
+      "empty": "Huecos vacíos"
+    },
+    "sheet": {
+      "title": "Hueco {{code}}",
+      "description": "Stock ubicado en este hueco de {{warehouse}}.",
+      "fill": "Ocupación",
+      "units": "Unidades",
+      "value": "Valor",
+      "stock": "{{onHand}} en stock · {{reserved}} reservadas",
+      "move": "Mover",
+      "empty": {
+        "title": "Este hueco está vacío",
+        "description": "Mueve stock aquí desde otro hueco."
+      }
+    },
+    "move": {
+      "to": "Hueco de destino",
+      "quantity": "Cantidad",
+      "submit": "Mover stock",
+      "done": "Stock movido"
+    }
+  },
+  "valuation": {
+    "title": "Valoración de stock",
+    "description": "Cuánto vale el inventario por almacén y categoría, cómo evoluciona y qué no se vende.",
+    "method": "Método de valoración",
+    "methods": {
+      "fifo": "FIFO",
+      "average": "Coste medio"
+    },
+    "kpis": {
+      "value": "Valor del inventario",
+      "vsQuarter": "frente a hace 3 meses",
+      "units": "Unidades en stock",
+      "skus_one": "{{count}} SKU con stock",
+      "skus_other": "{{count}} SKU con stock",
+      "slow": "Valor de baja rotación",
+      "dead": "Valor de stock muerto",
+      "items_one": "{{count}} artículo",
+      "items_other": "{{count}} artículos"
+    },
+    "trend": {
+      "title": "Evolución de la valoración",
+      "description": "Valor del inventario a fin de mes durante el último año ({{method}}).",
+      "value": "Valor"
+    },
+    "categories": {
+      "title": "Por categoría",
+      "description": "Peso de cada categoría en el valor del inventario.",
+      "total": "Total"
+    },
+    "warehouses": {
+      "title": "Por almacén",
+      "description": "Valor del inventario por almacén, desglosado por categoría."
+    },
+    "slow": {
+      "title": "Stock de baja rotación y muerto",
+      "description": "Muerto: sin ventas en 45 días o descatalogado. Baja rotación: más de 365 días de cobertura al consumo actual.",
+      "export": "Exportar CSV",
+      "exported_one": "{{count}} fila exportada",
+      "exported_other": "{{count}} filas exportadas",
+      "never": "Sin ventas",
+      "daysAgo_one": "Hace {{count}} día",
+      "daysAgo_other": "Hace {{count}} días",
+      "days_one": "{{count}} día",
+      "days_other": "{{count}} días",
+      "columns": {
+        "item": "Artículo",
+        "category": "Categoría",
+        "onHand": "En stock",
+        "value": "Valor",
+        "lastSale": "Última venta",
+        "cover": "Cobertura",
+        "class": "Clase"
+      },
+      "classes": {
+        "slow": "Baja rotación",
+        "dead": "Muerto"
+      },
+      "empty": {
+        "title": "Todo se está moviendo",
+        "description": "Ahora mismo no hay stock de baja rotación ni muerto."
+      }
+    }
+  },
+  "shell": {
+    "categories": {
+      "stock": "Stock",
+      "receiving": "Recepción",
+      "counts": "Recuentos"
+    },
+    "notifications": {
+      "reorder": {
+        "title": "9 artículos bajo el punto de pedido",
+        "body": "Incluido SKU-1042 Soporte de acero (quedan 12, mín. 50)."
+      },
+      "arrived": {
+        "title": "La PO-5521 llegó al muelle 3",
+        "body": "48 palés de Acme Metals listos para recibir."
+      },
+      "variance": {
+        "title": "Diferencias en el recuento de la zona B",
+        "body": "6 ubicaciones difieren más de un 5 % del stock del sistema."
+      },
+      "expiry": {
+        "title": "El lote LOT-2209 caduca en 10 días",
+        "body": "320 unidades en el Almacén Norte."
+      },
+      "transfer": {
+        "title": "Traspaso TR-118 completado",
+        "body": "Norte → Sur · 1.200 unidades recibidas."
+      },
+      "valuation": {
+        "title": "Valoración de fin de mes lista",
+        "body": "Valor total del stock 2,41 M$ (+3,2 %)."
+      }
+    },
+    "create": {
+      "item": {
+        "label": "Añadir artículo",
+        "description": "Un SKU nuevo en el catálogo"
+      },
+      "po": {
+        "label": "Orden de compra",
+        "description": "Repón desde un proveedor"
+      },
+      "transfer": {
+        "label": "Traspaso de stock",
+        "description": "Mueve stock entre almacenes"
+      },
+      "count": {
+        "label": "Iniciar recuento",
+        "description": "Recuento cíclico o completo"
+      }
+    },
+    "account": {
+      "counts": "Mis recuentos",
+      "warehouses": "Mis almacenes"
+    }
+  }
+}
